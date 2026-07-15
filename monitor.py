@@ -699,8 +699,8 @@ def run(audit=False):
     if not new_roles and not fresh_failures:
         print("Nothing new; all configured sources checked or already-alerted failures.")
 
-    # ---- Weekly Sunday tasks (~8am Pacific): dead-link sweep + digest ----
-    if now.weekday() == 6 and now.hour == 15:
+    # ---- Weekly Saturday tasks (~7am Pacific): dead-link sweep + digest ----
+    if now.weekday() == 5 and now.hour == 14:
         expired = []
         checked = 0
         for key, meta in state["seen"].items():

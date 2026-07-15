@@ -65,7 +65,43 @@ NON_US_RE = re.compile(
     r"\b(india|china|ireland|germany|switzerland|denmark|united kingdom|"
     r"\buk\b|singapore|japan|canada|mexico|brazil|poland|spain|france|"
     r"italy|netherlands|belgium|austria|hyderabad|shanghai|bangalore|"
-    r"dublin|basel|copenhagen|taipei|taiwan|korea|australia)\b",
+    r"dublin|basel|copenhagen|taipei|taiwan|korea|australia|madrid|"
+    r"barcelona|ludwigshafen|maidenhead|campoverde|mainz|wiesbaden|"
+    r"zurich|tolochenaz|lyon|paris|london|edinburgh|lisbon|warsaw|"
+    r"krakow|budapest|bucharest|beijing|seoul|tokyo|osaka|mumbai|"
+    r"delhi|chennai|pune|sao paulo|buenos aires|bogota|lima|santiago|"
+    r"toronto|vancouver|montreal|mississauga|israel|egypt|turkey|"
+    r"ukraine|vietnam|indonesia|malaysia|philippines|pakistan|panama|"
+    r"saudi arabia|south africa|slovakia|czech|romania|bulgaria)\b",
+    re.IGNORECASE,
+)
+
+# Positive US indicators. A non-empty location must match this (and not
+# NON_US_RE) to be kept - Gunraj wants US-only postings.
+US_RE = re.compile(
+    r"\b(united states|usa|u\.s\.a?\.?|remote)\b"
+    r"|\b(alabama|alaska|arizona|arkansas|california|colorado|connecticut|"
+    r"delaware|florida|georgia|hawaii|idaho|illinois|indiana|iowa|kansas|"
+    r"kentucky|louisiana|maine|maryland|massachusetts|michigan|minnesota|"
+    r"mississippi|missouri|montana|nebraska|nevada|new hampshire|new jersey|"
+    r"new mexico|new york|north carolina|north dakota|ohio|oklahoma|oregon|"
+    r"pennsylvania|rhode island|south carolina|south dakota|tennessee|texas|"
+    r"utah|vermont|virginia|washington|west virginia|wisconsin|wyoming|"
+    r"district of columbia|puerto rico)\b"
+    r"|,\s*(AL|AK|AZ|AR|CA|CO|CT|DE|FL|GA|HI|ID|IL|IN|IA|KS|KY|LA|ME|MD|MA|"
+    r"MI|MN|MS|MO|MT|NE|NV|NH|NJ|NM|NY|NC|ND|OH|OK|OR|PA|RI|SC|SD|TN|TX|UT|"
+    r"VT|VA|WA|WV|WI|WY|DC)\b",
+    re.IGNORECASE,
+)
+
+# Undergrad-only postings get dropped (Gunraj is an MBA candidate).
+UNDERGRAD_TITLE_RE = re.compile(r"\b(undergrad(uate)?|high school)\b", re.IGNORECASE)
+UNDERGRAD_DESC_RE = re.compile(
+    r"(pursuing (a |an )?(bachelor|undergraduate)|"
+    r"currently enrolled in (a |an )?(bachelor|undergraduate)|"
+    r"undergraduate (students? only|degree required)|"
+    r"rising (sophomore|junior|senior)|"
+    r"must be (a |an )?(current )?undergraduate)",
     re.IGNORECASE,
 )
 
@@ -232,10 +268,236 @@ def fetch_phenom(cfg):
     return list(results.values())
 
 
+def fetch_jibe(cfg):
+    """iCIMS/Jibe career portals (careers.medpace.com etc.): GET /api/jobs."""
+    origin = cfg["origin"].rstrip("/")
+    results = {}
+    for term in cfg.get("search_terms", ["intern", "co-op", "MBA", "graduate"]):
+        page = 1
+        while page <= 20:
+            api = f"{origin}/api/jobs?keyword={term}&limit=100&page={page}"
+            resp = _request("GET", api)
+            data = _json_or_fail(resp, api)
+            jobs = data.get("jobs")
+            total = data.get("totalCount", 0)
+            if jobs is None:
+                raise SourceError(f"{api} responded without jobs (schema change?)")
+            for wrap in jobs:
+                j = wrap.get("data") or {}
+                key = j.get("slug") or j.get("req_id") or j.get("title")
+                desc = " ".join(filter(None, [j.get("description"), j.get("qualifications")]))
+                results[key] = {
+                    "title": (j.get("title") or "").strip(),
+                    "location": ", ".join(filter(None, [j.get("city"), j.get("state"), j.get("country")])),
+                    "url": f"{origin}/jobs/{j.get('slug')}?lang=en-us",
+                    "posted_on": (j.get("posted_date") or "")[:10],
+                    "description": html.unescape(re.sub(r"<[^>]+>", " ", desc)),
+                }
+            if page * 100 >= total or not jobs:
+                break
+            page += 1
+    return list(results.values())
+
+
+def fetch_ukg(cfg):
+    """UKG Pro Recruiting boards (recruiting.ultipro.com)."""
+    tenant, board = cfg["tenant"], cfg["board"]
+    base = f"https://recruiting.ultipro.com/{tenant}/JobBoard/{board}"
+    api = f"{base}/JobBoardView/LoadSearchResults"
+    results = {}
+    for term in cfg.get("search_terms", ["intern", "co-op", "MBA", "graduate"]):
+        skip = 0
+        while skip < 1000:
+            payload = {
+                "opportunitySearch": {
+                    "Top": 50, "Skip": skip, "QueryString": term,
+                    "OrderBy": [{"Value": "postedDateDesc",
+                                 "PropertyName": "PostedDate", "Ascending": False}],
+                    "Filters": [],
+                },
+                "matchCriteria": {"PreferredJobs": [], "Certifications": [],
+                                  "Skills": [], "Languages": []},
+            }
+            resp = _request("POST", api, json=payload)
+            data = _json_or_fail(resp, api)
+            opps = data.get("opportunities")
+            total = data.get("totalCount", 0)
+            if opps is None:
+                raise SourceError(f"{api} responded without opportunities (schema change?)")
+            for o in opps:
+                locs = []
+                for l in o.get("Locations") or []:
+                    addr = l.get("Address") or {}
+                    state = addr.get("State")
+                    country = addr.get("Country")
+                    parts = [addr.get("City") or "",
+                             (state.get("Code") if isinstance(state, dict) else state) or "",
+                             (country.get("Code") if isinstance(country, dict) else country) or ""]
+                    locs.append(", ".join(p for p in parts if p))
+                results[o.get("Id")] = {
+                    "title": (o.get("Title") or "").strip(),
+                    "location": "; ".join(l for l in locs if l),
+                    "url": f"{base}/OpportunityDetail?opportunityId={o.get('Id')}",
+                    "posted_on": (o.get("PostedDate") or "")[:10],
+                    "description": html.unescape(re.sub(r"<[^>]+>", " ", o.get("BriefDescription") or "")),
+                }
+            skip += 50
+            if skip >= total or not opps:
+                break
+    return list(results.values())
+
+
+def fetch_jobvite(cfg):
+    """Jobvite hosted boards (jobs.jobvite.com/<slug>): server-rendered HTML."""
+    slug = cfg["slug"]
+    results = {}
+    for term in cfg.get("search_terms", ["intern", "co-op", "MBA", "graduate"]):
+        for page in range(1, 21):
+            url = f"https://jobs.jobvite.com/{slug}/search?q={term}&p={page}"
+            resp = _request("GET", url)
+            t = resp.text
+            if "jv-job-list" not in t and page == 1:
+                raise SourceError(f"{url} returned no job list markup (site changed?)")
+            rows = re.findall(
+                r'href="(/' + re.escape(slug) + r'/job/([^"]+))"[^>]*>([^<]+)</a>'
+                r'[\s\S]{0,400}?jv-job-list-location">\s*([^<]*?)\s*</td>', t)
+            before = len(results)
+            for href, jid, title, loc in rows:
+                results[jid] = {
+                    "title": html.unescape(title).strip(),
+                    "location": html.unescape(loc).strip(),
+                    "url": f"https://jobs.jobvite.com{href}",
+                    "posted_on": "",
+                }
+            m = re.search(r"(\d+)\s*-\s*(\d+)\s*of\s*(\d+)", t)
+            done = not rows or len(results) == before or (m and int(m.group(2)) >= int(m.group(3)))
+            if done:
+                break
+    return list(results.values())
+
+
+def fetch_attrax(cfg):
+    """Attrax career sites (careers.abbvie.com): server-rendered tiles."""
+    origin = cfg["origin"].rstrip("/")
+    results = {}
+    for term in cfg.get("search_terms", ["intern", "co-op", "MBA", "graduate"]):
+        for page in range(1, 21):
+            url = f"{origin}/en/jobs?q={term}&page={page}"
+            resp = _request("GET", url)
+            t = resp.text
+            if "attrax-vacancy-tile" not in t:
+                if page == 1:
+                    raise SourceError(f"{url} returned no vacancy tiles (site changed?)")
+                break
+            anchors = list(re.finditer(
+                r'<a[^>]*vacancy-tile__title[^>]*href="(/en/job/[^"]+)"[^>]*>([\s\S]{1,200}?)</a>'
+                r'|<a[^>]*href="(/en/job/[^"]+)"[^>]*vacancy-tile__title[^>]*>([\s\S]{1,200}?)</a>', t))
+            if not anchors:
+                break
+            before = len(results)
+            for i, m in enumerate(anchors):
+                href = m.group(1) or m.group(3)
+                title = re.sub(r"<[^>]+>", " ", m.group(2) or m.group(4) or "")
+                end = anchors[i + 1].start() if i + 1 < len(anchors) else len(t)
+                seg = t[m.end():end]
+                lm = re.search(r"Location\s*</p>[\s\S]{0,200}?item-value[^>]*>\s*([^<]*?)\s*</p>", seg)
+                results[href] = {
+                    "title": html.unescape(re.sub(r"\s+", " ", title)).strip(),
+                    "location": html.unescape(lm.group(1)).strip() if lm else "",
+                    "url": origin + href,
+                    "posted_on": "",
+                }
+            if len(results) == before:
+                break
+    return list(results.values())
+
+
+def fetch_jnj_careers(cfg):
+    """careers.jnj.com: server-rendered cards; search is client-side only,
+    so crawl every page and filter locally by title."""
+    origin = "https://www.careers.jnj.com"
+    results = {}
+    page = 1
+    while page <= 120:
+        url = f"{origin}/en/jobs/" + (f"?page={page}" if page > 1 else "")
+        resp = _request("GET", url)
+        t = resp.text
+        cards = re.findall(
+            r'<a[^>]*href="(/en/jobs/(r-[^/"]+)/[^"]*)"[^>]*>([\s\S]{1,250}?)</a>'
+            r'[\s\S]{0,800}?PagePromo-location[^>]*>([\s\S]{0,300}?)</address>', t)
+        if not cards:
+            if page == 1:
+                raise SourceError(f"{url} returned no job cards (site changed?)")
+            break
+        new = 0
+        for href, rid, rawtitle, rawloc in cards:
+            if rid in results:
+                continue
+            new += 1
+            title = html.unescape(re.sub(r"\s+", " ", re.sub(r"<[^>]+>", " ", rawtitle))).strip()
+            loc = html.unescape(re.sub(r"\s+", " ", re.sub(r"<[^>]+>", " ", rawloc))).strip()
+            results[rid] = {"title": title, "location": loc,
+                            "url": origin + href, "posted_on": ""}
+        if new == 0:
+            break
+        page += 1
+    return list(results.values())
+
+
+def fetch_criver(cfg):
+    """jobs.criver.com: WordPress site, server-rendered search results."""
+    origin = "https://jobs.criver.com"
+    results = {}
+    marker_seen = False
+    for term in cfg.get("search_terms", ["intern", "co-op", "MBA", "graduate"]):
+        url = f"{origin}/job-search-results/?keyword={term}&primary_country=US"
+        resp = _request("GET", url)
+        t = resp.text
+        if "job-search-results" in t or "/job/" in t:
+            marker_seen = True
+        for href, jid, rawtitle in re.findall(
+                r'href="(/job/(\d+)/[^"]+)"[^>]*>([\s\S]{1,200}?)</a>', t):
+            title = html.unescape(re.sub(r"\s+", " ", re.sub(r"<[^>]+>", " ", rawtitle))).strip()
+            if not title:
+                continue
+            results[jid] = {"title": title, "location": "United States",
+                            "url": origin + href, "posted_on": ""}
+    if not marker_seen:
+        raise SourceError(f"{origin} search returned unrecognized markup (site changed?)")
+    return list(results.values())
+
+
+def fetch_novo(cfg):
+    """Novo Nordisk AEM careersearch JSON servlet, US-filtered."""
+    api = ("https://www.novonordisk.com/bin/nncorp/careersearch"
+           "?keyword=&country=United%20States&category=&locale=en")
+    resp = _request("GET", api)
+    data = (_json_or_fail(resp, api) or {}).get("data") or {}
+    jobs = data.get("jobs")
+    if jobs is None:
+        raise SourceError(f"{api} responded without data.jobs (schema change?)")
+    out = []
+    for j in jobs:
+        out.append({
+            "title": (j.get("jobTitle") or "").strip(),
+            "location": ", ".join(filter(None, [j.get("jobCity"), j.get("jobState"), j.get("jobCountry")])),
+            "url": f"https://www.novonordisk.com/careers/find-a-job/job-ad.html?id={j.get('jobId')}",
+            "posted_on": "",
+        })
+    return out
+
+
 ADAPTERS = {
     "workday": fetch_workday,
     "greenhouse": fetch_greenhouse,
     "phenom": fetch_phenom,
+    "jibe": fetch_jibe,
+    "ukg": fetch_ukg,
+    "jobvite": fetch_jobvite,
+    "attrax": fetch_attrax,
+    "jnj": fetch_jnj_careers,
+    "criver": fetch_criver,
+    "novo": fetch_novo,
 }
 
 
@@ -255,24 +517,35 @@ def dedupe_key(company, title, location):
 def is_candidate(item):
     if not TITLE_RE.search(item["title"]):
         return False
-    if item["location"] and NON_US_RE.search(item["location"]):
+    if UNDERGRAD_TITLE_RE.search(item["title"]):
         return False
+    loc = item["location"] or ""
+    if loc:
+        if NON_US_RE.search(loc):
+            return False
+        if not US_RE.search(loc):
+            return False  # US-only: unknown non-blank locations are dropped
     return True
 
 
-def eligibility_note(item, cfg):
-    """Best-effort grad-eligibility label. Never drops a posting."""
+def eligibility(item):
+    """Returns (keep, note). Drops postings that are clearly undergrad-only;
+    keeps everything else (with a note when eligibility cannot be verified)."""
     desc = item.get("description", "")
     if not desc and "_detail" in item:
         try:
             desc = fetch_workday_detail(item)
         except SourceError:
-            return "eligibility unverified (detail page unreachable) - check posting"
+            return True, "eligibility unverified (detail page unreachable) - check posting"
     if not desc:
-        return "eligibility not stated in feed - check posting"
-    if GRAD_RE.search(desc):
-        return "graduate-eligible (verified in description)"
-    return "grad eligibility not stated - check posting"
+        return True, "eligibility not stated in feed - check posting"
+    grad = bool(GRAD_RE.search(desc))
+    undergrad = bool(UNDERGRAD_DESC_RE.search(desc))
+    if undergrad and not grad:
+        return False, ""
+    if grad:
+        return True, "graduate-eligible (verified in description)"
+    return True, "grad eligibility not stated - check posting"
 
 
 def load_state():
@@ -332,7 +605,14 @@ def run(audit=False):
                 key = dedupe_key(name, item["title"], item["location"])
                 if key in state["seen"]:
                     continue
-                note = eligibility_note(item, cfg)
+                keep, note = eligibility(item)
+                if not keep:
+                    state["seen"][key] = {
+                        "company": name, "title": item["title"],
+                        "location": item["location"], "first_seen": now.isoformat(),
+                        "skipped": "undergrad-only",
+                    }
+                    continue
                 role = {
                     "company": name,
                     "title": item["title"],

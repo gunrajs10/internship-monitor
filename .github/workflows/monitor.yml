@@ -2,7 +2,7 @@ name: Internship Monitor
 
 on:
   schedule:
-    - cron: "17 0,14-23 * * *"  # hourly 7am-5pm Pacific (PDT, UTC-7); 11 runs/day
+    - cron: "17 * * * *"  # every hour at :17 (public repo - unlimited Actions minutes)
   workflow_dispatch:
     inputs:
       mode:

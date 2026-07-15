@@ -1,0 +1,216 @@
+# Biotech internship watchlist - 29 companies
+#
+# verified: true  = endpoint confirmed live during build (July 2026)
+# verified: false = best-known endpoint; the audit run will confirm or flag it
+#
+# ats types: workday | greenhouse | phenom | unsupported
+# career_page is the human fallback link used in failure alerts.
+
+companies:
+  # ---- Workday (confirmed) ----
+  - name: Amgen
+    ats: workday
+    tenant: amgen
+    host: wd1
+    site: Careers
+    verified: true
+    career_page: https://careers.amgen.com/en/students-and-graduates
+
+  - name: Genentech
+    ats: workday
+    tenant: roche
+    host: wd3
+    site: ROG-A2O-GENE
+    verified: true
+    career_page: https://careers.gene.com/us/en/internship-opportunities
+
+  - name: Gilead Sciences
+    ats: workday
+    tenant: gilead
+    host: wd1
+    site: gileadcareers
+    verified: true
+    career_page: https://www.gilead.com/careers/internship-program
+
+  - name: Pfizer
+    ats: workday
+    tenant: pfizer
+    host: wd1
+    site: PfizerCareers
+    verified: true
+    career_page: https://www.pfizer.com/about/careers/early-careers
+
+  - name: Bristol Myers Squibb
+    ats: workday
+    tenant: bristolmyerssquibb
+    host: wd5
+    site: BMS
+    verified: true
+    career_page: https://careers.bms.com/internships-co-ops
+
+  # ---- Workday (unverified - audit will confirm) ----
+  - name: Roche
+    ats: workday
+    tenant: roche
+    host: wd3
+    site: roche-ext
+    verified: false
+    career_page: https://careers.roche.com/global/en/students-graduates
+
+  - name: Kite Pharma
+    ats: workday
+    tenant: kitepharma
+    host: wd1
+    site: KitePharmaCareers
+    verified: false
+    career_page: https://www.kitepharma.com/careers
+    note: Kite roles may also appear on the Gilead board; audit will tell.
+
+  - name: Biogen
+    ats: workday
+    tenant: biogen
+    host: wd1
+    site: Biogen_External
+    verified: false
+    career_page: https://www.biogen.com/careers/students-and-graduates.html
+
+  - name: Neurocrine Biosciences
+    ats: workday
+    tenant: neurocrine
+    host: wd5
+    site: NeurocrineCareers
+    verified: false
+    career_page: https://www.neurocrine.com/careers/
+
+  - name: Vertex Pharmaceuticals
+    ats: workday
+    tenant: vrtx
+    host: wd5
+    site: VertexCareers
+    verified: false
+    career_page: https://www.vrtx.com/careers/university-programs/
+
+  - name: Regeneron
+    ats: workday
+    tenant: regeneron
+    host: wd1
+    site: Regeneron
+    verified: false
+    career_page: https://careers.regeneron.com/early-careers
+
+  - name: BioMarin
+    ats: workday
+    tenant: biomarin
+    host: wd1
+    site: BioMarin
+    verified: false
+    career_page: https://careers.biomarin.com/
+
+  - name: Agilent Technologies
+    ats: workday
+    tenant: agilent
+    host: wd1
+    site: External
+    verified: false
+    career_page: https://www.agilent.com/en/agilent-careers/students-graduates
+
+  - name: Illumina
+    ats: workday
+    tenant: illumina
+    host: wd1
+    site: illumina-careers
+    verified: false
+    career_page: https://www.illumina.com/company/careers/interns-and-new-grads.html
+
+  # ---- Greenhouse (unverified slugs - audit will confirm) ----
+  - name: Axsome Therapeutics
+    ats: greenhouse
+    slug: axsome
+    verified: false
+    career_page: https://www.axsome.com/careers
+
+  - name: Praxis Precision Medicines
+    ats: greenhouse
+    slug: praxismedicines
+    verified: false
+    career_page: https://praxismedicines.com/careers
+
+  - name: BridgeBio
+    ats: greenhouse
+    slug: bridgebio
+    verified: false
+    career_page: https://bridgebio.com/careers/
+
+  - name: Ultragenyx
+    ats: greenhouse
+    slug: ultragenyx
+    verified: false
+    career_page: https://www.ultragenyx.com/careers/emerging-talent-programs/
+
+  - name: Tempus AI
+    ats: greenhouse
+    slug: tempus
+    verified: false
+    career_page: https://www.tempus.com/about-us/careers/
+
+  # ---- Phenom career sites (unverified - audit will confirm) ----
+  - name: Johnson & Johnson
+    ats: phenom
+    origin: https://jobs.jnj.com
+    verified: false
+    career_page: https://www.careers.jnj.com/en/early-careers/
+
+  - name: AbbVie
+    ats: phenom
+    origin: https://careers.abbvie.com
+    verified: false
+    career_page: https://careers.abbvie.com/en/students
+
+  - name: Eli Lilly
+    ats: phenom
+    origin: https://careers.lilly.com
+    verified: false
+    career_page: https://careers.lilly.com/us/en/internships
+
+  - name: Merck
+    ats: phenom
+    origin: https://jobs.merck.com
+    verified: false
+    career_page: https://jobs.merck.com/us/en/students
+
+  - name: Thermo Fisher Scientific
+    ats: phenom
+    origin: https://jobs.thermofisher.com
+    verified: false
+    career_page: https://jobs.thermofisher.com/global/en/internships-co-ops
+
+  - name: Labcorp
+    ats: phenom
+    origin: https://careers.labcorp.com
+    verified: false
+    career_page: https://careers.labcorp.com/global/en/internships
+
+  - name: Charles River Laboratories
+    ats: phenom
+    origin: https://jobs.criver.com
+    verified: false
+    career_page: https://jobs.criver.com/global/en/students-and-graduates
+
+  # ---- No adapter yet (will fail loud with the manual link) ----
+  - name: Ionis Pharmaceuticals
+    ats: unsupported
+    verified: false
+    career_page: https://www.ionis.com/careers/internship-program/
+    note: UKG-hosted board; adapter to be added after audit.
+
+  - name: Medpace
+    ats: unsupported
+    verified: false
+    career_page: https://careers.medpace.com/jobs
+    note: Custom careers system; adapter to be added after audit.
+
+  - name: Novo Nordisk
+    ats: unsupported
+    verified: false
+    career_page: https://www.novonordisk.com/careers/early-career-programmes.html
+    note: SAP SuccessFactors; graduate programme applications open November 2026.

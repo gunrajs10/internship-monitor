@@ -2,7 +2,7 @@ name: Internship Monitor
 
 on:
   schedule:
-    - cron: "17 */2 * * *"   # every 2 hours at :17 (offset avoids GitHub busy :00)
+    - cron: "17 0,14-23 * * *"  # hourly 7am-5pm Pacific (PDT, UTC-7); 11 runs/day
   workflow_dispatch:
     inputs:
       mode:

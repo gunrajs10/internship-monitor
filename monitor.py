@@ -122,6 +122,14 @@ UNDERGRAD_DESC_RE = re.compile(
     re.IGNORECASE,
 )
 
+# Titles matching Gunraj's target functions get a HIGH priority flag.
+PRIORITY_RE = re.compile(
+    r"\b(commercial|strateg|market access|marketing|brand|business development|"
+    r"business analytics|mba|leadership development|new product planning|"
+    r"portfolio|competitive intelligence|operations|supply chain)\w*",
+    re.IGNORECASE,
+)
+
 FAILURE_REALERT_HOURS = 24
 
 
@@ -648,12 +656,14 @@ def run(audit=False):
                     "posted_on": item.get("posted_on", ""),
                     "url": item["url"],
                     "eligibility": note,
+                    "priority": "HIGH" if PRIORITY_RE.search(item["title"]) else "",
                     "first_seen": now.isoformat(),
                 }
                 new_roles.append(role)
                 state["seen"][key] = {
                     "company": name, "title": item["title"],
                     "location": item["location"], "first_seen": now.isoformat(),
+                    "url": item["url"],
                 }
         except SourceError as exc:
             failures.append({"company": name, "reason": str(exc)})
@@ -688,6 +698,32 @@ def run(audit=False):
         print(f"{len(fresh_failures)} source failure(s) reported")
     if not new_roles and not fresh_failures:
         print("Nothing new; all configured sources checked or already-alerted failures.")
+
+    # ---- Weekly Sunday tasks (~8am Pacific): dead-link sweep + digest ----
+    if now.weekday() == 6 and now.hour == 15:
+        expired = []
+        checked = 0
+        for key, meta in state["seen"].items():
+            url = meta.get("url")
+            if not url or meta.get("expired") or meta.get("skipped"):
+                continue
+            if checked >= 200:
+                break
+            checked += 1
+            try:
+                resp = requests.get(url, headers=HEADERS, timeout=15, allow_redirects=True)
+                if resp.status_code in (404, 410):
+                    meta["expired"] = True
+                    expired.append({"company": meta.get("company", ""),
+                                    "title": meta.get("title", ""), "url": url})
+            except requests.RequestException:
+                pass  # network hiccup: never mark expired on uncertainty
+            time.sleep(0.3)
+        if expired:
+            send_webhook({"type": "expired", "items": expired})
+            print(f"{len(expired)} expired posting(s) reported")
+        send_webhook({"type": "digest"})
+        print("weekly digest requested")
 
     save_state(state)
 

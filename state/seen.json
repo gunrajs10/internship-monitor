@@ -1,1 +1,439 @@
-{"seen": {}, "failures": {}}
+{
+ "failures": {
+  "086dc629b509cd0452a21cc3f157d1f45fa29ea9": "2026-07-15T06:28:41.532995+00:00",
+  "16f21d6ab6316264dcd83655281b68699bf45dfc": "2026-07-15T06:28:41.532995+00:00",
+  "26ec73deb78968c55ffb835419b110ceeda1996e": "2026-07-15T06:28:41.532995+00:00",
+  "2e59c836b7727c50020af57ba7425f16f00a1c59": "2026-07-15T06:28:41.532995+00:00",
+  "87e6196561dcb3a8ae8e993e59f1349256cb5e91": "2026-07-15T06:28:41.532995+00:00",
+  "c78195205147bee8ea18db17d4985b1f1c6d2436": "2026-07-15T06:28:41.532995+00:00",
+  "dff249e123931bda3de9c0d0b65d1bfaf865bae6": "2026-07-15T06:28:41.532995+00:00"
+ },
+ "seen": {
+  "059d92ae5472e3acb9142c0ed6e5ef1b95b7655c": {
+   "company": "Thermo Fisher Scientific",
+   "first_seen": "2026-07-15T06:28:41.532995+00:00",
+   "location": "Sofia, Bulgaria",
+   "title": "Project Support Coordinator Intern (6 months fixed term)"
+  },
+  "07aafa5bc3c33270c77dc271d1b370e3f07cb81f": {
+   "company": "Roche",
+   "first_seen": "2026-07-15T06:28:41.532995+00:00",
+   "location": "Budapest",
+   "title": "Accounts Payable Intern - Portuguese speaking"
+  },
+  "090cfb5401e9ab90bfcabd3d136be60672e36969": {
+   "company": "Roche",
+   "first_seen": "2026-07-15T06:28:41.532995+00:00",
+   "location": "Petaling Jaya",
+   "title": "Site IT Experience Intern"
+  },
+  "0c22c0c0666818cb9e460860f8520c46af6ce15c": {
+   "company": "Roche",
+   "first_seen": "2026-07-15T06:28:41.532995+00:00",
+   "location": "Petaling Jaya",
+   "title": "Travel & Expense Compliance Intern (Mandarin Speaker)"
+  },
+  "1130ab19ab24ac7fd664d732e98cbbbca39611b0": {
+   "company": "Roche",
+   "first_seen": "2026-07-15T06:28:41.532995+00:00",
+   "location": "Petaling Jaya",
+   "title": "Enterprise Master Data Management Operations - Intern (Mandarin speaker)"
+  },
+  "18f6400dbe05f155a5f41bc29ffc90820fb8c2d9": {
+   "company": "Roche",
+   "first_seen": "2026-07-15T06:28:41.532995+00:00",
+   "location": "2 Locations",
+   "title": "Regulatory Operation Intern"
+  },
+  "1a4fdeea5fd6bb1cdbdc696ca352c44117083079": {
+   "company": "Roche",
+   "first_seen": "2026-07-15T06:28:41.532995+00:00",
+   "location": "2 Locations",
+   "title": "Junior Project Coordinator\u00a0(Internship)"
+  },
+  "1d78dce515eb9bc8eb0c27335c9b666d99e0267e": {
+   "company": "Roche",
+   "first_seen": "2026-07-15T06:28:41.532995+00:00",
+   "location": "Petaling Jaya",
+   "title": "HR Intern - Early in Career Intern (APAC)"
+  },
+  "1f4c7ca05f60d977435303d247474f81ce1524ec": {
+   "company": "Roche",
+   "first_seen": "2026-07-15T06:28:41.532995+00:00",
+   "location": "Penzberg",
+   "title": "6-month Internship in Antibody Development (m/f/d)"
+  },
+  "21a9ffddc9b3d36bea44f8324a4734b381a8e419": {
+   "company": "Thermo Fisher Scientific",
+   "first_seen": "2026-07-15T06:28:41.532995+00:00",
+   "location": "Brno, Czechia",
+   "title": "Internship \u2013 Syst\u00e9mov\u00fd/\u00e1 in\u017een\u00fdr/ka"
+  },
+  "246bd121bc98e038f9e6adf1abf6785937a50e73": {
+   "company": "Thermo Fisher Scientific",
+   "first_seen": "2026-07-15T06:28:41.532995+00:00",
+   "location": "Hillsboro, Oregon, United States of America",
+   "title": "Engineering Co-Op"
+  },
+  "2818b8aa58c484412357985106799fec8a319224": {
+   "company": "Eli Lilly",
+   "first_seen": "2026-07-15T06:28:41.532995+00:00",
+   "location": "Petaling Jaya, Selangor, Malaysia",
+   "title": "Finance Intern (AP)"
+  },
+  "2c86693473fd7b342df1edf274b0a11578344380": {
+   "company": "Roche",
+   "first_seen": "2026-07-15T06:28:41.532995+00:00",
+   "location": "Budapest",
+   "title": "People Support Solutions Intern"
+  },
+  "2d80a34a941334b1234571dac6ce994926138948": {
+   "company": "Genentech",
+   "first_seen": "2026-07-15T06:28:41.532995+00:00",
+   "location": "South San Francisco",
+   "title": "2026 Summer/Fall Intern - Regev Lab  - Decoding Genetic Circuitry"
+  },
+  "2e5a07dd99efcbf7cee73edcb3b69072c120f5c0": {
+   "company": "Roche",
+   "first_seen": "2026-07-15T06:28:41.532995+00:00",
+   "location": "Budapest",
+   "title": "Accounting Intern"
+  },
+  "2fa450c3c76c4ff50f8afe35b883bac50fe6f847": {
+   "company": "Roche",
+   "first_seen": "2026-07-15T06:28:41.532995+00:00",
+   "location": "Sant Cugat del Vall\u00e8s",
+   "title": "GCS Project Management Office Intern"
+  },
+  "30c2ae3c9cf96546f57f873567c33f129f8e0e68": {
+   "company": "Roche",
+   "first_seen": "2026-07-15T06:28:41.532995+00:00",
+   "location": "Penzberg",
+   "title": "Internship Bioprocess Research (m/f/d)"
+  },
+  "3463734f7511e0be218fb903a8ae5b56ed1159bd": {
+   "company": "Roche",
+   "first_seen": "2026-07-15T06:28:41.532995+00:00",
+   "location": "Petaling Jaya",
+   "title": "Internship | Finance & Accounting (Supply Chain)"
+  },
+  "379c9482964af558a6597bc0967fb47631abd36d": {
+   "company": "Roche",
+   "first_seen": "2026-07-15T06:28:41.532995+00:00",
+   "location": "Rotkreuz",
+   "title": "Internship for MD or PhD Students in a health-related scientific field"
+  },
+  "3d2c0b62831110a7fbcf7bd58444ab8a7bcae711": {
+   "company": "Roche",
+   "first_seen": "2026-07-15T06:28:41.532995+00:00",
+   "location": "Kaiseraugst",
+   "title": "Student Internship in Supply Chain Operations"
+  },
+  "3d5d0634548dc1c08a9347e7e083b6d1d2d92cc3": {
+   "company": "Amgen",
+   "first_seen": "2026-07-15T06:28:41.532995+00:00",
+   "location": "US - Ohio - New Albany",
+   "title": "Undergrad Co-op - Engineering - Ohio (August-December 2026)"
+  },
+  "41e2026bc39c956128d3012fa9c9a8217d691e12": {
+   "company": "Thermo Fisher Scientific",
+   "first_seen": "2026-07-15T06:28:41.532995+00:00",
+   "location": "Gauteng, South Africa",
+   "title": "Intern Clinical Operations"
+  },
+  "430b9697b4da49cf40ff54d4d3c8ea959dd4d860": {
+   "company": "Roche",
+   "first_seen": "2026-07-15T06:28:41.532995+00:00",
+   "location": "Budapest",
+   "title": "Talent Acquisition Intern - French speaking"
+  },
+  "43844e5c5ebdb18818078862f4c6a003172d4682": {
+   "company": "Roche",
+   "first_seen": "2026-07-15T06:28:41.532995+00:00",
+   "location": "Budapest",
+   "title": "Integrated Support Service Specialist Intern - German speaking"
+  },
+  "4471209bac0049bbf497ec8fc189bf6f3880be83": {
+   "company": "Amgen",
+   "first_seen": "2026-07-15T06:28:41.532995+00:00",
+   "location": "Portugal - Lisbon",
+   "title": "Internship Program - Technology"
+  },
+  "44d6e7b8517b69ecd0ca9c6c913a8aa4580278f8": {
+   "company": "Roche",
+   "first_seen": "2026-07-15T06:28:41.532995+00:00",
+   "location": "Panama",
+   "title": "Operations & Audit Intern"
+  },
+  "4f139ad401a0a48bdb5ba7f3b25b84b52c586b0c": {
+   "company": "Roche",
+   "first_seen": "2026-07-15T06:28:41.532995+00:00",
+   "location": "Petaling Jaya",
+   "title": "Accounts Payable Intern (Mandarin Speaker)"
+  },
+  "512601b7ee1dcf1158ed800fae929c79ca69493a": {
+   "company": "Roche",
+   "first_seen": "2026-07-15T06:28:41.532995+00:00",
+   "location": "Laval",
+   "title": "2026 Fall Intern - Field Service Representative Intern / Stagiaire d'Automne 2026 - Repr\u00e9sentant du Service sur le Terrain"
+  },
+  "54b9c8c1aa370a71087ee2b6669760cde914a39c": {
+   "company": "Labcorp",
+   "first_seen": "2026-07-15T06:28:41.532995+00:00",
+   "location": "Appleton, Wisconsin, United States of America",
+   "title": "Undergrad Lab Intern"
+  },
+  "5a8b1d968ed29142d2e557e94d886a9ba25b46f2": {
+   "company": "Roche",
+   "first_seen": "2026-07-15T06:28:41.532995+00:00",
+   "location": "Mannheim",
+   "title": "Lab-on-Chip Development Internship + Master Thesis at Near Patient Care (m/f/d)"
+  },
+  "5bfcd116be736b799e66d29dae92ca93caf3406d": {
+   "company": "Roche",
+   "first_seen": "2026-07-15T06:28:41.532995+00:00",
+   "location": "Sant Cugat del Vall\u00e8s",
+   "title": "Technical Support Engineer Intern"
+  },
+  "5d09599a7f93f514e03dd50fddb0e503d59d8619": {
+   "company": "Roche",
+   "first_seen": "2026-07-15T06:28:41.532995+00:00",
+   "location": "Petaling Jaya",
+   "title": "Travel & Expense Compliance Intern"
+  },
+  "64f449d2026e74c73c8b2e29c1d5ef93c831f2e5": {
+   "company": "Roche",
+   "first_seen": "2026-07-15T06:28:41.532995+00:00",
+   "location": "Mannheim",
+   "title": "Internship Sequencing Service & Support EMEA-LATAM - AXELIOS 1"
+  },
+  "67e7cc5931873c1b07ce4331848c1f29ad4a87be": {
+   "company": "Eli Lilly",
+   "first_seen": "2026-07-15T06:28:41.532995+00:00",
+   "location": "Petaling Jaya, Selangor, Malaysia",
+   "title": "Intern \u2013 Trial Capabilities (Clinical Trial Payment)"
+  },
+  "6ae61c5c25d9320e9c49bf9a8121b2f22947070f": {
+   "company": "Roche",
+   "first_seen": "2026-07-15T06:28:41.532995+00:00",
+   "location": "Sant Cugat del Vall\u00e8s",
+   "title": "In-House Service/Repair Technician Intern"
+  },
+  "72d07da0061b120ac19226e38b79257d92de984a": {
+   "company": "Roche",
+   "first_seen": "2026-07-15T06:28:41.532995+00:00",
+   "location": "Subang Jaya",
+   "title": "Policy, Access & Communications Intern"
+  },
+  "739126599890cb884e61f9571174cf4ca1f30458": {
+   "company": "Roche",
+   "first_seen": "2026-07-15T06:28:41.532995+00:00",
+   "location": "Subang Jaya",
+   "title": "Digital Marketing Intern"
+  },
+  "742c95363abcb11cfab49aba0daeb043b0831096": {
+   "company": "Genentech",
+   "first_seen": "2026-07-15T06:28:41.532995+00:00",
+   "location": "Hillsboro",
+   "title": "MECOP 2026 Summer/Fall Intern - Automation Systems & Digital Integration"
+  },
+  "85e4d78c3254f58f9d566b54580f2e4a6ce47c2e": {
+   "company": "Amgen",
+   "first_seen": "2026-07-15T06:28:41.532995+00:00",
+   "location": "Portugal - Lisbon",
+   "title": "Internship Program \u2013 Business & Operations"
+  },
+  "899b530b573f11ec00102298f847e93d95b291d0": {
+   "company": "Roche",
+   "first_seen": "2026-07-15T06:28:41.532995+00:00",
+   "location": "Petaling Jaya",
+   "title": "Accounting - Period End Closing (PEC) Intern"
+  },
+  "8c31e11eb9c99207d93b72a38e40ee7b353da246": {
+   "company": "Roche",
+   "first_seen": "2026-07-15T06:28:41.532995+00:00",
+   "location": "Budapest",
+   "title": "Workforce Optimization Intern (External Workforce)"
+  },
+  "99713dad25a6192a06bfa8938abbf653918bc201": {
+   "company": "Roche",
+   "first_seen": "2026-07-15T06:28:41.532995+00:00",
+   "location": "Istanbul",
+   "title": "Legal Intern"
+  },
+  "a26948eb04cbfc57741f65d653a14a4a8d78c77a": {
+   "company": "Roche",
+   "first_seen": "2026-07-15T06:28:41.532995+00:00",
+   "location": "Rotkreuz",
+   "title": "Internship in BGE Sensor Development (Rotkreuz, 6-12 month)"
+  },
+  "a4bfaed87704f4c96ed363697e70563cd70eab69": {
+   "company": "Regeneron",
+   "first_seen": "2026-07-15T06:28:41.532995+00:00",
+   "location": "TARRYTOWN",
+   "title": "Summer 2026 MD Intern, Internal Medicine"
+  },
+  "a751a0aab37b65af570799aaf0fba163e1da5837": {
+   "company": "Roche",
+   "first_seen": "2026-07-15T06:28:41.532995+00:00",
+   "location": "Mannheim",
+   "title": "Internship & Master Thesis Near-Patient Care Development (m/f/d)"
+  },
+  "a86b0763350baff6c2bd128b5a12bb824d1ea5bb": {
+   "company": "Roche",
+   "first_seen": "2026-07-15T06:28:41.532995+00:00",
+   "location": "Bogota",
+   "title": "Environmental Intern 2026"
+  },
+  "a9680defa6cb7b9f616b0ec1de1f30738b0610f1": {
+   "company": "Roche",
+   "first_seen": "2026-07-15T06:28:41.532995+00:00",
+   "location": "Sant Cugat del Vall\u00e8s",
+   "title": "Finance, Procurement & Performance Management Intern (On en Roche Graduate Program)"
+  },
+  "acbe4b16539e90d9954b7af8cf9c3c3d923bd07a": {
+   "company": "Roche",
+   "first_seen": "2026-07-15T06:28:41.532995+00:00",
+   "location": "Sant Cugat del Vall\u00e8s",
+   "title": "Logistics & Site Operations Intern (On en Roche Graduate Program)"
+  },
+  "b1fe9fc153d4a3af609a6c88e85b04c882ed1c66": {
+   "company": "Roche",
+   "first_seen": "2026-07-15T06:28:41.532995+00:00",
+   "location": "Fuzhou",
+   "title": "Marketing Intern"
+  },
+  "b4cead71cd51341bbb41325569d8c9ec53044a1f": {
+   "company": "Genentech",
+   "first_seen": "2026-07-15T06:28:41.532995+00:00",
+   "location": "South San Francisco",
+   "title": "2026 Summer/Fall Intern \u2013 AI/ML for Systems Biology"
+  },
+  "b899f44208cd63a157b761abd33ba9298e35cc35": {
+   "company": "Roche",
+   "first_seen": "2026-07-15T06:28:41.532995+00:00",
+   "location": "Subang Jaya",
+   "title": "Legal & Compliance Intern"
+  },
+  "b8c65c733996ab6a32e572e7bb6853f890f42210": {
+   "company": "Pfizer",
+   "first_seen": "2026-07-15T06:28:41.532995+00:00",
+   "location": "Philippines - Makati City",
+   "title": "Data Analytics and Full Stack Developer Intern"
+  },
+  "bae1329f664610a4403856e064dac92ef78367a0": {
+   "company": "Roche",
+   "first_seen": "2026-07-15T06:28:41.532995+00:00",
+   "location": "Beijing",
+   "title": "Intern"
+  },
+  "be772dadeeabcf3a170899930bdd64acd9b7cfa3": {
+   "company": "Eli Lilly",
+   "first_seen": "2026-07-15T06:28:41.532995+00:00",
+   "location": "Petaling Jaya, Selangor, Malaysia",
+   "title": "Intern - Finance SSC (iNext)"
+  },
+  "bf797f3ddeef8f96cb60b21a34eb7f07c60b8658": {
+   "company": "Roche",
+   "first_seen": "2026-07-15T06:28:41.532995+00:00",
+   "location": "Sant Cugat del Vall\u00e8s",
+   "title": "Supply Chain Operations Intern (On en Roche Graduate Program)"
+  },
+  "c9607240d22fb33af00e37d2ed1739811c9851d3": {
+   "company": "Thermo Fisher Scientific",
+   "first_seen": "2026-07-15T06:28:41.532995+00:00",
+   "location": "Brno, Czechia",
+   "title": "Internship \u2013 Application Scientist"
+  },
+  "cf51eb1e6071e54966042aebda9c441d3aba40c8": {
+   "company": "Roche",
+   "first_seen": "2026-07-15T06:28:41.532995+00:00",
+   "location": "Suzhou",
+   "title": "Intern - China Procurement Facilities & Utilities"
+  },
+  "cfe6fc9c068ac0041a1c4a15d635ef3643e09eff": {
+   "company": "Genentech",
+   "first_seen": "2026-07-15T06:28:41.532995+00:00",
+   "location": "South San Francisco",
+   "title": "2026 Fall Intern - Frontier Research, Prescient Design (AI for Drug Discovery)"
+  },
+  "d2923c3c05336c156181f0dee79bd9f4ffb246b7": {
+   "company": "Roche",
+   "first_seen": "2026-07-15T06:28:41.532995+00:00",
+   "location": "Budapest",
+   "title": "Graphic Designer Intern"
+  },
+  "d3b942358fa984f0c1e77333582f2c02ded143d5": {
+   "company": "Roche",
+   "first_seen": "2026-07-15T06:28:41.532995+00:00",
+   "location": "Laval",
+   "title": "2026 Fall Intern -  Field Application Specialist Intern / Stagiaire d'Automne 2026 - Sp\u00e9cialiste d'Application de Terrain"
+  },
+  "d521f4d72b6b25589a4614b188b939a5c20007b6": {
+   "company": "Roche",
+   "first_seen": "2026-07-15T06:28:41.532995+00:00",
+   "location": "San Jose, Costa Rica",
+   "title": "Trilingual University/ Campus Program Intern (Spanish, English & Portuguese)"
+  },
+  "e0e0619b1ba0673cd1b2e1d9e26bf0091b6b50df": {
+   "company": "Eli Lilly",
+   "first_seen": "2026-07-15T06:28:41.532995+00:00",
+   "location": "ISTANBUL, null, T\u00fcrkiye",
+   "title": "Lilly EnAble Internship Opportunity"
+  },
+  "e5679caebfe6a3993f969bad97108c1c4af455a7": {
+   "company": "Pfizer",
+   "first_seen": "2026-07-15T06:28:41.532995+00:00",
+   "location": "Malaysia - Kuala Lumpur",
+   "title": "Internship \u2013 APAC RIO (Regulatory)"
+  },
+  "e5b8656a72754a045b45b0cea376a937247b982f": {
+   "company": "Thermo Fisher Scientific",
+   "first_seen": "2026-07-15T06:28:41.532995+00:00",
+   "location": "Greenville, North Carolina, United States of America",
+   "title": "Engineering Co-Op"
+  },
+  "e66381cc61f2632816235e4875d0aec381bef6fc": {
+   "company": "Roche",
+   "first_seen": "2026-07-15T06:28:41.532995+00:00",
+   "location": "Penzberg",
+   "title": "Stelle Internship im GMP Service Facilities & Engineering (m/w/d)"
+  },
+  "e7f9cb4df2db6727ab99e626a8167db6d5e9e526": {
+   "company": "Roche",
+   "first_seen": "2026-07-15T06:28:41.532995+00:00",
+   "location": "Budapest",
+   "title": "Strategic Talent Acquisition Intern - German advantage"
+  },
+  "ededab4d46223de7405a605c7271df65bdefe87f": {
+   "company": "Eli Lilly",
+   "first_seen": "2026-07-15T06:28:41.532995+00:00",
+   "location": "ISTANBUL, null, T\u00fcrkiye",
+   "title": "Lilly StarT Marketing Intern - Specialty Business Unit"
+  },
+  "f1b016f068d614f30fc815909d2ef9b5421c2e30": {
+   "company": "Roche",
+   "first_seen": "2026-07-15T06:28:41.532995+00:00",
+   "location": "Laval",
+   "title": "2026 Fall Intern - Business / Data Analyst Intern / Stagiaire d'Automne 2026 - Analyste d'Affaires / de Donn\u00e9es"
+  },
+  "fc0a60e74d6ea49201842b89430897080da0c17d": {
+   "company": "Roche",
+   "first_seen": "2026-07-15T06:28:41.532995+00:00",
+   "location": "Abidjan",
+   "title": "Internship - Event Coordinator"
+  },
+  "fe1a62e404fa0bb549d6887aea2e801747280754": {
+   "company": "Roche",
+   "first_seen": "2026-07-15T06:28:41.532995+00:00",
+   "location": "Budapest",
+   "title": "Procurement & Car Fleet Management Intern - Hungarian speaking"
+  },
+  "ffaee4235987d4e8e51afe4f1886262c6ba279d8": {
+   "company": "Thermo Fisher Scientific",
+   "first_seen": "2026-07-15T06:28:41.532995+00:00",
+   "location": "Porto Salvo, Portugal",
+   "title": "Data Mng Internship"
+  }
+ }
+}

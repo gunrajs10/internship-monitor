@@ -41,9 +41,10 @@ RETRIES = 2
 HEADERS = {
     "User-Agent": (
         "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 "
-        "(KHTML, like Gecko) Chrome/126.0.0.0 Safari/537.36"
+        "(KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36"
     ),
-    "Accept": "application/json",
+    "Accept": "application/json, text/html;q=0.9, */*;q=0.8",
+    "Accept-Language": "en-US,en;q=0.9",
 }
 
 # Titles that count as internship-type roles.
@@ -90,9 +91,25 @@ US_RE = re.compile(
     r"district of columbia|puerto rico)\b"
     r"|,\s*(AL|AK|AZ|AR|CA|CO|CT|DE|FL|GA|HI|ID|IL|IN|IA|KS|KY|LA|ME|MD|MA|"
     r"MI|MN|MS|MO|MT|NE|NV|NH|NJ|NM|NY|NC|ND|OH|OK|OR|PA|RI|SC|SD|TN|TX|UT|"
-    r"VT|VA|WA|WV|WI|WY|DC)\b",
+    r"VT|VA|WA|WV|WI|WY|DC)\b"
+    r"|\b(san francisco|san diego|los angeles|thousand oaks|foster city|"
+    r"south san francisco|santa monica|el segundo|carlsbad|la jolla|novato|"
+    r"san rafael|redwood city|menlo park|palo alto|sunnyvale|emeryville|"
+    r"berkeley|hayward|fremont|alameda|brisbane|boston|waltham|lexington|"
+    r"bedford|tarrytown|new york|princeton|summit|basking ridge|nutley|"
+    r"rahway|kenilworth|plainsboro|titusville|whitehouse station|horsham|"
+    r"malvern|king of prussia|collegeville|spring house|west point|"
+    r"gaithersburg|rockville|frederick|wilmington|research triangle park|"
+    r"raleigh|durham|clayton|indianapolis|north chicago|chicago|madison|"
+    r"cincinnati|columbus|ann arbor|minneapolis|saint louis|st\.? louis|"
+    r"salt lake city|phoenix|austin|dallas|houston|denver|boulder|portland|"
+    r"philadelphia|pittsburgh|seattle|bothell)\b",
     re.IGNORECASE,
 )
+
+# Location strings that reveal nothing about the country ("2 Locations",
+# "Multiple Locations"). Kept rather than dropped - better to over-report.
+UNKNOWN_LOC_RE = re.compile(r"\b\d+\s+locations\b|multiple locations|various", re.IGNORECASE)
 
 # Undergrad-only postings get dropped (Gunraj is an MBA candidate).
 UNDERGRAD_TITLE_RE = re.compile(r"\b(undergrad(uate)?|high school)\b", re.IGNORECASE)
@@ -476,12 +493,21 @@ def fetch_novo(cfg):
     jobs = data.get("jobs")
     if jobs is None:
         raise SourceError(f"{api} responded without data.jobs (schema change?)")
+    def _s(v):
+        if isinstance(v, dict):
+            v = v.get("label") or v.get("value") or v.get("name") or ""
+        if isinstance(v, list):
+            v = ", ".join(str(x) for x in v if x)
+        return str(v or "").strip()
+
     out = []
     for j in jobs:
+        loc = _s(j.get("jobLocationLabel")) or ", ".join(
+            p for p in (_s(j.get("jobCity")), _s(j.get("jobState")), _s(j.get("jobCountry"))) if p)
         out.append({
-            "title": (j.get("jobTitle") or "").strip(),
-            "location": ", ".join(filter(None, [j.get("jobCity"), j.get("jobState"), j.get("jobCountry")])),
-            "url": f"https://www.novonordisk.com/careers/find-a-job/job-ad.html?id={j.get('jobId')}",
+            "title": _s(j.get("jobTitle")),
+            "location": loc,
+            "url": f"https://www.novonordisk.com/careers/find-a-job/job-ad.html?id={_s(j.get('jobId'))}",
             "posted_on": "",
         })
     return out
@@ -523,8 +549,10 @@ def is_candidate(item):
     if loc:
         if NON_US_RE.search(loc):
             return False
+        if UNKNOWN_LOC_RE.search(loc):
+            return True  # "2 Locations" etc. - cannot tell, keep
         if not US_RE.search(loc):
-            return False  # US-only: unknown non-blank locations are dropped
+            return False  # US-only: identifiable non-US locations are dropped
     return True
 
 

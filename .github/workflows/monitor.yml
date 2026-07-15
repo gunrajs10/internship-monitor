@@ -1,0 +1,53 @@
+name: Internship Monitor
+
+on:
+  schedule:
+    - cron: "17 */2 * * *"   # every 2 hours at :17 (offset avoids GitHub busy :00)
+  workflow_dispatch:
+    inputs:
+      mode:
+        description: "Run mode"
+        required: true
+        default: "normal"
+        type: choice
+        options: [normal, audit]
+
+permissions:
+  contents: write
+
+concurrency:
+  group: monitor
+  cancel-in-progress: false
+
+jobs:
+  monitor:
+    runs-on: ubuntu-latest
+    timeout-minutes: 25
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Install dependencies
+        run: pip install -r requirements.txt
+
+      - name: Run monitor
+        env:
+          WEBHOOK_URL: ${{ secrets.WEBHOOK_URL }}
+        run: |
+          if [ "${{ github.event.inputs.mode }}" = "audit" ]; then
+            python monitor.py --audit
+          else
+            python monitor.py
+          fi
+
+      - name: Commit updated state
+        if: github.event.inputs.mode != 'audit'
+        run: |
+          git config user.name "monitor-bot"
+          git config user.email "monitor-bot@users.noreply.github.com"
+          git add state/seen.json
+          git diff --cached --quiet || git commit -m "Update seen postings [skip ci]"
+          git push

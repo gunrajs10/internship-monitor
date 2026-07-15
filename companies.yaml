@@ -48,7 +48,7 @@ companies:
     verified: true
     career_page: https://careers.bms.com/internships-co-ops
 
-  # ---- Workday (unverified - audit will confirm) ----
+  # ---- Workday ----
   - name: Roche
     ats: workday
     tenant: roche
@@ -99,10 +99,10 @@ companies:
     career_page: https://careers.regeneron.com/early-careers
 
   - name: BioMarin
-    ats: unsupported
-    verified: false
+    ats: jobvite
+    slug: biomarin
+    verified: true
     career_page: https://careers.biomarin.com/
-    note: Uses Jobvite (jobs.jobvite.com/biomarin); adapter to be added.
 
   - name: Agilent Technologies
     ats: workday
@@ -155,16 +155,16 @@ companies:
 
   # ---- Phenom career sites ----
   - name: Johnson & Johnson
-    ats: unsupported
-    verified: false
+    ats: jnj
+    verified: true
     career_page: https://www.careers.jnj.com/en/early-careers/
-    note: Migrated off Phenom to a custom site; adapter to be added.
+    note: Site search is client-side only; adapter crawls all pages and filters locally.
 
   - name: AbbVie
-    ats: unsupported
-    verified: false
+    ats: attrax
+    origin: https://careers.abbvie.com
+    verified: true
     career_page: https://careers.abbvie.com/en/students
-    note: Migrated off Phenom to an AEM site; adapter to be added.
 
   - name: Eli Lilly
     ats: phenom
@@ -191,26 +191,26 @@ companies:
     career_page: https://careers.labcorp.com/global/en/internships
 
   - name: Charles River Laboratories
-    ats: unsupported
-    verified: false
-    career_page: https://jobs.criver.com/global/en/students-and-graduates
-    note: Migrated off Phenom to a WordPress site; adapter to be added.
+    ats: criver
+    verified: true
+    career_page: https://jobs.criver.com/students-and-new-grads/
 
-  # ---- No adapter yet (will fail loud with the manual link) ----
+  # ---- Custom-platform adapters ----
   - name: Ionis Pharmaceuticals
-    ats: unsupported
-    verified: false
+    ats: ukg
+    tenant: ISI1000ISIS
+    board: 14a66400-68fa-4847-8593-af776328cfd2
+    verified: true
     career_page: https://www.ionis.com/careers/internship-program/
-    note: UKG-hosted board; adapter to be added after audit.
 
   - name: Medpace
-    ats: unsupported
-    verified: false
+    ats: jibe
+    origin: https://careers.medpace.com
+    verified: true
     career_page: https://careers.medpace.com/jobs
-    note: Custom careers system; adapter to be added after audit.
 
   - name: Novo Nordisk
-    ats: unsupported
-    verified: false
+    ats: novo
+    verified: true
     career_page: https://www.novonordisk.com/careers/early-career-programmes.html
-    note: SAP SuccessFactors; graduate programme applications open November 2026.
+    note: US-filtered via corporate careersearch API; graduate programme opens November 2026.

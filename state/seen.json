@@ -345,6 +345,12 @@
    "location": "Istanbul",
    "title": "Legal Intern"
   },
+  "a17f8e088f3166b1f98e0ba0db80c1d77a26d283": {
+   "company": "Johnson & Johnson",
+   "first_seen": "2026-07-15T19:37:08.789805+00:00",
+   "location": "New Brunswick / Raritan / Titusville / Bridgewater / Spring House / West Chester",
+   "title": "Class of 2027 Technology Leadership Development Program (TLDP)"
+  },
   "a26948eb04cbfc57741f65d653a14a4a8d78c77a": {
    "company": "Roche",
    "first_seen": "2026-07-15T06:28:41.532995+00:00",
@@ -393,6 +399,13 @@
    "first_seen": "2026-07-15T06:28:41.532995+00:00",
    "location": "Sant Cugat del Vall\u00e8s",
    "title": "Logistics & Site Operations Intern (On en Roche Graduate Program)"
+  },
+  "ad1fb0f8517cc0b642531cc4c05bcc2fa6588576": {
+   "company": "Medpace",
+   "first_seen": "2026-07-15T19:37:08.789805+00:00",
+   "location": "Cincinnati, Ohio, United States",
+   "skipped": "undergrad-only",
+   "title": "Patient Recruitment Intern - Fall 2026"
   },
   "af56791c99ab1db87d57298a2827f371d8ed8278": {
    "company": "Medpace",

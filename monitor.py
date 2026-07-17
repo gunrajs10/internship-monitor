@@ -590,6 +590,22 @@ def send_webhook(payload):
 # Main
 # ---------------------------------------------------------------------------
 
+def _next_cron_slot(after):
+    """Mirror of the schedule in monitor.yml (UTC):
+    work hours (7am-5pm PDT = 14:00-00:59 UTC): :17 and :47 each hour;
+    overnight: every 2 hours at :17."""
+    cands = []
+    for d in (0, 1):
+        base = (after + timedelta(days=d)).replace(
+            hour=0, minute=0, second=0, microsecond=0)
+        for h in [0] + list(range(14, 24)):
+            for m in (17, 47):
+                cands.append(base.replace(hour=h, minute=m))
+        for h in (1, 3, 5, 7, 9, 11, 13):
+            cands.append(base.replace(hour=h, minute=17))
+    return min(c for c in cands if c > after)
+
+
 def run(audit=False):
     with open(CONFIG_PATH) as f:
         companies = yaml.safe_load(f)["companies"]
@@ -703,16 +719,14 @@ def run(audit=False):
 
     # Heartbeat: silent status stamp in the sheet (no email). Lets Gunraj
     # confirm the monitor is alive even when there is nothing new.
-    # Timestamps are computed at send time (end of run), not run start, and
-    # the "next" time is the next cron SLOT - GitHub starts scheduled runs
-    # late (typically 5-60 min) under load, so the sheet labels it "or later".
+    # Timestamps are computed at send time (end of run). The "next" time is
+    # the next cron SLOT (see monitor.yml): every 30 min at :17/:47 during
+    # 7am-5pm Pacific work hours, every 2 hours overnight. GitHub starts
+    # scheduled runs late under load, so the sheet labels it "or later".
     hb_now = datetime.now(timezone.utc)
-    nxt = hb_now.replace(minute=17, second=0, microsecond=0)
-    if hb_now.minute >= 17:
-        nxt += timedelta(hours=1)
     send_webhook({"type": "heartbeat",
                   "ran_at": hb_now.isoformat(),
-                  "next_at": nxt.isoformat(),
+                  "next_at": _next_cron_slot(hb_now).isoformat(),
                   "new_count": len(new_roles)})
 
     save_state(state)

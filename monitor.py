@@ -701,6 +701,16 @@ def run(audit=False):
         send_webhook({"type": "digest"})
         print("weekly digest requested")
 
+    # Heartbeat: silent status stamp in the sheet (no email). Lets Gunraj
+    # confirm the monitor is alive even when there is nothing new.
+    nxt = now.replace(minute=17, second=0, microsecond=0)
+    if now.minute >= 17:
+        nxt += timedelta(hours=1)
+    send_webhook({"type": "heartbeat",
+                  "ran_at": now.isoformat(),
+                  "next_at": nxt.isoformat(),
+                  "new_count": len(new_roles)})
+
     save_state(state)
 
 

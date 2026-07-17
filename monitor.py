@@ -469,29 +469,6 @@ def fetch_jnj_careers(cfg):
     return list(results.values())
 
 
-def fetch_criver(cfg):
-    """jobs.criver.com: WordPress site, server-rendered search results."""
-    origin = "https://jobs.criver.com"
-    results = {}
-    marker_seen = False
-    for term in cfg.get("search_terms", ["intern", "co-op", "MBA", "graduate"]):
-        url = f"{origin}/job-search-results/?keyword={term}&primary_country=US"
-        resp = _request("GET", url)
-        t = resp.text
-        if "job-search-results" in t or "/job/" in t:
-            marker_seen = True
-        for href, jid, rawtitle in re.findall(
-                r'href="(/job/(\d+)/[^"]+)"[^>]*>([\s\S]{1,200}?)</a>', t):
-            title = html.unescape(re.sub(r"\s+", " ", re.sub(r"<[^>]+>", " ", rawtitle))).strip()
-            if not title:
-                continue
-            results[jid] = {"title": title, "location": "United States",
-                            "url": origin + href, "posted_on": ""}
-    if not marker_seen:
-        raise SourceError(f"{origin} search returned unrecognized markup (site changed?)")
-    return list(results.values())
-
-
 def fetch_novo(cfg):
     """Novo Nordisk AEM careersearch JSON servlet, US-filtered."""
     api = ("https://www.novonordisk.com/bin/nncorp/careersearch"
@@ -530,7 +507,6 @@ ADAPTERS = {
     "jobvite": fetch_jobvite,
     "attrax": fetch_attrax,
     "jnj": fetch_jnj_careers,
-    "criver": fetch_criver,
     "novo": fetch_novo,
 }
 

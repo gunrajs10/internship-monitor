@@ -1,4 +1,4 @@
-# Biotech internship watchlist - 29 companies
+# Biotech internship watchlist - 28 companies
 #
 # verified: true  = endpoint confirmed live during build (July 2026)
 # verified: false = best-known endpoint; the audit run will confirm or flag it
@@ -48,7 +48,7 @@ companies:
     verified: true
     career_page: https://careers.bms.com/internships-co-ops
 
-  # ---- Workday ----
+  # ---- Workday (unverified - audit will confirm) ----
   - name: Roche
     ats: workday
     tenant: roche
@@ -120,7 +120,7 @@ companies:
     verified: false
     career_page: https://www.illumina.com/company/careers/interns-and-new-grads.html
 
-  # ---- Greenhouse ----
+  # ---- Greenhouse (unverified slugs - audit will confirm) ----
   - name: Axsome Therapeutics
     ats: greenhouse
     slug: axsometherapeutics
@@ -153,7 +153,7 @@ companies:
     verified: true
     career_page: https://www.tempus.com/about-us/careers/
 
-  # ---- Phenom career sites ----
+  # ---- Phenom career sites (unverified - audit will confirm) ----
   - name: Johnson & Johnson
     ats: jnj
     verified: true
@@ -169,31 +169,26 @@ companies:
   - name: Eli Lilly
     ats: phenom
     origin: https://careers.lilly.com
-    verified: true
+    verified: false
     career_page: https://careers.lilly.com/us/en/internships
 
   - name: Merck
     ats: phenom
     origin: https://jobs.merck.com
-    verified: true
+    verified: false
     career_page: https://jobs.merck.com/us/en/students
 
   - name: Thermo Fisher Scientific
     ats: phenom
     origin: https://jobs.thermofisher.com
-    verified: true
+    verified: false
     career_page: https://jobs.thermofisher.com/global/en/internships-co-ops
 
   - name: Labcorp
     ats: phenom
     origin: https://careers.labcorp.com
-    verified: true
+    verified: false
     career_page: https://careers.labcorp.com/global/en/internships
-
-  - name: Charles River Laboratories
-    ats: criver
-    verified: true
-    career_page: https://jobs.criver.com/students-and-new-grads/
 
   # ---- Custom-platform adapters ----
   - name: Ionis Pharmaceuticals

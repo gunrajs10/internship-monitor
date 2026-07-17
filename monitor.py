@@ -703,11 +703,15 @@ def run(audit=False):
 
     # Heartbeat: silent status stamp in the sheet (no email). Lets Gunraj
     # confirm the monitor is alive even when there is nothing new.
-    nxt = now.replace(minute=17, second=0, microsecond=0)
-    if now.minute >= 17:
+    # Timestamps are computed at send time (end of run), not run start, and
+    # the "next" time is the next cron SLOT - GitHub starts scheduled runs
+    # late (typically 5-60 min) under load, so the sheet labels it "or later".
+    hb_now = datetime.now(timezone.utc)
+    nxt = hb_now.replace(minute=17, second=0, microsecond=0)
+    if hb_now.minute >= 17:
         nxt += timedelta(hours=1)
     send_webhook({"type": "heartbeat",
-                  "ran_at": now.isoformat(),
+                  "ran_at": hb_now.isoformat(),
                   "next_at": nxt.isoformat(),
                   "new_count": len(new_roles)})
 

@@ -47,6 +47,15 @@ jobs:
             python monitor.py
           fi
 
+      - name: Alert on program crash
+        if: failure()
+        env:
+          WEBHOOK_URL: ${{ secrets.WEBHOOK_URL }}
+        run: |
+          curl -s -X POST -H "Content-Type: application/json" \
+            -d '{"type":"failures","items":[{"company":"MONITOR PROGRAM ITSELF","reason":"The monitor run CRASHED - this is a program error, not a website problem. No sources were checked. See https://github.com/gunrajs10/internship-monitor/actions"}]}' \
+            "$WEBHOOK_URL" || true
+
       - name: Commit updated state
         if: github.event.inputs.mode != 'audit'
         run: |

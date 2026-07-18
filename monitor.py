@@ -131,6 +131,8 @@ PRIORITY_RE = re.compile(
 )
 
 FAILURE_REALERT_HOURS = 24
+FAIL_MIN_STREAK = 3   # consecutive failing runs before alerting
+FAIL_MIN_HOURS = 3    # and the failures must span at least this long
 
 
 class SourceError(Exception):
@@ -606,6 +608,36 @@ def _next_cron_slot(after):
     return min(c for c in cands if c > after)
 
 
+def _gate_failures(state, failures, now):
+    """Persistent-failure gate. A source is only alerted after it has failed
+    FAIL_MIN_STREAK consecutive runs spanning at least FAIL_MIN_HOURS. One-off
+    blips - e.g. Workday's weekly Saturday-early-morning maintenance window,
+    which took down all 13 classic-pod Workday tenants at once on 2026-07-18 -
+    recover silently. Real breakage still alerts the same day. Identical
+    alerts remain rate-limited to one per FAILURE_REALERT_HOURS."""
+    failing = state.setdefault("failing", {})
+    failed_names = {f["company"] for f in failures}
+    for name in [n for n in list(failing) if n not in failed_names]:
+        del failing[name]  # recovered - clear the streak silently
+
+    fresh = []
+    for f_item in failures:
+        rec = failing.get(f_item["company"]) or {"since": now.isoformat(), "streak": 0}
+        rec["streak"] += 1
+        rec["reason"] = f_item["reason"]
+        failing[f_item["company"]] = rec
+        hours_failing = (now - datetime.fromisoformat(rec["since"])).total_seconds() / 3600
+        if rec["streak"] < FAIL_MIN_STREAK or hours_failing < FAIL_MIN_HOURS:
+            continue  # too new to alarm - wait for persistence
+        sig = hashlib.sha1(f"{f_item['company']}|{f_item['reason'][:80]}".encode()).hexdigest()
+        last = state["failures"].get(sig)
+        if last and now - datetime.fromisoformat(last) < timedelta(hours=FAILURE_REALERT_HOURS):
+            continue
+        state["failures"][sig] = now.isoformat()
+        fresh.append(f_item)
+    return fresh
+
+
 def run(audit=False):
     with open(CONFIG_PATH) as f:
         companies = yaml.safe_load(f)["companies"]
@@ -672,15 +704,7 @@ def run(audit=False):
         print(f"\n{ok}/{len(audit_rows)} sources fully readable.")
         return
 
-    # Rate-limit failure alerts to one per source per 24h.
-    fresh_failures = []
-    for f_item in failures:
-        sig = hashlib.sha1(f"{f_item['company']}|{f_item['reason'][:80]}".encode()).hexdigest()
-        last = state["failures"].get(sig)
-        if last and now - datetime.fromisoformat(last) < timedelta(hours=FAILURE_REALERT_HOURS):
-            continue
-        state["failures"][sig] = now.isoformat()
-        fresh_failures.append(f_item)
+    fresh_failures = _gate_failures(state, failures, now)
 
     if new_roles:
         send_webhook({"type": "new_roles", "items": new_roles})

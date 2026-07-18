@@ -131,8 +131,17 @@ PRIORITY_RE = re.compile(
 )
 
 FAILURE_REALERT_HOURS = 24
-FAIL_MIN_STREAK = 3   # consecutive failing runs before alerting
+FAIL_MIN_STREAK = 3   # consecutive failing runs before alerting (site-side)
 FAIL_MIN_HOURS = 3    # and the failures must span at least this long
+
+# Program-side problems alert IMMEDIATELY (no persistence gate): unexpected
+# exceptions in our code, and schema changes where waiting cannot help
+# because the adapter itself is now wrong for the site.
+IMMEDIATE_FAIL_RE = re.compile(
+    r"unexpected:|schema change|schema mismatch|site changed|responded without|"
+    r"no adapter yet",
+    re.IGNORECASE,
+)
 
 
 class SourceError(Exception):
@@ -627,8 +636,9 @@ def _gate_failures(state, failures, now):
         rec["reason"] = f_item["reason"]
         failing[f_item["company"]] = rec
         hours_failing = (now - datetime.fromisoformat(rec["since"])).total_seconds() / 3600
-        if rec["streak"] < FAIL_MIN_STREAK or hours_failing < FAIL_MIN_HOURS:
-            continue  # too new to alarm - wait for persistence
+        immediate = bool(IMMEDIATE_FAIL_RE.search(f_item["reason"]))
+        if not immediate and (rec["streak"] < FAIL_MIN_STREAK or hours_failing < FAIL_MIN_HOURS):
+            continue  # site-side blip - wait for persistence
         sig = hashlib.sha1(f"{f_item['company']}|{f_item['reason'][:80]}".encode()).hexdigest()
         last = state["failures"].get(sig)
         if last and now - datetime.fromisoformat(last) < timedelta(hours=FAILURE_REALERT_HOURS):

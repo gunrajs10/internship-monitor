@@ -1,56 +1,5 @@
 {
- "failing": {
-  "Agilent Technologies": {
-   "reason": "https://agilent.wd5.myworkdayjobs.com/wday/cxs/agilent/Agilent_Careers/jobs returned non-JSON (likely bot-blocked or wrong endpoint)",
-   "since": "2026-07-18T08:58:08.538735+00:00",
-   "streak": 1
-  },
-  "Amgen": {
-   "reason": "https://amgen.wd1.myworkdayjobs.com/wday/cxs/amgen/Careers/jobs returned non-JSON (likely bot-blocked or wrong endpoint)",
-   "since": "2026-07-18T08:58:08.538735+00:00",
-   "streak": 1
-  },
-  "Bristol Myers Squibb": {
-   "reason": "https://bristolmyerssquibb.wd5.myworkdayjobs.com/wday/cxs/bristolmyerssquibb/BMS/jobs returned non-JSON (likely bot-blocked or wrong endpoint)",
-   "since": "2026-07-18T08:58:08.538735+00:00",
-   "streak": 1
-  },
-  "Gilead Sciences": {
-   "reason": "https://gilead.wd1.myworkdayjobs.com/wday/cxs/gilead/gileadcareers/jobs returned non-JSON (likely bot-blocked or wrong endpoint)",
-   "since": "2026-07-18T08:58:08.538735+00:00",
-   "streak": 1
-  },
-  "Illumina": {
-   "reason": "https://illumina.wd1.myworkdayjobs.com/wday/cxs/illumina/illumina-careers/jobs returned non-JSON (likely bot-blocked or wrong endpoint)",
-   "since": "2026-07-18T08:58:08.538735+00:00",
-   "streak": 1
-  },
-  "Kite Pharma": {
-   "reason": "https://gilead.wd1.myworkdayjobs.com/wday/cxs/gilead/kitepharmacareers/jobs returned non-JSON (likely bot-blocked or wrong endpoint)",
-   "since": "2026-07-18T08:58:08.538735+00:00",
-   "streak": 1
-  },
-  "Neurocrine Biosciences": {
-   "reason": "https://neurocrine.wd5.myworkdayjobs.com/wday/cxs/neurocrine/NeurocrineCareers/jobs returned non-JSON (likely bot-blocked or wrong endpoint)",
-   "since": "2026-07-18T08:58:08.538735+00:00",
-   "streak": 1
-  },
-  "Pfizer": {
-   "reason": "https://pfizer.wd1.myworkdayjobs.com/wday/cxs/pfizer/PfizerCareers/jobs returned non-JSON (likely bot-blocked or wrong endpoint)",
-   "since": "2026-07-18T08:58:08.538735+00:00",
-   "streak": 1
-  },
-  "Regeneron": {
-   "reason": "https://regeneron.wd1.myworkdayjobs.com/wday/cxs/regeneron/Careers/jobs returned non-JSON (likely bot-blocked or wrong endpoint)",
-   "since": "2026-07-18T08:58:08.538735+00:00",
-   "streak": 1
-  },
-  "Tempus AI": {
-   "reason": "https://tempus.wd5.myworkdayjobs.com/wday/cxs/tempus/Tempus_Careers/jobs returned non-JSON (likely bot-blocked or wrong endpoint)",
-   "since": "2026-07-18T08:58:08.538735+00:00",
-   "streak": 1
-  }
- },
+ "failing": {},
  "failures": {
   "086dc629b509cd0452a21cc3f157d1f45fa29ea9": "2026-07-15T06:28:41.532995+00:00",
   "16f21d6ab6316264dcd83655281b68699bf45dfc": "2026-07-15T06:28:41.532995+00:00",

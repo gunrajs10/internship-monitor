@@ -47,10 +47,14 @@ HEADERS = {
     "Accept-Language": "en-US,en;q=0.9",
 }
 
-# Titles that count as internship-type roles.
+# Titles that count as target roles: internships AND rotational /
+# early-career / MBA development programs (CRDP-class postings).
 TITLE_RE = re.compile(
     r"\b(intern(ship)?s?|co[\s\-]?op|mba\b|summer associate|"
-    r"graduate (program|scheme|associate|intern)|leadership development program)\b",
+    r"graduate (program|scheme|associate|intern)|"
+    r"rotation(al)?|development (program|rotation)|"
+    r"leadership development program|early[\s\-]career|"
+    r"new grad(uate)?s?|campus hire)\b",
     re.IGNORECASE,
 )
 
@@ -103,7 +107,8 @@ US_RE = re.compile(
     r"raleigh|durham|clayton|indianapolis|north chicago|chicago|madison|"
     r"cincinnati|columbus|ann arbor|minneapolis|saint louis|st\.? louis|"
     r"salt lake city|phoenix|austin|dallas|houston|denver|boulder|portland|"
-    r"philadelphia|pittsburgh|seattle|bothell)\b",
+    r"philadelphia|pittsburgh|seattle|bothell|new brunswick|raritan|"
+    r"bridgewater|west chester|holly springs|hillsboro|clarksville)\b",
     re.IGNORECASE,
 )
 
@@ -129,6 +134,9 @@ PRIORITY_RE = re.compile(
     r"portfolio|competitive intelligence|operations|supply chain)\w*",
     re.IGNORECASE,
 )
+
+DEFAULT_SEARCH_TERMS = ["intern", "co-op", "MBA", "graduate", "rotation",
+                        "development program", "early career", "new grad"]
 
 FAILURE_REALERT_HOURS = 24
 FAIL_MIN_STREAK = 3   # consecutive failing runs before alerting (site-side)
@@ -189,7 +197,7 @@ def fetch_workday(cfg):
     api = f"{base}/wday/cxs/{tenant}/{site}/jobs"
 
     results = {}
-    for term in cfg.get("search_terms", ["intern", "co-op", "MBA", "graduate"]):
+    for term in cfg.get("search_terms", DEFAULT_SEARCH_TERMS):
         offset = 0
         while True:
             payload = {
@@ -253,7 +261,7 @@ def fetch_phenom(cfg):
     origin = cfg["origin"].rstrip("/")
     api = f"{origin}/widgets"
     results = {}
-    for term in cfg.get("search_terms", ["intern", "co-op", "MBA"]):
+    for term in cfg.get("search_terms", DEFAULT_SEARCH_TERMS):
         from_idx = 0
         while True:
             payload = {
@@ -308,7 +316,7 @@ def fetch_jibe(cfg):
     """iCIMS/Jibe career portals (careers.medpace.com etc.): GET /api/jobs."""
     origin = cfg["origin"].rstrip("/")
     results = {}
-    for term in cfg.get("search_terms", ["intern", "co-op", "MBA", "graduate"]):
+    for term in cfg.get("search_terms", DEFAULT_SEARCH_TERMS):
         page = 1
         while page <= 20:
             api = f"{origin}/api/jobs?keyword={term}&limit=100&page={page}"
@@ -341,7 +349,7 @@ def fetch_ukg(cfg):
     base = f"https://recruiting.ultipro.com/{tenant}/JobBoard/{board}"
     api = f"{base}/JobBoardView/LoadSearchResults"
     results = {}
-    for term in cfg.get("search_terms", ["intern", "co-op", "MBA", "graduate"]):
+    for term in cfg.get("search_terms", DEFAULT_SEARCH_TERMS):
         skip = 0
         while skip < 1000:
             payload = {
@@ -387,7 +395,7 @@ def fetch_jobvite(cfg):
     """Jobvite hosted boards (jobs.jobvite.com/<slug>): server-rendered HTML."""
     slug = cfg["slug"]
     results = {}
-    for term in cfg.get("search_terms", ["intern", "co-op", "MBA", "graduate"]):
+    for term in cfg.get("search_terms", DEFAULT_SEARCH_TERMS):
         for page in range(1, 21):
             url = f"https://jobs.jobvite.com/{slug}/search?q={term}&p={page}"
             resp = _request("GET", url)
@@ -416,7 +424,7 @@ def fetch_attrax(cfg):
     """Attrax career sites (careers.abbvie.com): server-rendered tiles."""
     origin = cfg["origin"].rstrip("/")
     results = {}
-    for term in cfg.get("search_terms", ["intern", "co-op", "MBA", "graduate"]):
+    for term in cfg.get("search_terms", DEFAULT_SEARCH_TERMS):
         for page in range(1, 21):
             url = f"{origin}/en/jobs?q={term}&page={page}"
             resp = _request("GET", url)

@@ -3,7 +3,7 @@
   "AbbVie": {
    "reason": "https://careers.abbvie.com/en/jobs?q=new grad&page=1 returned no vacancy tiles (site changed?)",
    "since": "2026-07-22T05:37:51.994589+00:00",
-   "streak": 3
+   "streak": 4
   }
  },
  "failures": {
@@ -75,6 +75,13 @@
    "first_seen": "2026-07-15T06:28:41.532995+00:00",
    "location": "Petaling Jaya",
    "title": "Enterprise Master Data Management Operations - Intern (Mandarin speaker)"
+  },
+  "123b21fbeabb0022beca9f76bf649e4acc1aa870": {
+   "company": "Eli Lilly",
+   "first_seen": "2026-07-22T15:15:59.193557+00:00",
+   "location": "Stamford, Connecticut, United States of America",
+   "title": "Sr. Director - Clinical Development Program Lead (CDPL) - Early Oncology",
+   "url": "https://lilly.wd115.myworkdayjobs.com/LLY/job/US-Stamford-CT/Sr-Director---Clinical-Development-Program-Lead--CDPL----Early-Oncology_R-108472-1/apply"
   },
   "181b7008568edb77ea2fdef52735e3b4ee72cf7b": {
    "company": "AbbVie",

@@ -1,5 +1,11 @@
 {
- "failing": {},
+ "failing": {
+  "AbbVie": {
+   "reason": "https://careers.abbvie.com/en/jobs?q=new grad&page=1 returned no vacancy tiles (site changed?)",
+   "since": "2026-07-22T05:37:51.994589+00:00",
+   "streak": 1
+  }
+ },
  "failures": {
   "086dc629b509cd0452a21cc3f157d1f45fa29ea9": "2026-07-15T06:28:41.532995+00:00",
   "16f21d6ab6316264dcd83655281b68699bf45dfc": "2026-07-15T06:28:41.532995+00:00",
@@ -21,6 +27,7 @@
   "9b2d457e162abd7110b823413ea52dfb7f953755": "2026-07-15T10:16:04.586005+00:00",
   "9cc6f10e0c44a0f3a4a9707f16c35e338bf676f9": "2026-07-18T07:06:43.380328+00:00",
   "c78195205147bee8ea18db17d4985b1f1c6d2436": "2026-07-15T06:28:41.532995+00:00",
+  "d4bca1582956e68e2bf2a1e076edd334d245354b": "2026-07-22T05:37:51.994589+00:00",
   "d8e690d4365279f8e354246f2faf5bbf31eee6f2": "2026-07-18T07:06:43.380328+00:00",
   "dff249e123931bda3de9c0d0b65d1bfaf865bae6": "2026-07-15T06:28:41.532995+00:00",
   "e073341d6868c3dfba4496ac55b1cf694139f42f": "2026-07-18T07:06:43.380328+00:00"
@@ -87,11 +94,25 @@
    "location": "Cincinnati, Ohio, United States",
    "title": "Software Development Co-Op - Fall 2026"
   },
+  "19cc27f485a94f3875c9babd7d0586edaa4bd32d": {
+   "company": "Amgen",
+   "first_seen": "2026-07-22T05:37:51.994589+00:00",
+   "location": "US - Ohio - New Albany",
+   "title": "Associate Fuel Rotational Program \u2013 New Albany, OH",
+   "url": "https://amgen.wd1.myworkdayjobs.com/en-US/Careers/job/US---Ohio---New-Albany/Associate-Fuel-Rotational-Program---New-Albany--OH_R-250292"
+  },
   "1a4fdeea5fd6bb1cdbdc696ca352c44117083079": {
    "company": "Roche",
    "first_seen": "2026-07-15T06:28:41.532995+00:00",
    "location": "2 Locations",
    "title": "Junior Project Coordinator\u00a0(Internship)"
+  },
+  "1af67eedd3730102cefcd033a0c01209a6b5f3b2": {
+   "company": "Thermo Fisher Scientific",
+   "first_seen": "2026-07-22T05:37:51.994589+00:00",
+   "location": "Greenville, North Carolina, United States of America",
+   "title": "Sr. Formulation Technician (12hr Nights, PDS Suite 3, 2-2-3 rotation)",
+   "url": "https://thermofisher.wd5.myworkdayjobs.com/ThermoFisherCareers/job/Greenville-North-Carolina-USA/Sr-Formulation-Technician--12hr-Nights--PDS-Suite-3--2-2-3-rotation-_R-01346283/apply"
   },
   "1d78dce515eb9bc8eb0c27335c9b666d99e0267e": {
    "company": "Roche",
@@ -105,6 +126,13 @@
    "location": "Penzberg",
    "title": "6-month Internship in Antibody Development (m/f/d)"
   },
+  "20999c73820ceffd47a972cc603c08bef55fc700": {
+   "company": "Biogen",
+   "first_seen": "2026-07-22T05:37:51.994589+00:00",
+   "location": "Research Triangle Park, NC",
+   "title": "Engineer II, Manufacturing (Rotation)",
+   "url": "https://biibhr.wd3.myworkdayjobs.com/en-US/external/job/Research-Triangle-Park-NC/Engineer-II--Manufacturing--Rotation-_REQ23194"
+  },
   "21a36b21e5e56e98f0b3ccb26ee4ca9e56e441f9": {
    "company": "Medpace",
    "first_seen": "2026-07-15T10:16:04.586005+00:00",
@@ -117,11 +145,25 @@
    "location": "Brno, Czechia",
    "title": "Internship \u2013 Syst\u00e9mov\u00fd/\u00e1 in\u017een\u00fdr/ka"
   },
+  "22072f7c6ee24685f0cbb12a0024facc630cb0c0": {
+   "company": "Genentech",
+   "first_seen": "2026-07-22T05:37:51.994589+00:00",
+   "location": "South San Francisco",
+   "title": "Commercial Rotation Development Program (CRDP)",
+   "url": "https://roche.wd3.myworkdayjobs.com/en-US/ROG-A2O-GENE/job/South-San-Francisco/Commercial-Rotation-Development-Program--CRDP-_202607-118045-2"
+  },
   "246bd121bc98e038f9e6adf1abf6785937a50e73": {
    "company": "Thermo Fisher Scientific",
    "first_seen": "2026-07-15T06:28:41.532995+00:00",
    "location": "Hillsboro, Oregon, United States of America",
    "title": "Engineering Co-Op"
+  },
+  "24e58d8618fda51e819557c36869a3982969305e": {
+   "company": "Medpace",
+   "first_seen": "2026-07-22T05:37:51.994589+00:00",
+   "location": "Cincinnati, Ohio, United States",
+   "title": "Biomedical Engineering New Grads - Imaging Project Coordinator",
+   "url": "https://careers.medpace.com/jobs/11973?lang=en-us"
   },
   "26cddeec316fb615b65cec28e2c6b6c5bf8e64bb": {
    "company": "Johnson & Johnson",
@@ -183,6 +225,13 @@
    "first_seen": "2026-07-15T06:28:41.532995+00:00",
    "location": "Rotkreuz",
    "title": "Internship for MD or PhD Students in a health-related scientific field"
+  },
+  "39716225569309f4828e4815e4a10aceda8e7fb7": {
+   "company": "Amgen",
+   "first_seen": "2026-07-22T05:37:51.994589+00:00",
+   "location": "US - Rhode Island - West Greenwich",
+   "title": "Associate Fuel Rotational Program \u2013 West Greenwich, RI",
+   "url": "https://amgen.wd1.myworkdayjobs.com/en-US/Careers/job/US---Rhode-Island---West-Greenwich/Associate-Fuel-Rotational-Program---West-Greenwich--RI_R-250289"
   },
   "3d2c0b62831110a7fbcf7bd58444ab8a7bcae711": {
    "company": "Roche",
@@ -259,11 +308,25 @@
    "skipped": "undergrad-only",
    "title": "Finance & Accounting Internship Program - Spring 2027"
   },
+  "512041da23b07c6a40a84089b1cebd5e570efb8d": {
+   "company": "Amgen",
+   "first_seen": "2026-07-22T05:37:51.994589+00:00",
+   "location": "US - California - Thousand Oaks",
+   "title": "Associate Fuel Rotational Program \u2013 Thousand Oaks, CA",
+   "url": "https://amgen.wd1.myworkdayjobs.com/en-US/Careers/job/US---California---Thousand-Oaks/Associate-Fuel-Rotational-Program---Thousand-Oaks--CA_R-250291"
+  },
   "512601b7ee1dcf1158ed800fae929c79ca69493a": {
    "company": "Roche",
    "first_seen": "2026-07-15T06:28:41.532995+00:00",
    "location": "Laval",
    "title": "2026 Fall Intern - Field Service Representative Intern / Stagiaire d'Automne 2026 - Repr\u00e9sentant du Service sur le Terrain"
+  },
+  "53a306e2527f1757db35fc0d7a6b69046c5e9ae3": {
+   "company": "Thermo Fisher Scientific",
+   "first_seen": "2026-07-22T05:37:51.994589+00:00",
+   "location": "Greenville, North Carolina, United States of America",
+   "title": "Sr. Formulation Technician (12hr nights, 2-2-3 rotation)",
+   "url": "https://thermofisher.wd5.myworkdayjobs.com/ThermoFisherCareers/job/Greenville-North-Carolina-USA/Sr-Formulation-Technician--12hr-nights--2-2-3-rotation-_R-01346136/apply"
   },
   "54b9c8c1aa370a71087ee2b6669760cde914a39c": {
    "company": "Labcorp",
@@ -276,6 +339,13 @@
    "first_seen": "2026-07-15T10:16:04.586005+00:00",
    "location": "Cincinnati, Ohio, United States",
    "title": "Fall 2026- Imaging Intern - Biomedical Engineering"
+  },
+  "56bede9464f3b17cc19b3cc44c9daf8c1c5b52b9": {
+   "company": "Amgen",
+   "first_seen": "2026-07-22T05:37:51.994589+00:00",
+   "location": "US - Ohio - New Albany",
+   "title": "Equipment Maintenance Technician (12 hour rotation, Night Shift)",
+   "url": "https://amgen.wd1.myworkdayjobs.com/en-US/Careers/job/US---Ohio---New-Albany/Equipment-Maintenance-Technician--12-hour-rotation--Night-Shift-_R-244350"
   },
   "58b5d154cb0d88210da23e936c5db8c25b88a934": {
    "company": "Medpace",
@@ -320,6 +390,13 @@
    "location": "Sant Cugat del Vall\u00e8s",
    "title": "In-House Service/Repair Technician Intern"
   },
+  "7214180d66e983ee316831a876ad80b31d9412a6": {
+   "company": "Thermo Fisher Scientific",
+   "first_seen": "2026-07-22T05:37:51.994589+00:00",
+   "location": "Greenville, North Carolina, United States of America",
+   "title": "Sr Formulation Technician (12hr days or 12hr nights; 2-2-3 rotation)",
+   "url": "https://thermofisher.wd5.myworkdayjobs.com/ThermoFisherCareers/job/Greenville-North-Carolina-USA/Sr-Formulation-Technician--12hr-days-or-12hr-nights--2-2-3-rotation-_R-01356301/apply"
+  },
   "72d07da0061b120ac19226e38b79257d92de984a": {
    "company": "Roche",
    "first_seen": "2026-07-15T06:28:41.532995+00:00",
@@ -345,6 +422,13 @@
    "skipped": "undergrad-only",
    "title": "Information Security Intern- Fall 2026"
   },
+  "7d5ff6ba64d727347d3fb2a715ffe34cbc2e4996": {
+   "company": "Amgen",
+   "first_seen": "2026-07-22T05:37:51.994589+00:00",
+   "location": "US - North Carolina - Holly Springs",
+   "title": "Associate Fuel Rotational Program \u2013 Holly Springs, NC",
+   "url": "https://amgen.wd1.myworkdayjobs.com/en-US/Careers/job/US---North-Carolina---Holly-Springs/Associate-Fuel-Rotational-Program---Holly-Springs--NC_R-250290"
+  },
   "7d98ce489bb90f0dc6442e69ad465ea321daf152": {
    "company": "Medpace",
    "first_seen": "2026-07-15T10:16:04.586005+00:00",
@@ -369,6 +453,20 @@
    "location": "Petaling Jaya",
    "title": "Accounting - Period End Closing (PEC) Intern"
   },
+  "89d03b021afe1bd63669e0263effcfc0f789f6eb": {
+   "company": "Medpace",
+   "first_seen": "2026-07-22T05:37:51.994589+00:00",
+   "location": "Denver, Colorado, United States",
+   "title": "Biomedical Engineering New Grads - Imaging Project Coordinator",
+   "url": "https://careers.medpace.com/jobs/12639?lang=en-us"
+  },
+  "8bf738855d0e22aa46d83131c49488197ad2747b": {
+   "company": "Amgen",
+   "first_seen": "2026-07-22T05:37:51.994589+00:00",
+   "location": "US - Massachusetts - Cambridge",
+   "title": "Associate Fuel Rotational Program - Cambridge, MA",
+   "url": "https://amgen.wd1.myworkdayjobs.com/en-US/Careers/job/US---Massachusetts---Cambridge/Associate-Fuel-Rotational-Program---Cambridge--MA_R-250281"
+  },
   "8c31e11eb9c99207d93b72a38e40ee7b353da246": {
    "company": "Roche",
    "first_seen": "2026-07-15T06:28:41.532995+00:00",
@@ -381,6 +479,20 @@
    "location": "2 Locations",
    "title": "Clinical Value Marketing Intern",
    "url": "https://roche.wd3.myworkdayjobs.com/en-US/roche-ext/job/Petaling-Jaya/Clinical-Value-Marketing-Intern_202607-118097"
+  },
+  "95e667be443ce87aafc7fcb9ebddb75c3fcd1cfd": {
+   "company": "Thermo Fisher Scientific",
+   "first_seen": "2026-07-22T05:37:51.994589+00:00",
+   "location": "Greenville, North Carolina, United States of America",
+   "title": "Lead Formulation Technician (12hr days or 12hr nights, 2-2-3 rotation)",
+   "url": "https://thermofisher.wd5.myworkdayjobs.com/ThermoFisherCareers/job/Greenville-North-Carolina-USA/Lead-Formulation-Technician--12hr-days-or-12hr-nights--2-2-3-rotation-_R-01341438/apply"
+  },
+  "97e67e688d7f82f68f5a289aad3dfda972140910": {
+   "company": "Thermo Fisher Scientific",
+   "first_seen": "2026-07-22T05:37:51.994589+00:00",
+   "location": "Greenville, North Carolina, United States of America",
+   "title": "Sr. Formulation Technician (12hr nights, D shift, 2-2-3 rotation)",
+   "url": "https://thermofisher.wd5.myworkdayjobs.com/ThermoFisherCareers/job/Greenville-North-Carolina-USA/Sr-Formulation-Technician--12hr-nights--D-shift--2-2-3-rotation-_R-01345691/apply"
   },
   "99713dad25a6192a06bfa8938abbf653918bc201": {
    "company": "Roche",
@@ -437,6 +549,13 @@
    "skipped": "undergrad-only",
    "title": "Quality Assurance (QA) Intern - Fall 2026"
   },
+  "abec362a0bcdc98a3e6f2093983a8c058cdd15a0": {
+   "company": "Thermo Fisher Scientific",
+   "first_seen": "2026-07-22T05:37:51.994589+00:00",
+   "location": "Greenville, North Carolina, United States of America",
+   "title": "Lead Packaging/Labeling Technician (12hr days; B shift; 2-2-3 rotation)",
+   "url": "https://thermofisher.wd5.myworkdayjobs.com/ThermoFisherCareers/job/Greenville-North-Carolina-USA/Lead-Packaging-Labeling-Technician--12hr-days--B-shift--2-2-3-rotation-_R-01349490/apply"
+  },
   "acbe4b16539e90d9954b7af8cf9c3c3d923bd07a": {
    "company": "Roche",
    "first_seen": "2026-07-15T06:28:41.532995+00:00",
@@ -480,6 +599,13 @@
    "first_seen": "2026-07-15T06:28:41.532995+00:00",
    "location": "Philippines - Makati City",
    "title": "Data Analytics and Full Stack Developer Intern"
+  },
+  "b9edc32d1f0fbec1579abfef7809b21b1feed2b7": {
+   "company": "Thermo Fisher Scientific",
+   "first_seen": "2026-07-22T05:37:51.994589+00:00",
+   "location": "Greenville, North Carolina, United States of America",
+   "title": "Sr Formulation Technician (12hr days, 2-2-3 rotation)",
+   "url": "https://thermofisher.wd5.myworkdayjobs.com/ThermoFisherCareers/job/Greenville-North-Carolina-USA/Sr-Formulation-Technician--12hr-days--2-2-3-rotation-_R-01345702/apply"
   },
   "bae1329f664610a4403856e064dac92ef78367a0": {
    "company": "Roche",
@@ -572,6 +698,13 @@
    "location": "Malaysia - Kuala Lumpur",
    "title": "Internship \u2013 APAC RIO (Regulatory)"
   },
+  "e5a63e9eaea8f561f1d875d217d1a215e1203344": {
+   "company": "Thermo Fisher Scientific",
+   "first_seen": "2026-07-22T05:37:51.994589+00:00",
+   "location": "Greenville, North Carolina, United States of America",
+   "title": "Lead Formulation Technician (12hr days, 2-2-3 rotation)",
+   "url": "https://thermofisher.wd5.myworkdayjobs.com/ThermoFisherCareers/job/Greenville-North-Carolina-USA/Lead-Formulation-Technician--12hr-days--2-2-3-rotation-_R-01345692/apply"
+  },
   "e5b8656a72754a045b45b0cea376a937247b982f": {
    "company": "Thermo Fisher Scientific",
    "first_seen": "2026-07-15T06:28:41.532995+00:00",
@@ -616,6 +749,13 @@
    "title": "2027 Packaging Co-Op (Jan - June)",
    "url": "https://careers.abbvie.com/en/job/2027-packaging-co-op-jan-june-in-north-chicago-il-jid-30760"
   },
+  "eaf92050596df6f0fa41ea847628383e94240d70": {
+   "company": "Thermo Fisher Scientific",
+   "first_seen": "2026-07-22T05:37:51.994589+00:00",
+   "location": "Greenville, North Carolina, United States of America",
+   "title": "Lead Formulation Technician (12hr nights, D shift, 2-2-3 rotation)",
+   "url": "https://thermofisher.wd5.myworkdayjobs.com/ThermoFisherCareers/job/Greenville-North-Carolina-USA/Lead-Formulation-Technician--12hr-nights--D-shift--2-2-3-rotation-_R-01346140/apply"
+  },
   "ededab4d46223de7405a605c7271df65bdefe87f": {
    "company": "Eli Lilly",
    "first_seen": "2026-07-15T06:28:41.532995+00:00",
@@ -633,6 +773,13 @@
    "first_seen": "2026-07-15T06:28:41.532995+00:00",
    "location": "Laval",
    "title": "2026 Fall Intern - Business / Data Analyst Intern / Stagiaire d'Automne 2026 - Analyste d'Affaires / de Donn\u00e9es"
+  },
+  "f1bbcbea00a645661be591aeee6b57775b4c4259": {
+   "company": "Amgen",
+   "first_seen": "2026-07-22T05:37:51.994589+00:00",
+   "location": "US - Puerto Rico - Juncos",
+   "title": "Associate Fuel Rotational Program",
+   "url": "https://amgen.wd1.myworkdayjobs.com/en-US/Careers/job/US---Puerto-Rico---Juncos/Associate-Fuel-Rotational-Program_R-250172"
   },
   "fc0a60e74d6ea49201842b89430897080da0c17d": {
    "company": "Roche",

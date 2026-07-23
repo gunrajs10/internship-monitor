@@ -3,7 +3,7 @@
   "AbbVie": {
    "reason": "https://careers.abbvie.com/en/jobs?q=new grad&page=1 returned no vacancy tiles (site changed?)",
    "since": "2026-07-22T05:37:51.994589+00:00",
-   "streak": 18
+   "streak": 19
   }
  },
  "failures": {
@@ -327,6 +327,13 @@
    "first_seen": "2026-07-15T06:28:41.532995+00:00",
    "location": "Laval",
    "title": "2026 Fall Intern - Field Service Representative Intern / Stagiaire d'Automne 2026 - Repr\u00e9sentant du Service sur le Terrain"
+  },
+  "529eafa85ddf0a3a870935ff82ee5f8673890673": {
+   "company": "Amgen",
+   "first_seen": "2026-07-23T18:49:10.316307+00:00",
+   "location": "United States - Remote",
+   "title": "Grad Intern \u2013 Commercialization Project Management",
+   "url": "https://amgen.wd1.myworkdayjobs.com/en-US/Careers/job/United-States---Remote/Grad-Intern---Commercialization-Project-Management_R-251067"
   },
   "53a306e2527f1757db35fc0d7a6b69046c5e9ae3": {
    "company": "Thermo Fisher Scientific",

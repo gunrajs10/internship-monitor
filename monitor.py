@@ -151,6 +151,14 @@ IMMEDIATE_FAIL_RE = re.compile(
     re.IGNORECASE,
 )
 
+# Webhook (Google Apps Script) POSTs get their own, longer timeout and their
+# own retry budget, separate from TIMEOUT/RETRIES above (which are tuned for
+# company job-site fetches). Apps Script cold-starts and heavy Sheet writes
+# can legitimately take longer than a single site fetch, and that is not a
+# program bug - it must never crash the run. See send_webhook() and run().
+WEBHOOK_TIMEOUT = 45
+WEBHOOK_RETRIES = 2
+
 
 class SourceError(Exception):
     """A source could not be conclusively checked."""
@@ -597,12 +605,46 @@ def save_state(state):
 # ---------------------------------------------------------------------------
 
 def send_webhook(payload):
+    """POST to the Apps Script webhook.
+
+    Root cause of the 2026-07-23 crash (run #109): this used to be a single
+    unretried POST at the same 30s TIMEOUT used for company-site fetches.
+    Apps Script occasionally takes longer than that to respond (cold start,
+    or a heavy Sheet write/formatting/email pass) - that one slow response
+    raised an uncaught requests.exceptions.ReadTimeout, which killed the
+    entire process before state could be saved. That is a program bug, not
+    a "the website is down" situation, so the fix is retry + a realistic
+    timeout, not the site-failure persistence gate.
+
+    Retries transient failures with backoff at a longer, Apps-Script-sized
+    timeout. Raises SourceError only after every retry is exhausted -
+    callers decide whether that's fatal. new_roles/failures (the actual
+    alert path) are allowed to let that propagate, because if the webhook
+    is still unreachable after 3 attempts spanning ~15s of backoff, that is
+    genuinely worth surfacing - via the workflow's exit-code-1, which fires
+    GitHub's own native "workflow failed" email to the repo owner
+    independent of this webhook, plus the crash-safety-net curl step in
+    monitor.yml. heartbeat/expired/digest are cosmetic/supplementary and are
+    always called from a try/except in run() so they can never crash a run.
+    """
     if not WEBHOOK_URL:
         print("WARN: WEBHOOK_URL not set; printing payload instead")
         print(json.dumps(payload, indent=2))
         return
-    resp = requests.post(WEBHOOK_URL, json=payload, timeout=TIMEOUT)
-    print(f"webhook -> HTTP {resp.status_code}")
+    last_err = None
+    for attempt in range(WEBHOOK_RETRIES + 1):
+        try:
+            resp = requests.post(WEBHOOK_URL, json=payload, timeout=WEBHOOK_TIMEOUT)
+            print(f"webhook -> HTTP {resp.status_code}")
+            return
+        except requests.RequestException as exc:
+            last_err = f"{type(exc).__name__}: {exc}"
+            if attempt < WEBHOOK_RETRIES:
+                time.sleep(5 * (attempt + 1))
+    raise SourceError(
+        f"webhook POST (type={payload.get('type')}) failed after "
+        f"{WEBHOOK_RETRIES + 1} attempts: {last_err}"
+    )
 
 
 # ---------------------------------------------------------------------------
@@ -724,6 +766,10 @@ def run(audit=False):
 
     fresh_failures = _gate_failures(state, failures, now)
 
+    # ---- Alert-critical sends. Allowed to raise after WEBHOOK_RETRIES
+    # attempts: if these are still failing at that point the notification
+    # pipe itself is broken, which is worth surfacing via the workflow's
+    # own failure path (see send_webhook docstring).
     if new_roles:
         send_webhook({"type": "new_roles", "items": new_roles})
         print(f"{len(new_roles)} new role(s) reported")
@@ -734,6 +780,8 @@ def run(audit=False):
         print("Nothing new; all configured sources checked or already-alerted failures.")
 
     # ---- Weekly Saturday tasks (~7am Pacific): dead-link sweep + digest ----
+    # Best-effort: supplementary, must never crash the run or block state
+    # from saving.
     if now.weekday() == 5 and now.hour == 14:
         expired = []
         checked = 0
@@ -754,24 +802,34 @@ def run(audit=False):
                 pass  # network hiccup: never mark expired on uncertainty
             time.sleep(0.3)
         if expired:
-            send_webhook({"type": "expired", "items": expired})
-            print(f"{len(expired)} expired posting(s) reported")
-        send_webhook({"type": "digest"})
-        print("weekly digest requested")
+            try:
+                send_webhook({"type": "expired", "items": expired})
+                print(f"{len(expired)} expired posting(s) reported")
+            except SourceError as exc:
+                print(f"WARN: expired-postings webhook failed (non-fatal): {exc}")
+        try:
+            send_webhook({"type": "digest"})
+            print("weekly digest requested")
+        except SourceError as exc:
+            print(f"WARN: digest webhook failed (non-fatal): {exc}")
 
-    # Heartbeat: silent status stamp in the sheet (no email). Lets Gunraj
-    # confirm the monitor is alive even when there is nothing new.
-    # Timestamps are computed at send time (end of run). The "next" time is
-    # the next cron SLOT (see monitor.yml): every 30 min at :17/:47 during
-    # 7am-5pm Pacific work hours, every 2 hours overnight. GitHub starts
-    # scheduled runs late under load, so the sheet labels it "or later".
-    hb_now = datetime.now(timezone.utc)
-    send_webhook({"type": "heartbeat",
-                  "ran_at": hb_now.isoformat(),
-                  "next_at": _next_cron_slot(hb_now).isoformat(),
-                  "new_count": len(new_roles)})
-
+    # State is saved here, BEFORE the heartbeat send. This is the direct fix
+    # for run #109: previously save_state() ran after the heartbeat webhook,
+    # so when that single decorative ping timed out, the entire run's state
+    # (new postings found, dedupe keys, failure-gate bookkeeping) was lost,
+    # not just the heartbeat itself.
     save_state(state)
+
+    # ---- Silent heartbeat: status stamp in the sheet, no email. Best-effort
+    # and fully isolated - it can never crash the run or affect state.
+    hb_now = datetime.now(timezone.utc)
+    try:
+        send_webhook({"type": "heartbeat",
+                      "ran_at": hb_now.isoformat(),
+                      "next_at": _next_cron_slot(hb_now).isoformat(),
+                      "new_count": len(new_roles)})
+    except SourceError as exc:
+        print(f"WARN: heartbeat webhook failed (non-fatal): {exc}")
 
 
 if __name__ == "__main__":

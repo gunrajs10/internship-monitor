@@ -3,7 +3,7 @@
   "AbbVie": {
    "reason": "https://careers.abbvie.com/en/jobs?q=new grad&page=1 returned no vacancy tiles (site changed?)",
    "since": "2026-07-22T05:37:51.994589+00:00",
-   "streak": 34
+   "streak": 35
   }
  },
  "failures": {
@@ -417,6 +417,13 @@
    "first_seen": "2026-07-15T06:28:41.532995+00:00",
    "location": "Sant Cugat del Vall\u00e8s",
    "title": "In-House Service/Repair Technician Intern"
+  },
+  "6cc538a5fac4e5dd743189e313efbeeafca42432": {
+   "company": "Pfizer",
+   "first_seen": "2026-07-24T22:41:12.288041+00:00",
+   "location": "United States - New York - New York City",
+   "title": "MBA Finance Summer Associate",
+   "url": "https://pfizer.wd1.myworkdayjobs.com/en-US/PfizerCareers/job/United-States---New-York---New-York-City/MBA-Finance-Summer-Associate_4960971"
   },
   "7214180d66e983ee316831a876ad80b31d9412a6": {
    "company": "Thermo Fisher Scientific",

@@ -3,7 +3,7 @@
   "AbbVie": {
    "reason": "https://careers.abbvie.com/en/jobs?q=new grad&page=1 returned no vacancy tiles (site changed?)",
    "since": "2026-07-22T05:37:51.994589+00:00",
-   "streak": 32
+   "streak": 33
   }
  },
  "failures": {
@@ -33,6 +33,13 @@
   "e073341d6868c3dfba4496ac55b1cf694139f42f": "2026-07-18T07:06:43.380328+00:00"
  },
  "seen": {
+  "0468545922c85a68dc660d82dfc279b94756ac15": {
+   "company": "Pfizer",
+   "first_seen": "2026-07-24T20:01:52.418388+00:00",
+   "location": "United States - New York - New York City",
+   "title": "MBA Marketing Summer Associate",
+   "url": "https://pfizer.wd1.myworkdayjobs.com/en-US/PfizerCareers/job/United-States---New-York---New-York-City/MBA-Marketing-Summer-Associate_4960967"
+  },
   "059d92ae5472e3acb9142c0ed6e5ef1b95b7655c": {
    "company": "Thermo Fisher Scientific",
    "first_seen": "2026-07-15T06:28:41.532995+00:00",

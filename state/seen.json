@@ -3,7 +3,7 @@
   "AbbVie": {
    "reason": "https://careers.abbvie.com/en/jobs?q=new grad&page=1 returned no vacancy tiles (site changed?)",
    "since": "2026-07-22T05:37:51.994589+00:00",
-   "streak": 30
+   "streak": 31
   }
  },
  "failures": {
@@ -245,6 +245,13 @@
    "first_seen": "2026-07-15T06:28:41.532995+00:00",
    "location": "Kaiseraugst",
    "title": "Student Internship in Supply Chain Operations"
+  },
+  "3d31ad9eaadc37be66a2cfc8c0afa24ff1e8a359": {
+   "company": "Thermo Fisher Scientific",
+   "first_seen": "2026-07-24T17:10:45.449585+00:00",
+   "location": "Greenville, North Carolina, United States of America",
+   "title": "Lead Formulation Technician (12hr nights, 2-2-3 rotation)",
+   "url": "https://thermofisher.wd5.myworkdayjobs.com/ThermoFisherCareers/job/Greenville-North-Carolina-USA/Lead-Formulation-Technician--12hr-nights--D-shift--2-2-3-rotation-_R-01346140/apply"
   },
   "3d5d0634548dc1c08a9347e7e083b6d1d2d92cc3": {
    "company": "Amgen",

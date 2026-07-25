@@ -3,7 +3,7 @@
   "AbbVie": {
    "reason": "https://careers.abbvie.com/en/jobs?q=new grad&page=1 returned no vacancy tiles (site changed?)",
    "since": "2026-07-22T05:37:51.994589+00:00",
-   "streak": 36
+   "streak": 37
   }
  },
  "failures": {
@@ -469,6 +469,13 @@
    "first_seen": "2026-07-15T10:16:04.586005+00:00",
    "location": "Cincinnati, Ohio, United States",
    "title": "Feasibility Informatics Internship/Co-Op Spring 2027"
+  },
+  "8449b377b6f5ae05bc6a155928912edb412b7e19": {
+   "company": "Thermo Fisher Scientific",
+   "first_seen": "2026-07-25T01:08:05.865596+00:00",
+   "location": "Waltham, Massachusetts, United States of America",
+   "title": "Fall 2026 Finance Co-op",
+   "url": "https://thermofisher.wd5.myworkdayjobs.com/ThermoFisherCareers/job/Waltham-Massachusetts-USA/Fall-2026-Finance-Co-op-_R-01362377-1/apply"
   },
   "85e4d78c3254f58f9d566b54580f2e4a6ce47c2e": {
    "company": "Amgen",

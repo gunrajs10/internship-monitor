@@ -3,12 +3,7 @@
   "AbbVie": {
    "reason": "https://careers.abbvie.com/en/jobs?q=new grad&page=1 returned no vacancy tiles (site changed?)",
    "since": "2026-07-22T05:37:51.994589+00:00",
-   "streak": 47
-  },
-  "Novo Nordisk": {
-   "reason": "https://www.novonordisk.com/bin/nncorp/careersearch?keyword=&country=United%20States&category=&locale=en failed after 3 attempts: HTTP 404",
-   "since": "2026-07-25T18:37:40.238420+00:00",
-   "streak": 2
+   "streak": 48
   }
  },
  "failures": {

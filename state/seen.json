@@ -1,11 +1,5 @@
 {
- "failing": {
-  "AbbVie": {
-   "reason": "https://careers.abbvie.com/en/jobs?q=new grad&page=1 returned no vacancy tiles (site changed?)",
-   "since": "2026-07-22T05:37:51.994589+00:00",
-   "streak": 58
-  }
- },
+ "failing": {},
  "failures": {
   "086dc629b509cd0452a21cc3f157d1f45fa29ea9": "2026-07-15T06:28:41.532995+00:00",
   "16f21d6ab6316264dcd83655281b68699bf45dfc": "2026-07-15T06:28:41.532995+00:00",
@@ -823,6 +817,13 @@
    "location": "US - Puerto Rico - Juncos",
    "title": "Associate Fuel Rotational Program",
    "url": "https://amgen.wd1.myworkdayjobs.com/en-US/Careers/job/US---Puerto-Rico---Juncos/Associate-Fuel-Rotational-Program_R-250172"
+  },
+  "f38d7ca815e97a08c728cfa1ec96187ec6ace72c": {
+   "company": "AbbVie",
+   "first_seen": "2026-07-26T16:18:57.271377+00:00",
+   "location": "North Chicago, IL",
+   "title": "Associate Medical Director (Physician Development Program - Hematology)",
+   "url": "https://careers.abbvie.com/en/job/associate-medical-director-physician-development-program-hematology-in-north-chicago-il-jid-19324"
   },
   "fc0a60e74d6ea49201842b89430897080da0c17d": {
    "company": "Roche",

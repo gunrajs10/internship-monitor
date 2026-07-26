@@ -138,6 +138,15 @@ PRIORITY_RE = re.compile(
 DEFAULT_SEARCH_TERMS = ["intern", "co-op", "MBA", "graduate", "rotation",
                         "development program", "early career", "new grad"]
 
+# Phrases a search-results page uses to say "this specific query matched
+# nothing," as opposed to the page itself being broken/blocked. Seen on
+# Attrax career sites (careers.abbvie.com): a valid, fully-rendered page
+# for a query with zero matches, distinct from a real markup change or a
+# bot-block page. Matching on this (rather than only on the presence of
+# result tiles) is what keeps a single zero-result search term - which is
+# a completely normal outcome - from being mistaken for "the site broke."
+NO_RESULTS_RE = re.compile(r"returned no results|no results (were )?found", re.IGNORECASE)
+
 FAILURE_REALERT_HOURS = 24
 FAIL_MIN_STREAK = 3   # consecutive failing runs before alerting (site-side)
 FAIL_MIN_HOURS = 3    # and the failures must span at least this long
@@ -429,7 +438,17 @@ def fetch_jobvite(cfg):
 
 
 def fetch_attrax(cfg):
-    """Attrax career sites (careers.abbvie.com): server-rendered tiles."""
+    """Attrax career sites (careers.abbvie.com): server-rendered tiles.
+
+    A page with zero results for a given search term is a fully valid,
+    normal response (Attrax renders "We are sorry but your search has
+    returned no results.") - it must NOT be treated the same as a real
+    markup change. Before this fix, any single term with zero matches
+    (e.g. "new grad" - a term added when search terms were broadened for
+    rotational-program coverage) raised SourceError immediately and threw
+    away every result already found under the other search terms in the
+    same run, silently starving AbbVie of new postings for days.
+    """
     origin = cfg["origin"].rstrip("/")
     results = {}
     for term in cfg.get("search_terms", DEFAULT_SEARCH_TERMS):
@@ -438,8 +457,13 @@ def fetch_attrax(cfg):
             resp = _request("GET", url)
             t = resp.text
             if "attrax-vacancy-tile" not in t:
+                if NO_RESULTS_RE.search(t):
+                    break  # legitimate zero matches for this term - not a break
                 if page == 1:
-                    raise SourceError(f"{url} returned no vacancy tiles (site changed?)")
+                    raise SourceError(
+                        f"{url} returned no vacancy tiles and no 'no results' "
+                        f"message (site changed?)"
+                    )
                 break
             anchors = list(re.finditer(
                 r'<a[^>]*vacancy-tile__title[^>]*href="(/en/job/[^"]+)"[^>]*>([\s\S]{1,200}?)</a>'

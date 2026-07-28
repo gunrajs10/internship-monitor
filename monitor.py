@@ -572,18 +572,21 @@ def fetch_lonza(cfg):
     ordered newest-first, so a full crawl is cheap and lets TITLE_RE do the
     filtering - the same approach as fetch_jnj_careers.
 
-      3. Lonza sits behind a bot manager that is markedly stricter than any
-         other source on the watchlist. The module-level HEADERS - which are
-         tuned for JSON APIs (Accept: application/json...) and omit the
-         Referer/Origin/Sec-Fetch-* set a real browser always sends - get a
-         flat HTTP 403 from a datacenter IP, even though the identical
-         request succeeds from a browser. So this adapter uses its own
-         Session with full document-request headers and primes it with a GET
-         of the search page first, so the POSTs carry a same-origin Referer
-         and any cookies the WAF handed out. If Lonza still refuses, the
-         adapter raises SourceError rather than returning an empty list, so
-         the run produces a loud failure alert with the career_page fallback
-         link instead of a silent "nothing new."
+      3. Lonza sits behind a bot manager far stricter than any other source
+         on the watchlist, and it fingerprints the TLS handshake, not just
+         the headers. Verified on the runner: plain `requests` gets a flat
+         HTTP 403, and it stays 403 even with a Session that sends the full
+         browser header set (document Accept, Sec-Fetch-*, sec-ch-ua,
+         same-origin Referer/Origin) and primes itself with a GET first.
+         The same requests succeed from a real browser, and from other
+         datacenter clients, so the discriminator is python-urllib3's TLS
+         ClientHello. curl_cffi replays Chrome's actual handshake, which is
+         what gets through. It is used for this source only; every other
+         adapter still runs on plain `requests`.
+
+    If Lonza refuses anyway, the adapter raises SourceError rather than
+    returning an empty list, so a block shows up as a loud failure alert
+    carrying the career_page link - never as a silent "nothing new."
     """
     url = cfg.get("url", "https://www.lonza.com/careers/job-search")
     origin = "https://www.lonza.com"
@@ -607,7 +610,15 @@ def fetch_lonza(cfg):
         "sec-ch-ua-platform": '"Windows"',
     }
 
-    sess = requests.Session()
+    try:
+        from curl_cffi import requests as impersonating
+        sess = impersonating.Session(impersonate="chrome")
+        transport = "curl_cffi/chrome"
+    except ImportError:
+        # Degrade rather than crash the whole run; this will very likely be
+        # refused with a 403, which surfaces as a normal loud source failure.
+        sess = requests.Session()
+        transport = "requests (curl_cffi unavailable - expect HTTP 403)"
     sess.headers.update(doc_headers)
 
     def _get(method, **kwargs):
@@ -618,10 +629,12 @@ def fetch_lonza(cfg):
                 if r.status_code == 200:
                     return r
                 last = f"HTTP {r.status_code}"
-            except requests.RequestException as exc:
+            except Exception as exc:
                 last = type(exc).__name__
             time.sleep(2 * (attempt + 1))
-        raise SourceError(f"{url} failed after {RETRIES + 1} attempts: {last}")
+        raise SourceError(
+            f"{url} failed after {RETRIES + 1} attempts via {transport}: {last}"
+        )
 
     # Prime the session: a first-party GET, exactly as a browser would do
     # before submitting the paging form.

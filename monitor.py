@@ -571,6 +571,19 @@ def fetch_lonza(cfg):
     The board is small (~640 postings, 26 pages), deterministically
     ordered newest-first, so a full crawl is cheap and lets TITLE_RE do the
     filtering - the same approach as fetch_jnj_careers.
+
+      3. Lonza sits behind a bot manager that is markedly stricter than any
+         other source on the watchlist. The module-level HEADERS - which are
+         tuned for JSON APIs (Accept: application/json...) and omit the
+         Referer/Origin/Sec-Fetch-* set a real browser always sends - get a
+         flat HTTP 403 from a datacenter IP, even though the identical
+         request succeeds from a browser. So this adapter uses its own
+         Session with full document-request headers and primes it with a GET
+         of the search page first, so the POSTs carry a same-origin Referer
+         and any cookies the WAF handed out. If Lonza still refuses, the
+         adapter raises SourceError rather than returning an empty list, so
+         the run produces a loud failure alert with the career_page fallback
+         link instead of a silent "nothing new."
     """
     url = cfg.get("url", "https://www.lonza.com/careers/job-search")
     origin = "https://www.lonza.com"
@@ -579,9 +592,46 @@ def fetch_lonza(cfg):
         r'[\s\S]{0,400}?search-result-title">([\s\S]*?)</div>'
         r'[\s\S]{0,200}?search-result-content">([\s\S]*?)</div>'
     )
+    doc_headers = {
+        "User-Agent": HEADERS["User-Agent"],
+        "Accept": ("text/html,application/xhtml+xml,application/xml;q=0.9,"
+                   "image/avif,image/webp,image/apng,*/*;q=0.8"),
+        "Accept-Language": "en-US,en;q=0.9",
+        "Upgrade-Insecure-Requests": "1",
+        "Sec-Fetch-Dest": "document",
+        "Sec-Fetch-Mode": "navigate",
+        "Sec-Fetch-Site": "same-origin",
+        "Sec-Fetch-User": "?1",
+        "sec-ch-ua": '"Chromium";v="138", "Google Chrome";v="138", "Not)A;Brand";v="8"',
+        "sec-ch-ua-mobile": "?0",
+        "sec-ch-ua-platform": '"Windows"',
+    }
+
+    sess = requests.Session()
+    sess.headers.update(doc_headers)
+
+    def _get(method, **kwargs):
+        last = None
+        for attempt in range(RETRIES + 1):
+            try:
+                r = sess.request(method, url, timeout=TIMEOUT, **kwargs)
+                if r.status_code == 200:
+                    return r
+                last = f"HTTP {r.status_code}"
+            except requests.RequestException as exc:
+                last = type(exc).__name__
+            time.sleep(2 * (attempt + 1))
+        raise SourceError(f"{url} failed after {RETRIES + 1} attempts: {last}")
+
+    # Prime the session: a first-party GET, exactly as a browser would do
+    # before submitting the paging form.
+    _get("GET", headers={"Sec-Fetch-Site": "none"})
+
     results = {}
     for pg in range(1, 61):
-        resp = _request("POST", url, data={"q": "", "pg": str(pg)})
+        resp = _get("POST", data={"q": "", "pg": str(pg)},
+                    headers={"Content-Type": "application/x-www-form-urlencoded",
+                             "Origin": origin, "Referer": url})
         t = resp.text
         rows = row_re.findall(t)
         if not rows:

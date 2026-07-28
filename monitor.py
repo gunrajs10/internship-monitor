@@ -49,12 +49,90 @@ HEADERS = {
 
 # Titles that count as target roles: internships AND rotational /
 # early-career / MBA development programs (CRDP-class postings).
+#
+# The second block is the real program vocabulary, taken from how these
+# programs are actually branded rather than from what they "should" be
+# called (checked against live careers pages, July 2026):
+#   Commercial Leadership Development Program (CLDP) - Takeda, J&J, BMS, AZ
+#   Commercial Leadership Program (CLP)              - Amgen
+#   Rotational Development Program (RDP)             - Biogen, Pfizer
+#   Commercial Rotational Development Program (CRDP) - Genentech
+#   GPS Emerging Leaders Program                     - BMS
+#   MBA Leadership Development Program               - Blueprint / Sanofi
+#   Early Talent Program                             - Novartis
+#   Future Leaders                                   - GSK, AstraZeneca
+# "development program"/"rotational" already covered CLDP and RDP; the
+# named-cohort brands ("Emerging Leaders", "Future Leaders", "Early
+# Talent") and the bare acronyms did not, and were silently invisible.
 TITLE_RE = re.compile(
     r"\b(intern(ship)?s?|co[\s\-]?op|mba\b|summer associate|"
     r"graduate (program|scheme|associate|intern)|"
     r"rotation(al)?|development (program|rotation)|"
-    r"leadership development program|early[\s\-]career|"
-    r"new grad(uate)?s?|campus hire)\b",
+    r"leadership (development )?program|early[\s\-]career|"
+    r"new grad(uate)?s?|campus hire|"
+    r"emerging leaders?|future leaders?|early talent|"
+    r"associate program|trainee|fellowship|"
+    r"crdp|cldp|mldp|ldp|rdp|clp)\b",
+    re.IGNORECASE,
+)
+
+# ---- Track 2: ordinary early-stage roles that carry no program branding --
+# A first-year-MBA-appropriate commercial role is often just "Associate
+# Product Manager, Oncology" - no keyword above will ever fire on it. This
+# track requires all three conditions: a target function, a junior
+# seniority marker, and no senior marker. Deliberately tight; it is a
+# precision filter, not a catch-all, because the alternative is burying the
+# real programs under hundreds of Director-level postings.
+FUNCTION_RE = re.compile(
+    r"\b(commercial|strateg\w*|market access|marketing|brand\w*|"
+    r"business development|business analytics|business operations|"
+    r"insights?|analytics|new product planning|portfolio|"
+    r"competitive intelligence|product manage\w+|product marketing|"
+    r"pricing|forecast\w*|market research|market development|launch|"
+    r"operations|supply chain|corporate development|alliance\w*|"
+    r"partnerships?|patient (access|services)|medical affairs)\b",
+    re.IGNORECASE,
+)
+JUNIOR_RE = re.compile(
+    r"\b(associate|analyst|coordinator|specialist|assistant|"
+    r"entry[\s\-]level)\b",
+    re.IGNORECASE,
+)
+# Anything at or above these levels will not hire a first-year MBA into a
+# first post-MBA role. "Associate Director" and "Senior Associate" both get
+# dropped here - intentional under the tight setting.
+SENIOR_RE = re.compile(
+    r"\b(director|sr\.?|senior|principal|staff|lead|"
+    r"head of|vice president|vp|chief|executive|distinguished)\b",
+    re.IGNORECASE,
+)
+# "Manager" is ambiguous: "Associate Product Manager" is a standard entry
+# title, while a bare "Manager, Commercial Operations" is usually a
+# mid-career hire. Treat manager as senior UNLESS it is qualified by
+# associate/assistant.
+MANAGER_RE = re.compile(r"\bmanagers?\b", re.IGNORECASE)
+JUNIOR_MANAGER_RE = re.compile(
+    r"\b(associate|assistant)\s+(\w+\s+){0,2}managers?\b", re.IGNORECASE)
+
+
+def is_senior(title):
+    if SENIOR_RE.search(title):
+        return True
+    if MANAGER_RE.search(title) and not JUNIOR_MANAGER_RE.search(title):
+        return True
+    return False
+
+# ---- Track 3: description-level rescue for generically-titled programs --
+# The failure mode this exists for: a rotational program posted under a
+# title with no early-career signal at all. Only the description reveals
+# it. Applied to a bounded subset (see worth_deep_scan) because reading
+# every description across ~10,000 postings is not affordable per run.
+DESC_PROGRAM_RE = re.compile(
+    r"(rotational (program|assignment|development)|rotations? (through|across|in)|"
+    r"leadership development program|commercial leadership program|"
+    r"(recent |current )?mba (graduate|student|candidate)s?|"
+    r"mba (is )?(required|preferred|strongly preferred)|"
+    r"program (participants|associates|cohort)|two[\s\-]year rotation)",
     re.IGNORECASE,
 )
 
@@ -148,6 +226,12 @@ DEFAULT_SEARCH_TERMS = ["intern", "co-op", "MBA", "graduate", "rotation",
 NO_RESULTS_RE = re.compile(r"returned no results|no results (were )?found", re.IGNORECASE)
 
 FAILURE_REALERT_HOURS = 24
+
+# Track 3 reads job descriptions to catch rotational programs whose titles
+# give nothing away. Most sources ship the description in the feed, which is
+# free; Workday-style sources need one extra HTTP call per posting, so those
+# are capped per company. Raising this trades runtime for recall.
+DEEP_SCAN_FETCH_CAP = 25
 FAIL_MIN_STREAK = 3   # consecutive failing runs before alerting (site-side)
 FAIL_MIN_HOURS = 3    # and the failures must span at least this long
 
@@ -695,20 +779,55 @@ def dedupe_key(company, title, location):
     return hashlib.sha1(raw.encode()).hexdigest()
 
 
+def location_ok(item):
+    """US-only rule, shared by every match track."""
+    loc = item.get("location") or ""
+    if not loc:
+        return True
+    if NON_US_RE.search(loc):
+        return False
+    if UNKNOWN_LOC_RE.search(loc):
+        return True  # "2 Locations" etc. - cannot tell, keep
+    return bool(US_RE.search(loc))
+
+
+def title_match(item):
+    """Which title track a posting hits, or None.
+
+    'program'     - explicit internship / rotational / named-cohort branding
+    'early-stage' - no program branding, but a junior-level role in a target
+                    function (Associate Product Manager, Commercial Analyst)
+    """
+    title = item.get("title") or ""
+    if UNDERGRAD_TITLE_RE.search(title):
+        return None
+    if TITLE_RE.search(title):
+        return "program"
+    if (FUNCTION_RE.search(title) and JUNIOR_RE.search(title)
+            and not is_senior(title)):
+        return "early-stage"
+    return None
+
+
+def worth_deep_scan(item):
+    """Should this title-miss have its description read (track 3)?
+
+    Bounded on purpose. Reading every description across ~10,000 postings a
+    run is not affordable, so the scan is limited to postings that at least
+    land in a target function - which is where a generically-titled
+    rotational program would actually sit. A posting whose description is
+    already in the feed costs nothing extra; only Workday-style sources
+    need a separate fetch, and those are capped by the caller.
+    """
+    title = item.get("title") or ""
+    if UNDERGRAD_TITLE_RE.search(title):
+        return False
+    return bool(FUNCTION_RE.search(title))
+
+
 def is_candidate(item):
-    if not TITLE_RE.search(item["title"]):
-        return False
-    if UNDERGRAD_TITLE_RE.search(item["title"]):
-        return False
-    loc = item["location"] or ""
-    if loc:
-        if NON_US_RE.search(loc):
-            return False
-        if UNKNOWN_LOC_RE.search(loc):
-            return True  # "2 Locations" etc. - cannot tell, keep
-        if not US_RE.search(loc):
-            return False  # US-only: identifiable non-US locations are dropped
-    return True
+    """Kept for the audit path: does this posting match on title alone?"""
+    return title_match(item) is not None and location_ok(item)
 
 
 def eligibility(item):
@@ -861,11 +980,56 @@ def run(audit=False):
             continue
         try:
             postings = adapter(cfg)
-            candidates = [p for p in postings if is_candidate(p)]
-            audit_rows.append((name, "OK", f"{len(postings)} postings, {len(candidates)} internship-type"))
+
+            # ---- Tracks 1 and 2: title-based matches ----
+            kinds = {}          # id(posting) -> match kind
+            for p in postings:
+                kind = title_match(p)
+                if kind and location_ok(p):
+                    kinds[id(p)] = kind
+
+            # ---- Track 3: description rescue for generically-titled
+            # programs. Runs on postings in a target function that pass the
+            # US rule and are NOT senior-level. The seniority gate matters:
+            # a rotational program is never posted as "Director, Commercial
+            # Strategy", but plenty of Director postings say "MBA required"
+            # and would otherwise flood the sheet with roles that will not
+            # hire a first-year MBA. Descriptions already in the feed are
+            # free; the ones needing a per-posting fetch are capped so a
+            # single company cannot blow up the run. A posting already
+            # matched as early-stage is UPGRADED here when its description
+            # proves it is actually a program.
+            fetched = 0
+            for p in postings:
+                if kinds.get(id(p)) == "program":
+                    continue  # title already proved it
+                if not worth_deep_scan(p) or not location_ok(p):
+                    continue
+                if is_senior(p.get("title") or ""):
+                    continue
+                desc = p.get("description", "")
+                if not desc and "_detail" in p:
+                    if fetched >= DEEP_SCAN_FETCH_CAP:
+                        continue
+                    fetched += 1
+                    try:
+                        desc = fetch_workday_detail(p)
+                        p["description"] = desc
+                    except SourceError:
+                        continue
+                if desc and DESC_PROGRAM_RE.search(desc):
+                    kinds[id(p)] = "program-desc"
+
+            candidates = [(p, kinds[id(p)]) for p in postings if id(p) in kinds]
+
+            n_prog = sum(1 for _, k in candidates if k != "early-stage")
+            n_early = sum(1 for _, k in candidates if k == "early-stage")
+            audit_rows.append((
+                name, "OK",
+                f"{len(postings)} postings, {n_prog} program-type, {n_early} early-stage"))
             if audit:
                 continue
-            for item in candidates:
+            for item, kind in candidates:
                 key = dedupe_key(name, item["title"], item["location"])
                 if key in state["seen"]:
                     continue
@@ -877,21 +1041,30 @@ def run(audit=False):
                         "skipped": "undergrad-only",
                     }
                     continue
+                label = {
+                    "program": "rotational/internship program",
+                    "program-desc": "PROGRAM FOUND IN DESCRIPTION (title gives no hint)",
+                    "early-stage": "early-stage commercial role (not a named program)",
+                }[kind]
                 role = {
                     "company": name,
                     "title": item["title"],
                     "location": item["location"],
                     "posted_on": item.get("posted_on", ""),
                     "url": item["url"],
-                    "eligibility": note,
-                    "priority": "HIGH" if PRIORITY_RE.search(item["title"]) else "",
+                    "eligibility": f"{label} - {note}",
+                    # A program found only in the description is always HIGH -
+                    # that is precisely the class of posting that went missed
+                    # before. Everything else earns HIGH on function match.
+                    "priority": ("HIGH" if kind == "program-desc"
+                                 or PRIORITY_RE.search(item["title"]) else ""),
                     "first_seen": now.isoformat(),
                 }
                 new_roles.append(role)
                 state["seen"][key] = {
                     "company": name, "title": item["title"],
                     "location": item["location"], "first_seen": now.isoformat(),
-                    "url": item["url"],
+                    "url": item["url"], "match": kind,
                 }
         except SourceError as exc:
             failures.append({"company": name, "reason": str(exc)})

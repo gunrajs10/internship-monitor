@@ -1,4 +1,4 @@
-# Biotech internship watchlist - 29 companies
+# Biotech internship watchlist - 35 companies
 #
 # verified: true  = endpoint confirmed live during build (July 2026)
 # verified: false = best-known endpoint; the audit run will confirm or flag it
@@ -190,6 +190,55 @@ companies:
     origin: https://careers.labcorp.com
     verified: false
     career_page: https://careers.labcorp.com/global/en/internships
+
+  # ---- Big-pharma Workday boards (endpoints probed live July 2026) ----
+  - name: Novartis
+    ats: workday
+    tenant: novartis
+    host: wd3
+    site: Novartis_Careers
+    verified: true
+    career_page: https://www.novartis.com/careers/career-search
+
+  - name: Sanofi
+    ats: workday
+    tenant: sanofi
+    host: wd3
+    site: SanofiCareers
+    verified: true
+    career_page: https://www.sanofi.com/en/careers/students-and-graduates
+
+  - name: GSK
+    ats: workday
+    tenant: gsk
+    host: wd5
+    site: GSKCareers
+    verified: true
+    career_page: https://www.gsk.com/en-gb/careers/early-careers/
+
+  - name: AstraZeneca
+    ats: workday
+    tenant: astrazeneca
+    host: wd3
+    site: Careers
+    verified: true
+    career_page: https://careers.astrazeneca.com/early-talent
+
+  - name: Takeda
+    ats: workday
+    tenant: takeda
+    host: wd3
+    site: External
+    verified: true
+    career_page: https://www.takedajobs.com/early-careers
+
+  - name: Moderna
+    ats: workday
+    tenant: modernatx
+    host: wd1
+    site: M_tx
+    verified: true
+    career_page: https://www.modernatx.com/careers/students-and-early-career
 
   # ---- Custom-platform adapters ----
   - name: Ionis Pharmaceuticals

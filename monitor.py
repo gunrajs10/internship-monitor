@@ -161,8 +161,21 @@ NON_US_RE = re.compile(
 
 # Positive US indicators. A non-empty location must match this (and not
 # NON_US_RE) to be kept - Gunraj wants US-only postings.
+# Two additions after finding real US roles being silently discarded:
+#   1. A bare "US" token. AstraZeneca posts "US - Baltimore - MD" and even
+#      plain "US"; none of "united states", "usa" or "u.s." match those, so
+#      the posting was dropped as non-US.
+#   2. State codes after a dash or en-dash, not just a comma. "US - Miami -
+#      FL" never matched the old `,\s*(FL)` form.
+# Between them, 22 of 40 distinct AstraZeneca US locations (56 postings in
+# a single sample) were being thrown away. NON_US_RE is still evaluated
+# first, so "US - London - UK" is still correctly rejected.
 US_RE = re.compile(
-    r"\b(united states|usa|u\.s\.a?\.?|remote)\b"
+    r"(^|[\s,\-–])US([\s,\-–]|$)"
+    r"|[,\-–]\s*(AL|AK|AZ|AR|CA|CO|CT|DE|FL|GA|HI|ID|IL|IN|IA|KS|KY|LA|"
+    r"ME|MD|MA|MI|MN|MS|MO|MT|NE|NV|NH|NJ|NM|NY|NC|ND|OH|OK|OR|PA|RI|SC|SD|"
+    r"TN|TX|UT|VT|VA|WA|WV|WI|WY|DC)\b"
+    r"|\b(united states|usa|u\.s\.a?\.?|remote)\b"
     r"|\b(alabama|alaska|arizona|arkansas|california|colorado|connecticut|"
     r"delaware|florida|georgia|hawaii|idaho|illinois|indiana|iowa|kansas|"
     r"kentucky|louisiana|maine|maryland|massachusetts|michigan|minnesota|"

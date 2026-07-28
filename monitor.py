@@ -113,7 +113,8 @@ FUNCTION_RE = re.compile(
 SCIENCE_EXCLUDE_RE = re.compile(
     r"\b(scientist|scientific|research (associate|scientist|fellow)|"
     r"biochem\w*|chemist\w*|chemistry|biolog\w*|microbiolog\w*|immunolog\w*|"
-    r"toxicolog\w*|pharmacolog\w*|engineer\w*|technician|technologist|"
+    r"toxicolog\w*|pharmacolog\w*|patholog\w*|histolog\w*|genomic\w*|"
+    r"engineer\w*|technician|technologist|"
     r"laboratory|lab\b|assay|bioprocess|upstream|downstream|cell culture|"
     r"purification|formulation|analytical chemistry|cmc\b|"
     r"quality (control|assurance)|\bqc\b|\bqa\b|validation|"
@@ -143,10 +144,17 @@ SENIOR_RE = re.compile(
     r"head of|global head|vice president|vp|chief|executive|distinguished)\b",
     re.IGNORECASE,
 )
+# Loosening "senior" wholesale let "Senior Manager" and "Sr. Manager" in -
+# typically five-plus years in pharma, well above a first post-MBA role.
+# "Senior Associate" / "Senior Analyst" / "Senior Specialist" are the titles
+# actually wanted, so seniority is only disqualifying when it modifies
+# manager.
+SENIOR_MANAGER_RE = re.compile(
+    r"\b(senior|sr\.?)\s+(\w+\s+){0,2}managers?\b", re.IGNORECASE)
 
 
 def is_senior(title):
-    return bool(SENIOR_RE.search(title))
+    return bool(SENIOR_RE.search(title) or SENIOR_MANAGER_RE.search(title))
 
 # ---- Track 3: description-level rescue for generically-titled programs --
 # The failure mode this exists for: a rotational program posted under a

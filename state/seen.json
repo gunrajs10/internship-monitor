@@ -28,6 +28,14 @@
   "e073341d6868c3dfba4496ac55b1cf694139f42f": "2026-07-18T07:06:43.380328+00:00"
  },
  "seen": {
+  "0107e5f68a5ea4095d4af4350167adacedf9d9f6": {
+   "company": "Regeneron",
+   "first_seen": "2026-07-28T21:45:15.519623+00:00",
+   "location": "TARRYTOWN",
+   "match": "early-stage",
+   "title": "Manager, Corporate Strategy",
+   "url": "https://regeneron.wd1.myworkdayjobs.com/en-US/Careers/job/TARRYTOWN/Manager--Corporate-Strategy_R47067-1"
+  },
   "010e76fb41664deeac666242852873d1c539ef91": {
    "company": "Johnson & Johnson",
    "first_seen": "2026-07-28T17:45:13.192092+00:00",
@@ -36,12 +44,28 @@
    "title": "US Market Access & Reimbursement Analyst - Shockwave Medical",
    "url": "https://www.careers.jnj.com/en/jobs/r-090034/us-market-access-reimbursement-analyst-shockwave-medical/"
   },
+  "01c29474020f43fce95383bb9adb6b910320bbfc": {
+   "company": "Genentech",
+   "first_seen": "2026-07-28T21:45:15.519623+00:00",
+   "location": "2 Locations",
+   "match": "early-stage",
+   "title": "Field Reimbursement Manager (FRM) - TN/KY/WV Ecosystem",
+   "url": "https://roche.wd3.myworkdayjobs.com/en-US/ROG-A2O-GENE/job/Lexington-Fayette/Field-Reimbursement-Manager--FRM----TN-KY-WV-Ecosystem_202607-118474"
+  },
   "029044d20355f07883b407e4636ceb79addf7cb7": {
    "company": "Thermo Fisher Scientific",
    "first_seen": "2026-07-27T03:59:17.196661+00:00",
    "location": "Waltham, Massachusetts, United States of America",
    "title": "Digital Leadership Development Program",
    "url": "https://thermofisher.wd5.myworkdayjobs.com/ThermoFisherCareers/job/Waltham-Massachusetts-USA/Digital-Leadership-Development-Program_R-01362051/apply"
+  },
+  "041e4f8ee0badc1a24050534c9c59f742f402f0e": {
+   "company": "Genentech",
+   "first_seen": "2026-07-28T21:45:15.519623+00:00",
+   "location": "South San Francisco",
+   "match": "early-stage",
+   "title": "Senior Strategy Manager, Customer Segment Strategy - Provider Groups",
+   "url": "https://roche.wd3.myworkdayjobs.com/en-US/ROG-A2O-GENE/job/South-San-Francisco/Senior-Strategy-Manager--Customer-Segment-Strategy---Provider-Groups_202607-118445-2"
   },
   "0468545922c85a68dc660d82dfc279b94756ac15": {
    "company": "Pfizer",
@@ -55,6 +79,14 @@
    "first_seen": "2026-07-15T06:28:41.532995+00:00",
    "location": "Sofia, Bulgaria",
    "title": "Project Support Coordinator Intern (6 months fixed term)"
+  },
+  "068651f2cfd3847ad22abd4e111364bb9c30df91": {
+   "company": "AbbVie",
+   "first_seen": "2026-07-28T21:45:15.519623+00:00",
+   "location": "Mettawa, IL",
+   "match": "early-stage",
+   "title": "Senior Manager, Global Pipeline Forecasting, Oncology",
+   "url": "https://careers.abbvie.com/en/job/senior-manager-global-pipeline-forecasting-oncology-in-mettawa-il-jid-29266"
   },
   "0733e4588e31f19fbcdc1237163f0e7a268775a8": {
    "company": "Medpace",
@@ -111,11 +143,59 @@
    "title": "Analytical R&D Fellowship \u2013 Formulation and Solubility Studies (Hiring Our Heroes Corporate Fellow)",
    "url": "https://jobs.merck.com"
   },
+  "0ccbbfabb7d65dd6e05e2193421df1d4b6cee956": {
+   "company": "Agilent Technologies",
+   "first_seen": "2026-07-28T21:45:15.519623+00:00",
+   "location": "5 Locations",
+   "match": "early-stage",
+   "title": "Global Marketing Programs Manager (m/f/d)",
+   "url": "https://agilent.wd5.myworkdayjobs.com/en-US/Agilent_Careers/job/Germany-Remote-Location-Waldbronn/Global-Marketing-Programs-Manager--m-f-d-_4037310"
+  },
+  "0db99ff583cf04426c2158c2107a4d98c462d47e": {
+   "company": "BridgeBio",
+   "first_seen": "2026-07-28T21:45:15.519623+00:00",
+   "location": "Field Based - United States",
+   "match": "early-stage",
+   "title": "Field Reimbursement Manager - Colorado",
+   "url": "https://job-boards.greenhouse.io/bridgebio/jobs/5195661007"
+  },
+  "0dd7d1e09f48a4e410d4a0fe386cadc1bc303874": {
+   "company": "AstraZeneca",
+   "first_seen": "2026-07-28T21:45:15.519623+00:00",
+   "location": "US - Gaithersburg - MD",
+   "match": "early-stage",
+   "title": "Senior Marketing Manager, Oncology DTC",
+   "url": "https://astrazeneca.wd3.myworkdayjobs.com/en-US/Careers/job/US---Gaithersburg---MD/Senior-Marketing-Manager--Oncology-DTC_R-256385"
+  },
+  "0e162c88a19256d0ffaf3f0b16275ba698ee8602": {
+   "company": "Roche",
+   "first_seen": "2026-07-28T21:45:15.519623+00:00",
+   "location": "Indianapolis",
+   "match": "early-stage",
+   "title": "Product Marketing Manager, qPCR systems & Reagents",
+   "url": "https://roche.wd3.myworkdayjobs.com/en-US/roche-ext/job/Indianapolis/Product-Marketing-Manager--qPCR-systems---Reagents_202606-115481-1"
+  },
+  "0ec6de69f95178d85fa48b474eb53c675d544ea8": {
+   "company": "Agilent Technologies",
+   "first_seen": "2026-07-28T21:45:15.519623+00:00",
+   "location": "2 Locations",
+   "match": "early-stage",
+   "title": "Innovation Strategic Programs Manager",
+   "url": "https://agilent.wd5.myworkdayjobs.com/en-US/Agilent_Careers/job/US-DE-Wilmington/Innovation-Strategic-Programs-Manager_4038522"
+  },
   "1130ab19ab24ac7fd664d732e98cbbbca39611b0": {
    "company": "Roche",
    "first_seen": "2026-07-15T06:28:41.532995+00:00",
    "location": "Petaling Jaya",
    "title": "Enterprise Master Data Management Operations - Intern (Mandarin speaker)"
+  },
+  "11d487a7d0af149cdc79ba5f24e38ff3f710e92f": {
+   "company": "Medpace",
+   "first_seen": "2026-07-28T21:45:15.519623+00:00",
+   "location": "Cincinnati, Ohio, United States",
+   "match": "early-stage",
+   "title": "Project Finance Account Manager",
+   "url": "https://careers.medpace.com/jobs/12242?lang=en-us"
   },
   "1202089cbd55355cb42fd4d1db9f4a9e49f696c1": {
    "company": "Labcorp",
@@ -125,12 +205,36 @@
    "title": "Phlebotomy Trainee",
    "url": "https://labcorp.wd1.myworkdayjobs.com/External/job/Olympia-WA/Phlebotomy-Trainee_2622920-1/apply"
   },
+  "122b0910d78036c1fc73b16601998b488babf768": {
+   "company": "Novo Nordisk",
+   "first_seen": "2026-07-28T21:45:15.519623+00:00",
+   "location": "United States, Plainsboro",
+   "match": "early-stage",
+   "title": "Market Access Insights Manager",
+   "url": "https://www.novonordisk.com/careers/find-a-job/job-ad.html?id=344539.en_US"
+  },
   "123b21fbeabb0022beca9f76bf649e4acc1aa870": {
    "company": "Eli Lilly",
    "first_seen": "2026-07-22T15:15:59.193557+00:00",
    "location": "Stamford, Connecticut, United States of America",
    "title": "Sr. Director - Clinical Development Program Lead (CDPL) - Early Oncology",
    "url": "https://lilly.wd115.myworkdayjobs.com/LLY/job/US-Stamford-CT/Sr-Director---Clinical-Development-Program-Lead--CDPL----Early-Oncology_R-108472-1/apply"
+  },
+  "12e3f27eac060af5cfcec853135990efb15aea90": {
+   "company": "AstraZeneca",
+   "first_seen": "2026-07-28T21:45:15.519623+00:00",
+   "location": "US - Manhattan - NY",
+   "match": "early-stage",
+   "title": "Pharmaceutical Sales Specialist, CVRM Specialty - Manhattan, NY-North",
+   "url": "https://astrazeneca.wd3.myworkdayjobs.com/en-US/Careers/job/US---Manhattan---NY/Pharmaceutical-Sales-Specialist--CVRM-Specialty---Manhattan--NY-North_R-256395"
+  },
+  "133d8e1978c402fe89f308cf96ff11bc79e325eb": {
+   "company": "AbbVie",
+   "first_seen": "2026-07-28T21:45:15.519623+00:00",
+   "location": "Mettawa, IL",
+   "match": "early-stage",
+   "title": "Manager, Planning Reporting support, Business Planning and Consolidation (SAP BPC)",
+   "url": "https://careers.abbvie.com/en/job/manager-planning-reporting-support-business-planning-and-consolidation-sap-bpc-in-mettawa-il-jid-30880"
   },
   "145a742256320367c4e13516ac83714e2deba849": {
    "company": "Regeneron",
@@ -140,6 +244,14 @@
    "title": "Associate Scientist, Host Cell Protein (HCP) Analytics",
    "url": "https://regeneron.wd1.myworkdayjobs.com/en-US/Careers/job/TARRYTOWN/Associate-Scientist--HCP-Analytics--Product-Biochemistry-_R49410"
   },
+  "14c716e7a7ea6147f6079247e0267d385e0e25c4": {
+   "company": "BioMarin",
+   "first_seen": "2026-07-28T21:45:15.519623+00:00",
+   "location": "San Rafael,\n            California",
+   "match": "early-stage",
+   "title": "Sr Manager, Strategic Insights Skeletal Conditions",
+   "url": "https://jobs.jobvite.com/biomarin/job/oHEuAfw9"
+  },
   "1521a07a962f9a2eb21476169f76e8b33a304d96": {
    "company": "Regeneron",
    "first_seen": "2026-07-28T17:45:13.192092+00:00",
@@ -148,11 +260,59 @@
    "title": "Associate Manager, Scientific Writing Operations",
    "url": "https://regeneron.wd1.myworkdayjobs.com/en-US/Careers/job/TARRYTOWN/Associate-Manager--Scientific-Writing-Operations_R47742"
   },
+  "153cda7b9125690ca339447e41a17d48f5cfae48": {
+   "company": "AbbVie",
+   "first_seen": "2026-07-28T21:45:15.519623+00:00",
+   "location": "Mettawa, IL",
+   "match": "early-stage",
+   "title": "Manager, Analytics and Market Research",
+   "url": "https://careers.abbvie.com/en/job/manager-analytics-and-market-research-in-mettawa-il-jid-30744"
+  },
+  "1556294f3ed93188b44a45cd3376320cdcf492c8": {
+   "company": "Axsome Therapeutics",
+   "first_seen": "2026-07-28T21:45:15.519623+00:00",
+   "location": "San Francisco, CA",
+   "match": "early-stage",
+   "title": "National Sales Training Manager, Psychiatry (West Region)",
+   "url": "https://job-boards.greenhouse.io/axsometherapeutics/jobs/5985938004"
+  },
+  "15718972d9318e41c3d562c0d8a5c194e4b7f218": {
+   "company": "Pfizer",
+   "first_seen": "2026-07-28T21:45:15.519623+00:00",
+   "location": "United States - Michigan - Grand Rapids",
+   "match": "early-stage",
+   "title": "Gastroenterology Health & Science Sales Specialist - Grand Rapids, MI",
+   "url": "https://pfizer.wd1.myworkdayjobs.com/en-US/PfizerCareers/job/United-States---Michigan---Grand-Rapids/Gastroenterology-Health---Science-Sales-Specialist---Grand-Rapids--MI_4960812-1"
+  },
+  "16147ac2c7849e06beb97e48d08d4be5afc537d5": {
+   "company": "Axsome Therapeutics",
+   "first_seen": "2026-07-28T21:45:15.519623+00:00",
+   "location": "New York, NY",
+   "match": "early-stage",
+   "title": "Manager, Talent Acquisition (Commercial Field Sales)",
+   "url": "https://job-boards.greenhouse.io/axsometherapeutics/jobs/5615397004"
+  },
+  "17b9c18376e1f1a5a260730e3fd9d604f148490e": {
+   "company": "AbbVie",
+   "first_seen": "2026-07-28T21:45:15.519623+00:00",
+   "location": "Austin, TX",
+   "match": "early-stage",
+   "title": "Sr. Inside Sales Business Development Manager",
+   "url": "https://careers.abbvie.com/en/job/sr-inside-sales-business-development-manager-in-austin-tx-jid-28586"
+  },
   "181b7008568edb77ea2fdef52735e3b4ee72cf7b": {
    "company": "AbbVie",
    "first_seen": "2026-07-15T10:16:04.586005+00:00",
    "location": "North Chicago, IL",
    "title": "Veteran SkillBridge Program Intern"
+  },
+  "18c80064a769d6c66a1a598d5f6eea1e28a53882": {
+   "company": "Gilead Sciences",
+   "first_seen": "2026-07-28T21:45:15.519623+00:00",
+   "location": "United States - California - Foster City",
+   "match": "early-stage",
+   "title": "Sr Supply Chain Specialist",
+   "url": "https://gilead.wd1.myworkdayjobs.com/en-US/gileadcareers/job/United-States---California---Foster-City/Sr-Supply-Chain-Specialist_R0053004-1"
   },
   "18f6400dbe05f155a5f41bc29ffc90820fb8c2d9": {
    "company": "Roche",
@@ -160,11 +320,27 @@
    "location": "2 Locations",
    "title": "Regulatory Operation Intern"
   },
+  "194b151ae4d913601b5fd076e207e96f4d508187": {
+   "company": "Bristol Myers Squibb",
+   "first_seen": "2026-07-28T21:45:15.519623+00:00",
+   "location": "Princeton - NJ - US",
+   "match": "early-stage",
+   "title": "Senior Manager, Business Development Analytics",
+   "url": "https://bristolmyerssquibb.wd5.myworkdayjobs.com/en-US/BMS/job/Princeton---NJ---US/Senior-Manager--Business-Development-Analytics_R1603248"
+  },
   "194cd34e4397bf5f750f0a8e6f5028d4c0a87c61": {
    "company": "Medpace",
    "first_seen": "2026-07-15T10:16:04.586005+00:00",
    "location": "Cincinnati, Ohio, United States",
    "title": "Software Development Co-Op - Fall 2026"
+  },
+  "195755838cce29b9311efd7f3796aa72191c40fa": {
+   "company": "Neurocrine Biosciences",
+   "first_seen": "2026-07-28T21:45:15.519623+00:00",
+   "location": "4 Locations",
+   "match": "program-desc",
+   "title": "NeuroPsych Regional Patient Access Manager, Ohio River Valley",
+   "url": "https://neurocrine.wd5.myworkdayjobs.com/en-US/NeurocrineCareers/job/US-IN-Home-Office/NeuroPsych-Regional-Patient-Access-Manager--Ohio-River-Valley_R7000"
   },
   "19cc27f485a94f3875c9babd7d0586edaa4bd32d": {
    "company": "Amgen",
@@ -181,11 +357,27 @@
    "title": "Financial Analyst, FP&A Data & Analytics",
    "url": "https://www.careers.jnj.com/en/jobs/r-076208/financial-analyst-fpa-data-analytics/"
   },
+  "1a2e6da42bb1ed6188f781cad58d5ab6b70fe58c": {
+   "company": "Labcorp",
+   "first_seen": "2026-07-28T21:45:15.519623+00:00",
+   "location": "Nashville, Tennessee, United States of America",
+   "match": "early-stage",
+   "title": "Regional Manager of Business Development Nashville, TN",
+   "url": "https://labcorp.wd1.myworkdayjobs.com/External/job/Nashville-TN/Regional-Manager-of-Business-Development--Nashville--TN-_264032-1/apply"
+  },
   "1a4fdeea5fd6bb1cdbdc696ca352c44117083079": {
    "company": "Roche",
    "first_seen": "2026-07-15T06:28:41.532995+00:00",
    "location": "2 Locations",
    "title": "Junior Project Coordinator\u00a0(Internship)"
+  },
+  "1aaeedb2f9aeec2d360a4713677aedbdd739c61c": {
+   "company": "Genentech",
+   "first_seen": "2026-07-28T21:45:15.519623+00:00",
+   "location": "South San Francisco",
+   "match": "early-stage",
+   "title": "Senior Customer Marketing Manager, Organized Customer",
+   "url": "https://roche.wd3.myworkdayjobs.com/en-US/ROG-A2O-GENE/job/South-San-Francisco/Senior-Customer-Marketing-Manager--Organized-Customer_202605-112235-1"
   },
   "1af67eedd3730102cefcd033a0c01209a6b5f3b2": {
    "company": "Thermo Fisher Scientific",
@@ -208,11 +400,35 @@
    "title": "QA Operations Specialist III - LSA (Nightshift)",
    "url": "https://www.lonza.com/jobs/R77308"
   },
+  "1ee1a7ddf55bb49b1b1526b206af3b90b8193ca9": {
+   "company": "AstraZeneca",
+   "first_seen": "2026-07-28T21:45:15.519623+00:00",
+   "location": "US - Scranton - PA",
+   "match": "early-stage",
+   "title": "Pharmaceutical Sales Specialist, CVRM Specialty \u2013  Scranton, PA",
+   "url": "https://astrazeneca.wd3.myworkdayjobs.com/en-US/Careers/job/US---Scranton---PA/Pharmaceutical-Sales-Specialist--CVRM-Specialty----Scranton--PA_R-257001"
+  },
   "1f4c7ca05f60d977435303d247474f81ce1524ec": {
    "company": "Roche",
    "first_seen": "2026-07-15T06:28:41.532995+00:00",
    "location": "Penzberg",
    "title": "6-month Internship in Antibody Development (m/f/d)"
+  },
+  "1fa25e5dadac52d0030f1652e3eee86ed72579d4": {
+   "company": "AstraZeneca",
+   "first_seen": "2026-07-28T21:45:15.519623+00:00",
+   "location": "US - Columbus - OH",
+   "match": "early-stage",
+   "title": "Pharmaceutical Sales Specialist, Primary Care\u00a0 - Columbus W, Ohio",
+   "url": "https://astrazeneca.wd3.myworkdayjobs.com/en-US/Careers/job/US---Columbus---OH/Pharmaceutical-Sales-Specialist--Primary-Care----Columbus-W--Ohio_R-256001"
+  },
+  "20002ac80e9ee02749223f250587a4c09134eae6": {
+   "company": "Tempus AI",
+   "first_seen": "2026-07-28T21:45:15.519623+00:00",
+   "location": "Remote - Texas",
+   "match": "program-desc",
+   "title": "MRD Regional Sales Manager, Central",
+   "url": "https://tempus.wd5.myworkdayjobs.com/en-US/Tempus_Careers/job/Remote---Texas/MRD-Regional-Sales-Manager--Central_JR202600615"
   },
   "20999c73820ceffd47a972cc603c08bef55fc700": {
    "company": "Biogen",
@@ -220,6 +436,22 @@
    "location": "Research Triangle Park, NC",
    "title": "Engineer II, Manufacturing (Rotation)",
    "url": "https://biibhr.wd3.myworkdayjobs.com/en-US/external/job/Research-Triangle-Park-NC/Engineer-II--Manufacturing--Rotation-_REQ23194"
+  },
+  "20fcbc22cbb1dc574209e4e6e5a036c3d07dc624": {
+   "company": "BridgeBio",
+   "first_seen": "2026-07-28T21:45:15.519623+00:00",
+   "location": "Field Based - United States",
+   "match": "early-stage",
+   "title": "Field Reimbursement Manager - Great Lakes",
+   "url": "https://job-boards.greenhouse.io/bridgebio/jobs/5195667007"
+  },
+  "213ff0c34cb3277d673aa5d26e522439515563a6": {
+   "company": "AstraZeneca",
+   "first_seen": "2026-07-28T21:45:15.519623+00:00",
+   "location": "2 Locations",
+   "match": "early-stage",
+   "title": "\u3010AstraZeneca\u3011\u3010Finance\u3011Pricing Manager, Pricing & Market Access",
+   "url": "https://astrazeneca.wd3.myworkdayjobs.com/en-US/Careers/job/Japan---Tokyo/XMLNAME--AstraZeneca--Finance-Pricing-Manager--Pricing---Market-Access_R-240314-2"
   },
   "21a36b21e5e56e98f0b3ccb26ee4ca9e56e441f9": {
    "company": "Medpace",
@@ -240,11 +472,35 @@
    "title": "Commercial Rotation Development Program (CRDP)",
    "url": "https://roche.wd3.myworkdayjobs.com/en-US/ROG-A2O-GENE/job/South-San-Francisco/Commercial-Rotation-Development-Program--CRDP-_202607-118045-2"
   },
+  "22ec1ebcfff4fc35f914b90bd12637247e54cb76": {
+   "company": "Neurocrine Biosciences",
+   "first_seen": "2026-07-28T21:45:15.519623+00:00",
+   "location": "US CA San Diego",
+   "match": "early-stage",
+   "title": "Senior Manager, HEOR - Endocrinology",
+   "url": "https://neurocrine.wd5.myworkdayjobs.com/en-US/NeurocrineCareers/job/US-CA-San-Diego/Senior-Manager--HEOR---Endocrinology-Pipeline_R6991"
+  },
+  "23bcc3fc75d864474951932f46f41f6cdeab2026": {
+   "company": "AbbVie",
+   "first_seen": "2026-07-28T21:45:15.519623+00:00",
+   "location": "Remote, OR",
+   "match": "early-stage",
+   "title": "Manager, Financial Process and Systems, Business Planning and Consolidation (SAP BPC)",
+   "url": "https://careers.abbvie.com/en/job/manager-financial-process-and-systems-business-planning-and-consolidation-sap-bpc-in-remote-or-jid-25804"
+  },
   "246bd121bc98e038f9e6adf1abf6785937a50e73": {
    "company": "Thermo Fisher Scientific",
    "first_seen": "2026-07-15T06:28:41.532995+00:00",
    "location": "Hillsboro, Oregon, United States of America",
    "title": "Engineering Co-Op"
+  },
+  "24da75fa1b0ad4dd0581159ecb32acbf2bbdbdc3": {
+   "company": "Illumina",
+   "first_seen": "2026-07-28T21:45:15.519623+00:00",
+   "location": "4 Locations",
+   "match": "early-stage",
+   "title": "Senior Sequencing Sales Specialist - Boston Cambridge",
+   "url": "https://illumina.wd1.myworkdayjobs.com/en-US/illumina-careers/job/US---Massachusetts---Remote/Senior-Sequencing-Sales-Specialist---Boston-Cambridge_42338-JOB"
   },
   "24e58d8618fda51e819557c36869a3982969305e": {
    "company": "Medpace",
@@ -259,6 +515,22 @@
    "location": "Cincinnati",
    "title": "J&J Surgery Cincinnati: Electrical Engineering Co-op, Fall 2026"
   },
+  "27889d6af3c2bcf284ef5c51a6bd1fd606942a19": {
+   "company": "Medpace",
+   "first_seen": "2026-07-28T21:45:15.519623+00:00",
+   "location": "Cincinnati, Ohio, United States",
+   "match": "early-stage",
+   "title": "Entry-level Sales Associate",
+   "url": "https://careers.medpace.com/jobs/12258?lang=en-us"
+  },
+  "27fd13e8101f09116387ee8a827880fffc52aa1e": {
+   "company": "Illumina",
+   "first_seen": "2026-07-28T21:45:15.519623+00:00",
+   "location": "US - California - San Diego",
+   "match": "early-stage",
+   "title": "Sr. Sales Operations Analyst",
+   "url": "https://illumina.wd1.myworkdayjobs.com/en-US/illumina-careers/job/US---California---San-Diego/Sr-Sales-Operations-Analyst_42565-JOB-1"
+  },
   "2818b8aa58c484412357985106799fec8a319224": {
    "company": "Eli Lilly",
    "first_seen": "2026-07-15T06:28:41.532995+00:00",
@@ -272,6 +544,70 @@
    "match": "early-stage",
    "title": "Digital Marketing Specialist - Patient Recruitment",
    "url": "https://careers.medpace.com/jobs/12719?lang=en-us"
+  },
+  "2883b92fcfcb354f2657f487307a5620b602ba80": {
+   "company": "Novartis",
+   "first_seen": "2026-07-28T21:45:15.519623+00:00",
+   "location": "2 Locations",
+   "match": "early-stage",
+   "title": "HEOR / HTA Specialist",
+   "url": "https://novartis.wd3.myworkdayjobs.com/en-US/Novartis_Careers/job/Barcelona-Gran-Va/HEOR---HTA-Specialist_REQ-10084438"
+  },
+  "2999089ec2a62ad4276caf73fcc25b1bf45b5421": {
+   "company": "Medpace",
+   "first_seen": "2026-07-28T21:45:15.519623+00:00",
+   "location": "Cincinnati, Ohio, United States",
+   "match": "early-stage",
+   "title": "Business Intelligence Manager",
+   "url": "https://careers.medpace.com/jobs/12572?lang=en-us"
+  },
+  "2a241009c7d594cd875ae8b6f747d3ac7069b3e5": {
+   "company": "AstraZeneca",
+   "first_seen": "2026-07-28T21:45:15.519623+00:00",
+   "location": "US - Philadelphia - PA",
+   "match": "early-stage",
+   "title": "Pharmaceutical Sales Specialist - Respiratory Specialty - Philadelphia, PA",
+   "url": "https://astrazeneca.wd3.myworkdayjobs.com/en-US/Careers/job/US---Philadelphia---PA/Pharmaceutical-Sales-Specialist---Respiratory-Specialty---Philadelphia--PA_R-225125"
+  },
+  "2a3bee5939d686d8cb6f40b50abab5a4ab3764a2": {
+   "company": "Labcorp",
+   "first_seen": "2026-07-28T21:45:15.519623+00:00",
+   "location": "Wichita, Kansas, United States of America",
+   "match": "program",
+   "title": "Grossing Tech Trainee",
+   "url": "https://labcorp.wd1.myworkdayjobs.com/External/job/Wichita-KS/Grossing-Tech-Trainee_2618387-1/apply"
+  },
+  "2b5e54762c8f9be0945646419a0f6b9db4e76b93": {
+   "company": "AstraZeneca",
+   "first_seen": "2026-07-28T21:45:15.519623+00:00",
+   "location": "2 Locations",
+   "match": "early-stage",
+   "title": "\u3010AstraZeneca\u3011\u3010Oncology-Marketing\u3011 Brand manager (BM) , \uff75\uff9d\uff7a\uff9b\uff7c\uff9e\uff70\u4e8b\u696d\u672c\u90e8, \u6ccc\u5c3f\u5668\u304c\u3093\u30fb\u5a66\u4eba\u79d1\u304c\u3093\uff8f\uff70\uff79\uff83\uff68\uff9d\uff78\uff9e",
+   "url": "https://astrazeneca.wd3.myworkdayjobs.com/en-US/Careers/job/Japan---Osaka/XMLNAME--AstraZeneca--Oncology-Marketing--Brand-manager--BM----------------------_R-234015-1"
+  },
+  "2b86e2c3f552763088453912219c725c97ccaf40": {
+   "company": "Pfizer",
+   "first_seen": "2026-07-28T21:45:15.519623+00:00",
+   "location": "2 Locations",
+   "match": "early-stage",
+   "title": "Senior Manager, Finance Solutions",
+   "url": "https://pfizer.wd1.myworkdayjobs.com/en-US/PfizerCareers/job/China---Shanghai---Shanghai/Senior-Manager--Finance-Solutions_4948488"
+  },
+  "2baef8b1b6a8e35ce7bd86bb2a21edd2b2e87400": {
+   "company": "BridgeBio",
+   "first_seen": "2026-07-28T21:45:15.519623+00:00",
+   "location": "Field Based - United States",
+   "match": "early-stage",
+   "title": "Field Reimbursement Manager - Pacific Northwest",
+   "url": "https://job-boards.greenhouse.io/bridgebio/jobs/5195665007"
+  },
+  "2c0e0eb299b3238023026e91912c692472d6df36": {
+   "company": "Roche",
+   "first_seen": "2026-07-28T21:45:15.519623+00:00",
+   "location": "Indianapolis",
+   "match": "early-stage",
+   "title": "Sr. Manager Supply Chain Maintenance",
+   "url": "https://roche.wd3.myworkdayjobs.com/en-US/roche-ext/job/Indianapolis/Sr-Manager-Supply-Chain-Maintenance_202607-118801-1"
   },
   "2c86693473fd7b342df1edf274b0a11578344380": {
    "company": "Roche",
@@ -305,11 +641,27 @@
    "location": "Sant Cugat del Vall\u00e8s",
    "title": "GCS Project Management Office Intern"
   },
+  "30494e8c59eccac97c7ba0c0f5d327d3007529f0": {
+   "company": "AstraZeneca",
+   "first_seen": "2026-07-28T21:45:15.519623+00:00",
+   "location": "US - San Bernardino - CA",
+   "match": "early-stage",
+   "title": "Pharmaceutical Sales Specialist-R&I Primary Care-San Bernardino, CA",
+   "url": "https://astrazeneca.wd3.myworkdayjobs.com/en-US/Careers/job/US---San-Bernardino---CA/Pharmaceutical-Sales-Specialist-R-I-Primary-Care-San-Bernardino--CA_R-251806"
+  },
   "30c2ae3c9cf96546f57f873567c33f129f8e0e68": {
    "company": "Roche",
    "first_seen": "2026-07-15T06:28:41.532995+00:00",
    "location": "Penzberg",
    "title": "Internship Bioprocess Research (m/f/d)"
+  },
+  "3106e1d962e3ecfa92c3996ac901ede058e29cea": {
+   "company": "Medpace",
+   "first_seen": "2026-07-28T21:45:15.519623+00:00",
+   "location": "Cincinnati, Ohio, United States",
+   "match": "early-stage",
+   "title": "Supply Chain Manager",
+   "url": "https://careers.medpace.com/jobs/12388?lang=en-us"
   },
   "314ccc541d39724f231e872eff2a42200a51634b": {
    "company": "Medpace",
@@ -326,6 +678,46 @@
    "title": "2027 Finance Leadership Development Program",
    "url": "https://thermofisher.wd5.myworkdayjobs.com/ThermoFisherCareers/job/Waltham-Massachusetts-USA/XMLNAME-2027-Finance-Leadership-Development-Program_R-01361199-1/apply"
   },
+  "31a3260b8a5e924d4085e5efac4ec86339abca01": {
+   "company": "Tempus AI",
+   "first_seen": "2026-07-28T21:45:15.519623+00:00",
+   "location": "2 Locations",
+   "match": "program-desc",
+   "title": "Oncology Regional Sales Manager - Heartland",
+   "url": "https://tempus.wd5.myworkdayjobs.com/en-US/Tempus_Careers/job/Remote---Indiana/Oncology-Regional-Sales-Manager---Heartland_JR202600568"
+  },
+  "31a80856d3c23ed56e3bc1aa5cb85ec70fbc548e": {
+   "company": "AstraZeneca",
+   "first_seen": "2026-07-28T21:45:15.519623+00:00",
+   "location": "2 Locations",
+   "match": "early-stage",
+   "title": "\u3010AstraZeneca\u3011\u3010Finance\u3011Strategic Sourcing Manager, Procurement",
+   "url": "https://astrazeneca.wd3.myworkdayjobs.com/en-US/Careers/job/Japan---Tokyo/XMLNAME--AstraZeneca--Finance-Strategic-Sourcing-Manager--Procurement_R-255861-4"
+  },
+  "3204a4de73480d66c32e0145d1adbda30a1bffd6": {
+   "company": "Tempus AI",
+   "first_seen": "2026-07-28T21:45:15.519623+00:00",
+   "location": "Chicago",
+   "match": "early-stage",
+   "title": "Senior Product Manager",
+   "url": "https://tempus.wd5.myworkdayjobs.com/en-US/Tempus_Careers/job/Chicago/Senior-Product-Manager_JR202600522"
+  },
+  "32afbcef4b4346d9cfa689c6c6ff6ce87c653bd2": {
+   "company": "Agilent Technologies",
+   "first_seen": "2026-07-28T21:45:15.519623+00:00",
+   "location": "US-DE-Wilmington",
+   "match": "early-stage",
+   "title": "Strategic Sourcing Manager",
+   "url": "https://agilent.wd5.myworkdayjobs.com/en-US/Agilent_Careers/job/US-DE-Wilmington/Strategic-Sourcing-Manager_4036993"
+  },
+  "33253567504e1c4c6109225678f25b0322b7b8ab": {
+   "company": "AstraZeneca",
+   "first_seen": "2026-07-28T21:45:15.519623+00:00",
+   "location": "US - Baltimore - MD",
+   "match": "early-stage",
+   "title": "R&I Primary Care District Sales Manager- Baltimore East",
+   "url": "https://astrazeneca.wd3.myworkdayjobs.com/en-US/Careers/job/US---Baltimore---MD/R-I-Primary-Care-District-Sales-Manager--Baltimore-East_R-254949"
+  },
   "334522c64a1611015e793b63513c7af87a119d2e": {
    "company": "Moderna",
    "first_seen": "2026-07-28T17:45:13.192092+00:00",
@@ -334,11 +726,35 @@
    "title": "Clinical Trial Associate, Clinical Operations, Therapeutics and Oncology",
    "url": "https://modernatx.wd1.myworkdayjobs.com/en-US/M_tx/job/Cambridge-Massachusetts/Clinical-Trial-Associate--Clinical-Operations--Therapeutics-and-Oncology_R19377-1"
   },
+  "335dcc4c26384002347c38ae104beacaeb8a87d0": {
+   "company": "BridgeBio",
+   "first_seen": "2026-07-28T21:45:15.519623+00:00",
+   "location": "Remote - USA",
+   "match": "program-desc",
+   "title": "Therapeutic Sales Specialist (Louisiana/Mississippi)",
+   "url": "https://job-boards.greenhouse.io/bridgebio/jobs/5185897007"
+  },
+  "338908a0e637e62a588e20dfd22071c1fd54f72f": {
+   "company": "Tempus AI",
+   "first_seen": "2026-07-28T21:45:15.519623+00:00",
+   "location": "Chicago",
+   "match": "early-stage",
+   "title": "Marketing Manager, Life Sciences",
+   "url": "https://tempus.wd5.myworkdayjobs.com/en-US/Tempus_Careers/job/Chicago/Marketing-Manager--Life-Sciences_JR202500389"
+  },
   "3463734f7511e0be218fb903a8ae5b56ed1159bd": {
    "company": "Roche",
    "first_seen": "2026-07-15T06:28:41.532995+00:00",
    "location": "Petaling Jaya",
    "title": "Internship | Finance & Accounting (Supply Chain)"
+  },
+  "34afa42dae72770f839cdab2679a0a4e77b9490b": {
+   "company": "AstraZeneca",
+   "first_seen": "2026-07-28T21:45:15.519623+00:00",
+   "location": "2 Locations",
+   "match": "early-stage",
+   "title": "\u3010AstraZeneca\u3011\u3010ONC\u3011 Brand manager (BM) , \uff75\uff9d\uff7a\uff9b\uff7c\uff9e\uff70\u4e8b\u696d\u672c\u90e8, \u6ccc\u5c3f\u5668\u304c\u3093\uff8f\uff70\uff79\uff83\uff68\uff9d\uff78\uff9e",
+   "url": "https://astrazeneca.wd3.myworkdayjobs.com/en-US/Careers/job/Japan---Osaka/XMLNAME--AstraZeneca--ONC--Brand-manager--BM---------------------_R-252293-3"
   },
   "35296ec1969ae49b868a6fb60e941f6ad0d4c395": {
    "company": "Tempus AI",
@@ -348,6 +764,14 @@
    "title": "Strategy & Operations Associate",
    "url": "https://tempus.wd5.myworkdayjobs.com/en-US/Tempus_Careers/job/Chicago/Strategy---Operations-Associate_JR202600517"
   },
+  "35853a46e13785c552d4dc78fc47d3b40077f507": {
+   "company": "Vertex Pharmaceuticals",
+   "first_seen": "2026-07-28T21:45:15.519623+00:00",
+   "location": "2 Locations",
+   "match": "early-stage",
+   "title": "Territory Account Manager Roles (California) \u2013   Join Vertex\u2019s Sales Talent Community",
+   "url": "https://vrtx.wd501.myworkdayjobs.com/en-US/Vertex_Careers/job/United-States---Field-Based/Territory-Account-Manager-Roles--California------Join-Vertex-s-Sales-Talent-Community_REQ-29073"
+  },
   "35bfafc9b2d0d85108bdb47412f92f3f765ba6ee": {
    "company": "Medpace",
    "first_seen": "2026-07-28T17:45:13.192092+00:00",
@@ -356,11 +780,51 @@
    "title": "Clinical Supply Chain Project Specialist (PharmD Candidates)",
    "url": "https://careers.medpace.com/jobs/12297?lang=en-us"
   },
+  "360be2da8c52fc0cbd65fc53a01432c0818b7da9": {
+   "company": "BridgeBio",
+   "first_seen": "2026-07-28T21:45:15.519623+00:00",
+   "location": "Field Based - United States",
+   "match": "early-stage",
+   "title": "Field Reimbursement Manager - Rocky Mountain",
+   "url": "https://job-boards.greenhouse.io/bridgebio/jobs/5192587007"
+  },
   "379c9482964af558a6597bc0967fb47631abd36d": {
    "company": "Roche",
    "first_seen": "2026-07-15T06:28:41.532995+00:00",
    "location": "Rotkreuz",
    "title": "Internship for MD or PhD Students in a health-related scientific field"
+  },
+  "38b631490fc6d95f92685c3be1094a04b9c8b19a": {
+   "company": "Pfizer",
+   "first_seen": "2026-07-28T21:45:15.519623+00:00",
+   "location": "United States - New York - Pearl River",
+   "match": "early-stage",
+   "title": "Senior Associate, Site Affairs and Business Operations",
+   "url": "https://pfizer.wd1.myworkdayjobs.com/en-US/PfizerCareers/job/United-States---New-York---Pearl-River/Senior-Associate--Site-Affairs-and-Business-Operations_4958929-2"
+  },
+  "3923e3e71404f3453965b180cb653dc86233c978": {
+   "company": "AbbVie",
+   "first_seen": "2026-07-28T21:45:15.519623+00:00",
+   "location": "Mettawa, IL",
+   "match": "early-stage",
+   "title": "Marketing Manager, Omnichannel Strategy \u00e2\u0080\u0093 Consumer",
+   "url": "https://careers.abbvie.com/en/job/marketing-manager-omnichannel-strategy-consumer-in-mettawa-il-jid-30738"
+  },
+  "3955030878d72ca0b4bdbb5eb30e577d5b3e0f23": {
+   "company": "AstraZeneca",
+   "first_seen": "2026-07-28T21:45:15.519623+00:00",
+   "location": "2 Locations",
+   "match": "early-stage",
+   "title": "\u3010AstraZeneca\u3011\u3010ONC\u3011Brand Manager \uff75\uff9d\uff7a\uff9b\uff7c\uff9e\uff70\u4e8b\u696d\u672c\u90e8 \u80c3\u304c\u3093\u9818\u57df\uff8f\uff70\uff79\uff83\uff68\uff9d\uff78\uff9e",
+   "url": "https://astrazeneca.wd3.myworkdayjobs.com/en-US/Careers/job/Japan---Osaka/XMLNAME--AstraZeneca--ONC-Brand-Manager-----------------_R-249519-1"
+  },
+  "396fb07814a6551ec55ee302ef8b628e2e3b2618": {
+   "company": "AstraZeneca",
+   "first_seen": "2026-07-28T21:45:15.519623+00:00",
+   "location": "16 Locations",
+   "match": "early-stage",
+   "title": "Pricing & Contract Strategy Manager Au\u00dfendienst (m/w/d) befristet f\u00fcr 1 Jahr",
+   "url": "https://astrazeneca.wd3.myworkdayjobs.com/en-US/Careers/job/Germany---Hamburg/Pricing---Contract-Strategy-Manager-Auendienst--m-w-d--befristet-fr-1-Jahr_R-251221-1"
   },
   "39716225569309f4828e4815e4a10aceda8e7fb7": {
    "company": "Amgen",
@@ -396,12 +860,44 @@
    "location": "US - Ohio - New Albany",
    "title": "Undergrad Co-op - Engineering - Ohio (August-December 2026)"
   },
+  "3d9d170dc4cc751f03bc8d8092a8a0bce41732d5": {
+   "company": "AbbVie",
+   "first_seen": "2026-07-28T21:45:15.519623+00:00",
+   "location": "North Chicago, IL",
+   "match": "early-stage",
+   "title": "Toxin Brand Manager",
+   "url": "https://careers.abbvie.com/en/job/toxin-brand-manager-in-north-chicago-il-jid-30797"
+  },
+  "3db155dbc9571866282eec3e677a27f3fb9137c8": {
+   "company": "Axsome Therapeutics",
+   "first_seen": "2026-07-28T21:45:15.519623+00:00",
+   "location": "Milwaukee, WI",
+   "match": "early-stage",
+   "title": "National Sales Training Manager, Psychiatry (Great Lakes Region)",
+   "url": "https://job-boards.greenhouse.io/axsometherapeutics/jobs/5985940004"
+  },
   "3e222f1e31d370fcab70fd58ffc81cb5585534c5": {
    "company": "Thermo Fisher Scientific",
    "first_seen": "2026-07-18T03:32:15.787600+00:00",
    "location": "Waltham, Massachusetts, United States of America",
    "title": "FLDP Finance Intern",
    "url": "https://thermofisher.wd5.myworkdayjobs.com/ThermoFisherCareers/job/Waltham-Massachusetts-USA/FLDP-Finance-Intern_R-01361452/apply"
+  },
+  "3eae515666caa18bd0c56c1483d0e14ee72967f4": {
+   "company": "Novo Nordisk",
+   "first_seen": "2026-07-28T21:45:15.519623+00:00",
+   "location": "United States, Plainsboro",
+   "match": "early-stage",
+   "title": "Senior Marketing Pipeline Strategy Cardiometabolic Manager",
+   "url": "https://www.novonordisk.com/careers/find-a-job/job-ad.html?id=344535.en_US"
+  },
+  "4043741b185c27eca309cbe7c4f38a2ab929c509": {
+   "company": "BridgeBio",
+   "first_seen": "2026-07-28T21:45:15.519623+00:00",
+   "location": "Palo Alto - 3160 Porter; San Francisco - 1800 Owens",
+   "match": "early-stage",
+   "title": "Manager/Senior Manager, Digital Marketing",
+   "url": "https://job-boards.greenhouse.io/bridgebio/jobs/5153904007"
   },
   "4164ad3900c555e0b800d7c89ec376ef62df54bf": {
    "company": "Sanofi",
@@ -410,6 +906,22 @@
    "match": "program",
    "title": "2027 Spring Co-Op Opportunities, Waltham, MA",
    "url": "https://sanofi.wd3.myworkdayjobs.com/en-US/SanofiCareers/job/Waltham-MA/XMLNAME-2027-Spring-Co-Op-Opportunities--Waltham--MA_R2855477"
+  },
+  "419310718d1b159ce455dc3d8d9741bcc81c9dad": {
+   "company": "AstraZeneca",
+   "first_seen": "2026-07-28T21:45:15.519623+00:00",
+   "location": "US - Charleston - WV",
+   "match": "early-stage",
+   "title": "Pharmaceutical Sales Specialist, CVRM Specialty \u2013  Charleston, WV",
+   "url": "https://astrazeneca.wd3.myworkdayjobs.com/en-US/Careers/job/US---Charleston---WV/Pharmaceutical-Sales-Specialist--CVRM-Specialty----Charleston--WV_R-253563"
+  },
+  "41db1bb7b12e4048a6aa06a66631a8629da3e7a7": {
+   "company": "AstraZeneca",
+   "first_seen": "2026-07-28T21:45:15.519623+00:00",
+   "location": "2 Locations",
+   "match": "early-stage",
+   "title": "\u3010AstraZeneca\u3011\u3010R&I\u3011Brand Manager",
+   "url": "https://astrazeneca.wd3.myworkdayjobs.com/en-US/Careers/job/Japan---Osaka/XMLNAME--AstraZeneca--R-I-Brand-Manager_R-252380-5"
   },
   "41e2026bc39c956128d3012fa9c9a8217d691e12": {
    "company": "Thermo Fisher Scientific",
@@ -447,6 +959,14 @@
    "location": "Panama",
    "title": "Operations & Audit Intern"
   },
+  "45416424afeeee9d6121cf3206869fadbda860a3": {
+   "company": "Agilent Technologies",
+   "first_seen": "2026-07-28T21:45:15.519623+00:00",
+   "location": "4 Locations",
+   "match": "early-stage",
+   "title": "Regional Marketing Program Manager",
+   "url": "https://agilent.wd5.myworkdayjobs.com/en-US/Agilent_Careers/job/India-Bangalore/Regional-Marketing-Program-Manager_4038061-1"
+  },
   "45d554d76d555fe4632cfc3c25d5598c967af23b": {
    "company": "Neurocrine Biosciences",
    "first_seen": "2026-07-28T17:45:13.192092+00:00",
@@ -454,6 +974,14 @@
    "match": "early-stage",
    "title": "Associate Specialist, Clinical Trials Operations",
    "url": "https://neurocrine.wd5.myworkdayjobs.com/en-US/NeurocrineCareers/job/US-CA-San-Diego/Associate-Specialist--Clinical-Trials-Operations_R6902"
+  },
+  "4637fe077a477326a50c31d9bb327a3647a7b68b": {
+   "company": "AstraZeneca",
+   "first_seen": "2026-07-28T21:45:15.519623+00:00",
+   "location": "US - Riverside - CA",
+   "match": "early-stage",
+   "title": "Pharmaceutical Sales Specialist-R&I Primary Care-Rancho Cucamonga, CA",
+   "url": "https://astrazeneca.wd3.myworkdayjobs.com/en-US/Careers/job/US---Riverside---CA/Pharmaceutical-Sales-Specialist-R-I-Primary-Care-Riverside--CA_R-257122"
   },
   "463943cc68bf9d2dd5622f5c7daad6ebef2a4dc6": {
    "company": "Moderna",
@@ -463,6 +991,22 @@
    "title": "Analyst, US Commercial Contract Operations",
    "url": "https://modernatx.wd1.myworkdayjobs.com/en-US/M_tx/job/Warsaw---Poland/Analyst--US-Commercial-Contract-Operations_R19108"
   },
+  "46ca0ccf6c43a16b762cacad758400e287659975": {
+   "company": "Bristol Myers Squibb",
+   "first_seen": "2026-07-28T21:45:15.519623+00:00",
+   "location": "Princeton - NJ - US",
+   "match": "early-stage",
+   "title": "Sr. Manager, Commercial AI and Advanced Analytics",
+   "url": "https://bristolmyerssquibb.wd5.myworkdayjobs.com/en-US/BMS/job/Princeton---NJ---US/Sr-Manager--Commercial-AI-and-Advanced-Analytics_R1603928"
+  },
+  "470d3adf59c89a6af1895398870c71c7eb661a21": {
+   "company": "GSK",
+   "first_seen": "2026-07-28T21:45:15.519623+00:00",
+   "location": "2 Locations",
+   "match": "early-stage",
+   "title": "Sr Manager, HCP Marketing - Belamaf (Philadelphia, PA)",
+   "url": "https://gsk.wd5.myworkdayjobs.com/en-US/GSKCareers/job/Durham-Blackwell-Street/XMLNAME-40808Sr-Manager--HCP-Marketing---Belamaf--Philadelphia--PA-_444852"
+  },
   "4759583b237d44760529064ab53e19a7857a18a7": {
    "company": "Tempus AI",
    "first_seen": "2026-07-28T17:45:13.192092+00:00",
@@ -470,6 +1014,38 @@
    "match": "early-stage",
    "title": "Clinical Operations Coordinator (Report Gen)",
    "url": "https://tempus.wd5.myworkdayjobs.com/en-US/Tempus_Careers/job/Chicago/Clinical-Operations-Coordinator--Report-Gen-_JR202600720"
+  },
+  "48ab84112b275c586e413e688ad706490e54a91b": {
+   "company": "Medpace",
+   "first_seen": "2026-07-28T21:45:15.519623+00:00",
+   "location": "Cincinnati, Ohio, United States",
+   "match": "early-stage",
+   "title": "Senior Finance Account Analyst",
+   "url": "https://careers.medpace.com/jobs/12255?lang=en-us"
+  },
+  "49b85a710a254e7d74fa85f1bb22e3dc163d2eed": {
+   "company": "AstraZeneca",
+   "first_seen": "2026-07-28T21:45:15.519623+00:00",
+   "location": "5 Locations",
+   "match": "early-stage",
+   "title": "Sr. Pharmaceutical Sales Specialist, CVRM Specialty-Phoenix East, AZ",
+   "url": "https://astrazeneca.wd3.myworkdayjobs.com/en-US/Careers/job/US---Phoenix---AZ/Sr-Pharmaceutical-Sales-Specialist--CVRM-Specialty-Phoenix-East--AZ_R-256997"
+  },
+  "49c3a64511c46ad8c93ef96b0e1caff917a0336e": {
+   "company": "AstraZeneca",
+   "first_seen": "2026-07-28T21:45:15.519623+00:00",
+   "location": "US - Schenectady - NY",
+   "match": "early-stage",
+   "title": "Pharmaceutical Sales Specialist - Respiratory Specialty Care - Schenectady, NY",
+   "url": "https://astrazeneca.wd3.myworkdayjobs.com/en-US/Careers/job/US---Schenectady---NY/Pharmaceutical-Sales-Specialist---Respiratory-Specialty-Care---Schenectady--NY_R-256272"
+  },
+  "4a0f38535b3f6b1b8073e94276f37cb862df753c": {
+   "company": "Thermo Fisher Scientific",
+   "first_seen": "2026-07-28T21:45:15.519623+00:00",
+   "location": "Carlsbad, California, United States of America",
+   "match": "early-stage",
+   "title": "Senior Manager, Global Market Development \u2013 New Product Commercialization Excellence",
+   "url": "https://thermofisher.wd5.myworkdayjobs.com/ThermoFisherCareers/job/Carlsbad-California-USA/Senior-Manager--Global-Market-Development---New-Product-Commercialization-Excellence_R-01353718/apply"
   },
   "4a4d629cb967e2390f36d5a1e9d9211bff5383ac": {
    "company": "Lonza",
@@ -479,6 +1055,14 @@
    "title": "QA Operations Specialist III - LSA (Dayshift)",
    "url": "https://www.lonza.com/jobs/R77074"
   },
+  "4ba0673f77e9c73a850e837282261ae9437c5d3c": {
+   "company": "Gilead Sciences",
+   "first_seen": "2026-07-28T21:45:15.519623+00:00",
+   "location": "United States - California - Foster City",
+   "match": "early-stage",
+   "title": "Senior Manager \u2013 HIV Community Marketing",
+   "url": "https://gilead.wd1.myworkdayjobs.com/en-US/gileadcareers/job/United-States---California---Foster-City/Senior-Product-Manager---HIV-Community-Marketing_R0052773"
+  },
   "4c240e54743c8e41397dd1c48eff8d12e5b83c8e": {
    "company": "Lonza",
    "first_seen": "2026-07-28T17:45:13.192092+00:00",
@@ -486,6 +1070,22 @@
    "match": "early-stage",
    "title": "Batch Release Specialist, Quality Assurance Operations",
    "url": "https://www.lonza.com/jobs/R76496"
+  },
+  "4d183cfc20ba7af5de8b09b81ea834a7223bb464": {
+   "company": "BioMarin",
+   "first_seen": "2026-07-28T21:45:15.519623+00:00",
+   "location": "remote,\n            United States",
+   "match": "early-stage",
+   "title": "Senior Manager, Commercial FP&A \u2014 OPEX",
+   "url": "https://jobs.jobvite.com/biomarin/job/oeotAfwp"
+  },
+  "4deb40e6cb4389d5f4f15441b1791e4692ea7438": {
+   "company": "Axsome Therapeutics",
+   "first_seen": "2026-07-28T21:45:15.519623+00:00",
+   "location": "Des Moines, IA",
+   "match": "early-stage",
+   "title": "Field Reimbursement Manager (Great Plains Region)",
+   "url": "https://job-boards.greenhouse.io/axsometherapeutics/jobs/5780343004"
   },
   "4e8e16d62475fbc3a197e8ae47f1c6744e918a32": {
    "company": "Medpace",
@@ -531,6 +1131,22 @@
    "skipped": "undergrad-only",
    "title": "Finance & Accounting Internship Program - Spring 2027"
   },
+  "507ccc03c892044cc46f833741687b511d68bc70": {
+   "company": "Vertex Pharmaceuticals",
+   "first_seen": "2026-07-28T21:45:15.519623+00:00",
+   "location": "Boston, MA",
+   "match": "early-stage",
+   "title": "Supply Chain Senior Manager",
+   "url": "https://vrtx.wd501.myworkdayjobs.com/en-US/Vertex_Careers/job/Boston-MA/Supply-Chain-Senior-Manager_REQ-29642"
+  },
+  "5118c96fe8106572f09aee0beefc65dbda5ab388": {
+   "company": "AbbVie",
+   "first_seen": "2026-07-28T21:45:15.519623+00:00",
+   "location": "Irvine, CA",
+   "match": "early-stage",
+   "title": "Senior Manager, Marketing/Product Marketing - AA",
+   "url": "https://careers.abbvie.com/en/job/senior-manager-marketing-product-marketing-aa-in-irvine-ca-jid-30430"
+  },
   "512041da23b07c6a40a84089b1cebd5e570efb8d": {
    "company": "Amgen",
    "first_seen": "2026-07-22T05:37:51.994589+00:00",
@@ -543,6 +1159,14 @@
    "first_seen": "2026-07-15T06:28:41.532995+00:00",
    "location": "Laval",
    "title": "2026 Fall Intern - Field Service Representative Intern / Stagiaire d'Automne 2026 - Repr\u00e9sentant du Service sur le Terrain"
+  },
+  "51a7561a374f9edf99c62275484fa7b973851f30": {
+   "company": "AbbVie",
+   "first_seen": "2026-07-28T21:45:15.519623+00:00",
+   "location": "Mettawa, IL",
+   "match": "early-stage",
+   "title": "Senior Manager, Market Research and Analytics - Oncology",
+   "url": "https://careers.abbvie.com/en/job/senior-manager-market-research-and-analytics-oncology-in-mettawa-il-jid-29695"
   },
   "529eafa85ddf0a3a870935ff82ee5f8673890673": {
    "company": "Amgen",
@@ -566,6 +1190,30 @@
    "title": "Sr. Formulation Technician (12hr nights, 2-2-3 rotation)",
    "url": "https://thermofisher.wd5.myworkdayjobs.com/ThermoFisherCareers/job/Greenville-North-Carolina-USA/Sr-Formulation-Technician--12hr-nights--2-2-3-rotation-_R-01346136/apply"
   },
+  "53e6472b181a0bec68be435533f7ad8baf349c40": {
+   "company": "Lonza",
+   "first_seen": "2026-07-28T21:45:15.519623+00:00",
+   "location": "United States, Portsmouth (New Hampshire)",
+   "match": "early-stage",
+   "title": "Finance Manager",
+   "url": "https://www.lonza.com/jobs/R76188"
+  },
+  "543b772af69e0dda125db10624a22087fc5a8ea7": {
+   "company": "BridgeBio",
+   "first_seen": "2026-07-28T21:45:15.519623+00:00",
+   "location": "Remote - USA",
+   "match": "program-desc",
+   "title": "Therapeutic Sales Specialist - Boston North",
+   "url": "https://job-boards.greenhouse.io/bridgebio/jobs/5174085007"
+  },
+  "54828defd8e4cd42116bce9a1eeab2ce947c7a13": {
+   "company": "Sanofi",
+   "first_seen": "2026-07-28T21:45:15.519623+00:00",
+   "location": "Atlanta, GA",
+   "match": "early-stage",
+   "title": "Strategic Account Manager, Rare Diseases, Central, GA",
+   "url": "https://sanofi.wd3.myworkdayjobs.com/en-US/SanofiCareers/job/Atlanta-GA/Strategic-Account-Manager--Rare-Diseases--Central--GA_R2855835-1"
+  },
   "54b9c8c1aa370a71087ee2b6669760cde914a39c": {
    "company": "Labcorp",
    "first_seen": "2026-07-15T06:28:41.532995+00:00",
@@ -585,6 +1233,14 @@
    "first_seen": "2026-07-15T10:16:04.586005+00:00",
    "location": "Cincinnati, Ohio, United States",
    "title": "Fall 2026- Imaging Intern - Biomedical Engineering"
+  },
+  "56892074d62859809094eff66b00d0674b5c77aa": {
+   "company": "BridgeBio",
+   "first_seen": "2026-07-28T21:45:15.519623+00:00",
+   "location": "Remote - USA",
+   "match": "program-desc",
+   "title": "Therapeutic Sales Specialist - Los Angeles",
+   "url": "https://job-boards.greenhouse.io/bridgebio/jobs/5184926007"
   },
   "56b4fdd68389a66a7f312ff89c53a2c019b5fee5": {
    "company": "Lonza",
@@ -609,6 +1265,22 @@
    "title": "Associate, Patient Materials Operations, MSS",
    "url": "https://bristolmyerssquibb.wd5.myworkdayjobs.com/en-US/BMS/job/Summit-West---NJ---US/Associate--Patient-Materials-Operations--MSS_R1604411"
   },
+  "5757ab7442f2847428d3fc56e9b3b85d23469a79": {
+   "company": "Agilent Technologies",
+   "first_seen": "2026-07-28T21:45:15.519623+00:00",
+   "location": "3 Locations",
+   "match": "early-stage",
+   "title": "Launch Excellence Manager",
+   "url": "https://agilent.wd5.myworkdayjobs.com/en-US/Agilent_Careers/job/Ireland-Remote-Location-Cork/Launch-Excellence-Manager_4038815"
+  },
+  "5899a3115490c2c87abf77b3ca9ff6105c8735c2": {
+   "company": "Tempus AI",
+   "first_seen": "2026-07-28T21:45:15.519623+00:00",
+   "location": "Remote - California",
+   "match": "program-desc",
+   "title": "Region Sales Manager, Southern California",
+   "url": "https://tempus.wd5.myworkdayjobs.com/en-US/Tempus_Careers/job/Remote---California/Region-Sales-Manager--Southern-California_JR202600641-1"
+  },
   "58b5d154cb0d88210da23e936c5db8c25b88a934": {
    "company": "Medpace",
    "first_seen": "2026-07-15T10:16:04.586005+00:00",
@@ -616,11 +1288,35 @@
    "skipped": "undergrad-only",
    "title": "Patient Concierge Intern - Fall 2026"
   },
+  "59baa28e4ee8f277082baff90f8f1cfa7102578f": {
+   "company": "GSK",
+   "first_seen": "2026-07-28T21:45:15.519623+00:00",
+   "location": "San Francisco",
+   "match": "early-stage",
+   "title": "Hepatology Access & Reimbursement Manager - San Francisco",
+   "url": "https://gsk.wd5.myworkdayjobs.com/en-US/GSKCareers/job/San-Francisco/Hepatology-Access---Reimbursement-Manager---San-Francisco_442883-1"
+  },
   "5a8b1d968ed29142d2e557e94d886a9ba25b46f2": {
    "company": "Roche",
    "first_seen": "2026-07-15T06:28:41.532995+00:00",
    "location": "Mannheim",
    "title": "Lab-on-Chip Development Internship + Master Thesis at Near Patient Care (m/f/d)"
+  },
+  "5a9e1c1a296681479f93574f6a93036c6d25df9a": {
+   "company": "Praxis Precision Medicines",
+   "first_seen": "2026-07-28T21:45:15.519623+00:00",
+   "location": "United States - Remote",
+   "match": "early-stage",
+   "title": "Senior Manager, Analytical Sciences - Commercial",
+   "url": "https://job-boards.greenhouse.io/praxisprecisionmedicines/jobs/5233449008"
+  },
+  "5b9c68bffeaac97a4ecf84bade25bc1f4e546b3e": {
+   "company": "GSK",
+   "first_seen": "2026-07-28T21:45:15.519623+00:00",
+   "location": "USA - California - San Diego",
+   "match": "early-stage",
+   "title": "Pharmaceutical Sales Specialist- San Diego, CA",
+   "url": "https://gsk.wd5.myworkdayjobs.com/en-US/GSKCareers/job/USA---California---San-Diego/Pharmaceutical-Sales-Specialist--San-Diego--CA_444703"
   },
   "5bfcd116be736b799e66d29dae92ca93caf3406d": {
    "company": "Roche",
@@ -650,6 +1346,22 @@
    "title": "Specialist, Clinical Trial Operations",
    "url": "https://neurocrine.wd5.myworkdayjobs.com/en-US/NeurocrineCareers/job/US-CA-San-Diego/Specialist--Clinical-Trial-Operations_R7017"
   },
+  "62878fcb76597dbacc9d535e88e0be9b417caedd": {
+   "company": "Genentech",
+   "first_seen": "2026-07-28T21:45:15.519623+00:00",
+   "location": "South San Francisco",
+   "match": "early-stage",
+   "title": "Sr. Customer Marketing Manager, HCP",
+   "url": "https://roche.wd3.myworkdayjobs.com/en-US/ROG-A2O-GENE/job/South-San-Francisco/Sr-Customer-Marketing-Manager--HCP_202607-118031-1"
+  },
+  "63a6f481870b838f07ce064d0e30601e312e0732": {
+   "company": "AstraZeneca",
+   "first_seen": "2026-07-28T21:45:15.519623+00:00",
+   "location": "US - Gaithersburg - MD",
+   "match": "early-stage",
+   "title": "Product Manager, OneSite - Evinova",
+   "url": "https://astrazeneca.wd3.myworkdayjobs.com/en-US/Careers/job/US---Gaithersburg---MD/Product-Manager--OneSite---Evinova_R-252179"
+  },
   "64863cdcaea60ec90919440634c4b09450ab5fbe": {
    "company": "Medpace",
    "first_seen": "2026-07-28T17:45:13.192092+00:00",
@@ -664,11 +1376,51 @@
    "location": "Mannheim",
    "title": "Internship Sequencing Service & Support EMEA-LATAM - AXELIOS 1"
   },
+  "655b5e7a82c3c002ae344f20e8ce6da5ff99f794": {
+   "company": "Vertex Pharmaceuticals",
+   "first_seen": "2026-07-28T21:45:15.519623+00:00",
+   "location": "2 Locations",
+   "match": "early-stage",
+   "title": "Territory Account Manager Roles (Northeast) \u2013   Join Vertex\u2019s Sales Talent Community!",
+   "url": "https://vrtx.wd501.myworkdayjobs.com/en-US/Vertex_Careers/job/United-States---Field-Based/Territory-Account-Manager-Roles--Northeast------Join-Vertex-s-Sales-Talent-Community-_REQ-29071"
+  },
+  "670d8039688ef1f23046a5351dee51da0a0ab6a5": {
+   "company": "Regeneron",
+   "first_seen": "2026-07-28T21:45:15.519623+00:00",
+   "location": "Atlanta, GA",
+   "match": "early-stage",
+   "title": "Field Reimbursement Manager  - Neurology (Atlanta,GA)",
+   "url": "https://regeneron.wd1.myworkdayjobs.com/en-US/Careers/job/Atlanta-GA/Field-Reimbursement-Manager----Neurology--Atlanta-GA-_R48131"
+  },
+  "676bf5674d3cb1de990e2f02223a3f1eea2ecdcc": {
+   "company": "Vertex Pharmaceuticals",
+   "first_seen": "2026-07-28T21:45:15.519623+00:00",
+   "location": "6 Locations",
+   "match": "early-stage",
+   "title": "Field Reimbursement Manager - Kidney (Great Plains - NV, UT, CO, NE, KS)",
+   "url": "https://vrtx.wd501.myworkdayjobs.com/en-US/Vertex_Careers/job/United-States---Field-Based/Field-Reimbursement-Manager---Kidney--Great-Plains---NV--UT--CO--NE--KS-_REQ-29093"
+  },
+  "67ba6f667b531a12acc5c51419ed13cba6ae86e7": {
+   "company": "AstraZeneca",
+   "first_seen": "2026-07-28T21:45:15.519623+00:00",
+   "location": "2 Locations",
+   "match": "early-stage",
+   "title": "SR Pharmaceutical Sales Specialist Respiratory Primary Care, Pasadena CA",
+   "url": "https://astrazeneca.wd3.myworkdayjobs.com/en-US/Careers/job/US/SR-Pharmaceutical-Sales-Specialist-Respiratory-Primary-Care--Pasadena-CA_R-248625"
+  },
   "67e7cc5931873c1b07ce4331848c1f29ad4a87be": {
    "company": "Eli Lilly",
    "first_seen": "2026-07-15T06:28:41.532995+00:00",
    "location": "Petaling Jaya, Selangor, Malaysia",
    "title": "Intern \u2013 Trial Capabilities (Clinical Trial Payment)"
+  },
+  "68d1625fd8e65d29e2bbbb2b6f1291e4d31fa31f": {
+   "company": "Regeneron",
+   "first_seen": "2026-07-28T21:45:15.519623+00:00",
+   "location": "Macon, GA",
+   "match": "early-stage",
+   "title": "Field Reimbursement Manager - GA",
+   "url": "https://regeneron.wd1.myworkdayjobs.com/en-US/Careers/job/Macon-GA/Field-Reimbursement-Manager---GA_R48661"
   },
   "68e634394fde7a6248ee4b8824d2c037d2bbc15a": {
    "company": "AstraZeneca",
@@ -678,11 +1430,51 @@
    "title": "Therapy Area Specialist / Pharmareferent (m/w/d) Breast Cancer Oncology Gebiet: Brandenburg & Sachsen-Anhalt (Fokusregion Potsdam, Magdeburg und Lutherstadt Wittenberg)",
    "url": "https://astrazeneca.wd3.myworkdayjobs.com/en-US/Careers/job/Germany---Hamburg/Therapy-Area-Specialist---Pharmareferent--m-w-d--Breast-Cancer-Oncology-Gebiet--Brandenburg---Sachsen-Anhalt--Fokusregion-Potsdam--Magdeburg-und-Lutherstadt-Wittenberg-_R-257267-1"
   },
+  "69743f0ed888880d71368f9a8e21dd38ec411320": {
+   "company": "Regeneron",
+   "first_seen": "2026-07-28T21:45:15.519623+00:00",
+   "location": "3 Locations",
+   "match": "early-stage",
+   "title": "Reimbursement Business Manager - Dermatology - Denver (West)",
+   "url": "https://regeneron.wd1.myworkdayjobs.com/en-US/Careers/job/Remote---Colorado/Reimbursement-Business-Manager---Dermatology---Denver--West-_R48728"
+  },
+  "69ca85eb2372696242bbfb6e44e4884fc39930c4": {
+   "company": "Roche",
+   "first_seen": "2026-07-28T21:45:15.519623+00:00",
+   "location": "2 Locations",
+   "match": "early-stage",
+   "title": "Quality Manager - RDT Diagnostics Commercial",
+   "url": "https://roche.wd3.myworkdayjobs.com/en-US/roche-ext/job/Warsaw/Quality-Manager---RDT-Diagnostics-Commercial_202606-116793-1"
+  },
+  "6a234731b416a66556458f7d2983722dbc98dea7": {
+   "company": "AstraZeneca",
+   "first_seen": "2026-07-28T21:45:15.519623+00:00",
+   "location": "2 Locations",
+   "match": "early-stage",
+   "title": "Senior Primary Care - CVRM Sales Specialist, Salt Lake City, UT",
+   "url": "https://astrazeneca.wd3.myworkdayjobs.com/en-US/Careers/job/US/Senior-Primary-Care---CVRM-Sales-Specialist--Salt-Lake-City--UT_R-247102"
+  },
   "6ae61c5c25d9320e9c49bf9a8121b2f22947070f": {
    "company": "Roche",
    "first_seen": "2026-07-15T06:28:41.532995+00:00",
    "location": "Sant Cugat del Vall\u00e8s",
    "title": "In-House Service/Repair Technician Intern"
+  },
+  "6bae53c29373c449dfbd23acf47c242124f5160f": {
+   "company": "Neurocrine Biosciences",
+   "first_seen": "2026-07-28T21:45:15.519623+00:00",
+   "location": "US CA San Diego",
+   "match": "program-desc",
+   "title": "Sr. HCP Marketing Manager - CAH",
+   "url": "https://neurocrine.wd5.myworkdayjobs.com/en-US/NeurocrineCareers/job/US-CA-San-Diego/Sr-HCP-Marketing-Manager---CAH_R6836-1"
+  },
+  "6c8747ca700532a286c22da5caf4ed3c360fa65f": {
+   "company": "Axsome Therapeutics",
+   "first_seen": "2026-07-28T21:45:15.519623+00:00",
+   "location": "New York, NY",
+   "match": "early-stage",
+   "title": "Senior Manager, Sales Training and Development",
+   "url": "https://job-boards.greenhouse.io/axsometherapeutics/jobs/6107755004"
   },
   "6cc538a5fac4e5dd743189e313efbeeafca42432": {
    "company": "Pfizer",
@@ -691,6 +1483,54 @@
    "title": "MBA Finance Summer Associate",
    "url": "https://pfizer.wd1.myworkdayjobs.com/en-US/PfizerCareers/job/United-States---New-York---New-York-City/MBA-Finance-Summer-Associate_4960971"
   },
+  "6d4fbd09f4b0a02066791682cc8d76cebdd2f638": {
+   "company": "AstraZeneca",
+   "first_seen": "2026-07-28T21:45:15.519623+00:00",
+   "location": "US - Portland - ME",
+   "match": "early-stage",
+   "title": "Pharmaceutical Sales Specialist, Specialty Care -CVRM- Northern New England",
+   "url": "https://astrazeneca.wd3.myworkdayjobs.com/en-US/Careers/job/US---Portland---ME/Pharmaceutical-Sales-Specialist--Specialty-Care--CVRM--Northern-New-England_R-257205"
+  },
+  "6d6c887d1bf21328c803d1b4572449c9bad6648a": {
+   "company": "Vertex Pharmaceuticals",
+   "first_seen": "2026-07-28T21:45:15.519623+00:00",
+   "location": "Boston, MA",
+   "match": "early-stage",
+   "title": "Project Management & Strategic Operations Senior Manager",
+   "url": "https://vrtx.wd501.myworkdayjobs.com/en-US/Vertex_Careers/job/Boston-MA/Project-Management---Strategic-Operations-Senior-Manager_REQ-28989"
+  },
+  "6ddf2704c54cce21fbd9f5c881bc6d98800a9ef6": {
+   "company": "AstraZeneca",
+   "first_seen": "2026-07-28T21:45:15.519623+00:00",
+   "location": "US - Chicago - IL",
+   "match": "early-stage",
+   "title": "Pharmaceutical Sales Specialist, CVRM Specialty \u2013  Chicago Central",
+   "url": "https://astrazeneca.wd3.myworkdayjobs.com/en-US/Careers/job/US---Chicago---IL/Pharmaceutical-Sales-Specialist--CVRM-Specialty----Chicago-Central_R-256199-1"
+  },
+  "6eb8e54ceaaf3823fc5d70891072abd28d5468ce": {
+   "company": "Axsome Therapeutics",
+   "first_seen": "2026-07-28T21:45:15.519623+00:00",
+   "location": "Cleveland, OH",
+   "match": "early-stage",
+   "title": "National Sales Training Manager, Psychiatry (Appalachia & Northeast Regions)",
+   "url": "https://job-boards.greenhouse.io/axsometherapeutics/jobs/5985942004"
+  },
+  "6f8298be3b191603273734221ddeba2ea46a37a5": {
+   "company": "AbbVie",
+   "first_seen": "2026-07-28T21:45:15.519623+00:00",
+   "location": "Mettawa, IL",
+   "match": "early-stage",
+   "title": "Manager, Financial Planning \u00e2\u0080\u0093 Commercial Controllership Finance",
+   "url": "https://careers.abbvie.com/en/job/manager-financial-planning-commercial-controllership-finance-in-mettawa-il-jid-29511"
+  },
+  "710cbd11dc0cbcfb1c6cf0806db0f8cb6bd44608": {
+   "company": "BridgeBio",
+   "first_seen": "2026-07-28T21:45:15.519623+00:00",
+   "location": "Remote - USA",
+   "match": "program-desc",
+   "title": "Therapeutic Sales Specialist - Rochester, NY",
+   "url": "https://job-boards.greenhouse.io/bridgebio/jobs/5176519007"
+  },
   "7214180d66e983ee316831a876ad80b31d9412a6": {
    "company": "Thermo Fisher Scientific",
    "first_seen": "2026-07-22T05:37:51.994589+00:00",
@@ -698,11 +1538,27 @@
    "title": "Sr Formulation Technician (12hr days or 12hr nights; 2-2-3 rotation)",
    "url": "https://thermofisher.wd5.myworkdayjobs.com/ThermoFisherCareers/job/Greenville-North-Carolina-USA/Sr-Formulation-Technician--12hr-days-or-12hr-nights--2-2-3-rotation-_R-01356301/apply"
   },
+  "728fb635e364beddd2b3fabcef76104930b93b0b": {
+   "company": "Regeneron",
+   "first_seen": "2026-07-28T21:45:15.519623+00:00",
+   "location": "2 Locations",
+   "match": "early-stage",
+   "title": "Field Reimbursement Manager - Pulm/Gastro (Knoxville,TN)",
+   "url": "https://regeneron.wd1.myworkdayjobs.com/en-US/Careers/job/Knoxville-TN/Field-Reimbursement-Manager---Pulm-Gastro--Knoxville-TN-_R48092"
+  },
   "72d07da0061b120ac19226e38b79257d92de984a": {
    "company": "Roche",
    "first_seen": "2026-07-15T06:28:41.532995+00:00",
    "location": "Subang Jaya",
    "title": "Policy, Access & Communications Intern"
+  },
+  "735353b80646b409e9a9fa0b515b968319beb34c": {
+   "company": "Bristol Myers Squibb",
+   "first_seen": "2026-07-28T21:45:15.519623+00:00",
+   "location": "New Brunswick - NJ - US",
+   "match": "early-stage",
+   "title": "Manager, Demand Forecasting & Supply Chain Analytics",
+   "url": "https://bristolmyerssquibb.wd5.myworkdayjobs.com/en-US/BMS/job/New-Brunswick---NJ---US/Manager--Demand-Forecasting---Supply-Chain-Analytics_R1602578"
   },
   "739126599890cb884e61f9571174cf4ca1f30458": {
    "company": "Roche",
@@ -715,6 +1571,22 @@
    "first_seen": "2026-07-15T06:28:41.532995+00:00",
    "location": "Hillsboro",
    "title": "MECOP 2026 Summer/Fall Intern - Automation Systems & Digital Integration"
+  },
+  "747467e83f0cd21440d19a90bcf749e5a0d44467": {
+   "company": "Regeneron",
+   "first_seen": "2026-07-28T21:45:15.519623+00:00",
+   "location": "New York, NY",
+   "match": "early-stage",
+   "title": "Field Reimbursement Manager  - Neurology (NY, NY)",
+   "url": "https://regeneron.wd1.myworkdayjobs.com/en-US/Careers/job/New-York-NY/Field-Reimbursement-Manager----Neurology--NY--NY-_R48126"
+  },
+  "749aba80945d9b83c5cf3ea34fd833ee0d530f0a": {
+   "company": "BridgeBio",
+   "first_seen": "2026-07-28T21:45:15.519623+00:00",
+   "location": "San Francisco - 1800 Owens",
+   "match": "early-stage",
+   "title": "Manager/Senior Manager, Sales Operations",
+   "url": "https://job-boards.greenhouse.io/bridgebio/jobs/5133411007"
   },
   "760b8347af72720dd4f9242c3fa171d4ef1598ed": {
    "company": "Lonza",
@@ -739,6 +1611,22 @@
    "title": "US Sales & Operations Planning Business Analyst",
    "url": "https://roche.wd3.myworkdayjobs.com/en-US/ROG-A2O-GENE/job/South-San-Francisco/US-Sales---Operations-Planning-Business-Analyst_202607-117703-1"
   },
+  "790d9689c7a944dbcfe7b1d9ba447a18fae08531": {
+   "company": "AstraZeneca",
+   "first_seen": "2026-07-28T21:45:15.519623+00:00",
+   "location": "US - Dayton - OH",
+   "match": "early-stage",
+   "title": "CVRM Primary Care District Sales Manager- Dayton, OH",
+   "url": "https://astrazeneca.wd3.myworkdayjobs.com/en-US/Careers/job/US---Dayton---OH/CVRM-Primary-Care-District-Sales-Manager--Dayton--OH_R-256704"
+  },
+  "7ae6c385768feda877eb208c7f445bf1f2d73b59": {
+   "company": "AbbVie",
+   "first_seen": "2026-07-28T21:45:15.519623+00:00",
+   "location": "North Chicago, IL",
+   "match": "early-stage",
+   "title": "Senior Manager - Information Security\u00c2 Portfolio Management (Hybrid)",
+   "url": "https://careers.abbvie.com/en/job/senior-manager-information-security-portfolio-management-hybrid-in-north-chicago-il-jid-28508"
+  },
   "7b54695745a67a291a3ebb03883cf0ed8b12017b": {
    "company": "AstraZeneca",
    "first_seen": "2026-07-28T17:45:13.192092+00:00",
@@ -746,6 +1634,22 @@
    "match": "early-stage",
    "title": "Therapy Area Specialist / Pharmareferent (m/w/d) Urogenitale Onkologie / Gebiet: Berlin, Potsdam, Brandenburg",
    "url": "https://astrazeneca.wd3.myworkdayjobs.com/en-US/Careers/job/Germany---Hamburg/Therapy-Area-Specialist---Pharmareferent--m-w-d--Urogenitale-Onkologie---Gebiet--Berlin--Potsdam--Brandenburg_R-257028-2"
+  },
+  "7c6e18155d9b34db45b9fba4567a2fbddb76ab23": {
+   "company": "Genentech",
+   "first_seen": "2026-07-28T21:45:15.519623+00:00",
+   "location": "9 Locations",
+   "match": "early-stage",
+   "title": "Senior Strategy Manager, Customer Segment Strategy - National P/PBM - United Health Group",
+   "url": "https://roche.wd3.myworkdayjobs.com/en-US/ROG-A2O-GENE/job/South-San-Francisco/Senior-Strategy-Manager--Customer-Segment-Strategy---National-P-PBM---United-Health-Group_202607-118337-1"
+  },
+  "7d07f311586055e6469e3090710c80c1e5366f90": {
+   "company": "AstraZeneca",
+   "first_seen": "2026-07-28T21:45:15.519623+00:00",
+   "location": "US - Springfield - MO",
+   "match": "early-stage",
+   "title": "Pharmaceutical Sales Specialist - Respiratory Inhaled - Springfield, MO",
+   "url": "https://astrazeneca.wd3.myworkdayjobs.com/en-US/Careers/job/US---Springfield---MO/Pharmaceutical-Sales-Specialist---Respiratory-Inhaled---Springfield--MO_R-255601"
   },
   "7d5ff6ba64d727347d3fb2a715ffe34cbc2e4996": {
    "company": "Amgen",
@@ -768,6 +1672,14 @@
    "title": "Clinical Trial Associate, Clinical Operations, Infectious Disease",
    "url": "https://modernatx.wd1.myworkdayjobs.com/en-US/M_tx/job/Cambridge-Massachusetts/Clinical-Trial-Associate--Clinical-Operations--Infectious-Disease_R19396"
   },
+  "814499e6f2bbcfdfcc3ae6f5895d16758435b138": {
+   "company": "Biogen",
+   "first_seen": "2026-07-28T21:45:15.519623+00:00",
+   "location": "Cambridge, MA",
+   "match": "program-desc",
+   "title": "Senior Manager, Market Access Marketing",
+   "url": "https://biibhr.wd3.myworkdayjobs.com/en-US/external/job/Cambridge-MA/Senior-Manager--Payer-Marketing_REQ23542"
+  },
   "816deec2a034c3d48824531aabd040cb144764ea": {
    "company": "AstraZeneca",
    "first_seen": "2026-07-28T17:45:13.192092+00:00",
@@ -784,6 +1696,14 @@
    "title": "Research Associate 1, Process Analytics and Services (Analytical Sciences)",
    "url": "https://jobs.jobvite.com/biomarin/job/o80lAfwN"
   },
+  "826dc942a5684db8c22d5067987ff99f0c3584b9": {
+   "company": "Amgen",
+   "first_seen": "2026-07-28T21:45:15.519623+00:00",
+   "location": "US - California - Thousand Oaks",
+   "match": "early-stage",
+   "title": "Competitive Intelligence Manager, Obesity CDnA",
+   "url": "https://amgen.wd1.myworkdayjobs.com/en-US/Careers/job/US---California---Thousand-Oaks/Competitive-Intelligence-Manager--Obesity-CDnA_R-241539"
+  },
   "82af42385dc8a6618ad21b8590bde828e7b239dd": {
    "company": "Johnson & Johnson",
    "first_seen": "2026-07-28T17:45:13.192092+00:00",
@@ -791,6 +1711,30 @@
    "match": "early-stage",
    "title": "Assistant General Counsel, Innovative Medicine Supply Chain",
    "url": "https://www.careers.jnj.com/en/jobs/r-077537/assistant-general-counsel-innovative-medicine-supply-chain/"
+  },
+  "835538a82614a0094939a2518a008ed94840320e": {
+   "company": "GSK",
+   "first_seen": "2026-07-28T21:45:15.519623+00:00",
+   "location": "Durham Blackwell Street",
+   "match": "early-stage",
+   "title": "Omnichannel marketing manager",
+   "url": "https://gsk.wd5.myworkdayjobs.com/en-US/GSKCareers/job/Durham-Blackwell-Street/Omnichannel-marketing-manager_443561-1"
+  },
+  "83aef1d36edef7379bdd06747d1c07036d71da31": {
+   "company": "Regeneron",
+   "first_seen": "2026-07-28T21:45:15.519623+00:00",
+   "location": "2 Locations",
+   "match": "early-stage",
+   "title": "Manager, Regulatory Affairs Strategy - Oncology",
+   "url": "https://regeneron.wd1.myworkdayjobs.com/en-US/Careers/job/Warren/Manager--Regulatory-Affairs-Strategy---Oncology_R49495"
+  },
+  "83b0ec33d0d9f1c254551aaf6dd667638249d32a": {
+   "company": "Amgen",
+   "first_seen": "2026-07-28T21:45:15.519623+00:00",
+   "location": "2 Locations",
+   "match": "early-stage",
+   "title": "Competitive Intelligence Senior Associate, Inflammation",
+   "url": "https://amgen.wd1.myworkdayjobs.com/en-US/Careers/job/US---California---Thousand-Oaks/Competitive-Intelligence-Senior-Associate--Inflammation_R-248089"
   },
   "842812d8199b43f49d6436b9c59bf05002526acf": {
    "company": "AstraZeneca",
@@ -807,11 +1751,27 @@
    "title": "Fall 2026 Finance Co-op",
    "url": "https://thermofisher.wd5.myworkdayjobs.com/ThermoFisherCareers/job/Waltham-Massachusetts-USA/Fall-2026-Finance-Co-op-_R-01362377-1/apply"
   },
+  "85798867488aa348817829bc5ead961d7ef974c8": {
+   "company": "Novo Nordisk",
+   "first_seen": "2026-07-28T21:45:15.519623+00:00",
+   "location": "United States, Plainsboro",
+   "match": "early-stage",
+   "title": "Senior Manager Consumer Marketing - Social & Community",
+   "url": "https://www.novonordisk.com/careers/find-a-job/job-ad.html?id=344790.en_US"
+  },
   "85e4d78c3254f58f9d566b54580f2e4a6ce47c2e": {
    "company": "Amgen",
    "first_seen": "2026-07-15T06:28:41.532995+00:00",
    "location": "Portugal - Lisbon",
    "title": "Internship Program \u2013 Business & Operations"
+  },
+  "87880c05add782e25cadfd1bbab3bef011d16136": {
+   "company": "AbbVie",
+   "first_seen": "2026-07-28T21:45:15.519623+00:00",
+   "location": "Mettawa, IL",
+   "match": "early-stage",
+   "title": "Senior Manager, Oncology Payer and Channel Analytics",
+   "url": "https://careers.abbvie.com/en/job/senior-manager-oncology-payer-and-channel-analytics-in-mettawa-il-jid-30743"
   },
   "87fa0dc1465d5cfc785fda790f216164ae0a3d85": {
    "company": "Medpace",
@@ -827,6 +1787,22 @@
    "title": "Sales Operations Analyst",
    "url": "https://illumina.wd1.myworkdayjobs.com/en-US/illumina-careers/job/Singapore---Biopolis/Sr-Sales-Operations-Analyst_41935-JOB"
   },
+  "88f165337a49883f5f3cfe84fe9689eba014af8b": {
+   "company": "Tempus AI",
+   "first_seen": "2026-07-28T21:45:15.519623+00:00",
+   "location": "Chicago",
+   "match": "early-stage",
+   "title": "Product Marketing Manager, Life Sciences Research",
+   "url": "https://tempus.wd5.myworkdayjobs.com/en-US/Tempus_Careers/job/Chicago/Product-Marketing-Manager--Life-Sciences-Research_JR202600633"
+  },
+  "89066f82d1688b035c7332ef2dc6e6a242a39bce": {
+   "company": "Amgen",
+   "first_seen": "2026-07-28T21:45:15.519623+00:00",
+   "location": "US - New York - New York",
+   "match": "early-stage",
+   "title": "Field Reimbursement Manager - Long Island, NY ( Includes, Brooklyn, Queens and Long Island)",
+   "url": "https://amgen.wd1.myworkdayjobs.com/en-US/Careers/job/US---New-York---New-York/Field-Reimbursement-Manager---Long-Island--NY---Includes--Brooklyn--Queens-and-Long-Island-_R-248732"
+  },
   "899b530b573f11ec00102298f847e93d95b291d0": {
    "company": "Roche",
    "first_seen": "2026-07-15T06:28:41.532995+00:00",
@@ -839,6 +1815,38 @@
    "location": "Denver, Colorado, United States",
    "title": "Biomedical Engineering New Grads - Imaging Project Coordinator",
    "url": "https://careers.medpace.com/jobs/12639?lang=en-us"
+  },
+  "8a03b51c4a1b7211a34265873920661a154814f3": {
+   "company": "Merck",
+   "first_seen": "2026-07-28T21:45:15.519623+00:00",
+   "location": "Guaynabo, Guaynabo, Puerto Rico",
+   "match": "early-stage",
+   "title": "Financial Planning & Analysis Senior Specialist",
+   "url": "https://msd.wd5.myworkdayjobs.com/en-US/SearchJobs/job/PRI---Guaynabo---Guaynabo/Financial-Planning---Analysis-Senior-Specialist_R389632-1/apply"
+  },
+  "8a21e9f517150e03ffd0d36bde1f3f3c1a093a69": {
+   "company": "AstraZeneca",
+   "first_seen": "2026-07-28T21:45:15.519623+00:00",
+   "location": "US - Denver - CO",
+   "match": "early-stage",
+   "title": "Pharmaceutical Sales Specialist, CVRM Specialty \u2013  Denver, CO",
+   "url": "https://astrazeneca.wd3.myworkdayjobs.com/en-US/Careers/job/US---Denver---CO/Pharmaceutical-Sales-Specialist--CVRM-Specialty----Denver--CO_R-256985"
+  },
+  "8ac180aff960a984fdc4058bddc8588a3dbbe39c": {
+   "company": "Roche",
+   "first_seen": "2026-07-28T21:45:15.519623+00:00",
+   "location": "6 Locations",
+   "match": "early-stage",
+   "title": "Digital Pathology Sales Specialist",
+   "url": "https://roche.wd3.myworkdayjobs.com/en-US/roche-ext/job/Indianapolis/Digital-Pathology-Sales-Specialist_202606-117070-1"
+  },
+  "8bed02792977f6f7d1a20756f72c61ed45166c12": {
+   "company": "Tempus AI",
+   "first_seen": "2026-07-28T21:45:15.519623+00:00",
+   "location": "Chicago",
+   "match": "early-stage",
+   "title": "Senior Technical Product Manager",
+   "url": "https://tempus.wd5.myworkdayjobs.com/en-US/Tempus_Careers/job/Chicago/Senior-Technical-Product-Manager_JR202600601"
   },
   "8bf738855d0e22aa46d83131c49488197ad2747b": {
    "company": "Amgen",
@@ -861,6 +1869,14 @@
    "title": "Clinical Operations Coordinator (Reference Lab)",
    "url": "https://tempus.wd5.myworkdayjobs.com/en-US/Tempus_Careers/job/Chicago/Clinical-Operations-Coordinator--Reference-Lab-_JR202600717"
   },
+  "92a4475158dcd2bb325fd24eb4ff16dd1deabc93": {
+   "company": "Amgen",
+   "first_seen": "2026-07-28T21:45:15.519623+00:00",
+   "location": "US - California - Alameda",
+   "match": "early-stage",
+   "title": "Senior Manager Marketing Science Ops",
+   "url": "https://amgen.wd1.myworkdayjobs.com/en-US/Careers/job/US---California---Alameda/Senior-Manager-Marketing-Science-Ops_R-242929"
+  },
   "92ab98b898a5227ac9d16cb5d188f44429d21166": {
    "company": "Labcorp",
    "first_seen": "2026-07-28T17:45:13.192092+00:00",
@@ -868,6 +1884,22 @@
    "match": "program",
    "title": "Medical Technologist Trainee",
    "url": "https://labcorp.wd1.myworkdayjobs.com/External/job/Phoenix-AZ/Medical-Technologist-Trainee_2622507/apply"
+  },
+  "92d6eac5c9417f7bb33992c9832680844471117c": {
+   "company": "AstraZeneca",
+   "first_seen": "2026-07-28T21:45:15.519623+00:00",
+   "location": "2 Locations",
+   "match": "early-stage",
+   "title": "Senior Primary Care - CVRM Sales Specialist, Casper WY",
+   "url": "https://astrazeneca.wd3.myworkdayjobs.com/en-US/Careers/job/US/Senior-Primary-Care---CVRM-Sales-Specialist--Casper-WY_R-247105"
+  },
+  "94ac4f0d25571e9ceb7576a8026992f805fffd90": {
+   "company": "Regeneron",
+   "first_seen": "2026-07-28T21:45:15.519623+00:00",
+   "location": "Boston, MA",
+   "match": "early-stage",
+   "title": "Field Reimbursement Manager  - Neurology (Boston, MA)",
+   "url": "https://regeneron.wd1.myworkdayjobs.com/en-US/Careers/job/Boston-MA/Field-Reimbursement-Manager----Neurology--Boston--MA-_R48125"
   },
   "958a557f38bcaf096bb7ff6cb2c2200f41241510": {
    "company": "Roche",
@@ -883,6 +1915,14 @@
    "title": "Lead Formulation Technician (12hr days or 12hr nights, 2-2-3 rotation)",
    "url": "https://thermofisher.wd5.myworkdayjobs.com/ThermoFisherCareers/job/Greenville-North-Carolina-USA/Lead-Formulation-Technician--12hr-days-or-12hr-nights--2-2-3-rotation-_R-01341438/apply"
   },
+  "96be6623244ba997d627baa1b73f5d4620e60e7a": {
+   "company": "Johnson & Johnson",
+   "first_seen": "2026-07-28T21:45:15.519623+00:00",
+   "location": "West Chester",
+   "match": "early-stage",
+   "title": "Sr. Manager, Sales Leader Effectiveness, Trauma, Extremities, Foot & Ankle",
+   "url": "https://www.careers.jnj.com/en/jobs/r-088682/sr-manager-sales-leader-effectiveness-trauma-extremities-foot-ankle/"
+  },
   "97e67e688d7f82f68f5a289aad3dfda972140910": {
    "company": "Thermo Fisher Scientific",
    "first_seen": "2026-07-22T05:37:51.994589+00:00",
@@ -890,17 +1930,89 @@
    "title": "Sr. Formulation Technician (12hr nights, D shift, 2-2-3 rotation)",
    "url": "https://thermofisher.wd5.myworkdayjobs.com/ThermoFisherCareers/job/Greenville-North-Carolina-USA/Sr-Formulation-Technician--12hr-nights--D-shift--2-2-3-rotation-_R-01345691/apply"
   },
+  "983bf4e7c303ba9dacb286aad6714c305f814058": {
+   "company": "Neurocrine Biosciences",
+   "first_seen": "2026-07-28T21:45:15.519623+00:00",
+   "location": "US CA San Diego",
+   "match": "early-stage",
+   "title": "Sr. Market Access Marketing Manager",
+   "url": "https://neurocrine.wd5.myworkdayjobs.com/en-US/NeurocrineCareers/job/US-CA-San-Diego/Sr-Market-Access-Marketing-Manager_R6905-1"
+  },
+  "9944d445956d5106c88fb89bace78f220899818d": {
+   "company": "Gilead Sciences",
+   "first_seen": "2026-07-28T21:45:15.519623+00:00",
+   "location": "United States - California - Foster City",
+   "match": "early-stage",
+   "title": "Senior Manager, Medical Digital Strategy & Activation",
+   "url": "https://gilead.wd1.myworkdayjobs.com/en-US/gileadcareers/job/United-States---California---Foster-City/Senior-Manager--Medical-Digital-Strategy---Activation_R0052176"
+  },
   "99713dad25a6192a06bfa8938abbf653918bc201": {
    "company": "Roche",
    "first_seen": "2026-07-15T06:28:41.532995+00:00",
    "location": "Istanbul",
    "title": "Legal Intern"
   },
+  "9a26bc1fcaaa829de05763c904a8b8569aa25bed": {
+   "company": "AbbVie",
+   "first_seen": "2026-07-28T21:45:15.519623+00:00",
+   "location": "Mettawa, IL",
+   "match": "early-stage",
+   "title": "Senior Finance Manager, Global Commercial Reporting",
+   "url": "https://careers.abbvie.com/en/job/senior-finance-manager-global-commercial-reporting-in-mettawa-il-jid-30792"
+  },
+  "9a3e9872c4065f9f2000e8fd7ad2c78627820ae4": {
+   "company": "Tempus AI",
+   "first_seen": "2026-07-28T21:45:15.519623+00:00",
+   "location": "4 Locations",
+   "match": "program-desc",
+   "title": "Regional Sales Manager, Northeast",
+   "url": "https://tempus.wd5.myworkdayjobs.com/en-US/Tempus_Careers/job/Remote---Massachusetts/Regional-Sales-Manager--Northeast_JR202600460-1"
+  },
+  "9af0217a58fa6336a920721f2f09df2a8b81e3e7": {
+   "company": "AstraZeneca",
+   "first_seen": "2026-07-28T21:45:15.519623+00:00",
+   "location": "US - Columbia - SC",
+   "match": "early-stage",
+   "title": "R&I Primary Care District Sales Manager- Columbia, SC",
+   "url": "https://astrazeneca.wd3.myworkdayjobs.com/en-US/Careers/job/US---Columbia---SC/R-I-Primary-Care-District-Sales-Manager--Columbia--SC_R-257206"
+  },
+  "9b2688a2b28cbeb5a5586d72246c74e6feb9f5ae": {
+   "company": "AbbVie",
+   "first_seen": "2026-07-28T21:45:15.519623+00:00",
+   "location": "Mettawa, IL",
+   "match": "early-stage",
+   "title": "Senior Analyst, Finance",
+   "url": "https://careers.abbvie.com/en/job/senior-analyst-finance-in-mettawa-il-jid-30633"
+  },
+  "9c2d4e35e0647571538ffc5a1dbbfd7712514bed": {
+   "company": "BridgeBio",
+   "first_seen": "2026-07-28T21:45:15.519623+00:00",
+   "location": "Field Based - United States",
+   "match": "early-stage",
+   "title": "Field Reimbursement Manager - South Atlantic",
+   "url": "https://job-boards.greenhouse.io/bridgebio/jobs/5195669007"
+  },
+  "9f41a1df620790fcee57547ab2661280b8df2624": {
+   "company": "AstraZeneca",
+   "first_seen": "2026-07-28T21:45:15.519623+00:00",
+   "location": "US - Hartford - CT",
+   "match": "early-stage",
+   "title": "Senior Pharmaceutical Sales Specialist, Specialty Care- Hartford, CT",
+   "url": "https://astrazeneca.wd3.myworkdayjobs.com/en-US/Careers/job/US---Hartford---CT/Senior-Pharmaceutical-Sales-Specialist--Specialty-Care--Hartford--CT_R-256460"
+  },
   "a17f8e088f3166b1f98e0ba0db80c1d77a26d283": {
    "company": "Johnson & Johnson",
    "first_seen": "2026-07-15T19:37:08.789805+00:00",
    "location": "New Brunswick / Raritan / Titusville / Bridgewater / Spring House / West Chester",
    "title": "Class of 2027 Technology Leadership Development Program (TLDP)"
+  },
+  "a21121a1c20fc72f657f8df68537036b0d56dc52": {
+   "company": "Biogen",
+   "first_seen": "2026-07-28T21:45:15.519623+00:00",
+   "location": "Cambridge, MA",
+   "match": "program-desc",
+   "title": "Senior Manager, Lupus Market Access Strategy",
+   "url": "https://biibhr.wd3.myworkdayjobs.com/en-US/external/job/Cambridge-MA/Senior-Manager--Lupus-Market-Access-Strategy_REQ23204"
   },
   "a26948eb04cbfc57741f65d653a14a4a8d78c77a": {
    "company": "Roche",
@@ -913,6 +2025,30 @@
    "first_seen": "2026-07-15T06:28:41.532995+00:00",
    "location": "TARRYTOWN",
    "title": "Summer 2026 MD Intern, Internal Medicine"
+  },
+  "a51541f7a1c2643dbcfbf072be0463b13458f443": {
+   "company": "Moderna",
+   "first_seen": "2026-07-28T21:45:15.519623+00:00",
+   "location": "",
+   "match": "early-stage",
+   "title": "Senior Analyst, Global Commercial Finance",
+   "url": "https://modernatx.wd1.myworkdayjobs.com/en-US/M_tx/job/Warsaw---Poland/Senior-Analyst--Global-Commercial-Finance_R19142"
+  },
+  "a527d3b7d031eb030f7fcc2653e98bc3e5026ba6": {
+   "company": "BridgeBio",
+   "first_seen": "2026-07-28T21:45:15.519623+00:00",
+   "location": "Remote - USA",
+   "match": "program-desc",
+   "title": "Therapeutic Sales Specialist - New England",
+   "url": "https://job-boards.greenhouse.io/bridgebio/jobs/5174083007"
+  },
+  "a61734b2e915770d33ba492fa634fea94f32d24f": {
+   "company": "Axsome Therapeutics",
+   "first_seen": "2026-07-28T21:45:15.519623+00:00",
+   "location": "San Francisco, CA",
+   "match": "early-stage",
+   "title": "National Sales Training Manager, Neurology (West Region)",
+   "url": "https://job-boards.greenhouse.io/axsometherapeutics/jobs/5985929004"
   },
   "a61b184dc1986688f31a384c15d455d5054f8911": {
    "company": "Medpace",
@@ -931,6 +2067,14 @@
    "first_seen": "2026-07-15T06:28:41.532995+00:00",
    "location": "Bogota",
    "title": "Environmental Intern 2026"
+  },
+  "a9140fc42629b2bc0e10fcd5ee565657fe9b0bd1": {
+   "company": "Neurocrine Biosciences",
+   "first_seen": "2026-07-28T21:45:15.519623+00:00",
+   "location": "US CA San Diego",
+   "match": "early-stage",
+   "title": "Sr. Field Sales Training Manager",
+   "url": "https://neurocrine.wd5.myworkdayjobs.com/en-US/NeurocrineCareers/job/US-CA-San-Diego/Sr-Field-Sales-Training-Manager_R6962"
   },
   "a9680defa6cb7b9f616b0ec1de1f30738b0610f1": {
    "company": "Roche",
@@ -952,6 +2096,14 @@
    "location": "Cincinnati, Ohio, United States",
    "skipped": "undergrad-only",
    "title": "Quality Assurance (QA) Intern - Fall 2026"
+  },
+  "aab06a3f3b249a3d7bd24067bc9c163400f81a3a": {
+   "company": "Biogen",
+   "first_seen": "2026-07-28T21:45:15.519623+00:00",
+   "location": "Cambridge, MA",
+   "match": "early-stage",
+   "title": "Manager - Corporate Finance",
+   "url": "https://biibhr.wd3.myworkdayjobs.com/en-US/external/job/Cambridge-MA/Manager---Corporate-Finance_REQ23587"
   },
   "abec362a0bcdc98a3e6f2093983a8c058cdd15a0": {
    "company": "Thermo Fisher Scientific",
@@ -996,6 +2148,14 @@
    "skipped": "undergrad-only",
    "title": "Call Center Intern"
   },
+  "afde25e1b7d94472914bb13b00fabec037d97358": {
+   "company": "Amgen",
+   "first_seen": "2026-07-28T21:45:15.519623+00:00",
+   "location": "United States - Remote",
+   "match": "program-desc",
+   "title": "UPLIZNA gMG HCP Marketing, Manager",
+   "url": "https://amgen.wd1.myworkdayjobs.com/en-US/Careers/job/United-States---Remote/UPLIZNA-gMG-HCP-Marketing--Manager_R-251275-1"
+  },
   "b007788aa4be5be467973eb3f0de793c46ed391e": {
    "company": "Sanofi",
    "first_seen": "2026-07-28T17:45:13.192092+00:00",
@@ -1012,6 +2172,30 @@
    "title": "Associate Manager, Regulatory Affairs Strategy - Oncology",
    "url": "https://regeneron.wd1.myworkdayjobs.com/en-US/Careers/job/TARRYTOWN/Associate-Manager--Regulatory-Affairs-Strategy---Oncology_R49505"
   },
+  "b0844343f3d93b77225ae088a5b7394423305fab": {
+   "company": "Regeneron",
+   "first_seen": "2026-07-28T21:45:15.519623+00:00",
+   "location": "Chicago, IL",
+   "match": "early-stage",
+   "title": "Field Reimbursement Manager  - Neurology (Chicago, IL)",
+   "url": "https://regeneron.wd1.myworkdayjobs.com/en-US/Careers/job/Chicago-IL/Field-Reimbursement-Manager----Neurology--Chicago--IL-_R48127"
+  },
+  "b0871e4a5c12338e740fe37ded67f074ed101598": {
+   "company": "Novartis",
+   "first_seen": "2026-07-28T21:45:15.519623+00:00",
+   "location": "4 Locations",
+   "match": "early-stage",
+   "title": "Access & Reimbursement Manager, Allergy - Colorado",
+   "url": "https://novartis.wd3.myworkdayjobs.com/en-US/Novartis_Careers/job/Field-Non-Sales-USA/Access---Reimbursement-Manager--Allergy---Colorado_REQ-10084484"
+  },
+  "b0f6e5a9526c9dbb23d6f931860efc319b396f0a": {
+   "company": "Medpace",
+   "first_seen": "2026-07-28T21:45:15.519623+00:00",
+   "location": "Cincinnati, Ohio, United States",
+   "match": "early-stage",
+   "title": "Manager, Marketing Analytics",
+   "url": "https://careers.medpace.com/jobs/12689?lang=en-us"
+  },
   "b1f43dc1fb18067f90091219e68abe36c7ebbc04": {
    "company": "Sanofi",
    "first_seen": "2026-07-28T17:45:13.192092+00:00",
@@ -1026,6 +2210,14 @@
    "location": "Fuzhou",
    "title": "Marketing Intern"
   },
+  "b24074ae331ce901d6e4f8c2698d97f799a9b8af": {
+   "company": "AstraZeneca",
+   "first_seen": "2026-07-28T21:45:15.519623+00:00",
+   "location": "4 Locations",
+   "match": "early-stage",
+   "title": "District Sales Manager, Advanced Specialty Care ATTR - New York",
+   "url": "https://astrazeneca.wd3.myworkdayjobs.com/en-US/Careers/job/US---Manhattan---NY/District-Sales-Manager--Advanced-Specialty-Care-ATTR---New-York_R-256157"
+  },
   "b330b1d219c9a96d3c12da89be1c7f7c0158303f": {
    "company": "Labcorp",
    "first_seen": "2026-07-28T17:45:13.192092+00:00",
@@ -1034,11 +2226,43 @@
    "title": "Technologist Trainee",
    "url": "https://labcorp.wd1.myworkdayjobs.com/External/job/Itasca-IL/Technologist-Trainee_2625043-1/apply"
   },
+  "b376b563bede642b9397018181ff7596dbdf9cb2": {
+   "company": "Regeneron",
+   "first_seen": "2026-07-28T21:45:15.519623+00:00",
+   "location": "2 Locations",
+   "match": "early-stage",
+   "title": "Field Reimbursement Manager-Ophthalmology \u2013 Minnesota, Wisconsin",
+   "url": "https://regeneron.wd1.myworkdayjobs.com/en-US/Careers/job/Remote---Wisconsin/Field-Reimbursement-Manager-Ophthalmology---Minnesota--Wisconsin_R49534"
+  },
   "b4cead71cd51341bbb41325569d8c9ec53044a1f": {
    "company": "Genentech",
    "first_seen": "2026-07-15T06:28:41.532995+00:00",
    "location": "South San Francisco",
    "title": "2026 Summer/Fall Intern \u2013 AI/ML for Systems Biology"
+  },
+  "b50f5acc430357d23bde04c612f4fa28cdbae8c3": {
+   "company": "Neurocrine Biosciences",
+   "first_seen": "2026-07-28T21:45:15.519623+00:00",
+   "location": "US CA San Diego",
+   "match": "early-stage",
+   "title": "Sr. Business Development Manager | Onsite San Diego HQ",
+   "url": "https://neurocrine.wd5.myworkdayjobs.com/en-US/NeurocrineCareers/job/US-CA-San-Diego/Sr-Business-Development-Manager---Onsite-San-Diego-HQ_R7023"
+  },
+  "b7266d1fb3f8f905e1084b320c6402078b7d384a": {
+   "company": "Amgen",
+   "first_seen": "2026-07-28T21:45:15.519623+00:00",
+   "location": "2 Locations",
+   "match": "early-stage",
+   "title": "BAI - Competitive Intelligence Manager, Cardiovascular",
+   "url": "https://amgen.wd1.myworkdayjobs.com/en-US/Careers/job/US---California---Thousand-Oaks/BAI---Competitive-Intelligence-Manager--Cardiovascular_R-247919-1"
+  },
+  "b7d474fc6ecea3bcbb78687d7ddf78d5088d2a97": {
+   "company": "BridgeBio",
+   "first_seen": "2026-07-28T21:45:15.519623+00:00",
+   "location": "Remote - USA",
+   "match": "program-desc",
+   "title": "Therapeutic Sales Specialist (Hawaii)",
+   "url": "https://job-boards.greenhouse.io/bridgebio/jobs/5165315007"
   },
   "b899f44208cd63a157b761abd33ba9298e35cc35": {
    "company": "Roche",
@@ -1051,6 +2275,14 @@
    "first_seen": "2026-07-15T06:28:41.532995+00:00",
    "location": "Philippines - Makati City",
    "title": "Data Analytics and Full Stack Developer Intern"
+  },
+  "b964edc19fdb69984361356348f5acfbb626baef": {
+   "company": "AstraZeneca",
+   "first_seen": "2026-07-28T21:45:15.519623+00:00",
+   "location": "6 Locations",
+   "match": "early-stage",
+   "title": "District Sales Manager, Advanced Specialty Care - Central Regional",
+   "url": "https://astrazeneca.wd3.myworkdayjobs.com/en-US/Careers/job/US/District-Sales-Manager--Advanced-Speciality-Care---Central-Regional_R-255331-1"
   },
   "b9edc32d1f0fbec1579abfef7809b21b1feed2b7": {
    "company": "Thermo Fisher Scientific",
@@ -1065,6 +2297,22 @@
    "location": "Beijing",
    "title": "Intern"
   },
+  "baee258bb6216cf670cba14d1179ba5ed2e73b49": {
+   "company": "Medpace",
+   "first_seen": "2026-07-28T21:45:15.519623+00:00",
+   "location": "Cincinnati, Ohio, United States",
+   "match": "early-stage",
+   "title": "Finance Account Manager",
+   "url": "https://careers.medpace.com/jobs/12234?lang=en-us"
+  },
+  "baf59a58c74eaf94e81e4ef539c239ca0c60b128": {
+   "company": "Lonza",
+   "first_seen": "2026-07-28T21:45:15.519623+00:00",
+   "location": "United States, Walkersville (Maryland)",
+   "match": "early-stage",
+   "title": "Senior Business Development Manager",
+   "url": "https://www.lonza.com/jobs/R77758"
+  },
   "bba1eb48ff6f01496cd21000121cd1a42883d140": {
    "company": "Medpace",
    "first_seen": "2026-07-28T17:45:13.192092+00:00",
@@ -1072,6 +2320,14 @@
    "match": "early-stage",
    "title": "Commercial Financial Analyst",
    "url": "https://careers.medpace.com/jobs/12215?lang=en-us"
+  },
+  "bbb385dd7ae4861904d6f3f869dc4309deb02d2f": {
+   "company": "Regeneron",
+   "first_seen": "2026-07-28T21:45:15.519623+00:00",
+   "location": "Austin, TX",
+   "match": "early-stage",
+   "title": "Field Reimbursement Manager  - Neurology (Austin, TX)",
+   "url": "https://regeneron.wd1.myworkdayjobs.com/en-US/Careers/job/Austin-TX/Field-Reimbursement-Manager----Neurology--Austin--TX-_R48132"
   },
   "be772dadeeabcf3a170899930bdd64acd9b7cfa3": {
    "company": "Eli Lilly",
@@ -1087,11 +2343,43 @@
    "title": "Supply Chain Warehouse Specialist",
    "url": "https://astrazeneca.wd3.myworkdayjobs.com/en-US/Careers/job/US---Rockville---MD/Supply-Chain-Warehouse-Specialist_R-256706-1"
   },
+  "bece37522ad71f4e710959d7a6327f346d6a5950": {
+   "company": "Regeneron",
+   "first_seen": "2026-07-28T21:45:15.519623+00:00",
+   "location": "2 Locations",
+   "match": "early-stage",
+   "title": "Reimbursement Business Manager",
+   "url": "https://regeneron.wd1.myworkdayjobs.com/en-US/Careers/job/Remote---United-States/Reimbursement-Business-Manager_R48672-1"
+  },
+  "bf335738032d0aabefa9f7b03ae59515c7385f59": {
+   "company": "Johnson & Johnson",
+   "first_seen": "2026-07-28T21:45:15.519623+00:00",
+   "location": "Philadelphia",
+   "match": "early-stage",
+   "title": "Oncology Sales Specialist, CAR-T (Philadelphia, PA) - Johnson & Johnson Innovative Medicine",
+   "url": "https://www.careers.jnj.com/en/jobs/r-090767/oncology-sales-specialist-car-t-philadelphia-pa-johnson-johnson-innovative-medicine/"
+  },
   "bf797f3ddeef8f96cb60b21a34eb7f07c60b8658": {
    "company": "Roche",
    "first_seen": "2026-07-15T06:28:41.532995+00:00",
    "location": "Sant Cugat del Vall\u00e8s",
    "title": "Supply Chain Operations Intern (On en Roche Graduate Program)"
+  },
+  "c1d040f1e9c08b66d837df535d15f62730f4f026": {
+   "company": "Medpace",
+   "first_seen": "2026-07-28T21:45:15.519623+00:00",
+   "location": "Cincinnati, Ohio, United States",
+   "match": "early-stage",
+   "title": "Finance Account Analyst",
+   "url": "https://careers.medpace.com/jobs/12232?lang=en-us"
+  },
+  "c304e2f8a19b8dce2b87d536e80477b3768e0d8a": {
+   "company": "Amgen",
+   "first_seen": "2026-07-28T21:45:15.519623+00:00",
+   "location": "US - IL - Deerfield",
+   "match": "early-stage",
+   "title": "BAI - Competitive Intelligence Senior Manager, Rare Disease",
+   "url": "https://amgen.wd1.myworkdayjobs.com/en-US/Careers/job/US---IL---Deerfield/BAI---Competitive-Intelligence-Senior-Manager--Rare-Disease_R-250336"
   },
   "c3217d46f84da9f4f49e198c7f972da41462b181": {
    "company": "Medpace",
@@ -1108,6 +2396,14 @@
    "title": "TEMP - Contracts Specialist, Medical Affairs",
    "url": "https://neurocrine.wd5.myworkdayjobs.com/en-US/NeurocrineCareers/job/US-CA-San-Diego/TEMP---Contracts-Specialist--Medical-Affairs_R6979-1"
   },
+  "c4da1b0d613d3535b4abb79d2da04f64cf5677cd": {
+   "company": "Regeneron",
+   "first_seen": "2026-07-28T21:45:15.519623+00:00",
+   "location": "Los Angeles, CA",
+   "match": "early-stage",
+   "title": "Field Reimbursement Manager  - Neurology (Los Angeles, CA)",
+   "url": "https://regeneron.wd1.myworkdayjobs.com/en-US/Careers/job/Los-Angeles-CA/Field-Reimbursement-Manager----Neurology--Los-Angeles--CA-_R48128"
+  },
   "c5beb56cf7dd3f56ed4ab0f7348b8fb31203d644": {
    "company": "Medpace",
    "first_seen": "2026-07-15T10:16:04.586005+00:00",
@@ -1121,6 +2417,22 @@
    "match": "early-stage",
    "title": "QA Specialist IV-Operations",
    "url": "https://www.lonza.com/jobs/R77129"
+  },
+  "c7c4500c38d28ccd3c6ee648b4e3f573c878841b": {
+   "company": "AstraZeneca",
+   "first_seen": "2026-07-28T21:45:15.519623+00:00",
+   "location": "2 Locations",
+   "match": "early-stage",
+   "title": "\u3010Astra Zeneca\u3011\u3010OCN\u3011Brand Manager,\u30aa\u30f3\u30b3\u30ed\u30b8\u30fc\u4e8b\u696d\u672c\u90e8 \u80ba\u304c\u3093\uff08\u304c\u3093\u514d\u75ab\u6cbb\u7642\uff09\u9818\u57df\u30de\u30fc\u30b1\u30c6\u30a3\u30f3\u30b0",
+   "url": "https://astrazeneca.wd3.myworkdayjobs.com/en-US/Careers/job/Japan---Tokyo/XMLNAME--Astra-Zeneca--OCN-Brand-Manager----_R-256220-5"
+  },
+  "c7cec7c95b1e43be72e8ad5840e6a6ee6e193914": {
+   "company": "AbbVie",
+   "first_seen": "2026-07-28T21:45:15.519623+00:00",
+   "location": "Mettawa, IL",
+   "match": "early-stage",
+   "title": "Senior Manager, Marketing Research - Rheumatology",
+   "url": "https://careers.abbvie.com/en/job/senior-manager-marketing-research-rheumatology-in-mettawa-il-jid-29240"
   },
   "c9607240d22fb33af00e37d2ed1739811c9851d3": {
    "company": "Thermo Fisher Scientific",
@@ -1144,12 +2456,36 @@
    "title": "QA Specialist II - Operations",
    "url": "https://www.lonza.com/jobs/R78035"
   },
+  "cb5599b3181950604d4d94dab9084b700a403bda": {
+   "company": "AstraZeneca",
+   "first_seen": "2026-07-28T21:45:15.519623+00:00",
+   "location": "2 Locations",
+   "match": "early-stage",
+   "title": "\u3010AstraZeneca\u3011\u3010CVRM\u3011Brand Manager",
+   "url": "https://astrazeneca.wd3.myworkdayjobs.com/en-US/Careers/job/Japan---Osaka/XMLNAME--AstraZeneca--CVRM-Brand-Manager_R-252183-5"
+  },
+  "cb91bcb03aef4bacc2ad566902c7469af1957cb3": {
+   "company": "AbbVie",
+   "first_seen": "2026-07-28T21:45:15.519623+00:00",
+   "location": "Mettawa, IL",
+   "match": "early-stage",
+   "title": "Program Manager, Ambassador Resource Center, Patient Services",
+   "url": "https://careers.abbvie.com/en/job/program-manager-ambassador-resource-center-patient-services-in-mettawa-il-jid-30764"
+  },
   "cd73a49835d3b78ef84780b6ef41ef353e483d52": {
    "company": "Thermo Fisher Scientific",
    "first_seen": "2026-07-27T03:59:17.196661+00:00",
    "location": "Waltham, Massachusetts, United States of America",
    "title": "Operations Leadership Development Program",
    "url": "https://thermofisher.wd5.myworkdayjobs.com/ThermoFisherCareers/job/Waltham-Massachusetts-USA/Operations-Leadership-Development-Program_R-01362052/apply"
+  },
+  "cda70a8bead6a01b843d505d573eff53376259e1": {
+   "company": "AbbVie",
+   "first_seen": "2026-07-28T21:45:15.519623+00:00",
+   "location": "Mettawa, IL",
+   "match": "early-stage",
+   "title": "Senior Manager, Price Forecasting",
+   "url": "https://careers.abbvie.com/en/job/senior-manager-price-forecasting-in-mettawa-il-jid-31033"
   },
   "cdabea3beaef834d105f373ae326678a7294d051": {
    "company": "AbbVie",
@@ -1171,6 +2507,22 @@
    "location": "South San Francisco",
    "title": "2026 Fall Intern - Frontier Research, Prescient Design (AI for Drug Discovery)"
   },
+  "d05df7d25ff46ebd9e74a9529e2891a7b0cacf04": {
+   "company": "Biogen",
+   "first_seen": "2026-07-28T21:45:15.519623+00:00",
+   "location": "Cambridge, MA",
+   "match": "program-desc",
+   "title": "Manager, Market Access Marketing",
+   "url": "https://biibhr.wd3.myworkdayjobs.com/en-US/external/job/Cambridge-MA/Manager--Payer-Marketing_REQ23546"
+  },
+  "d0ec1b8095eff7af93eb14c942538bbe0a0b57ac": {
+   "company": "Pfizer",
+   "first_seen": "2026-07-28T21:45:15.519623+00:00",
+   "location": "6 Locations",
+   "match": "early-stage",
+   "title": "Sr. Manager - Oncology Forecasting & Insights",
+   "url": "https://pfizer.wd1.myworkdayjobs.com/en-US/PfizerCareers/job/United-States---New-York---New-York-City/Sr-Manager---Oncology-Forecasting---Insights_4956671-2"
+  },
   "d2923c3c05336c156181f0dee79bd9f4ffb246b7": {
    "company": "Roche",
    "first_seen": "2026-07-15T06:28:41.532995+00:00",
@@ -1183,11 +2535,35 @@
    "location": "Laval",
    "title": "2026 Fall Intern -  Field Application Specialist Intern / Stagiaire d'Automne 2026 - Sp\u00e9cialiste d'Application de Terrain"
   },
+  "d42da620dc1832925d2417a065eae4cd560170aa": {
+   "company": "Thermo Fisher Scientific",
+   "first_seen": "2026-07-28T21:45:15.519623+00:00",
+   "location": "New York, New York, United States of America",
+   "match": "early-stage",
+   "title": "Sr. Technical Sales Specialist - Spatial Imaging, Eastern US",
+   "url": "https://thermofisher.wd5.myworkdayjobs.com/ThermoFisherCareers/job/New-York-New-York-USA/Sr-Technical-Sales-Specialist---Spatial-Imaging--Eastern-US_R-01357907-1/apply"
+  },
   "d521f4d72b6b25589a4614b188b939a5c20007b6": {
    "company": "Roche",
    "first_seen": "2026-07-15T06:28:41.532995+00:00",
    "location": "San Jose, Costa Rica",
    "title": "Trilingual University/ Campus Program Intern (Spanish, English & Portuguese)"
+  },
+  "d5507ace8a0aca35020d4809315271db9158ce09": {
+   "company": "Gilead Sciences",
+   "first_seen": "2026-07-28T21:45:15.519623+00:00",
+   "location": "United States - California - Foster City",
+   "match": "early-stage",
+   "title": "Manager, Medical Affairs",
+   "url": "https://gilead.wd1.myworkdayjobs.com/en-US/gileadcareers/job/United-States---California---Foster-City/Manager--Medical-Affairs_R0053445"
+  },
+  "d57e98970cfe8b2fc76bd93b6bdf42a4b5e86189": {
+   "company": "Amgen",
+   "first_seen": "2026-07-28T21:45:15.519623+00:00",
+   "location": "4 Locations",
+   "match": "early-stage",
+   "title": "Business Development Senior Manager - Alliance Management",
+   "url": "https://amgen.wd1.myworkdayjobs.com/en-US/Careers/job/US---California---Thousand-Oaks/Business-Development-Senior-Manager---Alliance-Management_R-249859"
   },
   "d604434cc43f0956a3411ab413fda3f3747c6fef": {
    "company": "Medpace",
@@ -1195,11 +2571,43 @@
    "location": "Cincinnati, Ohio, United States",
    "title": "Clinical Business Intelligence Internship - Spring 2026"
   },
+  "d6850a04fc6bb098d07f8342e607d9da1ac3717b": {
+   "company": "Medpace",
+   "first_seen": "2026-07-28T21:45:15.519623+00:00",
+   "location": "Cincinnati, Ohio, United States",
+   "match": "early-stage",
+   "title": "Senior Business Intelligence Analyst",
+   "url": "https://careers.medpace.com/jobs/12571?lang=en-us"
+  },
+  "d6d4a10c6dfe3c50b9b63e96da2cf9eb2f35e950": {
+   "company": "Regeneron",
+   "first_seen": "2026-07-28T21:45:15.519623+00:00",
+   "location": "Houston, TX",
+   "match": "early-stage",
+   "title": "Field Reimbursement Manager  - Neurology (Dallas/Houston, TX)",
+   "url": "https://regeneron.wd1.myworkdayjobs.com/en-US/Careers/job/Houston-TX/Field-Reimbursement-Manager----Neurology--Dallas-Houston--TX-_R48129"
+  },
   "d755c86011e9aa0b0d10fb1ac1039bab64be7fa2": {
    "company": "Johnson & Johnson",
    "first_seen": "2026-07-15T17:39:33.266918+00:00",
    "location": "Spring House",
    "title": "Emerging Technologies Co-op"
+  },
+  "d7f533695d1c1f5625ecc7652fd9f25325d6ab03": {
+   "company": "AbbVie",
+   "first_seen": "2026-07-28T21:45:15.519623+00:00",
+   "location": "Mettawa, IL",
+   "match": "early-stage",
+   "title": "Manager, Patient Services Business Design",
+   "url": "https://careers.abbvie.com/en/job/manager-patient-services-business-design-in-mettawa-il-jid-30697"
+  },
+  "d88a1810f721868602fabb7ae960fb31b6904be5": {
+   "company": "BridgeBio",
+   "first_seen": "2026-07-28T21:45:15.519623+00:00",
+   "location": "Field Based - United States",
+   "match": "early-stage",
+   "title": "Field Reimbursement Manager - New York",
+   "url": "https://job-boards.greenhouse.io/bridgebio/jobs/5195671007"
   },
   "d9c619c17389312b3499865f1cd1e7ab51088c36": {
    "company": "Thermo Fisher Scientific",
@@ -1208,6 +2616,22 @@
    "title": "General Management Graduate Leadership Development Program",
    "url": "https://thermofisher.wd5.myworkdayjobs.com/ThermoFisherCareers/job/Waltham-Massachusetts-USA/General-Management-Graduate-Leadership-Development-Program_R-01362050/apply"
   },
+  "dceb128e857411900f2225633c5df1ea79aa7663": {
+   "company": "Novo Nordisk",
+   "first_seen": "2026-07-28T21:45:15.519623+00:00",
+   "location": "United States, Plainsboro",
+   "match": "early-stage",
+   "title": "Senior Gross To Net Forecasting & Innovation Manager",
+   "url": "https://www.novonordisk.com/careers/find-a-job/job-ad.html?id=342264.en_US"
+  },
+  "dde2e84ef693ab7fed1d030bf99b2d64f32ba93f": {
+   "company": "Kite Pharma",
+   "first_seen": "2026-07-28T21:45:15.519623+00:00",
+   "location": "4 Locations",
+   "match": "early-stage",
+   "title": "Senior Product Manager, ATC Expansion & Access Innovation",
+   "url": "https://gilead.wd1.myworkdayjobs.com/en-US/kitepharmacareers/job/United-States---California---Foster-City/Senior-Product-Manager--ATC-Expansion---Access-Innovation_R0053598-1"
+  },
   "de5981141aea435aa9577dd6603779c7fcfc335f": {
    "company": "Moderna",
    "first_seen": "2026-07-28T17:45:13.192092+00:00",
@@ -1215,6 +2639,22 @@
    "match": "early-stage",
    "title": "Manufacturing Associate II, Process Development, Pilot Scale Operations",
    "url": "https://modernatx.wd1.myworkdayjobs.com/en-US/M_tx/job/Norwood-Massachusetts/Manufacturing-Associate-II--Process-Development--Pilot-Scale-Operations_R19364"
+  },
+  "dea9b632f507632287350feac07720bba0b514b9": {
+   "company": "Amgen",
+   "first_seen": "2026-07-28T21:45:15.519623+00:00",
+   "location": "US - Ohio - New Albany",
+   "match": "early-stage",
+   "title": "Sr Associate Finance",
+   "url": "https://amgen.wd1.myworkdayjobs.com/en-US/Careers/job/US---Ohio---New-Albany/Sr-Associate-Finance_R-247024"
+  },
+  "dff684cd681b46978dceeaf322596230cbbf0f84": {
+   "company": "Lonza",
+   "first_seen": "2026-07-28T21:45:15.519623+00:00",
+   "location": "United States, Portsmouth (New Hampshire)",
+   "match": "early-stage",
+   "title": "Strategic Operations Associate I",
+   "url": "https://www.lonza.com/jobs/R78141"
   },
   "e06e0365af653c4323b61db7ea9e88903767a9d6": {
    "company": "Eli Lilly",
@@ -1246,11 +2686,27 @@
    "title": "Analyst, Managed Care Rebate Operations",
    "url": "https://bristolmyerssquibb.wd5.myworkdayjobs.com/en-US/BMS/job/Princeton---NJ---US/Analyst--Managed-Care-Rebate-Operations_R1603266"
   },
+  "e4c88f42e7b68efb2afac7390603ced7185c4f1b": {
+   "company": "AstraZeneca",
+   "first_seen": "2026-07-28T21:45:15.519623+00:00",
+   "location": "US - Gaithersburg - MD",
+   "match": "early-stage",
+   "title": "Technical Product Manager \u2013 Study Lifecycle Tooling - Evinova",
+   "url": "https://astrazeneca.wd3.myworkdayjobs.com/en-US/Careers/job/US---Gaithersburg---MD/Technical-Product-Manager---Study-Lifecycle-Tooling---Evinova_R-256381"
+  },
   "e5679caebfe6a3993f969bad97108c1c4af455a7": {
    "company": "Pfizer",
    "first_seen": "2026-07-15T06:28:41.532995+00:00",
    "location": "Malaysia - Kuala Lumpur",
    "title": "Internship \u2013 APAC RIO (Regulatory)"
+  },
+  "e568f9332a56c8e07e0226dd18278c9b9dcdce7f": {
+   "company": "Vertex Pharmaceuticals",
+   "first_seen": "2026-07-28T21:45:15.519623+00:00",
+   "location": "Boston, MA",
+   "match": "early-stage",
+   "title": "Commercial Training Senior Manager \u2014 Field Reimbursement, Patient Services",
+   "url": "https://vrtx.wd501.myworkdayjobs.com/en-US/Vertex_Careers/job/Boston-MA/Commercial-Training-Senior-Manager---Field-Reimbursement--Patient-Services_REQ-29581"
   },
   "e5a63e9eaea8f561f1d875d217d1a215e1203344": {
    "company": "Thermo Fisher Scientific",
@@ -1272,11 +2728,27 @@
    "skipped": "undergrad-only",
    "title": "Study Start-Up Intern- Fall 2026"
   },
+  "e6371db7658f8497ef012cf4c5221fe8972d7118": {
+   "company": "AstraZeneca",
+   "first_seen": "2026-07-28T21:45:15.519623+00:00",
+   "location": "US - Omaha - NE",
+   "match": "early-stage",
+   "title": "Pharmaceutical Sales Specialist, R&I Primary Care - Omaha, NE -Metro",
+   "url": "https://astrazeneca.wd3.myworkdayjobs.com/en-US/Careers/job/US---Omaha---NE/Pharmaceutical-Sales-Specialist--R-I-Primary-Care---Omaha--NE--Metro_R-256535"
+  },
   "e66381cc61f2632816235e4875d0aec381bef6fc": {
    "company": "Roche",
    "first_seen": "2026-07-15T06:28:41.532995+00:00",
    "location": "Penzberg",
    "title": "Stelle Internship im GMP Service Facilities & Engineering (m/w/d)"
+  },
+  "e66681e94e5591198546610dccf12c2025e8b7d7": {
+   "company": "Sanofi",
+   "first_seen": "2026-07-28T21:45:15.519623+00:00",
+   "location": "Cambridge, MA",
+   "match": "early-stage",
+   "title": "US Senior Product Manager, Respiratory Marketing",
+   "url": "https://sanofi.wd3.myworkdayjobs.com/en-US/SanofiCareers/job/Cambridge-MA/US-Senior-Product-Manager--Respiratory-Marketing_R2857290-1"
   },
   "e756c0a2153508ac01cf7b5fa14eecdc542cbe06": {
    "company": "AstraZeneca",
@@ -1311,6 +2783,14 @@
    "title": "2027 Packaging Co-Op (Jan - June)",
    "url": "https://careers.abbvie.com/en/job/2027-packaging-co-op-jan-june-in-north-chicago-il-jid-30760"
   },
+  "e9c75fee878bd7c9f26401113a25eb1b53189de2": {
+   "company": "Gilead Sciences",
+   "first_seen": "2026-07-28T21:45:15.519623+00:00",
+   "location": "United States - California - Foster City",
+   "match": "early-stage",
+   "title": "Senior Product Manager, HIV Prevention HCP Marketing",
+   "url": "https://gilead.wd1.myworkdayjobs.com/en-US/gileadcareers/job/United-States---California---Foster-City/Senior-Product-Manager--HIV-Prevention-HCP-Marketing_R0053624-2"
+  },
   "eaf92050596df6f0fa41ea847628383e94240d70": {
    "company": "Thermo Fisher Scientific",
    "first_seen": "2026-07-22T05:37:51.994589+00:00",
@@ -1325,6 +2805,22 @@
    "match": "program",
    "title": "2027 Spring Co-op Opportunities, Cambridge, MA",
    "url": "https://sanofi.wd3.myworkdayjobs.com/en-US/SanofiCareers/job/Cambridge-MA/XMLNAME-2027-Spring-Co-op-Opportunities--Cambridge--MA_R2855469"
+  },
+  "eb570fd6e735a726d55e056d37671e594cd82188": {
+   "company": "Vertex Pharmaceuticals",
+   "first_seen": "2026-07-28T21:45:15.519623+00:00",
+   "location": "Boston, MA",
+   "match": "early-stage",
+   "title": "Senior Analyst, Market Access Platforms",
+   "url": "https://vrtx.wd501.myworkdayjobs.com/en-US/Vertex_Careers/job/Boston-MA/Senior-Analyst--Market-Access-Platforms_REQ-29607"
+  },
+  "ebf89132e944fb33611170968b3aa021bad94b3a": {
+   "company": "Genentech",
+   "first_seen": "2026-07-28T21:45:15.519623+00:00",
+   "location": "South San Francisco",
+   "match": "early-stage",
+   "title": "Senior Business Product Manager, Omnichannel Enablement",
+   "url": "https://roche.wd3.myworkdayjobs.com/en-US/ROG-A2O-GENE/job/South-San-Francisco/Senior-Business-Product-Manager--Omnichannel-Enablement_202603-108366-1"
   },
   "ec9239c476635804ba0784e21ec13aaf2ae8c976": {
    "company": "Sanofi",
@@ -1354,12 +2850,36 @@
    "location": "Cincinnati, Ohio, United States",
    "title": "Clinical Informatics Intern - Spring 2027"
   },
+  "efa6d18fbbb922944b6d11a72dac80081409f662": {
+   "company": "Regeneron",
+   "first_seen": "2026-07-28T21:45:15.519623+00:00",
+   "location": "San Francisco, CA",
+   "match": "early-stage",
+   "title": "Field Reimbursement Manager  - Neurology (San Francisco, CA)",
+   "url": "https://regeneron.wd1.myworkdayjobs.com/en-US/Careers/job/San-Francisco-CA/Field-Reimbursement-Manager----Neurology--San-Francisco--CA-_R48130"
+  },
   "efd34392fa2923b632b86f738e660896178ab5d4": {
    "company": "Roche",
    "first_seen": "2026-07-28T11:26:54.509055+00:00",
    "location": "2 Locations",
    "title": "Internship data-driven production supply (m/w/d)",
    "url": "https://roche.wd3.myworkdayjobs.com/en-US/roche-ext/job/Mannheim/Internship-data-driven-production-supply--m-w-d-_202607-118718-4"
+  },
+  "f08dda4ce9d58889c777af27f68e6cc00d15efa3": {
+   "company": "Neurocrine Biosciences",
+   "first_seen": "2026-07-28T21:45:15.519623+00:00",
+   "location": "US CA San Diego",
+   "match": "early-stage",
+   "title": "Sr. Manager, Brand Development and Launch - Schizophrenia",
+   "url": "https://neurocrine.wd5.myworkdayjobs.com/en-US/NeurocrineCareers/job/US-CA-San-Diego/Sr-Manager--Brand-Development-and-Launch---Schizophrenia_R7039"
+  },
+  "f0e5d060c9679d7fa7d561a1d13f47371b611398": {
+   "company": "Novo Nordisk",
+   "first_seen": "2026-07-28T21:45:15.519623+00:00",
+   "location": "United States, Plainsboro",
+   "match": "early-stage",
+   "title": "Senior F&O Strategic Project Manager",
+   "url": "https://www.novonordisk.com/careers/find-a-job/job-ad.html?id=338346.en_US"
   },
   "f1b016f068d614f30fc815909d2ef9b5421c2e30": {
    "company": "Roche",
@@ -1381,6 +2901,14 @@
    "title": "Associate Medical Director (Physician Development Program - Hematology)",
    "url": "https://careers.abbvie.com/en/job/associate-medical-director-physician-development-program-hematology-in-north-chicago-il-jid-19324"
   },
+  "f41a532a5d7d4c173916523391d3ee15bad6c90a": {
+   "company": "Regeneron",
+   "first_seen": "2026-07-28T21:45:15.519623+00:00",
+   "location": "TARRYTOWN",
+   "match": "early-stage",
+   "title": "Senior Product Manager, Predictive Analytics",
+   "url": "https://regeneron.wd1.myworkdayjobs.com/en-US/Careers/job/TARRYTOWN/Senior-Product-Manager--Predictive-Analytics_R48512"
+  },
   "f6220a5c7426c63a41ff83fd4c6d38f8bc39d28a": {
    "company": "Sanofi",
    "first_seen": "2026-07-28T17:45:13.192092+00:00",
@@ -1388,6 +2916,62 @@
    "match": "program",
    "title": "2027 Spring Co-Op Opportunities, Morristown, NJ",
    "url": "https://sanofi.wd3.myworkdayjobs.com/en-US/SanofiCareers/job/Morristown-NJ/XMLNAME-2027-Spring-Co-Op-Opportunities--Morristown--NJ_R2861045"
+  },
+  "f86e7bf4514224b2f261544f4448c25b44433b91": {
+   "company": "Eli Lilly",
+   "first_seen": "2026-07-28T21:45:15.519623+00:00",
+   "location": "Napa, California, United States of America",
+   "match": "early-stage",
+   "title": "Pharmaceutical Sales Representative - Territory Manager - Oncology Specialty",
+   "url": "https://lilly.wd115.myworkdayjobs.com/LLY/job/US-Napa-CA/Pharmaceutical-Sales-Representative---Territory-Manager---Oncology-Specialty_R-108761-1/apply"
+  },
+  "f99154e3c1e2ec25a1af141669eb6f55afbaa15e": {
+   "company": "Lonza",
+   "first_seen": "2026-07-28T21:45:15.519623+00:00",
+   "location": "United States, Bend (Oregon)",
+   "match": "early-stage",
+   "title": "Technical Sales Specialist",
+   "url": "https://www.lonza.com/jobs/R78136"
+  },
+  "fa28cc0ae65bf4273499b5b0bd41721cb9b1bfc2": {
+   "company": "Bristol Myers Squibb",
+   "first_seen": "2026-07-28T21:45:15.519623+00:00",
+   "location": "2 Locations",
+   "match": "early-stage",
+   "title": "Senior Manager, Competitive Intelligence Cell Therapy",
+   "url": "https://bristolmyerssquibb.wd5.myworkdayjobs.com/en-US/BMS/job/Princeton---NJ---US/Senior-Manager--Competitive-Intelligence-Cell-Therapy_R1602874"
+  },
+  "fa6260809d134b6e7b4bd7dcf97a1888e8b6e187": {
+   "company": "Praxis Precision Medicines",
+   "first_seen": "2026-07-28T21:45:15.519623+00:00",
+   "location": "United States - Remote",
+   "match": "early-stage",
+   "title": "Senior Product Manager - Marketing",
+   "url": "https://job-boards.greenhouse.io/praxisprecisionmedicines/jobs/5231424008"
+  },
+  "fb4495a1fe3df9b040bd678b1fbbc7a15287ed4c": {
+   "company": "Bristol Myers Squibb",
+   "first_seen": "2026-07-28T21:45:15.519623+00:00",
+   "location": "2 Locations",
+   "match": "early-stage",
+   "title": "CPSO Sr Manager Launch Excellence",
+   "url": "https://bristolmyerssquibb.wd5.myworkdayjobs.com/en-US/BMS/job/Boudry---CH/CPSO-Sr-Manager-Launch-Excellence_R1604035"
+  },
+  "fbdb0840928329f2d8337d167bd3be6fb9791f83": {
+   "company": "Genentech",
+   "first_seen": "2026-07-28T21:45:15.519623+00:00",
+   "location": "South San Francisco",
+   "match": "early-stage",
+   "title": "Customer Marketing Manager, HCP",
+   "url": "https://roche.wd3.myworkdayjobs.com/en-US/ROG-A2O-GENE/job/South-San-Francisco/Customer-Marketing-Manager--HCP_202607-118032-1"
+  },
+  "fbf1e59f28fa65fad9964a49285ebf25aafd3167": {
+   "company": "AbbVie",
+   "first_seen": "2026-07-28T21:45:15.519623+00:00",
+   "location": "North Chicago, IL",
+   "match": "early-stage",
+   "title": "Senior Manager, Regulatory Strategic Planning - Hybrid",
+   "url": "https://careers.abbvie.com/en/job/senior-manager-regulatory-strategic-planning-hybrid-in-north-chicago-il-jid-30204"
   },
   "fc0a60e74d6ea49201842b89430897080da0c17d": {
    "company": "Roche",
@@ -1403,11 +2987,51 @@
    "title": "Clinical Supply Chain Project Specialist (Entry)",
    "url": "https://careers.medpace.com/jobs/12307?lang=en-us"
   },
+  "fd59ebb00a15ce0e84ce0642ce4c183e934d4457": {
+   "company": "AbbVie",
+   "first_seen": "2026-07-28T21:45:15.519623+00:00",
+   "location": "Mettawa, IL",
+   "match": "early-stage",
+   "title": "Marketing Manager I/II, HCP - Oral Migraine",
+   "url": "https://careers.abbvie.com/en/job/marketing-manager-i-ii-hcp-oral-migraine-in-mettawa-il-jid-30778"
+  },
+  "fdcb1c4bfb2f48c958ef2258a9e865dd3aa0d494": {
+   "company": "AstraZeneca",
+   "first_seen": "2026-07-28T21:45:15.519623+00:00",
+   "location": "US - Gaithersburg - MD",
+   "match": "early-stage",
+   "title": "Senior Marketing Manager - Lung Cancer",
+   "url": "https://astrazeneca.wd3.myworkdayjobs.com/en-US/Careers/job/US---Gaithersburg---MD/Senior-Marketing-Manager---Lung-Cancer_R-256694"
+  },
+  "fe0daf94abe271a61d3f723bb12b3021d802697a": {
+   "company": "Vertex Pharmaceuticals",
+   "first_seen": "2026-07-28T21:45:15.519623+00:00",
+   "location": "2 Locations",
+   "match": "early-stage",
+   "title": "Territory Account Manager Roles (Central / South Florida) \u2013   Join Vertex\u2019s Sales Talent Community",
+   "url": "https://vrtx.wd501.myworkdayjobs.com/en-US/Vertex_Careers/job/United-States---Field-Based/Territory-Account-Manager-Roles--Central---South-Florida------Join-Vertex-s-Sales-Talent-Community_REQ-29072"
+  },
   "fe1a62e404fa0bb549d6887aea2e801747280754": {
    "company": "Roche",
    "first_seen": "2026-07-15T06:28:41.532995+00:00",
    "location": "Budapest",
    "title": "Procurement & Car Fleet Management Intern - Hungarian speaking"
+  },
+  "fe90f96aadbc57e999daf562b475129a5272185b": {
+   "company": "AstraZeneca",
+   "first_seen": "2026-07-28T21:45:15.519623+00:00",
+   "location": "US - Fort Worth - TX",
+   "match": "early-stage",
+   "title": "Pharmaceutical Sales Specialist, Respiratory Specialty Care - Fort Worth TX",
+   "url": "https://astrazeneca.wd3.myworkdayjobs.com/en-US/Careers/job/US---Fort-Worth---TX/Pharmaceutical-Sales-Specialist--Respiratory-Specialty-Care---Fort-Worth-TX_R-256832"
+  },
+  "feed71cf5d3738667d3c77d577254d2e06986b9f": {
+   "company": "Genentech",
+   "first_seen": "2026-07-28T21:45:15.519623+00:00",
+   "location": "2 Locations",
+   "match": "early-stage",
+   "title": "Associate Health Economics and Outcome Research Specialist",
+   "url": "https://roche.wd3.myworkdayjobs.com/en-US/ROG-A2O-GENE/job/South-San-Francisco/Associate-Health-Economics-and-Outcome-Research-Specialist_202607-118194"
   },
   "ff190e73b8cc2d3c64672f1e49ad180fc168a43b": {
    "company": "BridgeBio",
@@ -1417,11 +3041,27 @@
    "title": "People Operations Systems Specialist",
    "url": "https://job-boards.greenhouse.io/bridgebio/jobs/5171394007"
   },
+  "ff5bf84a54a5ffb5e4dc2e7bd2456f644492f866": {
+   "company": "AbbVie",
+   "first_seen": "2026-07-28T21:45:15.519623+00:00",
+   "location": "North Chicago, IL",
+   "match": "early-stage",
+   "title": "Brand Manager, Supply Chain",
+   "url": "https://careers.abbvie.com/en/job/brand-manager-supply-chain-in-north-chicago-il-jid-30980"
+  },
   "ffaee4235987d4e8e51afe4f1886262c6ba279d8": {
    "company": "Thermo Fisher Scientific",
    "first_seen": "2026-07-15T06:28:41.532995+00:00",
    "location": "Porto Salvo, Portugal",
    "title": "Data Mng Internship"
+  },
+  "fff4ed86570ec48d8ecc93262dbf5a268cf5a032": {
+   "company": "AstraZeneca",
+   "first_seen": "2026-07-28T21:45:15.519623+00:00",
+   "location": "US - Charlottesville - VA",
+   "match": "early-stage",
+   "title": "R&I Primary Care District Sales Manager-Charlottesville, VA",
+   "url": "https://astrazeneca.wd3.myworkdayjobs.com/en-US/Careers/job/US---Charlottesville---VA/R-I-Primary-Care-District-Sales-Manager-Charlottesville--VA_R-255490"
   }
  }
 }

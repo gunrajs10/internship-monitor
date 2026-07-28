@@ -83,44 +83,70 @@ TITLE_RE = re.compile(
 # seniority marker, and no senior marker. Deliberately tight; it is a
 # precision filter, not a catch-all, because the alternative is burying the
 # real programs under hundreds of Director-level postings.
+# Bare "analytics", "insights", "operations", "portfolio" and "launch" were
+# in this list and were the reason "Associate Scientist, HCP Analytics,
+# Product Biochemistry" was reported as a business role. Every ambiguous
+# term is now required to appear in a business-qualified form.
 FUNCTION_RE = re.compile(
     r"\b(commercial|strateg\w*|market access|marketing|brand\w*|"
-    r"business development|business analytics|business operations|"
-    r"insights?|analytics|new product planning|portfolio|"
-    r"competitive intelligence|product manage\w+|product marketing|"
-    r"pricing|forecast\w*|market research|market development|launch|"
-    r"operations|supply chain|corporate development|alliance\w*|"
-    r"partnerships?|patient (access|services)|medical affairs)\b",
+    r"business (development|analytics|operations|strategy|intelligence|planning)|"
+    r"(commercial|market|customer|consumer|competitive|sales|payer) "
+    r"(analytics|insights?|intelligence|research|excellence|operations|strategy)|"
+    r"new product planning|competitive intelligence|"
+    r"product manage\w+|product marketing|product strategy|"
+    r"pricing|reimbursement|payer|forecast\w*|market development|"
+    r"go[\s\-]to[\s\-]market|launch (strategy|excellence|planning)|"
+    r"portfolio (strategy|management|planning)|"
+    r"sales (operations|force|analytics)?|"
+    r"supply chain|corporate development|alliance management|"
+    r"business partner\w*|patient (access|services|advocacy)|"
+    r"medical affairs|health economics|heor|"
+    r"finance|financial planning)\b",
     re.IGNORECASE,
 )
+
+# Hard exclusion for the early-stage track: bench, clinical, engineering,
+# manufacturing and IT roles are not business roles no matter how
+# business-sounding a fragment of the title is. Applied ONLY to the
+# early-stage track - a named rotational program is still reported even if
+# it is technical, since those are explicitly wanted.
+SCIENCE_EXCLUDE_RE = re.compile(
+    r"\b(scientist|scientific|research (associate|scientist|fellow)|"
+    r"biochem\w*|chemist\w*|chemistry|biolog\w*|microbiolog\w*|immunolog\w*|"
+    r"toxicolog\w*|pharmacolog\w*|engineer\w*|technician|technologist|"
+    r"laboratory|lab\b|assay|bioprocess|upstream|downstream|cell culture|"
+    r"purification|formulation|analytical chemistry|cmc\b|"
+    r"quality (control|assurance)|\bqc\b|\bqa\b|validation|"
+    r"manufactur\w*|production|biostatistic\w*|bioinformatic\w*|"
+    r"statistical programm\w*|pharmacovigilance|clinical (trial|research|"
+    r"operations|data|development|scientist)|medical writ\w*|"
+    r"software|developer|devops|data engineer\w*|\bit\b|"
+    r"device|hardware|mechanical|electrical|automation|"
+    r"nurse|physician|pharmacist|toxicology|safety)\b",
+    re.IGNORECASE,
+)
+
+# Loosened per Gunraj: "Manager" and "Senior Associate/Analyst" are now
+# accepted, since both are realistic first post-MBA titles in pharma. The
+# hard ceiling stays at Director and above.
 JUNIOR_RE = re.compile(
-    r"\b(associate|analyst|coordinator|specialist|assistant|"
+    r"\b(associate|analyst|coordinator|specialist|assistant|manager|"
     r"entry[\s\-]level)\b",
     re.IGNORECASE,
 )
-# Anything at or above these levels will not hire a first-year MBA into a
-# first post-MBA role. "Associate Director" and "Senior Associate" both get
-# dropped here - intentional under the tight setting.
+# The hard ceiling. "Senior" and "Manager" were removed from this list when
+# the dial was loosened; Director and above will not hire a first-year MBA
+# into a first post-MBA role, so those still go. "Associate Director" is
+# still dropped - the Director wins over the Associate.
 SENIOR_RE = re.compile(
-    r"\b(director|sr\.?|senior|principal|staff|lead|"
-    r"head of|vice president|vp|chief|executive|distinguished)\b",
+    r"\b(director|principal|staff|lead|officer|partner|"
+    r"head of|global head|vice president|vp|chief|executive|distinguished)\b",
     re.IGNORECASE,
 )
-# "Manager" is ambiguous: "Associate Product Manager" is a standard entry
-# title, while a bare "Manager, Commercial Operations" is usually a
-# mid-career hire. Treat manager as senior UNLESS it is qualified by
-# associate/assistant.
-MANAGER_RE = re.compile(r"\bmanagers?\b", re.IGNORECASE)
-JUNIOR_MANAGER_RE = re.compile(
-    r"\b(associate|assistant)\s+(\w+\s+){0,2}managers?\b", re.IGNORECASE)
 
 
 def is_senior(title):
-    if SENIOR_RE.search(title):
-        return True
-    if MANAGER_RE.search(title) and not JUNIOR_MANAGER_RE.search(title):
-        return True
-    return False
+    return bool(SENIOR_RE.search(title))
 
 # ---- Track 3: description-level rescue for generically-titled programs --
 # The failure mode this exists for: a rotational program posted under a
@@ -817,7 +843,8 @@ def title_match(item):
     if TITLE_RE.search(title):
         return "program"
     if (FUNCTION_RE.search(title) and JUNIOR_RE.search(title)
-            and not is_senior(title)):
+            and not is_senior(title)
+            and not SCIENCE_EXCLUDE_RE.search(title)):
         return "early-stage"
     return None
 
@@ -1066,6 +1093,10 @@ def run(audit=False):
                     "posted_on": item.get("posted_on", ""),
                     "url": item["url"],
                     "eligibility": f"{label} - {note}",
+                    # Routes the row to a sheet tab: named programs and
+                    # description-rescued programs go to the programs tab,
+                    # ordinary junior commercial roles to the other.
+                    "track": "early-stage" if kind == "early-stage" else "program",
                     # A program found only in the description is always HIGH -
                     # that is precisely the class of posting that went missed
                     # before. Everything else earns HIGH on function match.

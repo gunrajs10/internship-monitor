@@ -549,6 +549,62 @@ def fetch_novo(cfg):
     return out
 
 
+def fetch_lonza(cfg):
+    """Lonza's own careers board (www.lonza.com/careers/job-search).
+
+    Not a hosted ATS - a server-rendered Sitecore search page. Two traps
+    that make the obvious approaches fail silently rather than loudly:
+
+      1. Paging is driven by a POST form (fields: q, pg, lid), NOT by query
+         string. GET ?page=2 and GET ?q=intern are accepted with HTTP 200
+         and simply ignored, always returning page 1. A naive GET crawl
+         would therefore re-read the same 25 rows forever and report
+         "checked, nothing new" - exactly the silent-failure mode this
+         monitor exists to prevent. The `lid` field turns out to be
+         optional, so only q and pg are sent.
+      2. The site's own `q` search is full-text over the whole job
+         description, not the title. q=intern returns 191 hits (most of
+         them unrelated roles that merely mention interns) while still
+         missing rotational / MBA / development programs whose text never
+         uses the word. So `q` is left empty and every page is crawled.
+
+    The board is small (~640 postings, 26 pages), deterministically
+    ordered newest-first, so a full crawl is cheap and lets TITLE_RE do the
+    filtering - the same approach as fetch_jnj_careers.
+    """
+    url = cfg.get("url", "https://www.lonza.com/careers/job-search")
+    origin = "https://www.lonza.com"
+    row_re = re.compile(
+        r'<a[^>]*class="search-result[^"]*"[^>]*href="(/jobs/(R\d+))"'
+        r'[\s\S]{0,400}?search-result-title">([\s\S]*?)</div>'
+        r'[\s\S]{0,200}?search-result-content">([\s\S]*?)</div>'
+    )
+    results = {}
+    for pg in range(1, 61):
+        resp = _request("POST", url, data={"q": "", "pg": str(pg)})
+        t = resp.text
+        rows = row_re.findall(t)
+        if not rows:
+            if pg == 1:
+                raise SourceError(
+                    f"{url} returned no search-result rows on page 1 (site changed?)"
+                )
+            break  # walked off the end of the listing - normal
+        before = len(results)
+        for href, rid, rawtitle, rawloc in rows:
+            results[rid] = {
+                "title": html.unescape(
+                    re.sub(r"\s+", " ", re.sub(r"<[^>]+>", " ", rawtitle))).strip(),
+                "location": html.unescape(
+                    re.sub(r"\s+", " ", re.sub(r"<[^>]+>", " ", rawloc))).strip(),
+                "url": origin + href,
+                "posted_on": "",
+            }
+        if len(results) == before:
+            break  # page repeated itself: paging stopped advancing
+    return list(results.values())
+
+
 ADAPTERS = {
     "workday": fetch_workday,
     "greenhouse": fetch_greenhouse,
@@ -559,6 +615,7 @@ ADAPTERS = {
     "attrax": fetch_attrax,
     "jnj": fetch_jnj_careers,
     "novo": fetch_novo,
+    "lonza": fetch_lonza,
 }
 
 

@@ -1,9 +1,10 @@
-# Biotech internship watchlist - 28 companies
+# Biotech internship watchlist - 29 companies
 #
 # verified: true  = endpoint confirmed live during build (July 2026)
 # verified: false = best-known endpoint; the audit run will confirm or flag it
 #
-# ats types: workday | greenhouse | phenom | unsupported
+# ats types: workday | greenhouse | phenom | jibe | ukg | jobvite |
+#            attrax | jnj | novo | lonza | unsupported
 # career_page is the human fallback link used in failure alerts.
 
 companies:
@@ -203,6 +204,17 @@ companies:
     origin: https://careers.medpace.com
     verified: true
     career_page: https://careers.medpace.com/jobs
+
+  - name: Lonza
+    ats: lonza
+    url: https://www.lonza.com/careers/job-search
+    verified: true
+    career_page: https://www.lonza.com/careers/early-talent
+    note: >
+      Own Sitecore board, not a hosted ATS. Paging is a POST form (q, pg);
+      GET ?page=/?q= are accepted but ignored, so the adapter POSTs and
+      crawls all ~26 pages, filtering on title locally. Lonza's own free-text
+      search matches whole descriptions, which is why it is left empty.
 
   - name: Novo Nordisk
     ats: novo

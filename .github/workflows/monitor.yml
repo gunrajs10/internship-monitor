@@ -71,8 +71,18 @@ jobs:
           # push is retried on top of whatever landed in the meantime.
           for i in 1 2 3 4 5; do
             if git push; then exit 0; fi
-            echo "push rejected (attempt $i) - rebasing onto origin/main"
-            git pull --rebase --autostash origin main || exit 1
+            echo "push rejected (attempt $i) - union-merging state with origin"
+            # Do NOT rebase: seen.json is append-only, so two overlapping runs
+            # always produce a textual conflict that rebase cannot resolve and
+            # that costs the whole run's state. Union the two ledgers instead,
+            # replay onto origin/main, and retry.
+            git fetch origin main
+            git show origin/main:state/seen.json > /tmp/theirs.json 2>/dev/null || echo '{}' > /tmp/theirs.json
+            python3 merge_state.py /tmp/theirs.json state/seen.json || exit 1
+            git reset --mixed origin/main
+            git add state/seen.json
+            git diff --cached --quiet && exit 0
+            git commit -m "Update seen postings [skip ci]"
             sleep $((i * 3))
           done
           echo "::error::could not push updated state after 5 attempts"

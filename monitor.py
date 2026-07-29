@@ -299,6 +299,15 @@ IMMEDIATE_FAIL_RE = re.compile(
 WEBHOOK_TIMEOUT = 45
 WEBHOOK_RETRIES = 2
 
+# A healthy webhook replies with the plain text "ok". Apps Script answers a
+# thrown exception with HTTP 200 and an HTML error page, so the body has to
+# be inspected - see send_webhook().
+WEBHOOK_ERROR_RE = re.compile(
+    r"<!doctype html|<title>\s*Error|ReferenceError|TypeError|"
+    r"Exception|Script function not found",
+    re.IGNORECASE,
+)
+
 
 class SourceError(Exception):
     """A source could not be conclusively checked."""
@@ -946,12 +955,22 @@ def send_webhook(payload):
     for attempt in range(WEBHOOK_RETRIES + 1):
         try:
             resp = requests.post(WEBHOOK_URL, json=payload, timeout=WEBHOOK_TIMEOUT)
-            print(f"webhook -> HTTP {resp.status_code}")
-            return
+            body = (resp.text or "").strip()
+            # HTTP 200 is NOT sufficient. An Apps Script web app that throws
+            # still answers 200 and serves an HTML error page, so checking
+            # only the status code reports success while the Sheet write or
+            # the email silently did not happen. That is exactly how a broken
+            # `n is not defined` in the webhook went unnoticed: rows appeared,
+            # no email was ever sent, and every run logged "HTTP 200".
+            if resp.status_code == 200 and not WEBHOOK_ERROR_RE.search(body):
+                print(f"webhook -> HTTP {resp.status_code} {body[:40]!r}")
+                return
+            last_err = (f"HTTP {resp.status_code}, body: "
+                        f"{re.sub(r'<[^>]+>', ' ', body)[:200].strip()!r}")
         except requests.RequestException as exc:
             last_err = f"{type(exc).__name__}: {exc}"
-            if attempt < WEBHOOK_RETRIES:
-                time.sleep(5 * (attempt + 1))
+        if attempt < WEBHOOK_RETRIES:
+            time.sleep(5 * (attempt + 1))
     raise SourceError(
         f"webhook POST (type={payload.get('type')}) failed after "
         f"{WEBHOOK_RETRIES + 1} attempts: {last_err}"

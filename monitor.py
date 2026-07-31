@@ -97,11 +97,34 @@ FUNCTION_RE = re.compile(
     r"pricing|reimbursement|payer|forecast\w*|market development|"
     r"go[\s\-]to[\s\-]market|launch (strategy|excellence|planning)|"
     r"portfolio (strategy|management|planning)|"
-    r"sales (operations|force|analytics)?|"
     r"supply chain|corporate development|alliance management|"
     r"business partner\w*|patient (access|services|advocacy)|"
     r"medical affairs|health economics|heor|"
     r"finance|financial planning)\b",
+    re.IGNORECASE,
+)
+
+# Field-sales exclusion for the early-stage track. Gunraj is not looking for
+# sales. Roughly half of everything this track surfaced was sales-facing:
+# "Oncology Sales Specialist", "Primary Care Pharmaceutical Sales Specialist",
+# "Sales Associate, Trauma", "Customer Team Leader (District Sales Manager)",
+# "Territory Account Manager Roles - Join Vertex's Sales Talent Community".
+# The bare word "sales" was also a matching FUNCTION term, which is what let
+# them in; that has been removed above and this is the backstop.
+#
+# Deliberately NOT excluded, because they are wanted:
+#   "commercial" on its own - Commercial Strategy / Analytics / Operations /
+#   Excellence all stay. Only genuinely sales-facing wording is cut.
+#   marketing, brand, market access, payer, pricing, forecasting, insights.
+# Applied to the early-stage track ONLY - a rotational program that happens
+# to include a sales rotation (Amgen CLP, Genentech CRDP) is still reported,
+# since those are the target.
+SALES_EXCLUDE_RE = re.compile(
+    r"\bsales\b|\bselling\b|\brepresentative\b|\breps?\b|"
+    r"\bterritory\b|\bdistrict manager\b|district sales|"
+    r"account (executive|manager|director|specialist)|key account|"
+    r"business development (rep|representative)|\bbdr\b|\bsdr\b|"
+    r"inside sales|field force|customer team leader",
     re.IGNORECASE,
 )
 
@@ -861,7 +884,8 @@ def title_match(item):
         return "program"
     if (FUNCTION_RE.search(title) and JUNIOR_RE.search(title)
             and not is_senior(title)
-            and not SCIENCE_EXCLUDE_RE.search(title)):
+            and not SCIENCE_EXCLUDE_RE.search(title)
+            and not SALES_EXCLUDE_RE.search(title)):
         return "early-stage"
     return None
 

@@ -1,14 +1,9 @@
 {
  "failing": {
-  "Novartis": {
-   "reason": "https://novartis.wd3.myworkdayjobs.com/wday/cxs/novartis/Novartis_Careers/jobs failed after 3 attempts: HTTP 401",
-   "since": "2026-08-01T10:47:22.142339+00:00",
-   "streak": 6
-  },
   "Takeda": {
    "reason": "https://takeda.wd3.myworkdayjobs.com/wday/cxs/takeda/External/jobs returned non-JSON (likely bot-blocked or wrong endpoint)",
    "since": "2026-08-01T14:40:16.785219+00:00",
-   "streak": 4
+   "streak": 5
   }
  },
  "failures": {
@@ -26,6 +21,7 @@
   "513d79acf71ba9ba5567945c0a7f32936bc89edd": "2026-07-18T07:06:43.380328+00:00",
   "5633daeaa52c2823783c98d235431667e7054131": "2026-07-18T07:06:43.380328+00:00",
   "5b01b9e3acb24a799e2055e3778ceb027233d6c1": "2026-07-18T07:06:43.380328+00:00",
+  "61cc41a1acd594a63c62a683b5f33f4c82eb9589": "2026-08-01T18:09:38.463207+00:00",
   "71afc05a31bfec55a667671da61dffcfb01d6946": "2026-07-18T07:06:43.380328+00:00",
   "81d8954712925d83c7999284d664dd6ff37c5a24": "2026-07-18T07:06:43.380328+00:00",
   "87e6196561dcb3a8ae8e993e59f1349256cb5e91": "2026-07-15T06:28:41.532995+00:00",

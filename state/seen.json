@@ -3,7 +3,12 @@
   "Novartis": {
    "reason": "https://novartis.wd3.myworkdayjobs.com/wday/cxs/novartis/Novartis_Careers/jobs failed after 3 attempts: HTTP 401",
    "since": "2026-08-01T10:47:22.142339+00:00",
-   "streak": 2
+   "streak": 3
+  },
+  "Takeda": {
+   "reason": "https://takeda.wd3.myworkdayjobs.com/wday/cxs/takeda/External/jobs failed after 3 attempts: HTTP 401",
+   "since": "2026-08-01T14:40:16.785219+00:00",
+   "streak": 1
   }
  },
  "failures": {
@@ -28,6 +33,7 @@
   "9b2d457e162abd7110b823413ea52dfb7f953755": "2026-07-15T10:16:04.586005+00:00",
   "9cc6f10e0c44a0f3a4a9707f16c35e338bf676f9": "2026-07-18T07:06:43.380328+00:00",
   "c78195205147bee8ea18db17d4985b1f1c6d2436": "2026-07-15T06:28:41.532995+00:00",
+  "d00b02a4f2a16f72a103d434ac797e4f5ee7f037": "2026-08-01T14:40:16.785219+00:00",
   "d4bca1582956e68e2bf2a1e076edd334d245354b": "2026-07-26T14:44:04.840791+00:00",
   "d8e690d4365279f8e354246f2faf5bbf31eee6f2": "2026-07-18T07:06:43.380328+00:00",
   "dff249e123931bda3de9c0d0b65d1bfaf865bae6": "2026-07-15T06:28:41.532995+00:00",
@@ -260,6 +266,7 @@
   },
   "1394cf0024906f616e714effdf28ed0720b8d999": {
    "company": "Johnson & Johnson",
+   "expired": true,
    "first_seen": "2026-07-28T23:38:04.477688+00:00",
    "location": "Houston",
    "match": "early-stage",
@@ -1075,6 +1082,7 @@
   },
   "446a4d3330e289edcba0444d0b68b79568110624": {
    "company": "Johnson & Johnson",
+   "expired": true,
    "first_seen": "2026-07-28T23:38:04.477688+00:00",
    "location": "New Brunswick",
    "match": "early-stage",
@@ -1373,6 +1381,7 @@
   },
   "541c96d837359956da40a8b431fa1068458a2b61": {
    "company": "Johnson & Johnson",
+   "expired": true,
    "first_seen": "2026-07-29T21:11:04.423368+00:00",
    "location": "Texas (Any City)",
    "match": "early-stage",
@@ -1456,6 +1465,7 @@
   },
   "57f0f7ff1dc620a120cd500d1cb2d022a5243a90": {
    "company": "Johnson & Johnson",
+   "expired": true,
    "first_seen": "2026-07-28T23:38:04.477688+00:00",
    "location": "West Chester",
    "match": "early-stage",
@@ -1593,6 +1603,7 @@
   },
   "641f909f98b5858e9b5802e413103af5e171c325": {
    "company": "Johnson & Johnson",
+   "expired": true,
    "first_seen": "2026-07-28T23:38:04.477688+00:00",
    "location": "St. Louis",
    "match": "early-stage",
@@ -1778,6 +1789,7 @@
   },
   "71dc500eb93baacffc74e17bffc55c864cc820bb": {
    "company": "Johnson & Johnson",
+   "expired": true,
    "first_seen": "2026-07-28T23:38:04.477688+00:00",
    "location": "West Chester / Raynham",
    "match": "early-stage",
@@ -1906,6 +1918,7 @@
   },
   "7866bd7b698061478c27c96391c341959da65888": {
    "company": "Johnson & Johnson",
+   "expired": true,
    "first_seen": "2026-07-28T23:38:04.477688+00:00",
    "location": "Houston",
    "match": "early-stage",

@@ -3,12 +3,12 @@
   "Novartis": {
    "reason": "https://novartis.wd3.myworkdayjobs.com/wday/cxs/novartis/Novartis_Careers/jobs failed after 3 attempts: HTTP 401",
    "since": "2026-08-01T10:47:22.142339+00:00",
-   "streak": 4
+   "streak": 5
   },
   "Takeda": {
-   "reason": "https://takeda.wd3.myworkdayjobs.com/wday/cxs/takeda/External/jobs failed after 3 attempts: HTTP 401",
+   "reason": "https://takeda.wd3.myworkdayjobs.com/wday/cxs/takeda/External/jobs returned non-JSON (likely bot-blocked or wrong endpoint)",
    "since": "2026-08-01T14:40:16.785219+00:00",
-   "streak": 2
+   "streak": 3
   }
  },
  "failures": {

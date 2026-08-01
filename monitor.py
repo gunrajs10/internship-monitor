@@ -305,6 +305,24 @@ DEEP_SCAN_FETCH_CAP = 25
 FAIL_MIN_STREAK = 3   # consecutive failing runs before alerting (site-side)
 FAIL_MIN_HOURS = 3    # and the failures must span at least this long
 
+# An identified vendor maintenance window gets a longer rope than a generic
+# site failure: Workday tenant maintenance routinely runs longer than the 3h
+# generic gate, so the old setting alerted partway through a window that was
+# always going to heal itself. It still alerts eventually - silence must
+# never mean "could not check" - just not in hour three of a known-transient
+# vendor state.
+MAINTENANCE_MIN_HOURS = 8
+
+# Vendor "we are down for maintenance" interstitials, which arrive as HTML
+# where JSON was expected. Workday redirects to community.workday.com's
+# maintenance page with the title "Workday is currently unavailable."
+MAINTENANCE_RE = re.compile(
+    r"currently unavailable|maintenance[\s\-]?page|scheduled maintenance|"
+    r"under maintenance|temporarily unavailable|be right back",
+    re.IGNORECASE,
+)
+MAINTENANCE_FAIL_RE = re.compile(r"VENDOR MAINTENANCE WINDOW", re.IGNORECASE)
+
 # Program-side problems alert IMMEDIATELY (no persistence gate): unexpected
 # exceptions in our code, and schema changes where waiting cannot help
 # because the adapter itself is now wrong for the site.
@@ -360,6 +378,23 @@ def _json_or_fail(resp, url):
     try:
         return resp.json()
     except ValueError:
+        # Distinguish a vendor maintenance window from a real break. Workday
+        # takes individual tenants offline for maintenance and serves an HTML
+        # "Workday is currently unavailable" page (it redirects to
+        # community.workday.com/maintenance-page) instead of JSON. That is
+        # transient and needs no code change, but the old blanket message
+        # said "likely bot-blocked or wrong endpoint", which sends whoever
+        # reads the alert hunting for a moved tenant or a WAF that is not
+        # there. Observed on Takeda 2026-07-31 while every other wd3 tenant
+        # kept answering normally.
+        body = (getattr(resp, "text", "") or "")[:4000]
+        final_url = str(getattr(resp, "url", "") or "")
+        if MAINTENANCE_RE.search(body) or MAINTENANCE_RE.search(final_url):
+            raise SourceError(
+                f"{url} is in a VENDOR MAINTENANCE WINDOW - it served an HTML "
+                f"'currently unavailable' page instead of JSON. Transient; the "
+                f"endpoint is unchanged and no fix is needed unless it persists."
+            )
         raise SourceError(f"{url} returned non-JSON (likely bot-blocked or wrong endpoint)")
 
 
@@ -1041,7 +1076,12 @@ def _gate_failures(state, failures, now):
         failing[f_item["company"]] = rec
         hours_failing = (now - datetime.fromisoformat(rec["since"])).total_seconds() / 3600
         immediate = bool(IMMEDIATE_FAIL_RE.search(f_item["reason"]))
-        if not immediate and (rec["streak"] < FAIL_MIN_STREAK or hours_failing < FAIL_MIN_HOURS):
+        # A recognised vendor maintenance window is known-transient, so give
+        # it a longer window before it is worth waking Gunraj for.
+        min_hours = (MAINTENANCE_MIN_HOURS
+                     if MAINTENANCE_FAIL_RE.search(f_item["reason"])
+                     else FAIL_MIN_HOURS)
+        if not immediate and (rec["streak"] < FAIL_MIN_STREAK or hours_failing < min_hours):
             continue  # site-side blip - wait for persistence
         sig = hashlib.sha1(f"{f_item['company']}|{f_item['reason'][:80]}".encode()).hexdigest()
         last = state["failures"].get(sig)

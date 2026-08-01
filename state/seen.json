@@ -3,7 +3,7 @@
   "Takeda": {
    "reason": "https://takeda.wd3.myworkdayjobs.com/wday/cxs/takeda/External/jobs is in a VENDOR MAINTENANCE WINDOW - it served an HTML 'currently unavailable' page instead of JSON. Transient; the endpoint is unchanged and no fix is needed unless it persists.",
    "since": "2026-08-01T14:40:16.785219+00:00",
-   "streak": 7
+   "streak": 8
   }
  },
  "failures": {

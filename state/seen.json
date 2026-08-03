@@ -3,7 +3,7 @@
   "Takeda": {
    "reason": "https://takeda.wd3.myworkdayjobs.com/wday/cxs/takeda/External/jobs failed after 3 attempts: HTTP 422",
    "since": "2026-08-01T14:40:16.785219+00:00",
-   "streak": 26
+   "streak": 27
   }
  },
  "failures": {
@@ -3127,6 +3127,14 @@
    "first_seen": "2026-07-15T06:28:41.532995+00:00",
    "location": "Budapest",
    "title": "Graphic Designer Intern"
+  },
+  "d365e8f45765f4aa255da78e627714ff3d21c246": {
+   "company": "Johnson & Johnson",
+   "first_seen": "2026-08-03T04:45:17.291131+00:00",
+   "location": "Remote (Us)",
+   "match": "program",
+   "title": "Sales Leadership Development Program \u2013 Johnson and Johnson MedTech - Vision",
+   "url": "https://www.careers.jnj.com/en/jobs/r-090589/sales-leadership-development-program-johnson-and-johnson-medtech-vision/"
   },
   "d3b942358fa984f0c1e77333582f2c02ded143d5": {
    "company": "Roche",

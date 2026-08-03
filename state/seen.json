@@ -3,12 +3,7 @@
   "Takeda": {
    "reason": "https://takeda.wd3.myworkdayjobs.com/wday/cxs/takeda/External/jobs failed after 3 attempts: HTTP 422",
    "since": "2026-08-01T14:40:16.785219+00:00",
-   "streak": 30
-  },
-  "Tempus AI": {
-   "reason": "https://tempus.wd5.myworkdayjobs.com/wday/cxs/tempus/Tempus_Careers/jobs failed after 3 attempts: HTTP 500",
-   "since": "2026-08-03T15:50:48.421329+00:00",
-   "streak": 1
+   "streak": 31
   }
  },
  "failures": {

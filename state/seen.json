@@ -3,7 +3,7 @@
   "Takeda": {
    "reason": "https://takeda.wd3.myworkdayjobs.com/wday/cxs/takeda/External/jobs failed after 3 attempts: HTTP 422",
    "since": "2026-08-01T14:40:16.785219+00:00",
-   "streak": 24
+   "streak": 25
   }
  },
  "failures": {
@@ -2061,6 +2061,14 @@
    "location": "Waltham, Massachusetts, United States of America",
    "title": "Fall 2026 Finance Co-op",
    "url": "https://thermofisher.wd5.myworkdayjobs.com/ThermoFisherCareers/job/Waltham-Massachusetts-USA/Fall-2026-Finance-Co-op-_R-01362377-1/apply"
+  },
+  "84dd321a7cab9979634a649a63f9c7da30f74d4c": {
+   "company": "Regeneron",
+   "first_seen": "2026-08-03T00:10:31.295823+00:00",
+   "location": "8 Locations",
+   "match": "early-stage",
+   "title": "Field Reimbursement Manager - Neurology (Mid South)",
+   "url": "https://regeneron.wd1.myworkdayjobs.com/en-US/Careers/job/Richmond-VA/Field-Reimbursement-Manager----Neurology--Austin--TX-_R48132"
   },
   "85798867488aa348817829bc5ead961d7ef974c8": {
    "company": "Novo Nordisk",

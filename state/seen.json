@@ -3,7 +3,7 @@
   "Takeda": {
    "reason": "https://takeda.wd3.myworkdayjobs.com/wday/cxs/takeda/External/jobs failed after 3 attempts: HTTP 422",
    "since": "2026-08-01T14:40:16.785219+00:00",
-   "streak": 32
+   "streak": 33
   }
  },
  "failures": {
@@ -118,6 +118,14 @@
    "first_seen": "2026-07-15T10:16:04.586005+00:00",
    "location": "Cincinnati, Ohio, United States",
    "title": "Data Engineer Intern - Fall 2026"
+  },
+  "0790fc7df521a275ac67d1d655780ce87fba8e57": {
+   "company": "Merck",
+   "first_seen": "2026-08-03T20:17:23.197725+00:00",
+   "location": "Rahway, New Jersey, United States of America",
+   "match": "program",
+   "title": "2027 Future Talent Program - Finance MBA - Full Time (Hybrid)",
+   "url": "https://msd.wd5.myworkdayjobs.com/en-US/SearchJobs/job/USA---New-Jersey---Rahway/XMLNAME-2027-Future-Talent-Program---Finance-MBA---Full-Time--Hybrid-_R410567-1/apply"
   },
   "07aafa5bc3c33270c77dc271d1b370e3f07cb81f": {
    "company": "Roche",
@@ -1921,6 +1929,14 @@
    "title": "Regional Clinical Sales Specialist, CMF (Portland, OR) - Johnson & Johnson MedTech, Orthopaedics",
    "url": "https://www.careers.jnj.com/en/jobs/r-090949/regional-clinical-sales-specialist-cmf-portland-or-johnson-johnson-medtech-orthopaedics/"
   },
+  "783dc253b29591105455339c69a8d2581022bec2": {
+   "company": "Johnson & Johnson",
+   "first_seen": "2026-08-03T20:17:23.197725+00:00",
+   "location": "New York",
+   "match": "early-stage",
+   "title": "GI Field Reimbursement Manager \u2013 Brooklyn/Queens/Huntington, NY",
+   "url": "https://www.careers.jnj.com/en/jobs/r-091778/gi-field-reimbursement-manager-brooklynqueenshuntington-ny/"
+  },
   "7858c1dc88099129d50ae1470d981542f0857dd8": {
    "company": "Genentech",
    "first_seen": "2026-07-28T17:45:13.192092+00:00",
@@ -3049,6 +3065,14 @@
    "title": "Senior Manager, Marketing Research - Rheumatology",
    "url": "https://careers.abbvie.com/en/job/senior-manager-marketing-research-rheumatology-in-mettawa-il-jid-29240"
   },
+  "c8dcbdf296d60724aef379c9da27c0fcc593641b": {
+   "company": "Johnson & Johnson",
+   "first_seen": "2026-08-03T20:17:23.197725+00:00",
+   "location": "New Brunswick / Titusville",
+   "match": "early-stage",
+   "title": "Manager, MT Group Finance - LRFP",
+   "url": "https://www.careers.jnj.com/en/jobs/r-090402/manager-mt-group-finance-lrfp/"
+  },
   "c9607240d22fb33af00e37d2ed1739811c9851d3": {
    "company": "Thermo Fisher Scientific",
    "first_seen": "2026-07-15T06:28:41.532995+00:00",
@@ -3380,6 +3404,14 @@
    "match": "early-stage",
    "title": "Customer Team Leader (District Sales Manager), Cardiovascular Disease - Kansas City District",
    "url": "https://msd.wd5.myworkdayjobs.com/en-US/SearchJobs/job/USA---Missouri---Kansas-City/Customer-Team-Leader--District-Sales-Manager---Cardiovascular-Disease---Kansas-City-District_R401233-1/apply"
+  },
+  "e3ddf01a224464277b1dde49ad47d5956081b3d6": {
+   "company": "Johnson & Johnson",
+   "first_seen": "2026-08-03T20:17:23.197725+00:00",
+   "location": "Titusville",
+   "match": "early-stage",
+   "title": "Manager, Technology Product Management, AI Data Insights",
+   "url": "https://www.careers.jnj.com/en/jobs/r-089944/manager-technology-product-management-ai-data-insights/"
   },
   "e4c88f42e7b68efb2afac7390603ced7185c4f1b": {
    "company": "AstraZeneca",

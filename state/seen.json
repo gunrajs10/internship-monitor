@@ -3,7 +3,7 @@
   "Takeda": {
    "reason": "https://takeda.wd3.myworkdayjobs.com/wday/cxs/takeda/External/jobs failed after 3 attempts: HTTP 422",
    "since": "2026-08-01T14:40:16.785219+00:00",
-   "streak": 25
+   "streak": 26
   }
  },
  "failures": {
@@ -642,6 +642,14 @@
    "match": "early-stage",
    "title": "Manager, Commercial Performance",
    "url": "https://www.careers.jnj.com/en/jobs/r-089182/manager-commercial-performance/"
+  },
+  "29ff07b3aa80093f553940934f64b111750a4864": {
+   "company": "Sanofi",
+   "first_seen": "2026-08-03T03:51:26.336532+00:00",
+   "location": "2 Locations",
+   "match": "early-stage",
+   "title": "Vx-MKT Business Innovation- (Sr.) Brand Manager- Shanghai/ Beijing",
+   "url": "https://sanofi.wd3.myworkdayjobs.com/en-US/SanofiCareers/job/Shanghai/Vx-MKT-Business-Innovation---Sr--Brand-Manager--Shanghai--Beijing_R2867297"
   },
   "2a241009c7d594cd875ae8b6f747d3ac7069b3e5": {
    "company": "AstraZeneca",

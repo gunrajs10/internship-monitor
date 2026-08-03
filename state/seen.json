@@ -3,7 +3,7 @@
   "Takeda": {
    "reason": "https://takeda.wd3.myworkdayjobs.com/wday/cxs/takeda/External/jobs failed after 3 attempts: HTTP 422",
    "since": "2026-08-01T14:40:16.785219+00:00",
-   "streak": 31
+   "streak": 32
   }
  },
  "failures": {
@@ -1012,6 +1012,14 @@
    "location": "Waltham, Massachusetts, United States of America",
    "title": "FLDP Finance Intern",
    "url": "https://thermofisher.wd5.myworkdayjobs.com/ThermoFisherCareers/job/Waltham-Massachusetts-USA/FLDP-Finance-Intern_R-01361452/apply"
+  },
+  "3e618046dfbc49fdac87972ad5293f8a1ad27320": {
+   "company": "Amgen",
+   "first_seen": "2026-08-03T18:24:59.024842+00:00",
+   "location": "4 Locations",
+   "match": "early-stage",
+   "title": "Field Reimbursement Manager - Hartford, CT",
+   "url": "https://amgen.wd1.myworkdayjobs.com/en-US/Careers/job/US---Connecticut---Hartford/Field-Reimbursement-Manager---Hartford--CT_R-251691"
   },
   "3eae515666caa18bd0c56c1483d0e14ee72967f4": {
    "company": "Novo Nordisk",
@@ -2276,6 +2284,14 @@
    "title": "Senior Primary Care - CVRM Sales Specialist, Casper WY",
    "url": "https://astrazeneca.wd3.myworkdayjobs.com/en-US/Careers/job/US/Senior-Primary-Care---CVRM-Sales-Specialist--Casper-WY_R-247105"
   },
+  "9361ef384082088a2685656e19d3437ef6218b48": {
+   "company": "Medpace",
+   "first_seen": "2026-08-03T18:24:59.024842+00:00",
+   "location": "Cincinnati, Ohio, United States",
+   "match": "program",
+   "title": "Clinical Business Intelligence Internship - Spring 2027",
+   "url": "https://careers.medpace.com/jobs/12845?lang=en-us"
+  },
   "944baf7219271f5c46e85443922ee07dfc25651c": {
    "company": "BridgeBio",
    "first_seen": "2026-07-29T19:58:52.883368+00:00",
@@ -2611,6 +2627,14 @@
    "match": "early-stage",
    "title": "Oncology Sales Specialist - Rhode Island / Southern Massachusetts",
    "url": "https://msd.wd5.myworkdayjobs.com/en-US/SearchJobs/job/USA---Rhode-Island---Providence/Oncology-Sales-Specialist---Rhode-Island---Southern-Massachusetts_R409211-2/apply"
+  },
+  "aea4f70d03038dc9c5923a75dbe7727bdb4c1a2b": {
+   "company": "AbbVie",
+   "first_seen": "2026-08-03T18:24:59.024842+00:00",
+   "location": "North Chicago, IL",
+   "match": "program",
+   "title": "2027 Human Resources Leadership Development Program Intern (Master's)",
+   "url": "https://careers.abbvie.com/en/job/2027-human-resources-leadership-development-program-intern-master-s-in-north-chicago-il-jid-31291"
   },
   "af168f81a5c05b616d0077fdf71c30d7fce46678": {
    "company": "Labcorp",

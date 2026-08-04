@@ -3,7 +3,7 @@
   "Takeda": {
    "reason": "https://takeda.wd3.myworkdayjobs.com/wday/cxs/takeda/External/jobs failed after 3 attempts: HTTP 422",
    "since": "2026-08-01T14:40:16.785219+00:00",
-   "streak": 42
+   "streak": 43
   }
  },
  "failures": {
@@ -118,6 +118,14 @@
    "first_seen": "2026-07-15T10:16:04.586005+00:00",
    "location": "Cincinnati, Ohio, United States",
    "title": "Data Engineer Intern - Fall 2026"
+  },
+  "0770a345511b3bef6e5321e5bbed4c82c0eb451c": {
+   "company": "Neurocrine Biosciences",
+   "first_seen": "2026-08-04T18:17:31.582006+00:00",
+   "location": "US CA San Diego One Paseo",
+   "match": "early-stage",
+   "title": "Commercial Analytics Manager (Ingrezza)",
+   "url": "https://neurocrine.wd5.myworkdayjobs.com/en-US/NeurocrineCareers/job/US-CA-San-Diego-One-Paseo/Commercial-Analytics-Manager_R7084"
   },
   "0790fc7df521a275ac67d1d655780ce87fba8e57": {
    "company": "Merck",
@@ -1341,6 +1349,14 @@
    "match": "early-stage",
    "title": "Associate Specialist Operations, Chemical Engineering Research & Development",
    "url": "https://msd.wd5.myworkdayjobs.com/en-US/SearchJobs/job/USA---New-Jersey---Rahway/Associate-Specialist-Operations--Chemical-Engineering-Research---Development_R405902-1/apply"
+  },
+  "502b032dec67d473c66393a0273250f03bae262d": {
+   "company": "GSK",
+   "first_seen": "2026-08-04T18:17:31.582006+00:00",
+   "location": "Durham Blackwell Street",
+   "match": "early-stage",
+   "title": "ViiV Healthcare (GSK) Business Intelligence Manager",
+   "url": "https://gsk.wd5.myworkdayjobs.com/en-US/GSKCareers/job/Durham-Blackwell-Street/ViiV-Healthcare--GSK--Business-Intelligence-Manager_445748"
   },
   "50474e6bff06233548006ca1cbd642337ec521ba": {
    "company": "Medpace",

@@ -3,7 +3,7 @@
   "Takeda": {
    "reason": "https://takeda.wd3.myworkdayjobs.com/wday/cxs/takeda/External/jobs failed after 3 attempts: HTTP 422",
    "since": "2026-08-01T14:40:16.785219+00:00",
-   "streak": 41
+   "streak": 42
   }
  },
  "failures": {
@@ -145,6 +145,14 @@
    "first_seen": "2026-07-15T06:28:41.532995+00:00",
    "location": "Petaling Jaya",
    "title": "Site IT Experience Intern"
+  },
+  "09ed79b2613f2981bebf98a21fd37d48dc2a515d": {
+   "company": "Thermo Fisher Scientific",
+   "first_seen": "2026-08-04T16:21:37.894020+00:00",
+   "location": "Waltham, Massachusetts, United States of America",
+   "match": "program",
+   "title": "2027 Human Resources Graduate Leadership Development Program",
+   "url": "https://thermofisher.wd5.myworkdayjobs.com/ThermoFisherCareers/job/Waltham-Massachusetts-USA/XMLNAME-2027-Human-Resources-Graduate-Leadership-Development-Program_R-01363164/apply"
   },
   "0a1cfa5244c4f1870615727e4f0591081058fc03": {
    "company": "Novo Nordisk",
@@ -3691,6 +3699,14 @@
    "location": "North Chicago, IL",
    "title": "Associate Medical Director (Physician Development Program - Hematology)",
    "url": "https://careers.abbvie.com/en/job/associate-medical-director-physician-development-program-hematology-in-north-chicago-il-jid-19324"
+  },
+  "f3d0977f4f3b9d9390275e1e35f11730be712205": {
+   "company": "Neurocrine Biosciences",
+   "first_seen": "2026-08-04T16:21:37.894020+00:00",
+   "location": "US CA San Diego One Paseo",
+   "match": "early-stage",
+   "title": "Commercial Analytics Manager",
+   "url": "https://neurocrine.wd5.myworkdayjobs.com/en-US/NeurocrineCareers/job/US-CA-San-Diego-One-Paseo/Commercial-Analytics-Manager_R7084"
   },
   "f41a532a5d7d4c173916523391d3ee15bad6c90a": {
    "company": "Regeneron",

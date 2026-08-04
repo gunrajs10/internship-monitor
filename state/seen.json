@@ -3,7 +3,7 @@
   "Takeda": {
    "reason": "https://takeda.wd3.myworkdayjobs.com/wday/cxs/takeda/External/jobs failed after 3 attempts: HTTP 422",
    "since": "2026-08-01T14:40:16.785219+00:00",
-   "streak": 40
+   "streak": 41
   }
  },
  "failures": {
@@ -720,6 +720,14 @@
    "first_seen": "2026-07-15T06:28:41.532995+00:00",
    "location": "Budapest",
    "title": "People Support Solutions Intern"
+  },
+  "2cab2a8ecd11e041294f477fd512970b819690d3": {
+   "company": "Johnson & Johnson",
+   "first_seen": "2026-08-04T15:34:03.381755+00:00",
+   "location": "New Brunswick",
+   "match": "early-stage",
+   "title": "Finance Manager - Global HR",
+   "url": "https://www.careers.jnj.com/en/jobs/r-086588/finance-manager-global-hr/"
   },
   "2cf6493510262b62438e3e19bc60e7a265c44ec6": {
    "company": "Regeneron",
@@ -2267,6 +2275,14 @@
    "match": "early-stage",
    "title": "Sales Associate, Trauma - Vail, CO - Johnson & Johnson MedTech - Orthopaedics",
    "url": "https://www.careers.jnj.com/en/jobs/r-085087/sales-associate-trauma-vail-co-johnson-johnson-medtech-orthopaedics/"
+  },
+  "8d1a5a9ee1f650e62a0ef6c988abcab3a2c7c630": {
+   "company": "Johnson & Johnson",
+   "first_seen": "2026-08-04T15:34:03.381755+00:00",
+   "location": "Horsham",
+   "match": "early-stage",
+   "title": "Product Manager, Bispecifics Community Expansion Marketing",
+   "url": "https://www.careers.jnj.com/en/jobs/r-092012/product-manager-bispecifics-community-expansion-marketing/"
   },
   "8f8f09d13b3389344abeb52821c6713b3d737ae0": {
    "company": "Tempus AI",

@@ -3,7 +3,7 @@
   "Takeda": {
    "reason": "https://takeda.wd3.myworkdayjobs.com/wday/cxs/takeda/External/jobs failed after 3 attempts: HTTP 422",
    "since": "2026-08-01T14:40:16.785219+00:00",
-   "streak": 38
+   "streak": 39
   }
  },
  "failures": {
@@ -553,6 +553,14 @@
    "match": "early-stage",
    "title": "Manager, Financial Process and Systems, Business Planning and Consolidation (SAP BPC)",
    "url": "https://careers.abbvie.com/en/job/manager-financial-process-and-systems-business-planning-and-consolidation-sap-bpc-in-remote-or-jid-25804"
+  },
+  "23d4706ded9b223b58b0c39ab23605bc05409b7f": {
+   "company": "Johnson & Johnson",
+   "first_seen": "2026-08-04T07:47:41.370606+00:00",
+   "location": "Raynham / Remote (Us)",
+   "match": "early-stage",
+   "title": "Senior Analyst Pricing",
+   "url": "https://www.careers.jnj.com/en/jobs/r-082635/senior-analyst-pricing/"
   },
   "246bd121bc98e038f9e6adf1abf6785937a50e73": {
    "company": "Thermo Fisher Scientific",

@@ -3,7 +3,7 @@
   "Takeda": {
    "reason": "https://takeda.wd3.myworkdayjobs.com/wday/cxs/takeda/External/jobs failed after 3 attempts: HTTP 422",
    "since": "2026-08-01T14:40:16.785219+00:00",
-   "streak": 45
+   "streak": 46
   }
  },
  "failures": {
@@ -1610,6 +1610,14 @@
    "title": "Pharmaceutical Sales Specialist- San Diego, CA",
    "url": "https://gsk.wd5.myworkdayjobs.com/en-US/GSKCareers/job/USA---California---San-Diego/Pharmaceutical-Sales-Specialist--San-Diego--CA_444703"
   },
+  "5bbc8748f32564b18154758e8df165136381a00a": {
+   "company": "Merck",
+   "first_seen": "2026-08-04T22:42:38.803746+00:00",
+   "location": "West Point, Pennsylvania, United States of America",
+   "match": "program",
+   "title": "2026 Future Talent Program - Vaccine Manufacturing Co-op",
+   "url": "https://msd.wd5.myworkdayjobs.com/en-US/SearchJobs/job/USA---Pennsylvania---West-Point/XMLNAME-2026-Future-Talent-Program---Vaccine-Manufacturing-Co-op_R395900/apply"
+  },
   "5bfcd116be736b799e66d29dae92ca93caf3406d": {
    "company": "Roche",
    "first_seen": "2026-07-15T06:28:41.532995+00:00",
@@ -2621,6 +2629,14 @@
    "location": "Mannheim",
    "title": "Internship & Master Thesis Near-Patient Care Development (m/f/d)"
   },
+  "a7947a97e16083c87f908d0b2e5e2053d4c73b0f": {
+   "company": "Pfizer",
+   "first_seen": "2026-08-04T22:42:38.803746+00:00",
+   "location": "4 Locations",
+   "match": "early-stage",
+   "title": "Manager- Supply Chain Operations Analyst",
+   "url": "https://pfizer.wd1.myworkdayjobs.com/en-US/PfizerCareers/job/United-States---Tennessee---Memphis/Manager--Supply-Chain-Operations-Analyst_4961481-1"
+  },
   "a8219c52bba72286d6c15b670fb8c54edfacc6bd": {
    "company": "Thermo Fisher Scientific",
    "first_seen": "2026-07-30T04:17:43.849291+00:00",
@@ -2930,6 +2946,14 @@
    "title": "Sr Formulation Technician (12hr days, 2-2-3 rotation)",
    "url": "https://thermofisher.wd5.myworkdayjobs.com/ThermoFisherCareers/job/Greenville-North-Carolina-USA/Sr-Formulation-Technician--12hr-days--2-2-3-rotation-_R-01345702/apply"
   },
+  "ba60698a492f730e3f31215a23335891878dfa57": {
+   "company": "Merck",
+   "first_seen": "2026-08-04T22:42:38.803746+00:00",
+   "location": "West Point, Pennsylvania, United States of America",
+   "match": "program",
+   "title": "2026 Future Talent Program \u2013 Manufacturing and Reliability Engineering Co-Op",
+   "url": "https://msd.wd5.myworkdayjobs.com/en-US/SearchJobs/job/USA---Pennsylvania---West-Point/XMLNAME-2026-Future-Talent-Program---Manufacturing-and-Reliability-Engineering-Co-Op_R395901/apply"
+  },
   "bae1329f664610a4403856e064dac92ef78367a0": {
    "company": "Roche",
    "first_seen": "2026-07-15T06:28:41.532995+00:00",
@@ -3136,6 +3160,14 @@
    "match": "early-stage",
    "title": "Senior Manager, Marketing Research - Rheumatology",
    "url": "https://careers.abbvie.com/en/job/senior-manager-marketing-research-rheumatology-in-mettawa-il-jid-29240"
+  },
+  "c82e87ecc02e453190e595670c466d2ee38de382": {
+   "company": "Johnson & Johnson",
+   "first_seen": "2026-08-04T22:42:38.803746+00:00",
+   "location": "Titusville",
+   "match": "early-stage",
+   "title": "Finance Manager GTN Solutions",
+   "url": "https://www.careers.jnj.com/en/jobs/r-092242/finance-manager-gtn-solutions/"
   },
   "c8dcbdf296d60724aef379c9da27c0fcc593641b": {
    "company": "Johnson & Johnson",

@@ -3,7 +3,7 @@
   "Takeda": {
    "reason": "https://takeda.wd3.myworkdayjobs.com/wday/cxs/takeda/External/jobs failed after 3 attempts: HTTP 422",
    "since": "2026-08-01T14:40:16.785219+00:00",
-   "streak": 44
+   "streak": 45
   }
  },
  "failures": {
@@ -52,6 +52,14 @@
    "match": "early-stage",
    "title": "US Market Access & Reimbursement Analyst - Shockwave Medical",
    "url": "https://www.careers.jnj.com/en/jobs/r-090034/us-market-access-reimbursement-analyst-shockwave-medical/"
+  },
+  "01b6548b3fd05da59d8ee31e3580bcc2eab15f06": {
+   "company": "Bristol Myers Squibb",
+   "first_seen": "2026-08-04T21:33:44.364349+00:00",
+   "location": "Princeton - NJ - US",
+   "match": "program-desc",
+   "title": "Product Manager, Global Medical Affairs BI&T - Scientific Content & Publications",
+   "url": "https://bristolmyerssquibb.wd5.myworkdayjobs.com/en-US/BMS/job/Princeton---NJ---US/Product-Manager--Global-Medical-Affairs-BI-T---Scientific-Content---Publications_R1601823"
   },
   "01c29474020f43fce95383bb9adb6b910320bbfc": {
    "company": "Genentech",
@@ -1700,6 +1708,14 @@
    "match": "early-stage",
    "title": "Manager, Price Forecasting",
    "url": "https://careers.abbvie.com/en/job/manager-price-forecasting-in-mettawa-il-jid-31101"
+  },
+  "66af86ac6156df8887f7e601094547e08ad39971": {
+   "company": "AbbVie",
+   "first_seen": "2026-08-04T21:33:44.364349+00:00",
+   "location": "Mettawa, IL",
+   "match": "early-stage",
+   "title": "Manager, Marketing Insights - Gastroenterology - Mettawa, IL",
+   "url": "https://careers.abbvie.com/en/job/manager-marketing-insights-gastroenterology-mettawa-il-in-mettawa-il-jid-31363"
   },
   "670d8039688ef1f23046a5351dee51da0a0ab6a5": {
    "company": "Regeneron",
@@ -3374,6 +3390,14 @@
    "match": "early-stage",
    "title": "Technical Sales Specialist \u2013 MedTech Surgery",
    "url": "https://www.careers.jnj.com/en/jobs/r-090281/technical-sales-specialist-medtech-surgery/"
+  },
+  "dd5ab803f519fd3aa89c7870045887a3b803cea6": {
+   "company": "Novo Nordisk",
+   "first_seen": "2026-08-04T21:33:44.364349+00:00",
+   "location": "United States, Plainsboro",
+   "match": "early-stage",
+   "title": "Senior Strategic Pricing and Contracting Advisory\u00a0Manager",
+   "url": "https://www.novonordisk.com/careers/find-a-job/job-ad.html?id=344962.en_US"
   },
   "dd81d2e76f36aa38c5280aa5603fc424bad9ef37": {
    "company": "Johnson & Johnson",

@@ -3,7 +3,7 @@
   "Takeda": {
    "reason": "https://takeda.wd3.myworkdayjobs.com/wday/cxs/takeda/External/jobs failed after 3 attempts: HTTP 422",
    "since": "2026-08-01T14:40:16.785219+00:00",
-   "streak": 36
+   "streak": 37
   }
  },
  "failures": {
@@ -2267,6 +2267,14 @@
    "match": "early-stage",
    "title": "Clinical Operations Coordinator (Reference Lab)",
    "url": "https://tempus.wd5.myworkdayjobs.com/en-US/Tempus_Careers/job/Chicago/Clinical-Operations-Coordinator--Reference-Lab-_JR202600717"
+  },
+  "90b2b5ade8c464a07aef286ac0a99d4878b25982": {
+   "company": "Merck",
+   "first_seen": "2026-08-04T01:07:35.140850+00:00",
+   "location": "Rahway, New Jersey, United States of America",
+   "match": "program",
+   "title": "Commercial Rotation Specialist, Marketing",
+   "url": "https://msd.wd5.myworkdayjobs.com/en-US/SearchJobs/job/USA---New-Jersey---Rahway/Commercial-Rotation-Specialist--Marketing_R408008-2/apply"
   },
   "9182d783400a67532ce2bd51a7fd29f0fdb65e7c": {
    "company": "Johnson & Johnson",

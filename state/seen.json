@@ -3,7 +3,7 @@
   "Takeda": {
    "reason": "https://takeda.wd3.myworkdayjobs.com/wday/cxs/takeda/External/jobs failed after 3 attempts: HTTP 422",
    "since": "2026-08-01T14:40:16.785219+00:00",
-   "streak": 46
+   "streak": 47
   }
  },
  "failures": {
@@ -2716,6 +2716,14 @@
    "first_seen": "2026-07-15T06:28:41.532995+00:00",
    "location": "Sant Cugat del Vall\u00e8s",
    "title": "Logistics & Site Operations Intern (On en Roche Graduate Program)"
+  },
+  "acdab605136c426c5e6b29ed194ede7ea060f25d": {
+   "company": "Tempus AI",
+   "first_seen": "2026-08-04T23:40:57.432870+00:00",
+   "location": "Chicago",
+   "match": "early-stage",
+   "title": "Sr Associate, Strategy & Operations",
+   "url": "https://tempus.wd5.myworkdayjobs.com/en-US/Tempus_Careers/job/Chicago/Sr-Associate--Strategy---Operations_JR202600785"
   },
   "ad1fb0f8517cc0b642531cc4c05bcc2fa6588576": {
    "company": "Medpace",

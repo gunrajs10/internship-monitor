@@ -3,7 +3,7 @@
   "Takeda": {
    "reason": "https://takeda.wd3.myworkdayjobs.com/wday/cxs/takeda/External/jobs failed after 3 attempts: HTTP 422",
    "since": "2026-08-01T14:40:16.785219+00:00",
-   "streak": 54
+   "streak": 55
   }
  },
  "failures": {
@@ -3664,6 +3664,14 @@
    "first_seen": "2026-07-15T06:28:41.532995+00:00",
    "location": "Budapest",
    "title": "Strategic Talent Acquisition Intern - German advantage"
+  },
+  "e9122214b2c4bf491da4961269dcea5696756211": {
+   "company": "Merck",
+   "first_seen": "2026-08-05T19:52:06.321962+00:00",
+   "location": "North Wales, Pennsylvania, United States of America",
+   "match": "early-stage",
+   "title": "Senior Specialist, Market Research",
+   "url": "https://msd.wd5.myworkdayjobs.com/en-US/SearchJobs/job/USA---Pennsylvania---North-Wales-Upper-Gwynedd/Senior-Specialist--Market-Research_R411205-1/apply"
   },
   "e9298bc80ce6adebbad7bdecddfd99737bfcd208": {
    "company": "Medpace",

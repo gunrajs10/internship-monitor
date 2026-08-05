@@ -3,7 +3,7 @@
   "Takeda": {
    "reason": "https://takeda.wd3.myworkdayjobs.com/wday/cxs/takeda/External/jobs failed after 3 attempts: HTTP 422",
    "since": "2026-08-01T14:40:16.785219+00:00",
-   "streak": 53
+   "streak": 54
   }
  },
  "failures": {
@@ -630,6 +630,14 @@
    "location": "Cincinnati, Ohio, United States",
    "title": "Biomedical Engineering New Grads - Imaging Project Coordinator",
    "url": "https://careers.medpace.com/jobs/11973?lang=en-us"
+  },
+  "2538b4956a3ab2a2686c472a130e8cf99cf94268": {
+   "company": "Neurocrine Biosciences",
+   "first_seen": "2026-08-05T17:52:34.791109+00:00",
+   "location": "US CA San Diego",
+   "match": "early-stage",
+   "title": "Senior Specialist, Regulatory Strategy",
+   "url": "https://neurocrine.wd5.myworkdayjobs.com/en-US/NeurocrineCareers/job/US-CA-San-Diego/Senior-Specialist--Regulatory-Strategy_R6844"
   },
   "259f0d68e40d9c46e80fba400b05ace9f5e2cd7c": {
    "company": "AstraZeneca",

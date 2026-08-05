@@ -3,7 +3,7 @@
   "Takeda": {
    "reason": "https://takeda.wd3.myworkdayjobs.com/wday/cxs/takeda/External/jobs failed after 3 attempts: HTTP 422",
    "since": "2026-08-01T14:40:16.785219+00:00",
-   "streak": 55
+   "streak": 56
   }
  },
  "failures": {
@@ -949,6 +949,14 @@
    "match": "early-stage",
    "title": "Territory Account Manager Roles (California) \u2013   Join Vertex\u2019s Sales Talent Community",
    "url": "https://vrtx.wd501.myworkdayjobs.com/en-US/Vertex_Careers/job/United-States---Field-Based/Territory-Account-Manager-Roles--California------Join-Vertex-s-Sales-Talent-Community_REQ-29073"
+  },
+  "35a164568f74a658c6bd40e1bd79aac63babeeda": {
+   "company": "Tempus AI",
+   "first_seen": "2026-08-05T21:30:54.569090+00:00",
+   "location": "2 Locations",
+   "match": "early-stage",
+   "title": "(Sr) Associate, Strategy & Operations",
+   "url": "https://tempus.wd5.myworkdayjobs.com/en-US/Tempus_Careers/job/Chicago/Sr-Associate--Strategy---Operations_JR202600785"
   },
   "35bfafc9b2d0d85108bdb47412f92f3f765ba6ee": {
    "company": "Medpace",
@@ -2873,6 +2881,14 @@
    "title": "District Sales Manager, Advanced Specialty Care ATTR - New York",
    "url": "https://astrazeneca.wd3.myworkdayjobs.com/en-US/Careers/job/US---Manhattan---NY/District-Sales-Manager--Advanced-Specialty-Care-ATTR---New-York_R-256157"
   },
+  "b292a45fe4079d977ac545a8b623cc383d271b7e": {
+   "company": "Genentech",
+   "first_seen": "2026-08-05T21:30:54.569090+00:00",
+   "location": "South San Francisco",
+   "match": "program",
+   "title": "Associate Program Director, Commercial Regulatory Affairs (CORA)",
+   "url": "https://roche.wd3.myworkdayjobs.com/en-US/ROG-A2O-GENE/job/South-San-Francisco/Associate-Program-Director--Commercial-Regulatory-Affairs--CORA-_202608-120265-1"
+  },
   "b330b1d219c9a96d3c12da89be1c7f7c0158303f": {
    "company": "Labcorp",
    "first_seen": "2026-07-28T17:45:13.192092+00:00",
@@ -2999,6 +3015,14 @@
    "match": "early-stage",
    "title": "Finance Account Manager",
    "url": "https://careers.medpace.com/jobs/12234?lang=en-us"
+  },
+  "baf14e315c23ec210187052da4063367ea93fc0a": {
+   "company": "Johnson & Johnson",
+   "first_seen": "2026-08-05T21:30:54.569090+00:00",
+   "location": "New Jersey (Any City) / Connecticut (Any City) / Maine (Any City) / Massachusetts (Any City) / New Hampshire (Any City) / New York / New York (Any City) / Rhode Island (Any City) / Vermont (Any City)",
+   "match": "early-stage",
+   "title": "Field Reimbursement Manager, CAR-T \u2013 Northeast",
+   "url": "https://www.careers.jnj.com/en/jobs/r-092343/field-reimbursement-manager-car-t-northeast/"
   },
   "baf59a58c74eaf94e81e4ef539c239ca0c60b128": {
    "company": "Lonza",

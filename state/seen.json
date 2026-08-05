@@ -3,7 +3,7 @@
   "Takeda": {
    "reason": "https://takeda.wd3.myworkdayjobs.com/wday/cxs/takeda/External/jobs failed after 3 attempts: HTTP 422",
    "since": "2026-08-01T14:40:16.785219+00:00",
-   "streak": 51
+   "streak": 52
   }
  },
  "failures": {
@@ -106,6 +106,14 @@
    "location": "United States - New York - New York City",
    "title": "MBA Marketing Summer Associate",
    "url": "https://pfizer.wd1.myworkdayjobs.com/en-US/PfizerCareers/job/United-States---New-York---New-York-City/MBA-Marketing-Summer-Associate_4960967"
+  },
+  "0484b592e9942a68227bbb5e15832d7bb392f4d1": {
+   "company": "Lonza",
+   "first_seen": "2026-08-05T15:26:09.075658+00:00",
+   "location": "United States, Portsmouth (New Hampshire)",
+   "match": "early-stage",
+   "title": "Strategic Operation Associate II",
+   "url": "https://www.lonza.com/jobs/R78306"
   },
   "059d92ae5472e3acb9142c0ed6e5ef1b95b7655c": {
    "company": "Thermo Fisher Scientific",
@@ -542,6 +550,14 @@
    "match": "early-stage",
    "title": "\u3010AstraZeneca\u3011\u3010Finance\u3011Pricing Manager, Pricing & Market Access",
    "url": "https://astrazeneca.wd3.myworkdayjobs.com/en-US/Careers/job/Japan---Tokyo/XMLNAME--AstraZeneca--Finance-Pricing-Manager--Pricing---Market-Access_R-240314-2"
+  },
+  "2185e132b57cc99f7e9d66dec9592a66303491ef": {
+   "company": "Sanofi",
+   "first_seen": "2026-08-05T15:26:09.075658+00:00",
+   "location": "Cambridge, MA",
+   "match": "early-stage",
+   "title": "Global Market Access & Pricing Specialist - VIE Contract",
+   "url": "https://sanofi.wd3.myworkdayjobs.com/en-US/SanofiCareers/job/Cambridge-MA/Global-Market-Access---Pricing-Specialist---VIE-Contract_R2867821"
   },
   "21a36b21e5e56e98f0b3ccb26ee4ca9e56e441f9": {
    "company": "Medpace",
@@ -3575,6 +3591,14 @@
    "match": "program",
    "title": "Technologist Trainee - Special Coagulation",
    "url": "https://labcorp.wd1.myworkdayjobs.com/External/job/Phoenix-AZ/Technologist-Trainee---Special-Coagulation_2623785/apply"
+  },
+  "e5cc9c3c0bf4293380459e3a55f55491bab8b6b2": {
+   "company": "Novo Nordisk",
+   "first_seen": "2026-08-05T15:26:09.075658+00:00",
+   "location": "United States, Plainsboro",
+   "match": "early-stage",
+   "title": "Pricing and Policy Insights Manager",
+   "url": "https://www.novonordisk.com/careers/find-a-job/job-ad.html?id=342008.en_US"
   },
   "e5ec01693ba555ca9c6d1c2ab70dc9c9083106fb": {
    "company": "Medpace",

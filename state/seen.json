@@ -1,24 +1,9 @@
 {
  "failing": {
-  "Medpace": {
-   "reason": "https://careers.medpace.com/api/jobs?keyword=intern&limit=100&page=1 failed after 3 attempts: HTTP 403",
-   "since": "2026-08-06T04:28:51.512203+00:00",
-   "streak": 1
-  },
-  "Merck": {
-   "reason": "https://jobs.merck.com/widgets failed after 3 attempts: HTTP 403",
-   "since": "2026-08-06T04:28:51.512203+00:00",
-   "streak": 1
-  },
   "Takeda": {
    "reason": "https://takeda.wd3.myworkdayjobs.com/wday/cxs/takeda/External/jobs failed after 3 attempts: HTTP 422",
    "since": "2026-08-01T14:40:16.785219+00:00",
-   "streak": 60
-  },
-  "Thermo Fisher Scientific": {
-   "reason": "https://jobs.thermofisher.com/widgets failed after 3 attempts: HTTP 403",
-   "since": "2026-08-06T04:28:51.512203+00:00",
-   "streak": 1
+   "streak": 61
   }
  },
  "failures": {
@@ -200,6 +185,14 @@
    "match": "early-stage",
    "title": "Associate Supply Chain Engineer",
    "url": "https://www.novonordisk.com/careers/find-a-job/job-ad.html?id=344694.en_US"
+  },
+  "0a7fd2f43ff453cb5b3adfc01410a195d798b268": {
+   "company": "Roche",
+   "first_seen": "2026-08-06T07:48:29.545451+00:00",
+   "location": "2 Locations",
+   "match": "early-stage",
+   "title": "Senior Infrastructure Business Operations Manager",
+   "url": "https://roche.wd3.myworkdayjobs.com/en-US/roche-ext/job/Basel/Senior-Infrastructure-Business-Operations-Manager_202607-117520-1"
   },
   "0ad41d237b5dcf57478b20096fb3d1e23dd3d273": {
    "company": "Medpace",

@@ -1,9 +1,24 @@
 {
  "failing": {
+  "Medpace": {
+   "reason": "https://careers.medpace.com/api/jobs?keyword=intern&limit=100&page=1 failed after 3 attempts: HTTP 403",
+   "since": "2026-08-06T04:28:51.512203+00:00",
+   "streak": 1
+  },
+  "Merck": {
+   "reason": "https://jobs.merck.com/widgets failed after 3 attempts: HTTP 403",
+   "since": "2026-08-06T04:28:51.512203+00:00",
+   "streak": 1
+  },
   "Takeda": {
    "reason": "https://takeda.wd3.myworkdayjobs.com/wday/cxs/takeda/External/jobs failed after 3 attempts: HTTP 422",
    "since": "2026-08-01T14:40:16.785219+00:00",
-   "streak": 59
+   "streak": 60
+  },
+  "Thermo Fisher Scientific": {
+   "reason": "https://jobs.thermofisher.com/widgets failed after 3 attempts: HTTP 403",
+   "since": "2026-08-06T04:28:51.512203+00:00",
+   "streak": 1
   }
  },
  "failures": {

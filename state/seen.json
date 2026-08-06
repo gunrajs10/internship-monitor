@@ -3,7 +3,7 @@
   "Takeda": {
    "reason": "https://takeda.wd3.myworkdayjobs.com/wday/cxs/takeda/External/jobs failed after 3 attempts: HTTP 422",
    "since": "2026-08-01T14:40:16.785219+00:00",
-   "streak": 62
+   "streak": 63
   }
  },
  "failures": {
@@ -3907,6 +3907,14 @@
    "match": "early-stage",
    "title": "Pharmaceutical Sales Representative - Territory Manager - Oncology Specialty",
    "url": "https://lilly.wd115.myworkdayjobs.com/LLY/job/US-Napa-CA/Pharmaceutical-Sales-Representative---Territory-Manager---Oncology-Specialty_R-108761-1/apply"
+  },
+  "f93eaaf48b75beaf89495434dc64c5232dd15934": {
+   "company": "Johnson & Johnson",
+   "first_seen": "2026-08-06T15:26:25.225903+00:00",
+   "location": "New Brunswick / Raynham / West Chester",
+   "match": "early-stage",
+   "title": "Analyst, Commercial Categories",
+   "url": "https://www.careers.jnj.com/en/jobs/r-091202/analyst-commercial-categories/"
   },
   "f99154e3c1e2ec25a1af141669eb6f55afbaa15e": {
    "company": "Lonza",

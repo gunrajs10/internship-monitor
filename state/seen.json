@@ -3,7 +3,7 @@
   "Takeda": {
    "reason": "https://takeda.wd3.myworkdayjobs.com/wday/cxs/takeda/External/jobs failed after 3 attempts: HTTP 422",
    "since": "2026-08-01T14:40:16.785219+00:00",
-   "streak": 71
+   "streak": 72
   }
  },
  "failures": {
@@ -1377,6 +1377,14 @@
    "match": "early-stage",
    "title": "Senior Manager, Commercial FP&A \u2014 OPEX",
    "url": "https://jobs.jobvite.com/biomarin/job/oeotAfwp"
+  },
+  "4da21c3fb54edafea803559da5623263abacdbb1": {
+   "company": "GSK",
+   "first_seen": "2026-08-07T15:07:39.894179+00:00",
+   "location": "2 Locations",
+   "match": "early-stage",
+   "title": "Manager, Payer & Provider Account Analytics",
+   "url": "https://gsk.wd5.myworkdayjobs.com/en-US/GSKCareers/job/USA---North-Carolina---Durham/Manager--Payer---Provider-Account-Analytics_446101"
   },
   "4deb40e6cb4389d5f4f15441b1791e4692ea7438": {
    "company": "Axsome Therapeutics",

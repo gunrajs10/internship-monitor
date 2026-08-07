@@ -3,7 +3,7 @@
   "Takeda": {
    "reason": "https://takeda.wd3.myworkdayjobs.com/wday/cxs/takeda/External/jobs failed after 3 attempts: HTTP 422",
    "since": "2026-08-01T14:40:16.785219+00:00",
-   "streak": 75
+   "streak": 76
   }
  },
  "failures": {
@@ -896,6 +896,14 @@
    "title": "\u3010AstraZeneca\u3011\u3010Finance\u3011Strategic Sourcing Manager, Procurement",
    "url": "https://astrazeneca.wd3.myworkdayjobs.com/en-US/Careers/job/Japan---Tokyo/XMLNAME--AstraZeneca--Finance-Strategic-Sourcing-Manager--Procurement_R-255861-4"
   },
+  "31f36bdb2397dd59dddae375db46439ef9a08109": {
+   "company": "Labcorp",
+   "first_seen": "2026-08-07T19:12:49.895551+00:00",
+   "location": "Burlington, North Carolina, United States of America",
+   "match": "early-stage",
+   "title": "Project Manager, Global Corporate Development",
+   "url": "https://labcorp.wd1.myworkdayjobs.com/External/job/Burlington-NC/Project-Manager--Global-Corporate-Development_267654/apply"
+  },
   "3204a4de73480d66c32e0145d1adbda30a1bffd6": {
    "company": "Tempus AI",
    "first_seen": "2026-07-28T21:45:15.519623+00:00",
@@ -1058,6 +1066,14 @@
    "location": "US - Rhode Island - West Greenwich",
    "title": "Associate Fuel Rotational Program \u2013 West Greenwich, RI",
    "url": "https://amgen.wd1.myworkdayjobs.com/en-US/Careers/job/US---Rhode-Island---West-Greenwich/Associate-Fuel-Rotational-Program---West-Greenwich--RI_R-250289"
+  },
+  "3a403f23adab797547347d67308f96461b655405": {
+   "company": "GSK",
+   "first_seen": "2026-08-07T19:12:49.895551+00:00",
+   "location": "Durham Blackwell Street",
+   "match": "early-stage",
+   "title": "Direct-to-Consumer Marketing Manager - HIV Prevention",
+   "url": "https://gsk.wd5.myworkdayjobs.com/en-US/GSKCareers/job/Durham-Blackwell-Street/Direct-to-Consumer-Marketing-Manager---HIV-Prevention_441911-1"
   },
   "3a40bf219442e3b7bf1b7085f3c0eec4d8a516f3": {
    "company": "Lonza",

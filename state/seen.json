@@ -3,7 +3,7 @@
   "Takeda": {
    "reason": "https://takeda.wd3.myworkdayjobs.com/wday/cxs/takeda/External/jobs failed after 3 attempts: HTTP 422",
    "since": "2026-08-01T14:40:16.785219+00:00",
-   "streak": 70
+   "streak": 71
   }
  },
  "failures": {
@@ -277,6 +277,14 @@
    "match": "early-stage",
    "title": "Project Finance Account Manager",
    "url": "https://careers.medpace.com/jobs/12242?lang=en-us"
+  },
+  "11fc063702847c8489376db08f0180f0fd446a66": {
+   "company": "Johnson & Johnson",
+   "first_seen": "2026-08-07T14:18:13.284484+00:00",
+   "location": "Remote (Us)",
+   "match": "early-stage",
+   "title": "Manager, Commercial Education (Remote) Johnson and Johnson MedTech, Electrophysiology",
+   "url": "https://www.careers.jnj.com/en/jobs/r-092232/manager-commercial-education-remote-johnson-and-johnson-medtech-electrophysiology/"
   },
   "1202089cbd55355cb42fd4d1db9f4a9e49f696c1": {
    "company": "Labcorp",
@@ -2659,6 +2667,14 @@
    "title": "Neuroscience Sales Specialist - Utica, NY - Johnson & Johnson Innovative Medicine",
    "url": "https://www.careers.jnj.com/en/jobs/r-086543/neuroscience-sales-specialist-utica-ny-johnson-johnson-innovative-medicine/"
   },
+  "a2a76305590143bc622d3cf5793fd25edf02cbc9": {
+   "company": "Amgen",
+   "first_seen": "2026-08-07T14:18:13.284484+00:00",
+   "location": "United States - Remote",
+   "match": "early-stage",
+   "title": "UPLIZNA gMG Medical Marketing, Manager",
+   "url": "https://amgen.wd1.myworkdayjobs.com/en-US/Careers/job/United-States---Remote/UPLIZNA-gMG-Medical-Marketing--Manager_R-252082-1"
+  },
   "a3946dc36a2c3611fb38c02f686f37dc02931777": {
    "company": "Johnson & Johnson",
    "first_seen": "2026-07-28T23:38:04.477688+00:00",
@@ -3923,6 +3939,14 @@
    "location": "North Chicago, IL",
    "title": "Associate Medical Director (Physician Development Program - Hematology)",
    "url": "https://careers.abbvie.com/en/job/associate-medical-director-physician-development-program-hematology-in-north-chicago-il-jid-19324"
+  },
+  "f3bc01956a5d2c381d021693aa6767c91c9bcf5e": {
+   "company": "Amgen",
+   "first_seen": "2026-08-07T14:18:13.284484+00:00",
+   "location": "51 Locations",
+   "match": "early-stage",
+   "title": "Strategic Sourcing Manager",
+   "url": "https://amgen.wd1.myworkdayjobs.com/en-US/Careers/job/US---Florida---Jacksonville/Strategic-Sourcing-Manager_R-250328-1"
   },
   "f3d0977f4f3b9d9390275e1e35f11730be712205": {
    "company": "Neurocrine Biosciences",

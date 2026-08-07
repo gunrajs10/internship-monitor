@@ -3,7 +3,7 @@
   "Takeda": {
    "reason": "https://takeda.wd3.myworkdayjobs.com/wday/cxs/takeda/External/jobs failed after 3 attempts: HTTP 422",
    "since": "2026-08-01T14:40:16.785219+00:00",
-   "streak": 67
+   "streak": 68
   }
  },
  "failures": {
@@ -1542,6 +1542,14 @@
    "first_seen": "2026-07-15T06:28:41.532995+00:00",
    "location": "Appleton, Wisconsin, United States of America",
    "title": "Undergrad Lab Intern"
+  },
+  "54ef02f39bf3e869c66c3d80fc9957f520606f94": {
+   "company": "Neurocrine Biosciences",
+   "first_seen": "2026-08-07T08:20:22.064285+00:00",
+   "location": "US CA San Diego",
+   "match": "early-stage",
+   "title": "Associate Specialist, Clin Ops Strategy & Efficiency",
+   "url": "https://neurocrine.wd5.myworkdayjobs.com/en-US/NeurocrineCareers/job/US-CA-San-Diego/Associate-Specialist--Clin-Ops-Strategy---Efficiency_R7099"
   },
   "55475200d7137db11f0cb82309f16f62a2c98d27": {
    "company": "Roche",

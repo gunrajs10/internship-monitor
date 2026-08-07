@@ -3,7 +3,7 @@
   "Takeda": {
    "reason": "https://takeda.wd3.myworkdayjobs.com/wday/cxs/takeda/External/jobs failed after 3 attempts: HTTP 422",
    "since": "2026-08-01T14:40:16.785219+00:00",
-   "streak": 72
+   "streak": 73
   }
  },
  "failures": {
@@ -1408,6 +1408,14 @@
    "skipped": "undergrad-only",
    "title": "Clinical Logistics Intern- Fall 2026"
   },
+  "4efe27fa4c317a61381db5053ea103772c9f00f1": {
+   "company": "Johnson & Johnson",
+   "first_seen": "2026-08-07T16:07:29.131778+00:00",
+   "location": "Cincinnati",
+   "match": "program",
+   "title": "Electrical Engineer Co-op",
+   "url": "https://www.careers.jnj.com/en/jobs/r-092818/electrical-engineer-co-op/"
+  },
   "4f139ad401a0a48bdb5ba7f3b25b84b52c586b0c": {
    "company": "Roche",
    "first_seen": "2026-07-15T06:28:41.532995+00:00",
@@ -2757,6 +2765,14 @@
    "location": "Mannheim",
    "title": "Internship & Master Thesis Near-Patient Care Development (m/f/d)"
   },
+  "a77375a44f005b1c9f7c5b6ec188151837ea38ac": {
+   "company": "AstraZeneca",
+   "first_seen": "2026-08-07T16:07:29.131778+00:00",
+   "location": "US - San Diego - CA",
+   "match": "early-stage",
+   "title": "Field Reimbursement Manager - San Diego, CA",
+   "url": "https://astrazeneca.wd3.myworkdayjobs.com/en-US/Careers/job/US---San-Diego---CA/Field-Reimbursement-Manager---San-Diego--CA_R-257865"
+  },
   "a7947a97e16083c87f908d0b2e5e2053d4c73b0f": {
    "company": "Pfizer",
    "first_seen": "2026-08-04T22:42:38.803746+00:00",
@@ -3772,6 +3788,14 @@
    "match": "early-stage",
    "title": "US Senior Product Manager, Respiratory Marketing",
    "url": "https://sanofi.wd3.myworkdayjobs.com/en-US/SanofiCareers/job/Cambridge-MA/US-Senior-Product-Manager--Respiratory-Marketing_R2857290-1"
+  },
+  "e754a15a6537c78558294c929a10430105026f39": {
+   "company": "Johnson & Johnson",
+   "first_seen": "2026-08-07T16:07:29.131778+00:00",
+   "location": "Cincinnati",
+   "match": "program",
+   "title": "Software Engineer Coop",
+   "url": "https://www.careers.jnj.com/en/jobs/r-092820/software-engineer-coop/"
   },
   "e756c0a2153508ac01cf7b5fa14eecdc542cbe06": {
    "company": "AstraZeneca",

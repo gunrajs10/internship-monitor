@@ -3,7 +3,7 @@
   "Takeda": {
    "reason": "https://takeda.wd3.myworkdayjobs.com/wday/cxs/takeda/External/jobs failed after 3 attempts: HTTP 422",
    "since": "2026-08-01T14:40:16.785219+00:00",
-   "streak": 63
+   "streak": 64
   }
  },
  "failures": {
@@ -169,6 +169,14 @@
    "first_seen": "2026-07-15T06:28:41.532995+00:00",
    "location": "Petaling Jaya",
    "title": "Site IT Experience Intern"
+  },
+  "09a58b2b3a3da91b88ceb569cdab8f81746a2f94": {
+   "company": "Merck",
+   "first_seen": "2026-08-07T00:14:00.214401+00:00",
+   "location": "Rahway, New Jersey, United States of America",
+   "match": "early-stage",
+   "title": "Senior Specialist, Marketing Procurement (Strategic Sourcing & Supplier Management)",
+   "url": "https://msd.wd5.myworkdayjobs.com/en-US/SearchJobs/job/USA---New-Jersey---Rahway/Senior-Specialist--Procurement_R406559/apply"
   },
   "09ed79b2613f2981bebf98a21fd37d48dc2a515d": {
    "company": "Thermo Fisher Scientific",
@@ -919,6 +927,14 @@
    "match": "early-stage",
    "title": "Marketing Manager, Life Sciences",
    "url": "https://tempus.wd5.myworkdayjobs.com/en-US/Tempus_Careers/job/Chicago/Marketing-Manager--Life-Sciences_JR202500389"
+  },
+  "340ea423a6179e220608849d63dafa2e6a87857d": {
+   "company": "AbbVie",
+   "first_seen": "2026-08-07T00:14:00.214401+00:00",
+   "location": "Austin, TX",
+   "match": "early-stage",
+   "title": "Sr Inside Business Development Manager",
+   "url": "https://careers.abbvie.com/en/job/sr-inside-business-development-manager-in-austin-tx-jid-31151"
   },
   "3463734f7511e0be218fb903a8ae5b56ed1159bd": {
    "company": "Roche",
@@ -1904,6 +1920,14 @@
    "title": "Manager, Financial Planning \u00e2\u0080\u0093 Commercial Controllership Finance",
    "url": "https://careers.abbvie.com/en/job/manager-financial-planning-commercial-controllership-finance-in-mettawa-il-jid-29511"
   },
+  "7055f377387ca31dde10c8b5189b9d89dd0db2dd": {
+   "company": "Johnson & Johnson",
+   "first_seen": "2026-08-07T00:14:00.214401+00:00",
+   "location": "Horsham",
+   "match": "early-stage",
+   "title": "Product Manager, Bladder Cancer Professional Promotion Marketing, Erda-iDRS",
+   "url": "https://www.careers.jnj.com/en/jobs/r-092746/product-manager-bladder-cancer-professional-promotion-marketing-erda-idrs/"
+  },
   "710cbd11dc0cbcfb1c6cf0806db0f8cb6bd44608": {
    "company": "BridgeBio",
    "first_seen": "2026-07-28T21:45:15.519623+00:00",
@@ -2057,6 +2081,14 @@
    "match": "early-stage",
    "title": "Sales Associate (Houston, TX) - Johnson & Johnson MedTech - Orthopaedics",
    "url": "https://www.careers.jnj.com/en/jobs/r-089525/sales-associate-houston-tx-johnson-johnson-medtech-orthopaedics/"
+  },
+  "78693f909ef2b3503c7a923eb1f2e0feace56cd5": {
+   "company": "Amgen",
+   "first_seen": "2026-08-07T00:14:00.214401+00:00",
+   "location": "US - Pennsylvania - Philadelphia",
+   "match": "early-stage",
+   "title": "UPLIZNA gMG Medical Marketing, Manager",
+   "url": "https://amgen.wd1.myworkdayjobs.com/en-US/Careers/job/US---Pennsylvania---Philadelphia/UPLIZNA-gMG-Medical-Marketing--Manager_R-252082-1"
   },
   "790d9689c7a944dbcfe7b1d9ba447a18fae08531": {
    "company": "AstraZeneca",
@@ -2619,6 +2651,14 @@
    "title": "Sr. Clinical Sales Specialist- West",
    "url": "https://www.careers.jnj.com/en/jobs/r-090467/sr-clinical-sales-specialist-west/"
   },
+  "a3cdf387b891becfd2b7f8b665194fc714da37a5": {
+   "company": "Medpace",
+   "first_seen": "2026-08-07T00:14:00.214401+00:00",
+   "location": "Cincinnati, Ohio, United States",
+   "match": "program",
+   "title": "Early Career Clinical Research Opportunities",
+   "url": "https://careers.medpace.com/jobs/12918?lang=en-us"
+  },
   "a4bfaed87704f4c96ed363697e70563cd70eab69": {
    "company": "Regeneron",
    "first_seen": "2026-07-15T06:28:41.532995+00:00",
@@ -2662,6 +2702,14 @@
    "first_seen": "2026-07-15T10:16:04.586005+00:00",
    "location": "Cincinnati, Ohio, United States",
    "title": "Clinical Informatics Intern - Fall 2026"
+  },
+  "a62228a73883aa410cebeacd4f45ea0a63cef85c": {
+   "company": "Labcorp",
+   "first_seen": "2026-08-07T00:14:00.214401+00:00",
+   "location": "Englewood, Colorado, United States of America",
+   "match": "early-stage",
+   "title": "Regional Manager Business Development - South Colorado",
+   "url": "https://labcorp.wd1.myworkdayjobs.com/External/job/Englewood-CO/Regional-Manager-Business-Development---South-Colorado_2627015/apply"
   },
   "a751a0aab37b65af570799aaf0fba163e1da5837": {
    "company": "Roche",
@@ -3055,6 +3103,14 @@
    "match": "early-stage",
    "title": "Field Reimbursement Manager  - Neurology (Austin, TX)",
    "url": "https://regeneron.wd1.myworkdayjobs.com/en-US/Careers/job/Austin-TX/Field-Reimbursement-Manager----Neurology--Austin--TX-_R48132"
+  },
+  "bd8d47cf4cf7cdaf228c884abbedc0ca490b8776": {
+   "company": "Johnson & Johnson",
+   "first_seen": "2026-08-07T00:14:00.214401+00:00",
+   "location": "Horsham",
+   "match": "early-stage",
+   "title": "Product Manager, Marketing Engagement and Professional Education, US Oncology",
+   "url": "https://www.careers.jnj.com/en/jobs/r-092499/product-manager-marketing-engagement-and-professional-education-us-oncology/"
   },
   "be772dadeeabcf3a170899930bdd64acd9b7cfa3": {
    "company": "Eli Lilly",

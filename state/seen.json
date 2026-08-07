@@ -3,7 +3,7 @@
   "Takeda": {
    "reason": "https://takeda.wd3.myworkdayjobs.com/wday/cxs/takeda/External/jobs failed after 3 attempts: HTTP 422",
    "since": "2026-08-01T14:40:16.785219+00:00",
-   "streak": 66
+   "streak": 67
   }
  },
  "failures": {
@@ -527,6 +527,14 @@
    "first_seen": "2026-07-15T06:28:41.532995+00:00",
    "location": "Penzberg",
    "title": "6-month Internship in Antibody Development (m/f/d)"
+  },
+  "1f89ecf7ca58c9d9200a95d4e9632c467f96a207": {
+   "company": "Sanofi",
+   "first_seen": "2026-08-07T06:17:16.720004+00:00",
+   "location": "2 Locations",
+   "match": "early-stage",
+   "title": "Field Reimbursement Manager,  Allergy ENT East, Charleston, WV",
+   "url": "https://sanofi.wd3.myworkdayjobs.com/en-US/SanofiCareers/job/Charleston-WV/Field-Reimbursement-Manager---Allergy-ENT-East--Charleston--WV_R2866970-1"
   },
   "1fa25e5dadac52d0030f1652e3eee86ed72579d4": {
    "company": "AstraZeneca",

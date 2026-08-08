@@ -3,7 +3,7 @@
   "Takeda": {
    "reason": "https://takeda.wd3.myworkdayjobs.com/wday/cxs/takeda/External/jobs failed after 3 attempts: HTTP 422",
    "since": "2026-08-01T14:40:16.785219+00:00",
-   "streak": 90
+   "streak": 91
   }
  },
  "failures": {
@@ -47,6 +47,7 @@
   },
   "010e76fb41664deeac666242852873d1c539ef91": {
    "company": "Johnson & Johnson",
+   "expired": true,
    "first_seen": "2026-07-28T17:45:13.192092+00:00",
    "location": "Minneapolis",
    "match": "early-stage",
@@ -336,6 +337,7 @@
   },
   "13be2a5764849184e1f717e4645aeaaa6aef7833": {
    "company": "Johnson & Johnson",
+   "expired": true,
    "first_seen": "2026-07-28T23:38:04.477688+00:00",
    "location": "Cincinnati",
    "match": "early-stage",
@@ -465,6 +467,7 @@
   },
   "1a0cc946a3efd660323e2bc40018e777eedaf875": {
    "company": "Johnson & Johnson",
+   "expired": true,
    "first_seen": "2026-07-28T17:45:13.192092+00:00",
    "location": "Raynham / Raritan / West Chester",
    "match": "early-stage",
@@ -642,6 +645,7 @@
   },
   "24853c2d2df1d117801058b0089a2952b1b53d2d": {
    "company": "Johnson & Johnson",
+   "expired": true,
    "first_seen": "2026-07-28T23:38:04.477688+00:00",
    "location": "Raynham / Raritan / West Chester",
    "match": "early-stage",
@@ -803,6 +807,7 @@
   },
   "2cab2a8ecd11e041294f477fd512970b819690d3": {
    "company": "Johnson & Johnson",
+   "expired": true,
    "first_seen": "2026-08-04T15:34:03.381755+00:00",
    "location": "New Brunswick",
    "match": "early-stage",
@@ -992,6 +997,7 @@
   },
   "3567c8069b78fb8efa04fcba137b46bc584d4bb6": {
    "company": "Johnson & Johnson",
+   "expired": true,
    "first_seen": "2026-07-29T07:52:08.902964+00:00",
    "location": "Horsham",
    "match": "early-stage",
@@ -1300,6 +1306,7 @@
   },
   "4679321a0f833152e742d6360cf9915d4f17aa7d": {
    "company": "Johnson & Johnson",
+   "expired": true,
    "first_seen": "2026-07-28T23:38:04.477688+00:00",
    "location": "West Chester / Palm Beach Gardens / Raynham / Raritan",
    "match": "early-stage",
@@ -1372,6 +1379,7 @@
   },
   "4adfaccdc6e4cec5d487e1e3d98ffb80516664b9": {
    "company": "Johnson & Johnson",
+   "expired": true,
    "first_seen": "2026-07-28T23:38:04.477688+00:00",
    "location": "New York",
    "match": "early-stage",

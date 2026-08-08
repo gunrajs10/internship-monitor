@@ -1,94 +1,9 @@
 {
  "failing": {
-  "Agilent Technologies": {
-   "reason": "https://agilent.wd5.myworkdayjobs.com/wday/cxs/agilent/Agilent_Careers/jobs is in a VENDOR MAINTENANCE WINDOW - it served an HTML 'currently unavailable' page instead of JSON. Transient; the endpoint is unchanged and no fix is needed unless it persists.",
-   "since": "2026-08-08T07:57:44.256140+00:00",
-   "streak": 1
-  },
-  "Amgen": {
-   "reason": "https://amgen.wd1.myworkdayjobs.com/wday/cxs/amgen/Careers/jobs is in a VENDOR MAINTENANCE WINDOW - it served an HTML 'currently unavailable' page instead of JSON. Transient; the endpoint is unchanged and no fix is needed unless it persists.",
-   "since": "2026-08-08T07:57:44.256140+00:00",
-   "streak": 1
-  },
-  "AstraZeneca": {
-   "reason": "https://astrazeneca.wd3.myworkdayjobs.com/wday/cxs/astrazeneca/Careers/jobs is in a VENDOR MAINTENANCE WINDOW - it served an HTML 'currently unavailable' page instead of JSON. Transient; the endpoint is unchanged and no fix is needed unless it persists.",
-   "since": "2026-08-08T05:55:26.551817+00:00",
-   "streak": 2
-  },
-  "Biogen": {
-   "reason": "https://biibhr.wd3.myworkdayjobs.com/wday/cxs/biibhr/external/jobs is in a VENDOR MAINTENANCE WINDOW - it served an HTML 'currently unavailable' page instead of JSON. Transient; the endpoint is unchanged and no fix is needed unless it persists.",
-   "since": "2026-08-08T07:57:44.256140+00:00",
-   "streak": 1
-  },
-  "Bristol Myers Squibb": {
-   "reason": "https://bristolmyerssquibb.wd5.myworkdayjobs.com/wday/cxs/bristolmyerssquibb/BMS/jobs is in a VENDOR MAINTENANCE WINDOW - it served an HTML 'currently unavailable' page instead of JSON. Transient; the endpoint is unchanged and no fix is needed unless it persists.",
-   "since": "2026-08-08T07:57:44.256140+00:00",
-   "streak": 1
-  },
-  "Genentech": {
-   "reason": "https://roche.wd3.myworkdayjobs.com/wday/cxs/roche/ROG-A2O-GENE/jobs is in a VENDOR MAINTENANCE WINDOW - it served an HTML 'currently unavailable' page instead of JSON. Transient; the endpoint is unchanged and no fix is needed unless it persists.",
-   "since": "2026-08-08T07:57:44.256140+00:00",
-   "streak": 1
-  },
-  "Gilead Sciences": {
-   "reason": "https://gilead.wd1.myworkdayjobs.com/wday/cxs/gilead/gileadcareers/jobs is in a VENDOR MAINTENANCE WINDOW - it served an HTML 'currently unavailable' page instead of JSON. Transient; the endpoint is unchanged and no fix is needed unless it persists.",
-   "since": "2026-08-08T07:57:44.256140+00:00",
-   "streak": 1
-  },
-  "Illumina": {
-   "reason": "https://illumina.wd1.myworkdayjobs.com/wday/cxs/illumina/illumina-careers/jobs is in a VENDOR MAINTENANCE WINDOW - it served an HTML 'currently unavailable' page instead of JSON. Transient; the endpoint is unchanged and no fix is needed unless it persists.",
-   "since": "2026-08-08T07:57:44.256140+00:00",
-   "streak": 1
-  },
-  "Kite Pharma": {
-   "reason": "https://gilead.wd1.myworkdayjobs.com/wday/cxs/gilead/kitepharmacareers/jobs is in a VENDOR MAINTENANCE WINDOW - it served an HTML 'currently unavailable' page instead of JSON. Transient; the endpoint is unchanged and no fix is needed unless it persists.",
-   "since": "2026-08-08T07:57:44.256140+00:00",
-   "streak": 1
-  },
-  "Moderna": {
-   "reason": "https://modernatx.wd1.myworkdayjobs.com/wday/cxs/modernatx/M_tx/jobs is in a VENDOR MAINTENANCE WINDOW - it served an HTML 'currently unavailable' page instead of JSON. Transient; the endpoint is unchanged and no fix is needed unless it persists.",
-   "since": "2026-08-08T05:55:26.551817+00:00",
-   "streak": 2
-  },
-  "Neurocrine Biosciences": {
-   "reason": "https://neurocrine.wd5.myworkdayjobs.com/wday/cxs/neurocrine/NeurocrineCareers/jobs is in a VENDOR MAINTENANCE WINDOW - it served an HTML 'currently unavailable' page instead of JSON. Transient; the endpoint is unchanged and no fix is needed unless it persists.",
-   "since": "2026-08-08T07:57:44.256140+00:00",
-   "streak": 1
-  },
-  "Novartis": {
-   "reason": "https://novartis.wd3.myworkdayjobs.com/wday/cxs/novartis/Novartis_Careers/jobs is in a VENDOR MAINTENANCE WINDOW - it served an HTML 'currently unavailable' page instead of JSON. Transient; the endpoint is unchanged and no fix is needed unless it persists.",
-   "since": "2026-08-08T07:57:44.256140+00:00",
-   "streak": 1
-  },
-  "Pfizer": {
-   "reason": "https://pfizer.wd1.myworkdayjobs.com/wday/cxs/pfizer/PfizerCareers/jobs is in a VENDOR MAINTENANCE WINDOW - it served an HTML 'currently unavailable' page instead of JSON. Transient; the endpoint is unchanged and no fix is needed unless it persists.",
-   "since": "2026-08-08T07:57:44.256140+00:00",
-   "streak": 1
-  },
-  "Regeneron": {
-   "reason": "https://regeneron.wd1.myworkdayjobs.com/wday/cxs/regeneron/Careers/jobs is in a VENDOR MAINTENANCE WINDOW - it served an HTML 'currently unavailable' page instead of JSON. Transient; the endpoint is unchanged and no fix is needed unless it persists.",
-   "since": "2026-08-08T07:57:44.256140+00:00",
-   "streak": 1
-  },
-  "Roche": {
-   "reason": "https://roche.wd3.myworkdayjobs.com/wday/cxs/roche/roche-ext/jobs is in a VENDOR MAINTENANCE WINDOW - it served an HTML 'currently unavailable' page instead of JSON. Transient; the endpoint is unchanged and no fix is needed unless it persists.",
-   "since": "2026-08-08T07:57:44.256140+00:00",
-   "streak": 1
-  },
-  "Sanofi": {
-   "reason": "https://sanofi.wd3.myworkdayjobs.com/wday/cxs/sanofi/SanofiCareers/jobs is in a VENDOR MAINTENANCE WINDOW - it served an HTML 'currently unavailable' page instead of JSON. Transient; the endpoint is unchanged and no fix is needed unless it persists.",
-   "since": "2026-08-08T07:57:44.256140+00:00",
-   "streak": 1
-  },
   "Takeda": {
    "reason": "https://takeda.wd3.myworkdayjobs.com/wday/cxs/takeda/External/jobs failed after 3 attempts: HTTP 422",
    "since": "2026-08-01T14:40:16.785219+00:00",
-   "streak": 87
-  },
-  "Tempus AI": {
-   "reason": "https://tempus.wd5.myworkdayjobs.com/wday/cxs/tempus/Tempus_Careers/jobs is in a VENDOR MAINTENANCE WINDOW - it served an HTML 'currently unavailable' page instead of JSON. Transient; the endpoint is unchanged and no fix is needed unless it persists.",
-   "since": "2026-08-08T07:57:44.256140+00:00",
-   "streak": 1
+   "streak": 88
   }
  },
  "failures": {
@@ -921,6 +836,14 @@
    "match": "early-stage",
    "title": "\u3010AstraZeneca\u3011\u3010Finance\u3011Individual contributor, HTA manager",
    "url": "https://astrazeneca.wd3.myworkdayjobs.com/en-US/Careers/job/Japan---Tokyo/XMLNAME--AstraZeneca--Finance-Individual-contributor--HTA-manager_R-257030-3"
+  },
+  "2ed8a6ca8ecf09232749684989d389b22f997ef0": {
+   "company": "Vertex Pharmaceuticals",
+   "first_seen": "2026-08-08T09:52:34.879603+00:00",
+   "location": "Boston, MA",
+   "match": "early-stage",
+   "title": "Business Systems Analyst, Market Access Platforms",
+   "url": "https://vrtx.wd501.myworkdayjobs.com/en-US/Vertex_Careers/job/Boston-MA/Senior-Analyst--Market-Access-Platforms_REQ-29607"
   },
   "2fa450c3c76c4ff50f8afe35b883bac50fe6f847": {
    "company": "Roche",

@@ -3,12 +3,12 @@
   "Takeda": {
    "reason": "https://takeda.wd3.myworkdayjobs.com/wday/cxs/takeda/External/jobs failed after 3 attempts: HTTP 422",
    "since": "2026-08-01T14:40:16.785219+00:00",
-   "streak": 109
+   "streak": 110
   }
  },
  "failures": {
   "086dc629b509cd0452a21cc3f157d1f45fa29ea9": "2026-07-15T06:28:41.532995+00:00",
-  "0c46a7f23793197517536fba857eb4558bb9ed42": "2026-08-08T04:19:58.373407+00:00",
+  "0c46a7f23793197517536fba857eb4558bb9ed42": "2026-08-09T04:34:53.112413+00:00",
   "16f21d6ab6316264dcd83655281b68699bf45dfc": "2026-07-15T06:28:41.532995+00:00",
   "1db83434c619dbfe5f4b93f05b4b44622b2afc72": "2026-07-18T07:06:43.380328+00:00",
   "1eb9659cfd2ca0542e8ee5cb15b6e3aa19f8311c": "2026-07-25T12:08:27.595295+00:00",
@@ -2569,6 +2569,14 @@
    "match": "early-stage",
    "title": "Sr. Manager, Sales Leader Effectiveness, Trauma, Extremities, Foot & Ankle",
    "url": "https://www.careers.jnj.com/en/jobs/r-088682/sr-manager-sales-leader-effectiveness-trauma-extremities-foot-ankle/"
+  },
+  "97473475ddbcee69e64c5a854b514564d1aaf54a": {
+   "company": "Sanofi",
+   "first_seen": "2026-08-09T04:34:53.112413+00:00",
+   "location": "Cambridge, MA",
+   "match": "early-stage",
+   "title": "Marketing Manager",
+   "url": "https://sanofi.wd3.myworkdayjobs.com/en-US/SanofiCareers/job/Cambridge-MA/Marketing-Manager_R2867041"
   },
   "97e67e688d7f82f68f5a289aad3dfda972140910": {
    "company": "Thermo Fisher Scientific",

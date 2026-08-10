@@ -3,7 +3,7 @@
   "Takeda": {
    "reason": "https://takeda.wd3.myworkdayjobs.com/wday/cxs/takeda/External/jobs failed after 3 attempts: HTTP 422",
    "since": "2026-08-01T14:40:16.785219+00:00",
-   "streak": 140
+   "streak": 141
   }
  },
  "failures": {
@@ -174,6 +174,14 @@
    "location": "Budapest",
    "title": "Accounts Payable Intern - Portuguese speaking"
   },
+  "08b7a565a1be6e68f3f7f1e2f58480e5a6f07a49": {
+   "company": "Medpace",
+   "first_seen": "2026-08-10T18:01:23.910972+00:00",
+   "location": "Cincinnati, Ohio, United States",
+   "match": "program",
+   "title": "IT Infrastructure Intern- Spring 2027",
+   "url": "https://careers.medpace.com/jobs/12925?lang=en-us"
+  },
   "08e4cc93bc518d98f2f3aecd23c9a126a79fb299": {
    "company": "AbbVie",
    "first_seen": "2026-07-21T15:17:17.874489+00:00",
@@ -226,6 +234,14 @@
    "match": "early-stage",
    "title": "Entry-Level TMF Operations Associate",
    "url": "https://careers.medpace.com/jobs/12851?lang=en-us"
+  },
+  "0c17ea15a1dd89fa7623deefc7e82b442cda9deb": {
+   "company": "Medpace",
+   "first_seen": "2026-08-10T18:01:23.910972+00:00",
+   "location": "Cincinnati, Ohio, United States",
+   "match": "program",
+   "title": "Software Development Co-Op - Spring 2027",
+   "url": "https://careers.medpace.com/jobs/12922?lang=en-us"
   },
   "0c22c0c0666818cb9e460860f8520c46af6ce15c": {
    "company": "Roche",
@@ -526,6 +542,14 @@
    "match": "program",
    "title": "Technologist Trainee",
    "url": "https://labcorp.wd1.myworkdayjobs.com/External/job/Houston-TX/Technologist-Trainee_2624075/apply"
+  },
+  "1c165b44cd67fcfab6d7490a77475f48e8ac6a24": {
+   "company": "Medpace",
+   "first_seen": "2026-08-10T18:01:23.910972+00:00",
+   "location": "Cincinnati, Ohio, United States",
+   "match": "program",
+   "title": "Software QA Test Engineer Intern - Spring 2027",
+   "url": "https://careers.medpace.com/jobs/12923?lang=en-us"
   },
   "1d78dce515eb9bc8eb0c27335c9b666d99e0267e": {
    "company": "Roche",
@@ -1614,6 +1638,13 @@
    "first_seen": "2026-07-15T06:28:41.532995+00:00",
    "location": "Appleton, Wisconsin, United States of America",
    "title": "Undergrad Lab Intern"
+  },
+  "54e0cb0c7cd1b5a1b983b24bd90d19b10c18dd54": {
+   "company": "Medpace",
+   "first_seen": "2026-08-10T18:01:23.910972+00:00",
+   "location": "Cincinnati, Ohio, United States",
+   "skipped": "undergrad-only",
+   "title": "UX Design Intern - Spring 2027"
   },
   "54ef02f39bf3e869c66c3d80fc9957f520606f94": {
    "company": "Neurocrine Biosciences",
@@ -3224,6 +3255,14 @@
    "title": "Field Reimbursement Manager  - Neurology (Austin, TX)",
    "url": "https://regeneron.wd1.myworkdayjobs.com/en-US/Careers/job/Austin-TX/Field-Reimbursement-Manager----Neurology--Austin--TX-_R48132"
   },
+  "bc9472090b0195d64c391669b933552589bccda1": {
+   "company": "Medpace",
+   "first_seen": "2026-08-10T18:01:23.910972+00:00",
+   "location": "Cincinnati, Ohio, United States",
+   "match": "program",
+   "title": "Data Engineer Intern - Spring 2027",
+   "url": "https://careers.medpace.com/jobs/12921?lang=en-us"
+  },
   "bd8d47cf4cf7cdaf228c884abbedc0ca490b8776": {
    "company": "Johnson & Johnson",
    "first_seen": "2026-08-07T00:14:00.214401+00:00",
@@ -3513,6 +3552,13 @@
    "match": "early-stage",
    "title": "Sr. Manager - Oncology Forecasting & Insights",
    "url": "https://pfizer.wd1.myworkdayjobs.com/en-US/PfizerCareers/job/United-States---New-York---New-York-City/Sr-Manager---Oncology-Forecasting---Insights_4956671-2"
+  },
+  "d290d70b4109e204bbd2c43b0e1ed96020be468d": {
+   "company": "Medpace",
+   "first_seen": "2026-08-10T18:01:23.910972+00:00",
+   "location": "Cincinnati, Ohio, United States",
+   "skipped": "undergrad-only",
+   "title": "Information Security Intern- Spring 2027"
   },
   "d2923c3c05336c156181f0dee79bd9f4ffb246b7": {
    "company": "Roche",

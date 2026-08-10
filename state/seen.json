@@ -3,7 +3,7 @@
   "Takeda": {
    "reason": "https://takeda.wd3.myworkdayjobs.com/wday/cxs/takeda/External/jobs failed after 3 attempts: HTTP 422",
    "since": "2026-08-01T14:40:16.785219+00:00",
-   "streak": 138
+   "streak": 139
   }
  },
  "failures": {
@@ -123,6 +123,14 @@
    "match": "early-stage",
    "title": "Strategic Operation Associate II",
    "url": "https://www.lonza.com/jobs/R78306"
+  },
+  "04c9d851faea1fa3843dbc901e871e6ca2d25338": {
+   "company": "Lonza",
+   "first_seen": "2026-08-10T16:08:36.869020+00:00",
+   "location": "United States, Vacaville (California)",
+   "match": "early-stage",
+   "title": "Business Development Specialist",
+   "url": "https://www.lonza.com/jobs/R78628"
   },
   "059d92ae5472e3acb9142c0ed6e5ef1b95b7655c": {
    "company": "Thermo Fisher Scientific",

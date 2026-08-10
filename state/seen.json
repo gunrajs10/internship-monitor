@@ -3,7 +3,7 @@
   "Takeda": {
    "reason": "https://takeda.wd3.myworkdayjobs.com/wday/cxs/takeda/External/jobs failed after 3 attempts: HTTP 422",
    "since": "2026-08-01T14:40:16.785219+00:00",
-   "streak": 139
+   "streak": 140
   }
  },
  "failures": {
@@ -4035,6 +4035,14 @@
    "location": "North Chicago, IL",
    "title": "Associate Medical Director (Physician Development Program - Hematology)",
    "url": "https://careers.abbvie.com/en/job/associate-medical-director-physician-development-program-hematology-in-north-chicago-il-jid-19324"
+  },
+  "f3a4a8542830386741deaf3dc365dc8ef12a754f": {
+   "company": "Gilead Sciences",
+   "first_seen": "2026-08-10T17:06:37.498974+00:00",
+   "location": "United States - California - Foster City",
+   "match": "early-stage",
+   "title": "Manager, FP&A - Inflammation Program Finance - Foster City, CA",
+   "url": "https://gilead.wd1.myworkdayjobs.com/en-US/gileadcareers/job/United-States---California---Foster-City/Manager--FP-A---Inflammation-Program-Finance---Foster-City--CA_R0054280-2"
   },
   "f3bc01956a5d2c381d021693aa6767c91c9bcf5e": {
    "company": "Amgen",

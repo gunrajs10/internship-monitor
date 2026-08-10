@@ -3,7 +3,7 @@
   "Takeda": {
    "reason": "https://takeda.wd3.myworkdayjobs.com/wday/cxs/takeda/External/jobs failed after 3 attempts: HTTP 422",
    "since": "2026-08-01T14:40:16.785219+00:00",
-   "streak": 137
+   "streak": 138
   }
  },
  "failures": {
@@ -84,6 +84,14 @@
    "match": "early-stage",
    "title": "Pharmaceutical Sales Specialist, Respiratory Specialty Care - West Virginia",
    "url": "https://astrazeneca.wd3.myworkdayjobs.com/en-US/Careers/job/US---Charleston---WV/Pharmaceutical-Sales-Specialist--Respiratory-Specialty-Care---West-Virginia_R-257373"
+  },
+  "03aca2ff0586e2faadf98855af7e461c26c44185": {
+   "company": "Labcorp",
+   "first_seen": "2026-08-10T15:14:47.165695+00:00",
+   "location": "Phoenix, Arizona, United States of America",
+   "match": "program",
+   "title": "Techno Trainee -  Immunoassay",
+   "url": "https://labcorp.wd1.myworkdayjobs.com/External/job/Phoenix-AZ/Techno-Trainee----Radioimmunoassay_2620078/apply"
   },
   "041e4f8ee0badc1a24050534c9c59f742f402f0e": {
    "company": "Genentech",

@@ -3,7 +3,7 @@
   "Takeda": {
    "reason": "https://takeda.wd3.myworkdayjobs.com/wday/cxs/takeda/External/jobs failed after 3 attempts: HTTP 422",
    "since": "2026-08-01T14:40:16.785219+00:00",
-   "streak": 136
+   "streak": 137
   }
  },
  "failures": {
@@ -2089,6 +2089,14 @@
    "match": "early-stage",
    "title": "Manager/Senior Manager, Sales Operations",
    "url": "https://job-boards.greenhouse.io/bridgebio/jobs/5133411007"
+  },
+  "74de5a4e4e9241d5ada193bd2b980e09b5f48f85": {
+   "company": "Johnson & Johnson",
+   "first_seen": "2026-08-10T14:31:38.649690+00:00",
+   "location": "West Chester",
+   "match": "early-stage",
+   "title": "Marketing Manager, Global Strategic Marketing, CMF and Thoracic",
+   "url": "https://www.careers.jnj.com/en/jobs/r-081850/marketing-manager-global-strategic-marketing-cmf-and-thoracic/"
   },
   "7606afa746743f42b58538835c80c2b427e2209e": {
    "company": "Johnson & Johnson",

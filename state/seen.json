@@ -3,7 +3,7 @@
   "Takeda": {
    "reason": "https://takeda.wd3.myworkdayjobs.com/wday/cxs/takeda/External/jobs failed after 3 attempts: HTTP 422",
    "since": "2026-08-01T14:40:16.785219+00:00",
-   "streak": 144
+   "streak": 145
   }
  },
  "failures": {
@@ -1195,6 +1195,14 @@
    "match": "early-stage",
    "title": "Field Reimbursement Manager, Southwest - Skeletal Dysplasia",
    "url": "https://job-boards.greenhouse.io/bridgebio/jobs/5198460007"
+  },
+  "3dc27830ba163f74c3ed66106532285fa3c841a8": {
+   "company": "Amgen",
+   "first_seen": "2026-08-10T21:56:10.836629+00:00",
+   "location": "United States - Remote",
+   "match": "early-stage",
+   "title": "Marketing Manager, Patient Access, Retail Copay Programs",
+   "url": "https://amgen.wd1.myworkdayjobs.com/en-US/Careers/job/United-States---Remote/Marketing-Manager--Patient-Access--Retail-Copay-Programs_R-249801"
   },
   "3e222f1e31d370fcab70fd58ffc81cb5585534c5": {
    "company": "Thermo Fisher Scientific",
@@ -2616,6 +2624,14 @@
    "location": "Greenville, North Carolina, United States of America",
    "title": "Lead Formulation Technician (12hr days or 12hr nights, 2-2-3 rotation)",
    "url": "https://thermofisher.wd5.myworkdayjobs.com/ThermoFisherCareers/job/Greenville-North-Carolina-USA/Lead-Formulation-Technician--12hr-days-or-12hr-nights--2-2-3-rotation-_R-01341438/apply"
+  },
+  "965e4374a2cc2b91169ea2d4e6ff33be26f1d1da": {
+   "company": "BioMarin",
+   "first_seen": "2026-08-10T21:56:10.836629+00:00",
+   "location": "San Rafael,\n            California",
+   "match": "early-stage",
+   "title": "Manager, Commercial FP&A, Centers of Excellence OPEX",
+   "url": "https://jobs.jobvite.com/biomarin/job/oQuCAfwg"
   },
   "96be6623244ba997d627baa1b73f5d4620e60e7a": {
    "company": "Johnson & Johnson",

@@ -3,7 +3,7 @@
   "Takeda": {
    "reason": "https://takeda.wd3.myworkdayjobs.com/wday/cxs/takeda/External/jobs failed after 3 attempts: HTTP 422",
    "since": "2026-08-01T14:40:16.785219+00:00",
-   "streak": 154
+   "streak": 155
   }
  },
  "failures": {
@@ -1076,6 +1076,14 @@
    "title": "Field Reimbursement Manager - Rocky Mountain",
    "url": "https://job-boards.greenhouse.io/bridgebio/jobs/5192587007"
   },
+  "3732a618e26ccef07f3c49d5d839878a03d52363": {
+   "company": "Johnson & Johnson",
+   "first_seen": "2026-08-11T14:30:58.396762+00:00",
+   "location": "Titusville",
+   "match": "program",
+   "title": "Supplier Operations Spring Co-op",
+   "url": "https://www.careers.jnj.com/en/jobs/r-091274/supplier-operations-spring-co-op/"
+  },
   "379c9482964af558a6597bc0967fb47631abd36d": {
    "company": "Roche",
    "first_seen": "2026-07-15T06:28:41.532995+00:00",
@@ -1218,6 +1226,14 @@
    "match": "early-stage",
    "title": "Field Reimbursement Manager - Hartford, CT",
    "url": "https://amgen.wd1.myworkdayjobs.com/en-US/Careers/job/US---Connecticut---Hartford/Field-Reimbursement-Manager---Hartford--CT_R-251691"
+  },
+  "3e7c85ea372fdd7e184ca6cc91029e4f7998cedd": {
+   "company": "GSK",
+   "first_seen": "2026-08-11T14:30:58.396762+00:00",
+   "location": "Durham Blackwell Street",
+   "match": "early-stage",
+   "title": "ViiV Healthcare Manager, Access Strategy and Marketing \u2013 Treatment",
+   "url": "https://gsk.wd5.myworkdayjobs.com/en-US/GSKCareers/job/Durham-Blackwell-Street/ViiV-Healthcare-Manager--Access-Strategy-and-Marketing---Treatment_445681-1"
   },
   "3eae515666caa18bd0c56c1483d0e14ee72967f4": {
    "company": "Novo Nordisk",
@@ -1433,6 +1449,14 @@
    "match": "early-stage",
    "title": "Regional Clinical Sales Specialist, Spine (New York Metropolitan) - Johnson & Johnson MedTech, Orthopaedics",
    "url": "https://www.careers.jnj.com/en/jobs/r-088540/regional-clinical-sales-specialist-spine-new-york-metropolitan-johnson-johnson-medtech-orthopaedics/"
+  },
+  "4b219d66d2ad2e4226ea70e2011ee880bc805399": {
+   "company": "Pfizer",
+   "first_seen": "2026-08-11T14:30:58.396762+00:00",
+   "location": "United States - New York - New York City",
+   "match": "program",
+   "title": "MBA Strategy & Consulting Summer Associate",
+   "url": "https://pfizer.wd1.myworkdayjobs.com/en-US/PfizerCareers/job/United-States---New-York---New-York-City/MBA-Strategy---Consulting-Summer-Associate_4960972"
   },
   "4ba0673f77e9c73a850e837282261ae9437c5d3c": {
    "company": "Gilead Sciences",
@@ -3324,6 +3348,14 @@
    "match": "early-stage",
    "title": "Oncology Sales Specialist, CAR-T (Philadelphia, PA) - Johnson & Johnson Innovative Medicine",
    "url": "https://www.careers.jnj.com/en/jobs/r-090767/oncology-sales-specialist-car-t-philadelphia-pa-johnson-johnson-innovative-medicine/"
+  },
+  "bf732f020ba66cac30a30b6164af76e82ee5f398": {
+   "company": "Johnson & Johnson",
+   "first_seen": "2026-08-11T14:30:58.396762+00:00",
+   "location": "Titusville",
+   "match": "program",
+   "title": "R&D Spring Co-op",
+   "url": "https://www.careers.jnj.com/en/jobs/r-093202/rd-spring-co-op/"
   },
   "bf797f3ddeef8f96cb60b21a34eb7f07c60b8658": {
    "company": "Roche",

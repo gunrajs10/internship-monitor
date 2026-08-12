@@ -1,11 +1,5 @@
 {
- "failing": {
-  "Takeda": {
-   "reason": "https://takeda.wd3.myworkdayjobs.com/wday/cxs/takeda/External/jobs failed after 3 attempts: HTTP 422",
-   "since": "2026-08-01T14:40:16.785219+00:00",
-   "streak": 173
-  }
- },
+ "failing": {},
  "failures": {
   "086dc629b509cd0452a21cc3f157d1f45fa29ea9": "2026-07-15T06:28:41.532995+00:00",
   "0c46a7f23793197517536fba857eb4558bb9ed42": "2026-08-12T08:38:28.406966+00:00",
@@ -3304,6 +3298,14 @@
    "title": "Senior Business Development Manager",
    "url": "https://www.lonza.com/jobs/R77758"
   },
+  "bb2df75d0e57bc7b2865661885a055aea6a9ee05": {
+   "company": "Takeda",
+   "first_seen": "2026-08-12T18:04:58.423629+00:00",
+   "location": "Bannockburn, IL",
+   "match": "early-stage",
+   "title": "Product Manager for Next Generation Donor Experience",
+   "url": "https://jobs.takeda.com/job/bannockburn/product-manager-for-next-generation-donor-experience/1113/98820432128"
+  },
   "bba1eb48ff6f01496cd21000121cd1a42883d140": {
    "company": "Medpace",
    "first_seen": "2026-07-28T17:45:13.192092+00:00",
@@ -3411,6 +3413,14 @@
    "match": "early-stage",
    "title": "Customer Marketing Manager, Organized Customer",
    "url": "https://roche.wd3.myworkdayjobs.com/en-US/ROG-A2O-GENE/job/South-San-Francisco/Customer-Marketing-Manager--Organized-Customer_202607-120043"
+  },
+  "c112c55cdf534ab745ee84892c94ed948a079c57": {
+   "company": "Takeda",
+   "first_seen": "2026-08-12T18:04:58.423629+00:00",
+   "location": "Bannockburn, IL",
+   "match": "early-stage",
+   "title": "Product Manager for Digital Marketing Campaign Strategy & Execution",
+   "url": "https://jobs.takeda.com/job/bannockburn/product-manager-for-digital-marketing-campaign-strategy-and-execution/1113/99035618944"
   },
   "c185641eb76863255277df98d0fc0c682f1810c6": {
    "company": "BridgeBio",
@@ -3574,6 +3584,14 @@
    "match": "early-stage",
    "title": "Field Reimbursement Manager, West - Skeletal Dysplasia",
    "url": "https://job-boards.greenhouse.io/bridgebio/jobs/5198463007"
+  },
+  "cb265c8f8e0c75f1193fae90f2bb158c7e6a02e3": {
+   "company": "Takeda",
+   "first_seen": "2026-08-12T18:04:58.423629+00:00",
+   "location": "Lexington, MA",
+   "match": "early-stage",
+   "title": "Manager,\u00a0Commercial Content Business/Product Owner",
+   "url": "https://jobs.takeda.com/job/lexington/manager-commercial-content-business-product-owner/1113/96322630880"
   },
   "cb5599b3181950604d4d94dab9084b700a403bda": {
    "company": "AstraZeneca",

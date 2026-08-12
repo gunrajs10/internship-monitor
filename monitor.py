@@ -374,6 +374,51 @@ def _request(method, url, **kwargs):
     raise SourceError(f"{url} failed after {RETRIES + 1} attempts: {last_err}")
 
 
+def _chrome_session():
+    """A requests-compatible session that replays Chrome's TLS handshake.
+
+    Some sources refuse python-urllib3's ClientHello outright while serving
+    the identical request from a browser (Lonza's WAF, and Takeda's Workday
+    tenant, which answers a real page to browser-like clients but feeds
+    python-requests an HTML interstitial). Returns (session, label); the
+    label goes into error messages so the transport in use is visible.
+    """
+    try:
+        from curl_cffi import requests as impersonating
+        return impersonating.Session(impersonate="chrome"), "curl_cffi/chrome"
+    except ImportError:
+        return requests.Session(), "requests (curl_cffi unavailable)"
+
+
+def _post_json_impersonated(api, payload):
+    """POST as Chrome and parse JSON, or raise SourceError. Used as the
+    fallback when the ordinary client gets HTML where JSON was promised."""
+    sess, label = _chrome_session()
+    sess.headers.update({
+        "User-Agent": HEADERS["User-Agent"],
+        "Accept": "application/json,text/plain,*/*",
+        "Accept-Language": "en-US,en;q=0.9",
+        "Content-Type": "application/json",
+        "Origin": api.split("/wday/")[0],
+        "Referer": api.split("/wday/")[0] + "/",
+    })
+    last = None
+    for attempt in range(RETRIES + 1):
+        try:
+            r = sess.request("POST", api, json=payload, timeout=TIMEOUT)
+            if r.status_code == 200:
+                try:
+                    return r.json()
+                except ValueError:
+                    last = f"HTTP 200 but non-JSON via {label}"
+            else:
+                last = f"HTTP {r.status_code} via {label}"
+        except Exception as exc:
+            last = f"{type(exc).__name__} via {label}"
+        time.sleep(2 * (attempt + 1))
+    raise SourceError(f"{api} failed after Chrome-impersonation fallback: {last}")
+
+
 def _json_or_fail(resp, url):
     try:
         return resp.json()
@@ -421,8 +466,21 @@ def fetch_workday(cfg):
                 "offset": offset,
                 "searchText": term,
             }
-            resp = _request("POST", api, json=payload)
-            data = _json_or_fail(resp, api)
+            # Normal path first; fall back to a Chrome-impersonating client
+            # only when Workday hands back HTML instead of JSON. Takeda's
+            # tenant started doing exactly that while every other wd3 tenant
+            # (AstraZeneca, Roche, Sanofi, Biogen) answered normally, and the
+            # same endpoint returned a real page to browser-like clients - so
+            # it is client rejection, not an outage or a moved endpoint. The
+            # fallback costs one extra request and only on failure.
+            try:
+                resp = _request("POST", api, json=payload)
+                data = _json_or_fail(resp, api)
+            except SourceError as exc:
+                if "non-JSON" not in str(exc) and "MAINTENANCE" not in str(exc):
+                    raise
+                print(f"  {tenant}: plain client refused, retrying as Chrome")
+                data = _post_json_impersonated(api, payload)
             postings = data.get("jobPostings")
             total = data.get("total")
             if postings is None or total is None:

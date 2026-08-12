@@ -3,7 +3,7 @@
   "Takeda": {
    "reason": "https://takeda.wd3.myworkdayjobs.com/wday/cxs/takeda/External/jobs failed after 3 attempts: HTTP 422",
    "since": "2026-08-01T14:40:16.785219+00:00",
-   "streak": 167
+   "streak": 168
   }
  },
  "failures": {
@@ -2774,6 +2774,14 @@
    "title": "Forensic Extractions Tech Trainee",
    "url": "https://labcorp.wd1.myworkdayjobs.com/External/job/Saint-Paul-MN/Forensic-Extractions-Tech-Trainee_2621260/apply"
   },
+  "9d4f9817ff6789a23b5e0b9f683c0655ef0fc30b": {
+   "company": "Sanofi",
+   "first_seen": "2026-08-12T06:40:40.960603+00:00",
+   "location": "2 Locations",
+   "match": "program",
+   "title": "Manager, One Sanofi Leadership Development Program",
+   "url": "https://sanofi.wd3.myworkdayjobs.com/en-US/SanofiCareers/job/Cambridge-MA/Manager--One-Sanofi-Leadership-Development-Program_R2866434-1"
+  },
   "9f41a1df620790fcee57547ab2661280b8df2624": {
    "company": "AstraZeneca",
    "first_seen": "2026-07-28T21:45:15.519623+00:00",
@@ -3998,6 +4006,14 @@
    "first_seen": "2026-07-15T06:28:41.532995+00:00",
    "location": "Budapest",
    "title": "Strategic Talent Acquisition Intern - German advantage"
+  },
+  "e80ff956336ea020c99602e3670146c6fb03bb49": {
+   "company": "Sanofi",
+   "first_seen": "2026-08-12T06:40:40.960603+00:00",
+   "location": "Morristown, NJ",
+   "match": "early-stage",
+   "title": "Marketing Operations Manager",
+   "url": "https://sanofi.wd3.myworkdayjobs.com/en-US/SanofiCareers/job/Morristown-NJ/Marketing-Operations-Manager_R2866802"
   },
   "e9122214b2c4bf491da4961269dcea5696756211": {
    "company": "Merck",

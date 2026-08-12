@@ -1,14 +1,39 @@
 {
  "failing": {
+  "Amgen": {
+   "reason": "https://amgen.wd1.myworkdayjobs.com/wday/cxs/amgen/Careers/jobs failed after 3 attempts: HTTP 503",
+   "since": "2026-08-12T21:26:43.791942+00:00",
+   "streak": 1
+  },
+  "Gilead Sciences": {
+   "reason": "https://gilead.wd1.myworkdayjobs.com/wday/cxs/gilead/gileadcareers/jobs failed after 3 attempts: HTTP 503",
+   "since": "2026-08-12T21:26:43.791942+00:00",
+   "streak": 1
+  },
   "Illumina": {
    "reason": "https://illumina.wd1.myworkdayjobs.com/wday/cxs/illumina/illumina-careers/jobs failed after 3 attempts: HTTP 503",
    "since": "2026-08-12T20:21:09.445007+00:00",
+   "streak": 2
+  },
+  "Kite Pharma": {
+   "reason": "https://gilead.wd1.myworkdayjobs.com/wday/cxs/gilead/kitepharmacareers/jobs failed after 3 attempts: HTTP 503",
+   "since": "2026-08-12T21:26:43.791942+00:00",
+   "streak": 1
+  },
+  "Moderna": {
+   "reason": "https://modernatx.wd1.myworkdayjobs.com/wday/cxs/modernatx/M_tx/jobs failed after 3 attempts: HTTP 503",
+   "since": "2026-08-12T21:26:43.791942+00:00",
+   "streak": 1
+  },
+  "Pfizer": {
+   "reason": "https://pfizer.wd1.myworkdayjobs.com/wday/cxs/pfizer/PfizerCareers/jobs failed after 3 attempts: HTTP 503",
+   "since": "2026-08-12T21:26:43.791942+00:00",
    "streak": 1
   },
   "Regeneron": {
-   "reason": "https://regeneron.wd1.myworkdayjobs.com/wday/cxs/regeneron/Careers/jobs failed after 3 attempts: HTTP 500",
+   "reason": "https://regeneron.wd1.myworkdayjobs.com/wday/cxs/regeneron/Careers/jobs failed after 3 attempts: HTTP 503",
    "since": "2026-08-12T20:21:09.445007+00:00",
-   "streak": 1
+   "streak": 2
   }
  },
  "failures": {

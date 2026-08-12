@@ -225,12 +225,17 @@ companies:
     career_page: https://careers.astrazeneca.com/early-talent
 
   - name: Takeda
-    ats: workday
-    tenant: takeda
-    host: wd3
-    site: External
+    ats: radancy
+    origin: https://jobs.takeda.com
     verified: true
-    career_page: https://www.takedajobs.com/early-careers
+    career_page: https://jobs.takeda.com/search-jobs
+    note: >
+      Moved off Workday. takeda.wd3 site "External" went bad and stayed bad:
+      the UI redirects to Workday's maintenance page and the CXS API answers
+      HTTP 422 (responds, but rejects the query) while every other wd3 tenant
+      recovered. A 422 persisting for days is a disabled/reconfigured career
+      site, not an outage. Takeda publishes the same requisitions on its own
+      Radancy/TalentBrew site, which returns ~300 postings reliably.
 
   - name: Moderna
     ats: workday

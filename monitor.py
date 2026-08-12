@@ -359,11 +359,16 @@ class SourceError(Exception):
 # ---------------------------------------------------------------------------
 
 def _request(method, url, **kwargs):
+    # Callers may pass their own headers (Radancy needs an
+    # X-Requested-With header). Merge rather than pass both, which would
+    # be a duplicate keyword argument to requests.request().
+    hdrs = dict(HEADERS)
+    hdrs.update(kwargs.pop("headers", None) or {})
     last_err = None
     for attempt in range(RETRIES + 1):
         try:
             resp = requests.request(
-                method, url, headers=HEADERS, timeout=TIMEOUT, **kwargs
+                method, url, headers=hdrs, timeout=TIMEOUT, **kwargs
             )
             if resp.status_code == 200:
                 return resp
@@ -960,8 +965,8 @@ def fetch_radancy(cfg):
                    f"&SearchFiltersModuleName=Search+Filters"
                    f"&SortCriteria=0&SortDirection=0&FacetFilters="
                    f"&SearchFields=&ResultsType=0")
-            resp = _request("GET", url, headers={
-                **HEADERS, "X-Requested-With": "XMLHttpRequest"})
+            resp = _request("GET", url,
+                            headers={"X-Requested-With": "XMLHttpRequest"})
             data = _json_or_fail(resp, url)
             fragment = data.get("results")
             if fragment is None:

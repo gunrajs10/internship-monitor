@@ -924,8 +924,74 @@ def fetch_lonza(cfg):
     return list(results.values())
 
 
+def fetch_radancy(cfg):
+    """Radancy / TalentBrew career sites (jobs.takeda.com).
+
+    Why Takeda is here rather than on the Workday adapter: its Workday
+    tenant (takeda.wd3, site "External") went bad and stayed bad. The UI
+    redirects to Workday's maintenance page and the CXS API answers HTTP
+    422 - the tenant responds but rejects the query - while every other
+    wd3 tenant (AstraZeneca, Roche, Sanofi, Biogen, Genentech) recovered
+    and answers normally. A 422 that persists for days is a disabled or
+    reconfigured career site, not an outage, and no amount of retrying or
+    TLS impersonation fixes it. Takeda publishes the same requisitions on
+    its own Radancy site, so that is now the source of truth.
+
+    The endpoint returns JSON whose "results" field is an HTML fragment;
+    the job rows inside it are stable and easy to parse. Paging is
+    CurrentPage with RecordsPerPage; a short page means the end.
+    """
+    origin = cfg.get("origin", "https://jobs.takeda.com").rstrip("/")
+    per_page = 100
+    row_re = re.compile(
+        r'<a href="(/job/[^"]+)"\s+data-job-id="(\d+)"[^>]*>\s*'
+        r'<h2 class="title">([\s\S]*?)</h2>\s*'
+        r'<span class="location">([\s\S]*?)</span>'
+    )
+    results = {}
+    for term in cfg.get("search_terms", DEFAULT_SEARCH_TERMS):
+        for page in range(1, 21):
+            url = (f"{origin}/search-jobs/results?ActiveFacetID=0"
+                   f"&CurrentPage={page}&RecordsPerPage={per_page}"
+                   f"&Distance=50&RadiusUnitType=0"
+                   f"&Keywords={requests.utils.quote(term)}&Location="
+                   f"&ShowRadius=False&IsPagination=True"
+                   f"&SearchResultsModuleName=Search+Results"
+                   f"&SearchFiltersModuleName=Search+Filters"
+                   f"&SortCriteria=0&SortDirection=0&FacetFilters="
+                   f"&SearchFields=&ResultsType=0")
+            resp = _request("GET", url, headers={
+                **HEADERS, "X-Requested-With": "XMLHttpRequest"})
+            data = _json_or_fail(resp, url)
+            fragment = data.get("results")
+            if fragment is None:
+                raise SourceError(f"{url} responded without a results field (schema change?)")
+            rows = row_re.findall(fragment)
+            if not rows:
+                if page == 1 and not data.get("hasJobs", True):
+                    break  # legitimate zero matches for this term
+                if page == 1:
+                    raise SourceError(
+                        f"{url} returned no job rows and did not say hasJobs=false "
+                        f"(site changed?)")
+                break
+            for href, jid, raw_title, raw_loc in rows:
+                results[jid] = {
+                    "title": html.unescape(
+                        re.sub(r"\s+", " ", re.sub(r"<[^>]+>", " ", raw_title))).strip(),
+                    "location": html.unescape(
+                        re.sub(r"\s+", " ", re.sub(r"<[^>]+>", " ", raw_loc))).strip(),
+                    "url": origin + href,
+                    "posted_on": "",
+                }
+            if len(rows) < per_page:
+                break
+    return list(results.values())
+
+
 ADAPTERS = {
     "workday": fetch_workday,
+    "radancy": fetch_radancy,
     "greenhouse": fetch_greenhouse,
     "phenom": fetch_phenom,
     "jibe": fetch_jibe,

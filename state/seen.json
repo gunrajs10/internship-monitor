@@ -98,6 +98,7 @@
   },
   "043e3c8b668c2a3fac7bd052151a45c23f5c4825": {
    "company": "Johnson & Johnson",
+   "expired": true,
    "first_seen": "2026-07-31T17:50:45.126538+00:00",
    "location": "Dallas / Irving / Coppell / Plano",
    "match": "early-stage",
@@ -682,6 +683,7 @@
   },
   "23d4706ded9b223b58b0c39ab23605bc05409b7f": {
    "company": "Johnson & Johnson",
+   "expired": true,
    "first_seen": "2026-08-04T07:47:41.370606+00:00",
    "location": "Raynham / Remote (Us)",
    "match": "early-stage",
@@ -1581,6 +1583,7 @@
   },
   "4efe27fa4c317a61381db5053ea103772c9f00f1": {
    "company": "Johnson & Johnson",
+   "expired": true,
    "first_seen": "2026-08-07T16:07:29.131778+00:00",
    "location": "Cincinnati",
    "match": "program",
@@ -1671,6 +1674,7 @@
   },
   "51d10b57029528e74d1776f54f264e5694c57db4": {
    "company": "Johnson & Johnson",
+   "expired": true,
    "first_seen": "2026-07-30T20:33:17.449766+00:00",
    "location": "Washington / Virginia (Any City)",
    "match": "early-stage",
@@ -1922,6 +1926,7 @@
   },
   "61e559c74ee115b9bd3753b1874d4af1edf2acd7": {
    "company": "Johnson & Johnson",
+   "expired": true,
    "first_seen": "2026-07-30T15:21:57.466888+00:00",
    "location": "Cincinnati / Raritan",
    "match": "early-stage",

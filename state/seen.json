@@ -1,5 +1,11 @@
 {
- "failing": {},
+ "failing": {
+  "Gilead Sciences": {
+   "reason": "https://gilead.wd1.myworkdayjobs.com/wday/cxs/gilead/gileadcareers/jobs failed after 3 attempts: HTTP 503",
+   "since": "2026-08-19T19:36:03.075648+00:00",
+   "streak": 1
+  }
+ },
  "failures": {
   "086dc629b509cd0452a21cc3f157d1f45fa29ea9": "2026-07-15T06:28:41.532995+00:00",
   "0c46a7f23793197517536fba857eb4558bb9ed42": "2026-08-12T08:38:28.406966+00:00",
@@ -2153,6 +2159,14 @@
    "location": "Petaling Jaya, Selangor, Malaysia",
    "title": "Intern \u2013 Trial Capabilities (Clinical Trial Payment)"
   },
+  "68b5d89416220afe39071859a5417eda79dbb763": {
+   "company": "Johnson & Johnson",
+   "first_seen": "2026-08-19T19:36:03.075648+00:00",
+   "location": "Titusville",
+   "match": "early-stage",
+   "title": "Sr. Product Analyst - JJT Strategy & Portfolio",
+   "url": "https://www.careers.jnj.com/en/jobs/r-094583/sr-product-analyst-jjt-strategy-portfolio/"
+  },
   "68d1625fd8e65d29e2bbbb2b6f1291e4d31fa31f": {
    "company": "Regeneron",
    "first_seen": "2026-07-28T21:45:15.519623+00:00",
@@ -2383,6 +2397,14 @@
    "first_seen": "2026-07-15T06:28:41.532995+00:00",
    "location": "Hillsboro",
    "title": "MECOP 2026 Summer/Fall Intern - Automation Systems & Digital Integration"
+  },
+  "746d5123cc40973c2e7334b712da7e6784c4cd00": {
+   "company": "Labcorp",
+   "first_seen": "2026-08-19T19:36:03.075648+00:00",
+   "location": "Burlington, North Carolina, United States of America",
+   "match": "program",
+   "title": "MLS Student trainee",
+   "url": "https://labcorp.wd1.myworkdayjobs.com/External/job/Burlington-NC/MLS-Student-trainee_2627437/apply"
   },
   "747467e83f0cd21440d19a90bcf749e5a0d44467": {
    "company": "Regeneron",

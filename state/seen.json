@@ -105,6 +105,7 @@
   },
   "03d0f7514769cd78b734f8c223f29c331bfe20c9": {
    "company": "Johnson & Johnson",
+   "expired": true,
    "first_seen": "2026-08-20T20:43:54.517171+00:00",
    "location": "New Brunswick",
    "match": "program",
@@ -370,6 +371,7 @@
   },
   "11fc063702847c8489376db08f0180f0fd446a66": {
    "company": "Johnson & Johnson",
+   "expired": true,
    "first_seen": "2026-08-07T14:18:13.284484+00:00",
    "location": "Remote (Us)",
    "match": "early-stage",
@@ -507,6 +509,7 @@
   },
   "16ef52f691f8980f7dc5dc3933403dc87fb05623": {
    "company": "Johnson & Johnson",
+   "expired": true,
    "first_seen": "2026-08-11T19:17:19.184091+00:00",
    "location": "Titusville / Raritan / Cincinnati",
    "match": "early-stage",
@@ -1216,6 +1219,7 @@
   },
   "35cea60745a46fb1b90755f99f50100741d0bf15": {
    "company": "Johnson & Johnson",
+   "expired": true,
    "first_seen": "2026-08-14T19:11:21.341423+00:00",
    "location": "Raritan",
    "match": "early-stage",
@@ -2000,6 +2004,7 @@
   },
   "58c64b084d9d490e90a5abb877ef84d7f6bfb352": {
    "company": "Johnson & Johnson",
+   "expired": true,
    "first_seen": "2026-07-28T23:38:04.477688+00:00",
    "location": "Wilmington",
    "match": "early-stage",

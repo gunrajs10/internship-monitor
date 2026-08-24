@@ -1939,6 +1939,14 @@
    "location": "Cincinnati, Ohio, United States",
    "title": "Fall 2026- Imaging Intern - Biomedical Engineering"
   },
+  "562fe0d3c1dc3846194e4c22f5b985f8cf068501": {
+   "company": "Johnson & Johnson",
+   "first_seen": "2026-08-24T14:57:45.743572+00:00",
+   "location": "North Ryde / Sydney / Brisbane / Melbourne",
+   "match": "early-stage",
+   "title": "ANZ Product Manager Knee",
+   "url": "https://www.careers.jnj.com/en/jobs/r-093351/anz-product-manager-knee/"
+  },
   "56892074d62859809094eff66b00d0674b5c77aa": {
    "company": "BridgeBio",
    "first_seen": "2026-07-28T21:45:15.519623+00:00",
@@ -2181,6 +2189,14 @@
    "match": "early-stage",
    "title": "Supply Chain Specialist",
    "url": "https://careers.medpace.com/jobs/12389?lang=en-us"
+  },
+  "64933ca2773482d287f16a44d95c14c00b1e60e6": {
+   "company": "Johnson & Johnson",
+   "first_seen": "2026-08-24T14:57:45.743572+00:00",
+   "location": "West Chester",
+   "match": "early-stage",
+   "title": "Marketing Manager, Global Growth Marketing, Trauma",
+   "url": "https://www.careers.jnj.com/en/jobs/r-095100/marketing-manager-global-growth-marketing-trauma/"
   },
   "64a80b60bc992c64206fc170b3b488b2289d8d61": {
    "company": "Vertex Pharmaceuticals",
@@ -5114,6 +5130,13 @@
    "match": "early-stage",
    "title": "Pharmaceutical Sales Specialist, Respiratory Specialty Care - Fort Worth TX",
    "url": "https://astrazeneca.wd3.myworkdayjobs.com/en-US/Careers/job/US---Fort-Worth---TX/Pharmaceutical-Sales-Specialist--Respiratory-Specialty-Care---Fort-Worth-TX_R-256832"
+  },
+  "fed579fc1ae27711469ea0c022762d9d6b641bb1": {
+   "company": "Medpace",
+   "first_seen": "2026-08-24T14:57:45.743572+00:00",
+   "location": "Cincinnati, Ohio, United States",
+   "skipped": "undergrad-only",
+   "title": "Python Intern - Summer 2027"
   },
   "feed71cf5d3738667d3c77d577254d2e06986b9f": {
    "company": "Genentech",

@@ -1,5 +1,11 @@
 {
- "failing": {},
+ "failing": {
+  "Tempus AI": {
+   "reason": "https://tempus.wd5.myworkdayjobs.com/wday/cxs/tempus/Tempus_Careers/jobs failed after 3 attempts: HTTP 500",
+   "since": "2026-08-25T15:57:46.304064+00:00",
+   "streak": 1
+  }
+ },
  "failures": {
   "086dc629b509cd0452a21cc3f157d1f45fa29ea9": "2026-07-15T06:28:41.532995+00:00",
   "0c46a7f23793197517536fba857eb4558bb9ed42": "2026-08-12T08:38:28.406966+00:00",
@@ -1549,6 +1555,14 @@
    "match": "early-stage",
    "title": "Associate - Supply Chain Project Planning",
    "url": "https://lilly.wd115.myworkdayjobs.com/LLY/job/US-Concord-NC/Associate---Supply-Chain-Project-Planning_R-107792/apply"
+  },
+  "45bffec1ca99aa79cafde961a2facf23f13e06cf": {
+   "company": "Sanofi",
+   "first_seen": "2026-08-25T15:57:46.304064+00:00",
+   "location": "8 Locations",
+   "match": "early-stage",
+   "title": "Field Reimbursement Manager Rheumatology FL GA NC",
+   "url": "https://sanofi.wd3.myworkdayjobs.com/en-US/SanofiCareers/job/Jacksonville-FL/Field-Reimbursement-Manager-Rheumatology-FL-GA-NC_R2869177-1"
   },
   "45d554d76d555fe4632cfc3c25d5598c967af23b": {
    "company": "Neurocrine Biosciences",

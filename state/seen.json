@@ -1,11 +1,5 @@
 {
- "failing": {
-  "Tempus AI": {
-   "reason": "https://tempus.wd5.myworkdayjobs.com/wday/cxs/tempus/Tempus_Careers/jobs failed after 3 attempts: HTTP 500",
-   "since": "2026-08-25T15:57:46.304064+00:00",
-   "streak": 1
-  }
- },
+ "failing": {},
  "failures": {
   "086dc629b509cd0452a21cc3f157d1f45fa29ea9": "2026-07-15T06:28:41.532995+00:00",
   "0c46a7f23793197517536fba857eb4558bb9ed42": "2026-08-12T08:38:28.406966+00:00",
@@ -2056,6 +2050,14 @@
    "match": "early-stage",
    "title": "Neuroscience Sales Specialist (Wilmington, DE) - Johnson & Johnson Innovative Medicine",
    "url": "https://www.careers.jnj.com/en/jobs/r-085327/neuroscience-sales-specialist-wilmington-de-johnson-johnson-innovative-medicine/"
+  },
+  "58d2860804f68f691065c39133392eb772ab7380": {
+   "company": "Johnson & Johnson",
+   "first_seen": "2026-08-25T16:52:52.537074+00:00",
+   "location": "Raynham / Remote (Us)",
+   "match": "early-stage",
+   "title": "Manager, Commercial Quality Global Labeling and IFU, DePuy Synthes",
+   "url": "https://www.careers.jnj.com/en/jobs/r-091297/manager-commercial-quality-global-labeling-and-ifu-depuy-synthes/"
   },
   "59baa28e4ee8f277082baff90f8f1cfa7102578f": {
    "company": "GSK",

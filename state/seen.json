@@ -1,33 +1,8 @@
 {
  "failing": {
-  "AstraZeneca": {
-   "reason": "https://astrazeneca.wd3.myworkdayjobs.com/wday/cxs/astrazeneca/Careers/jobs failed after Chrome-impersonation fallback: HTTP 200 but non-JSON via curl_cffi/chrome",
-   "since": "2026-08-29T07:51:16.005006+00:00",
-   "streak": 1
-  },
-  "Biogen": {
-   "reason": "https://biibhr.wd3.myworkdayjobs.com/wday/cxs/biibhr/external/jobs failed after Chrome-impersonation fallback: HTTP 200 but non-JSON via curl_cffi/chrome",
-   "since": "2026-08-29T07:51:16.005006+00:00",
-   "streak": 1
-  },
-  "Genentech": {
-   "reason": "https://roche.wd3.myworkdayjobs.com/wday/cxs/roche/ROG-A2O-GENE/jobs failed after Chrome-impersonation fallback: HTTP 200 but non-JSON via curl_cffi/chrome",
-   "since": "2026-08-29T07:51:16.005006+00:00",
-   "streak": 1
-  },
-  "Novartis": {
-   "reason": "https://novartis.wd3.myworkdayjobs.com/wday/cxs/novartis/Novartis_Careers/jobs failed after Chrome-impersonation fallback: HTTP 200 but non-JSON via curl_cffi/chrome",
-   "since": "2026-08-29T07:51:16.005006+00:00",
-   "streak": 1
-  },
-  "Roche": {
-   "reason": "https://roche.wd3.myworkdayjobs.com/wday/cxs/roche/roche-ext/jobs failed after Chrome-impersonation fallback: HTTP 200 but non-JSON via curl_cffi/chrome",
-   "since": "2026-08-29T07:51:16.005006+00:00",
-   "streak": 1
-  },
-  "Sanofi": {
-   "reason": "https://sanofi.wd3.myworkdayjobs.com/wday/cxs/sanofi/SanofiCareers/jobs failed after Chrome-impersonation fallback: HTTP 200 but non-JSON via curl_cffi/chrome",
-   "since": "2026-08-29T07:51:16.005006+00:00",
+  "BioMarin": {
+   "reason": "https://jobs.jobvite.com/biomarin/search?q=MBA&p=1 returned no job list markup (site changed?)",
+   "since": "2026-08-29T14:26:53.676108+00:00",
    "streak": 1
   }
  },
@@ -55,6 +30,7 @@
   "8a8486d0395e288b4e3e8162c226787cb3700dc7": "2026-07-18T07:06:43.380328+00:00",
   "9b2d457e162abd7110b823413ea52dfb7f953755": "2026-07-15T10:16:04.586005+00:00",
   "9cc6f10e0c44a0f3a4a9707f16c35e338bf676f9": "2026-07-18T07:06:43.380328+00:00",
+  "b9224a20eb51923648a90b5274d73faea3485bcd": "2026-08-29T14:26:53.676108+00:00",
   "c78195205147bee8ea18db17d4985b1f1c6d2436": "2026-07-15T06:28:41.532995+00:00",
   "d00b02a4f2a16f72a103d434ac797e4f5ee7f037": "2026-08-01T14:40:16.785219+00:00",
   "d4bca1582956e68e2bf2a1e076edd334d245354b": "2026-07-26T14:44:04.840791+00:00",
@@ -1371,6 +1347,7 @@
   },
   "3732a618e26ccef07f3c49d5d839878a03d52363": {
    "company": "Johnson & Johnson",
+   "expired": true,
    "first_seen": "2026-08-11T14:30:58.396762+00:00",
    "location": "Titusville",
    "match": "program",
@@ -1880,6 +1857,7 @@
   },
   "4d7d5d77f69f3cf7d828b394b07ecfee641af353": {
    "company": "Johnson & Johnson",
+   "expired": true,
    "first_seen": "2026-08-20T18:56:32.627207+00:00",
    "location": "Raritan / West Chester",
    "match": "early-stage",

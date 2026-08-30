@@ -1,5 +1,11 @@
 {
- "failing": {},
+ "failing": {
+  "BioMarin": {
+   "reason": "https://jobs.jobvite.com/biomarin/search?q=MBA&p=1 returned no job list markup (site changed?)",
+   "since": "2026-08-30T06:37:07.855428+00:00",
+   "streak": 1
+  }
+ },
  "failures": {
   "086dc629b509cd0452a21cc3f157d1f45fa29ea9": "2026-07-15T06:28:41.532995+00:00",
   "0c46a7f23793197517536fba857eb4558bb9ed42": "2026-08-12T08:38:28.406966+00:00",

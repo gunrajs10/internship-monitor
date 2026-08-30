@@ -1,9 +1,9 @@
 {
  "failing": {
   "BioMarin": {
-   "reason": "https://jobs.jobvite.com/biomarin/search?q=graduate&p=1 returned no job list markup (site changed?)",
+   "reason": "https://jobs.jobvite.com/biomarin/search?q=co-op&p=1 returned no job list markup (site changed?)",
    "since": "2026-08-29T22:38:42.814406+00:00",
-   "streak": 1
+   "streak": 2
   }
  },
  "failures": {
@@ -26,6 +26,7 @@
   "5b01b9e3acb24a799e2055e3778ceb027233d6c1": "2026-07-18T07:06:43.380328+00:00",
   "61cc41a1acd594a63c62a683b5f33f4c82eb9589": "2026-08-01T18:09:38.463207+00:00",
   "71afc05a31bfec55a667671da61dffcfb01d6946": "2026-07-18T07:06:43.380328+00:00",
+  "800ae8be0ff815d3124bb2bbcdb1a7d7629b4fcc": "2026-08-30T00:42:09.537445+00:00",
   "81d8954712925d83c7999284d664dd6ff37c5a24": "2026-07-18T07:06:43.380328+00:00",
   "87e6196561dcb3a8ae8e993e59f1349256cb5e91": "2026-07-15T06:28:41.532995+00:00",
   "8a8486d0395e288b4e3e8162c226787cb3700dc7": "2026-07-18T07:06:43.380328+00:00",

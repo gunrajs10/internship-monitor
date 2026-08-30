@@ -1,9 +1,9 @@
 {
  "failing": {
   "BioMarin": {
-   "reason": "https://jobs.jobvite.com/biomarin/search?q=rotation&p=1 returned no job list markup (site changed?)",
+   "reason": "https://jobs.jobvite.com/biomarin/search?q=intern&p=1 returned no job list markup (site changed?)",
    "since": "2026-08-30T17:27:06.676588+00:00",
-   "streak": 1
+   "streak": 2
   }
  },
  "failures": {
@@ -34,6 +34,7 @@
   "9b2d457e162abd7110b823413ea52dfb7f953755": "2026-07-15T10:16:04.586005+00:00",
   "9cc6f10e0c44a0f3a4a9707f16c35e338bf676f9": "2026-07-18T07:06:43.380328+00:00",
   "b9224a20eb51923648a90b5274d73faea3485bcd": "2026-08-29T14:26:53.676108+00:00",
+  "bd19904263163618755f3cdc38cb3521205a9e00": "2026-08-30T18:03:12.080535+00:00",
   "c78195205147bee8ea18db17d4985b1f1c6d2436": "2026-07-15T06:28:41.532995+00:00",
   "d00b02a4f2a16f72a103d434ac797e4f5ee7f037": "2026-08-01T14:40:16.785219+00:00",
   "d4bca1582956e68e2bf2a1e076edd334d245354b": "2026-07-26T14:44:04.840791+00:00",

@@ -994,6 +994,120 @@ def fetch_radancy(cfg):
     return list(results.values())
 
 
+def fetch_biomarin(cfg):
+    """BioMarin's own WordPress careers board (www.biomarin.com/careers/jobs/).
+
+    BioMarin decommissioned its hosted Jobvite board in late August 2026:
+    jobs.jobvite.com/biomarin/* now redirects to Jobvite's generic
+    /careers/info/unavailable.html stub ("Job listings are currently
+    unavailable but they will return shortly") - Jobvite's board-gone page,
+    not an outage, and it did not come back. The postings moved to a jobs
+    section on the corporate WordPress site (biomarin.com/careers/jobs/,
+    detail pages at biomarin.com/job/<slug>/).
+
+    Two properties of the new board decide the approach:
+
+      1. It is server-rendered and paginated (?paged=N, 12 cards per page,
+         ~11 pages for ~124 postings; verified live 2026-08-29). Pages past
+         the end answer HTTP 200 with zero cards, so "no cards" on page > 1
+         is the normal end of the listing, and on page 1 it is a loud
+         failure.
+      2. The site's own ?keyword= search is a plain substring match over
+         titles: "intern" returns Internal Audit and International
+         Regulatory roles and nothing else. Searching DEFAULT_SEARCH_TERMS
+         would therefore both over-match and completely miss named-cohort
+         programs ("Emerging Leaders" never contains any search term). The
+         board is small, so every page is crawled and TITLE_RE does the
+         filtering locally - the same approach as fetch_jnj_careers and
+         fetch_lonza.
+
+    Transport mirrors fetch_workday's shape: the plain client first, one
+    pass through the Chrome-impersonating client only if the plain client
+    is refused outright or served cardless markup on page 1 (the
+    WAF-interstitial case). Verified 2026-08-29 that a plain non-browser
+    client is served the full listing, so the fallback should stay dormant;
+    it exists because the GitHub runner's IP reputation differs from the
+    build environment's and a WordPress WAF ruleset can change under the
+    site without the markup changing.
+    """
+    base = (cfg.get("url") or "https://www.biomarin.com/careers/jobs/").rstrip("/") + "/"
+    row_re = re.compile(
+        r'<article class="job">[\s\S]{0,200}?'
+        r'<a href="(https://www\.biomarin\.com/job/([^"]+?)/?)">\s*'
+        r'<h3>([\s\S]*?)</h3>\s*'
+        r'(?:<p class="meta">([\s\S]*?)</p>)?'
+    )
+
+    def _plain_get(url):
+        return _request("GET", url).text
+
+    imp_sess = None
+
+    def _imp_get(url):
+        nonlocal imp_sess
+        if imp_sess is None:
+            sess, label = _chrome_session()
+            sess.headers.update({
+                "User-Agent": HEADERS["User-Agent"],
+                "Accept": ("text/html,application/xhtml+xml,application/xml;"
+                           "q=0.9,*/*;q=0.8"),
+                "Accept-Language": "en-US,en;q=0.9",
+            })
+            imp_sess = (sess, label)
+        sess, label = imp_sess
+        last = None
+        for attempt in range(RETRIES + 1):
+            try:
+                r = sess.get(url, timeout=TIMEOUT)
+                if r.status_code == 200:
+                    return r.text
+                last = f"HTTP {r.status_code}"
+            except Exception as exc:
+                last = type(exc).__name__
+            time.sleep(2 * (attempt + 1))
+        raise SourceError(
+            f"{url} failed after Chrome-impersonation fallback via {label}: {last}")
+
+    def _page(n, get):
+        url = base if n == 1 else f"{base}?paged={n}"
+        return row_re.findall(get(url)), url
+
+    get = _plain_get
+    try:
+        rows, url = _page(1, get)
+        if not rows:
+            raise SourceError(f"{url} served cardless markup to the plain client")
+    except SourceError:
+        print("  biomarin: plain client refused, retrying as Chrome")
+        get = _imp_get
+        rows, url = _page(1, get)
+    if not rows:
+        raise SourceError(f"{url} returned no job cards (site changed?)")
+
+    results = {}
+    page = 1
+    while True:
+        before = len(results)
+        for href, slug, raw_title, raw_loc in rows:
+            results[slug] = {
+                "title": html.unescape(
+                    re.sub(r"\s+", " ", re.sub(r"<[^>]+>", " ", raw_title))).strip(),
+                "location": html.unescape(
+                    re.sub(r"\s+", " ", re.sub(r"<[^>]+>", " ", raw_loc or ""))).strip(),
+                "url": href,
+                "posted_on": "",
+            }
+        if len(results) == before and page > 1:
+            break  # page repeated itself: paging stopped advancing
+        page += 1
+        if page > 60:
+            break  # safety cap, ~7x the board's current size
+        rows, _ = _page(page, get)
+        if not rows:
+            break  # walked off the end of the listing - normal
+    return list(results.values())
+
+
 ADAPTERS = {
     "workday": fetch_workday,
     "radancy": fetch_radancy,
@@ -1006,6 +1120,7 @@ ADAPTERS = {
     "jnj": fetch_jnj_careers,
     "novo": fetch_novo,
     "lonza": fetch_lonza,
+    "biomarin": fetch_biomarin,
 }
 
 

@@ -4,7 +4,7 @@
 # verified: false = best-known endpoint; the audit run will confirm or flag it
 #
 # ats types: workday | greenhouse | phenom | jibe | ukg | jobvite |
-#            attrax | jnj | novo | lonza | unsupported
+#            attrax | jnj | novo | lonza | biomarin | unsupported
 # career_page is the human fallback link used in failure alerts.
 
 companies:
@@ -100,10 +100,18 @@ companies:
     career_page: https://careers.regeneron.com/early-careers
 
   - name: BioMarin
-    ats: jobvite
-    slug: biomarin
+    ats: biomarin
+    url: https://www.biomarin.com/careers/jobs/
     verified: true
-    career_page: https://careers.biomarin.com/
+    career_page: https://www.biomarin.com/careers/
+    note: >
+      Moved off Jobvite (observed 2026-08-29): jobs.jobvite.com/biomarin
+      redirects to Jobvite's generic "Page Unavailable" stub - the
+      board-decommissioned page, not an outage. Postings now live on
+      BioMarin's own WordPress board. Its keyword search is a plain
+      substring match ("intern" returns Internal Audit roles and misses
+      named-cohort programs), so the adapter crawls all ~11 pages and
+      filters titles locally, like the J&J and Lonza adapters.
 
   - name: Agilent Technologies
     ats: workday

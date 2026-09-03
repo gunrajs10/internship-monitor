@@ -184,12 +184,33 @@ def is_senior(title):
 # title with no early-career signal at all. Only the description reveals
 # it. Applied to a bounded subset (see worth_deep_scan) because reading
 # every description across ~10,000 postings is not affordable per run.
+# The two MBA-qualification alternatives that used to live here -
+#   "(recent|current) mba (graduate|student|candidate)"
+#   "mba (is) (required|preferred|strongly preferred)"
+# - were the reason ordinary commercial roles kept landing in the programs
+# tab. An MBA being preferred is a DEGREE REQUIREMENT, not a rotational
+# program, and thousands of ordinary manager postings say it. Verified
+# against the two roles Gunraj flagged: Vertex "Manager, Disease Strategy
+# Finance" and Neurocrine "NeuroPsych Regional Patient Access Manager" each
+# matched on exactly one phrase - "MBA preferred" - and nothing else.
+# Amgen "2027 Finance Manager (FSLDP)", a genuine program, matches on
+# "leadership development program" and is unaffected by the removal.
+#
+# What is left is structural program language only: wording a posting can
+# only carry if the job really is a cohort/rotation, never wording that a
+# standalone role picks up from its qualifications or benefits boilerplate.
+# Note the deliberate absence of a bare "\w+ development program" catch-all:
+# "professional development program" appears in benefits sections company-
+# wide and would reintroduce the same class of false positive.
 DESC_PROGRAM_RE = re.compile(
-    r"(rotational (program|assignment|development)|rotations? (through|across|in)|"
-    r"leadership development program|commercial leadership program|"
-    r"(recent |current )?mba (graduate|student|candidate)s?|"
-    r"mba (is )?(required|preferred|strongly preferred)|"
-    r"program (participants|associates|cohort)|two[\s\-]year rotation)",
+    r"(rotational (program|assignment|development)|"
+    r"rotations? (through|across|in)|"
+    r"two[\s\-]year rotation|"
+    r"(leadership|commercial|marketing|finance|operations|"
+    r"general management|graduate|early[\s\-]career|mba) "
+    r"(leadership )?development program|"
+    r"commercial leadership program|"
+    r"program (participants|associates|cohort))",
     re.IGNORECASE,
 )
 

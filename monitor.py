@@ -358,7 +358,15 @@ IMMEDIATE_FAIL_RE = re.compile(
 # company job-site fetches). Apps Script cold-starts and heavy Sheet writes
 # can legitimately take longer than a single site fetch, and that is not a
 # program bug - it must never crash the run. See send_webhook() and run().
-WEBHOOK_TIMEOUT = 45
+#
+# Raised 45s -> 90s on 2026-09-17: investigation of repeating "new posting"
+# emails (2026-09-16/17) found retries firing well inside the old timeout
+# window (~20-40s apart) against a webhook that had, in every case checked,
+# already completed the Sheet write + email send before the retry landed -
+# i.e. genuine successes were being retried as if they were failures, not
+# a webhook that was actually down. A more generous timeout narrows that
+# false-failure window; it does not eliminate it (see event_id below).
+WEBHOOK_TIMEOUT = 90
 WEBHOOK_RETRIES = 2
 
 # A healthy webhook replies with the plain text "ok". Apps Script answers a
@@ -1275,6 +1283,17 @@ def send_webhook(payload):
         print("WARN: WEBHOOK_URL not set; printing payload instead")
         print(json.dumps(payload, indent=2))
         return
+    # Stable per-event id, computed once from the payload's own content so
+    # every retry of *this* call sends the identical id (a fresh id per
+    # attempt would defeat the point). This does not by itself stop
+    # duplicate Sheet rows/emails - the Apps Script side would need to
+    # remember event_ids it has already processed (e.g. a short-lived
+    # CacheService entry) and skip repeats. Added so that dedup can be
+    # added there without a matching monitor.py change.
+    event_id = hashlib.sha1(
+        json.dumps(payload, sort_keys=True, default=str).encode()
+    ).hexdigest()[:16]
+    payload = {**payload, "event_id": event_id}
     last_err = None
     for attempt in range(WEBHOOK_RETRIES + 1):
         try:
@@ -1483,10 +1502,29 @@ def run(audit=False):
 
     fresh_failures = _gate_failures(state, failures, now)
 
+    # Save state here, BEFORE attempting the alert-critical webhook sends
+    # below - not just before the heartbeat (see the save_state() call
+    # near the end of run(), which predates this one and covers the
+    # Saturday dead-link sweep). Root cause found 2026-09-17: send_webhook()
+    # for new_roles/failures is allowed to raise after WEBHOOK_RETRIES
+    # attempts (by design - see its docstring), and that raise happens
+    # BEFORE the old single save_state() call, which sat only at the end of
+    # run(). So a crashed send here used to discard this run's dedupe keys
+    # and failure-gate bookkeeping along with it: the same postings/
+    # failures were never marked seen, the next run re-detected them as
+    # "new", tried the same flaky send again, and the cycle repeated -
+    # exactly the repeating-alert / repeating-crash-email pattern reported.
+    # Saving here breaks that cycle: a webhook failure below can still
+    # raise and surface as a run failure, but it can no longer also undo
+    # this run's own bookkeeping.
+    save_state(state)
+
     # ---- Alert-critical sends. Allowed to raise after WEBHOOK_RETRIES
     # attempts: if these are still failing at that point the notification
     # pipe itself is broken, which is worth surfacing via the workflow's
-    # own failure path (see send_webhook docstring).
+    # own failure path (see send_webhook docstring). State for this run is
+    # already durably saved above, so a raise here no longer costs us the
+    # dedupe/failure-gate bookkeeping too.
     if new_roles:
         send_webhook({"type": "new_roles", "items": new_roles})
         print(f"{len(new_roles)} new role(s) reported")

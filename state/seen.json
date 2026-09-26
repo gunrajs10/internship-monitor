@@ -1,5 +1,96 @@
 {
- "failing": {},
+ "failing": {
+  "Agilent Technologies": {
+   "reason": "https://agilent.wd5.myworkdayjobs.com/wday/cxs/agilent/Agilent_Careers/jobs failed after Chrome-impersonation fallback: HTTP 200 but non-JSON via curl_cffi/chrome",
+   "since": "2026-09-26T06:08:27.827821+00:00",
+   "streak": 1
+  },
+  "Amgen": {
+   "reason": "https://amgen.wd1.myworkdayjobs.com/wday/cxs/amgen/Careers/jobs failed after Chrome-impersonation fallback: HTTP 200 but non-JSON via curl_cffi/chrome",
+   "since": "2026-09-26T06:08:27.827821+00:00",
+   "streak": 1
+  },
+  "AstraZeneca": {
+   "reason": "https://astrazeneca.wd3.myworkdayjobs.com/wday/cxs/astrazeneca/Careers/jobs failed after Chrome-impersonation fallback: HTTP 200 but non-JSON via curl_cffi/chrome",
+   "since": "2026-09-26T06:08:27.827821+00:00",
+   "streak": 1
+  },
+  "Biogen": {
+   "reason": "https://biibhr.wd3.myworkdayjobs.com/wday/cxs/biibhr/external/jobs failed after Chrome-impersonation fallback: HTTP 200 but non-JSON via curl_cffi/chrome",
+   "since": "2026-09-26T06:08:27.827821+00:00",
+   "streak": 1
+  },
+  "Bristol Myers Squibb": {
+   "reason": "https://bristolmyerssquibb.wd5.myworkdayjobs.com/wday/cxs/bristolmyerssquibb/BMS/jobs failed after Chrome-impersonation fallback: HTTP 200 but non-JSON via curl_cffi/chrome",
+   "since": "2026-09-26T06:08:27.827821+00:00",
+   "streak": 1
+  },
+  "GSK": {
+   "reason": "https://gsk.wd5.myworkdayjobs.com/wday/cxs/gsk/GSKCareers/jobs failed after Chrome-impersonation fallback: HTTP 200 but non-JSON via curl_cffi/chrome",
+   "since": "2026-09-26T06:08:27.827821+00:00",
+   "streak": 1
+  },
+  "Genentech": {
+   "reason": "https://roche.wd3.myworkdayjobs.com/wday/cxs/roche/ROG-A2O-GENE/jobs failed after Chrome-impersonation fallback: HTTP 200 but non-JSON via curl_cffi/chrome",
+   "since": "2026-09-26T06:08:27.827821+00:00",
+   "streak": 1
+  },
+  "Gilead Sciences": {
+   "reason": "https://gilead.wd1.myworkdayjobs.com/wday/cxs/gilead/gileadcareers/jobs failed after Chrome-impersonation fallback: HTTP 200 but non-JSON via curl_cffi/chrome",
+   "since": "2026-09-26T06:08:27.827821+00:00",
+   "streak": 1
+  },
+  "Illumina": {
+   "reason": "https://illumina.wd1.myworkdayjobs.com/wday/cxs/illumina/illumina-careers/jobs failed after Chrome-impersonation fallback: HTTP 200 but non-JSON via curl_cffi/chrome",
+   "since": "2026-09-26T06:08:27.827821+00:00",
+   "streak": 1
+  },
+  "Kite Pharma": {
+   "reason": "https://gilead.wd1.myworkdayjobs.com/wday/cxs/gilead/kitepharmacareers/jobs failed after Chrome-impersonation fallback: HTTP 200 but non-JSON via curl_cffi/chrome",
+   "since": "2026-09-26T06:08:27.827821+00:00",
+   "streak": 1
+  },
+  "Moderna": {
+   "reason": "https://modernatx.wd1.myworkdayjobs.com/wday/cxs/modernatx/M_tx/jobs failed after Chrome-impersonation fallback: HTTP 200 but non-JSON via curl_cffi/chrome",
+   "since": "2026-09-26T06:08:27.827821+00:00",
+   "streak": 1
+  },
+  "Neurocrine Biosciences": {
+   "reason": "https://neurocrine.wd5.myworkdayjobs.com/wday/cxs/neurocrine/NeurocrineCareers/jobs failed after Chrome-impersonation fallback: HTTP 200 but non-JSON via curl_cffi/chrome",
+   "since": "2026-09-26T06:08:27.827821+00:00",
+   "streak": 1
+  },
+  "Novartis": {
+   "reason": "https://novartis.wd3.myworkdayjobs.com/wday/cxs/novartis/Novartis_Careers/jobs failed after Chrome-impersonation fallback: HTTP 200 but non-JSON via curl_cffi/chrome",
+   "since": "2026-09-26T06:08:27.827821+00:00",
+   "streak": 1
+  },
+  "Pfizer": {
+   "reason": "https://pfizer.wd1.myworkdayjobs.com/wday/cxs/pfizer/PfizerCareers/jobs failed after 3 attempts: HTTP 500",
+   "since": "2026-09-26T06:08:27.827821+00:00",
+   "streak": 1
+  },
+  "Regeneron": {
+   "reason": "https://regeneron.wd1.myworkdayjobs.com/wday/cxs/regeneron/Careers/jobs failed after Chrome-impersonation fallback: HTTP 200 but non-JSON via curl_cffi/chrome",
+   "since": "2026-09-26T06:08:27.827821+00:00",
+   "streak": 1
+  },
+  "Roche": {
+   "reason": "https://roche.wd3.myworkdayjobs.com/wday/cxs/roche/roche-ext/jobs failed after Chrome-impersonation fallback: HTTP 200 but non-JSON via curl_cffi/chrome",
+   "since": "2026-09-26T06:08:27.827821+00:00",
+   "streak": 1
+  },
+  "Sanofi": {
+   "reason": "https://sanofi.wd3.myworkdayjobs.com/wday/cxs/sanofi/SanofiCareers/jobs failed after Chrome-impersonation fallback: HTTP 200 but non-JSON via curl_cffi/chrome",
+   "since": "2026-09-26T06:08:27.827821+00:00",
+   "streak": 1
+  },
+  "Tempus AI": {
+   "reason": "https://tempus.wd5.myworkdayjobs.com/wday/cxs/tempus/Tempus_Careers/jobs failed after Chrome-impersonation fallback: HTTP 200 but non-JSON via curl_cffi/chrome",
+   "since": "2026-09-26T06:08:27.827821+00:00",
+   "streak": 1
+  }
+ },
  "failures": {
   "086dc629b509cd0452a21cc3f157d1f45fa29ea9": "2026-07-15T06:28:41.532995+00:00",
   "0c46a7f23793197517536fba857eb4558bb9ed42": "2026-08-12T08:38:28.406966+00:00",
@@ -6437,6 +6528,14 @@
    "first_seen": "2026-07-15T06:28:41.532995+00:00",
    "location": "Istanbul",
    "title": "Legal Intern"
+  },
+  "997da55dda53895b2b145824d00a4cae59d5d1d4": {
+   "company": "Merck",
+   "first_seen": "2026-09-26T06:08:27.827821+00:00",
+   "location": "Rahway, New Jersey, United States of America",
+   "match": "program",
+   "title": "2027 Future Talent Program - North America Regional Security Team - Intern",
+   "url": "https://msd.wd5.myworkdayjobs.com/en-US/SearchJobs/job/USA---New-Jersey---Rahway/XMLNAME-2027-Future-Talent-Program---North-America-Regional-Security-Team---Intern_R413091/apply"
   },
   "99bf85470fb0db287da2b3440878ec1d9f5400ca": {
    "company": "Roche",

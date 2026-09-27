@@ -1,0 +1,217 @@
+{
+  "provenance": {
+    "verified_date": "2026-09-26",
+    "verification": "Each configured employer feed returned public JSON with jobs and descriptions. Counts are a build-time snapshot, not matching-job counts.",
+    "coverage": "Supplement to the existing 35-company internship monitor. Public employer feeds cover all current postings; LinkedIn queries are supplemental discovery.",
+    "runtime_ai_required": false
+  },
+  "linkedin": {
+    "enabled": true,
+    "queries": [
+      "biotech commercial internship",
+      "2027 healthcare commercial internship",
+      "biotech marketing analyst",
+      "pharma rotational program",
+      "life sciences business development associate",
+      "healthcare strategy analyst",
+      "2027 biotech MBA internship",
+      "medical device product marketing",
+      "biotech commercial operations",
+      "healthcare leadership development program"
+    ],
+    "lookback_hours": 6,
+    "max_pages": 10,
+    "page_size": 25,
+    "interval_seconds": 2,
+    "bootstrap_hours": 24
+  },
+  "boards": [
+    {
+      "name": "Freenome",
+      "type": "greenhouse",
+      "token": "freenome",
+      "industry": "biotechnology diagnostics",
+      "board_url": "https://job-boards.greenhouse.io/freenome",
+      "verified_job_count": 22
+    },
+    {
+      "name": "Natera",
+      "type": "greenhouse",
+      "token": "natera",
+      "industry": "biotechnology diagnostics",
+      "board_url": "https://job-boards.greenhouse.io/natera",
+      "verified_job_count": 193
+    },
+    {
+      "name": "Neuralink",
+      "type": "greenhouse",
+      "token": "neuralink",
+      "industry": "neurotechnology medical devices",
+      "board_url": "https://boards.greenhouse.io/neuralink",
+      "verified_job_count": 81
+    },
+    {
+      "name": "Omada Health",
+      "type": "greenhouse",
+      "token": "omadahealth",
+      "industry": "digital healthcare",
+      "board_url": "https://job-boards.greenhouse.io/omadahealth",
+      "verified_job_count": 17
+    },
+    {
+      "name": "Flatiron Health",
+      "type": "greenhouse",
+      "token": "flatironhealth",
+      "industry": "oncology healthcare technology",
+      "board_url": "https://job-boards.greenhouse.io/flatironhealth",
+      "verified_job_count": 27
+    },
+    {
+      "name": "Recursion",
+      "type": "greenhouse",
+      "token": "recursionpharmaceuticals",
+      "industry": "biotechnology drug discovery",
+      "board_url": "https://job-boards.greenhouse.io/recursionpharmaceuticals",
+      "verified_job_count": 16
+    },
+    {
+      "name": "Benchling",
+      "type": "ashby",
+      "token": "benchling",
+      "industry": "biotechnology research software",
+      "board_url": "https://jobs.ashbyhq.com/benchling",
+      "verified_job_count": 56
+    },
+    {
+      "name": "insitro",
+      "type": "ashby",
+      "token": "insitro",
+      "industry": "biotechnology drug discovery",
+      "board_url": "https://jobs.ashbyhq.com/insitro",
+      "verified_job_count": 15
+    },
+    {
+      "name": "Color Health",
+      "type": "ashby",
+      "token": "color-health",
+      "industry": "oncology digital healthcare",
+      "board_url": "https://jobs.ashbyhq.com/color-health",
+      "verified_job_count": 19
+    },
+    {
+      "name": "Hims & Hers",
+      "type": "ashby",
+      "token": "hims-and-hers",
+      "industry": "digital healthcare telehealth",
+      "board_url": "https://jobs.ashbyhq.com/hims-and-hers",
+      "verified_job_count": 131
+    },
+    {
+      "name": "Equip Health",
+      "type": "ashby",
+      "token": "equip",
+      "industry": "behavioral healthcare",
+      "board_url": "https://jobs.ashbyhq.com/equip",
+      "verified_job_count": 49
+    },
+    {
+      "name": "9amHealth",
+      "type": "ashby",
+      "token": "join9am",
+      "industry": "cardiometabolic digital healthcare",
+      "board_url": "https://jobs.ashbyhq.com/join9am",
+      "verified_job_count": 16
+    },
+    {
+      "name": "Solace",
+      "type": "ashby",
+      "token": "solace",
+      "industry": "healthcare advocacy technology",
+      "board_url": "https://jobs.ashbyhq.com/solace",
+      "verified_job_count": 26
+    },
+    {
+      "name": "Virta Health",
+      "type": "ashby",
+      "token": "virtahealth",
+      "industry": "cardiometabolic digital healthcare",
+      "board_url": "https://jobs.ashbyhq.com/virtahealth",
+      "verified_job_count": 20
+    },
+    {
+      "name": "Included Health",
+      "type": "lever",
+      "token": "includedhealth",
+      "industry": "digital healthcare navigation",
+      "board_url": "https://jobs.lever.co/includedhealth",
+      "verified_job_count": 53
+    },
+    {
+      "name": "GRAIL",
+      "type": "lever",
+      "token": "grailbio",
+      "industry": "biotechnology diagnostics",
+      "board_url": "https://jobs.lever.co/grailbio",
+      "verified_job_count": 18
+    }
+  ],
+  "healthcare_companies": {
+    "Amgen": "biotechnology",
+    "Genentech": "biotechnology",
+    "Gilead Sciences": "biopharmaceuticals",
+    "Pfizer": "pharmaceuticals",
+    "Bristol Myers Squibb": "biopharmaceuticals",
+    "Roche": "pharmaceuticals diagnostics",
+    "Kite Pharma": "cell therapy biotechnology",
+    "Biogen": "neuroscience biotechnology",
+    "Neurocrine Biosciences": "neuroscience biotechnology",
+    "Vertex Pharmaceuticals": "biopharmaceuticals",
+    "Regeneron": "biotechnology",
+    "BioMarin": "biotechnology",
+    "Agilent Technologies": "life sciences instrumentation",
+    "Illumina": "genomics biotechnology",
+    "Axsome Therapeutics": "neuroscience pharmaceuticals",
+    "Praxis Precision Medicines": "neuroscience biotechnology",
+    "BridgeBio": "biotechnology",
+    "Ultragenyx": "biotechnology",
+    "Tempus AI": "healthcare precision medicine",
+    "Johnson & Johnson": "pharmaceuticals medical devices",
+    "AbbVie": "biopharmaceuticals",
+    "Eli Lilly": "pharmaceuticals",
+    "Merck": "pharmaceuticals",
+    "Thermo Fisher Scientific": "life sciences tools",
+    "Labcorp": "healthcare diagnostics",
+    "Novartis": "pharmaceuticals",
+    "Sanofi": "pharmaceuticals",
+    "GSK": "biopharmaceuticals",
+    "AstraZeneca": "biopharmaceuticals",
+    "Takeda": "pharmaceuticals",
+    "Moderna": "biotechnology",
+    "Ionis Pharmaceuticals": "biotechnology",
+    "Medpace": "clinical research healthcare",
+    "Lonza": "biopharmaceutical manufacturing",
+    "Novo Nordisk": "pharmaceuticals",
+    "Freenome": "biotechnology diagnostics",
+    "Natera": "biotechnology diagnostics",
+    "Neuralink": "neurotechnology medical devices",
+    "Omada Health": "digital healthcare",
+    "Flatiron Health": "oncology healthcare technology",
+    "Recursion": "biotechnology drug discovery",
+    "Benchling": "biotechnology research software",
+    "insitro": "biotechnology drug discovery",
+    "Color Health": "oncology digital healthcare",
+    "Hims & Hers": "digital healthcare telehealth",
+    "Equip Health": "behavioral healthcare",
+    "9amHealth": "cardiometabolic digital healthcare",
+    "Solace": "healthcare advocacy technology",
+    "Virta Health": "cardiometabolic digital healthcare",
+    "Included Health": "digital healthcare navigation",
+    "GRAIL": "biotechnology diagnostics",
+    "Blackrock Neurotech": "neurotechnology medical devices"
+  },
+  "delivery": {
+    "batch_size": 25,
+    "max_batches_per_run": 8
+  },
+  "detail_limit": 50
+}

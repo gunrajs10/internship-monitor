@@ -104,7 +104,12 @@ def _location(location, description):
     if not us and _has(r"\bremote\b", loc):
         if _has(r"\b(?:remote (?:within|in|across|from)|based in|resid(?:e|ing) in|located in) (?:the )?(?:United States|U\.S\.|USA)\b", description):
             us = True
-    ca = us and (_has(r"\bcalifornia\b|\b(" + CA_CITIES + r")\b", loc) or bool(re.search(r"(?:[,;–-]\s*|^)CA(?:\s*[,;/)]|\s*$)", loc)))
+    explicit_ca = _has(r"\bcalifornia\b", loc) or bool(re.search(r"(?:[,;–-]\s*|^)CA(?:\s*[,;/)]|\s*$)", loc))
+    other_state = bool(re.search(r"(?:[,;–-]\s*|^)(?:" + "|".join(s for s in STATES if s != "CA") + r")(?:\s*[,;/)]|\s*$)", loc)) or _has(r"\b(" + "|".join(s for s in STATE_NAMES.split("|") if s != "california") + r")\b", loc)
+    # Berkeley Heights, NJ and Fremont, NE are not California. Explicit state
+    # information takes precedence over a shared city name; multi-state listings
+    # that explicitly include California still receive the highlight.
+    ca = us and (explicit_ca or (not other_state and _has(r"\b(" + CA_CITIES + r")\b", loc)))
     return ("us" if us else "unknown"), ca
 
 

@@ -130,7 +130,8 @@ class OpportunityRankTests(unittest.TestCase):
         titles = ["HVAC Technician", "Inventory Control Analyst", "Product Counsel",
                   "Software Engineer I", "Caregiver", "Recovery Coach",
                   "Business Development Representative", "SDR", "Sales Development Representative",
-                  "Territory Account Manager", "Sales Associate", "Field Service Engineer"]
+                  "Territory Account Manager", "Sales Associate", "Field Service Engineer",
+                  "Associate Marketing Designer", "Lab Waste Technician"]
         for title in titles:
             with self.subTest(title=title):
                 job = self.job(title=title, description="Entry-level healthcare opportunity. MBA preferred.", salary="$150,000 per year")
@@ -204,6 +205,101 @@ class OpportunityRankTests(unittest.TestCase):
                 result = assess(self.job(description=description), {})
                 self.assertTrue(result["include"])
                 self.assertFalse(any("4+ years" in caution for caution in result["cautions"]))
+
+    def test_work_years_without_experience_word_are_enforced(self):
+        for description in [
+            "- 4+ years in marketing analytics or marketing operations at a B2B SaaS company.",
+            "- 8+ years in Sales Strategy & Operations, Revenue Operations, or related analytical/GTM roles,",
+            "5+ years in clinical operations, clinical project management, or CRO/vendor management",
+            "Minimum 6 years working in biotechnology strategy.",
+            "You have 7 years building commercial teams.",
+            "4 or more years of relevant experience required.",
+        ]:
+            with self.subTest(description=description):
+                result = assess(self.job(description=description), {})
+                self.assertFalse(result["include"])
+                self.assertTrue(any("years of experience" in reason for reason in result["reasons"]))
+
+    def test_company_age_and_education_are_not_candidate_work_years(self):
+        for description in [
+            "We have 80 years in healthcare. MBA internship with no prior experience required.",
+            "Must be at least 18 years of age. MBA internship in biotechnology.",
+            "A 4 year undergraduate degree is required. MBA candidates encouraged.",
+            "MBA internship. 5+ years in marketing preferred.",
+        ]:
+            with self.subTest(description=description):
+                self.assertTrue(assess(self.job(description=description), {})["include"])
+
+    def test_or_more_years_are_detected_without_dropping_entry_level(self):
+        result = assess(self.job(description="3 or more years of experience in Operations or Supply Chain."), {})
+        self.assertTrue(result["include"])
+        self.assertTrue(any("3+ years" in c for c in result["cautions"]))
+
+    def test_local_language_foreign_locations_are_excluded(self):
+        for location in ["千葉県　柏市", "東京都", "大阪府", "日本", "中国", "Россия"]:
+            with self.subTest(location=location):
+                self.assertFalse(assess(self.job(location=location), {})["include"])
+                self.assertFalse(needs_detail(self.job(location=location), {}))
+        self.assertTrue(assess(self.job(location="Remote"), {})["include"])
+        self.assertTrue(assess(self.job(location="Remote - United States"), {})["include"])
+
+    def test_required_nursing_degree_and_listed_rn_are_excluded(self):
+        for description in [
+            "BSN required. Healthcare clinical program management.",
+            "BSN is required. Healthcare management.",
+            "Minimum Requirements\nLicenses & Certifications\nRN\nPreferred Requirements\nMaster's Degree",
+        ]:
+            with self.subTest(description=description):
+                self.assertFalse(assess(self.job(title="Clinical Program Manager", description=description), {})["include"])
+        self.assertTrue(assess(self.job(description="BSN preferred. MBA candidates eligible."), {})["include"])
+        self.assertTrue(assess(self.job(description="Preferred Requirements\nBSN preferred\nMBA candidates eligible."), {})["include"])
+
+    def test_current_cls_cgmbs_license_is_a_requirement(self):
+        job = self.job(title="Clinical Lab Scientist I", description="Qualifications\nCurrent California CLS license (Clinical Laboratory Science - Generalist) or CGMBS license (Clinical Genetics Molecular Biology Scientist)")
+        self.assertFalse(assess(job, {})["include"])
+        self.assertTrue(assess(self.job(description="CLS license preferred. MBA internship."), {})["include"])
+
+    def test_vie_citizenship_and_age_are_flagged_without_assumption(self):
+        result = assess(self.job(title="Global Oncology Market Access Junior Project Specialist VIE Contract", description="VIE Program is available to citizens of the European Economic Area (EU + Norway, Liechtenstein and Iceland) aged between 18 and 28. Candidates cannot apply to an assignment in their own country of citizenship."), {})
+        self.assertTrue(result["include"])
+        self.assertTrue(any("EEA citizenship" in caution and "age" in caution and "unverified" in caution for caution in result["cautions"]))
+        self.assertNotEqual(result["eligibility"], "Eligible")
+
+    def test_explicit_operations_function_overrides_brand_title(self):
+        job = self.job(title="Associate Brand Manager II", description="This is a role in Operations, not in Commercial or Marketing. MBA desired. Biotechnology operations.")
+        result = assess(job, {})
+        self.assertTrue(result["include"])
+        self.assertTrue(any("operations role" in reason for reason in result["reasons"]))
+        self.assertFalse(any("function (+37)" in reason for reason in result["reasons"]))
+
+    def test_current_bachelor_enrollment_is_different_from_completed_degree(self):
+        self.assertFalse(assess(self.job(description="Minimum Qualifications\nCurrent enrollment in a Bachelor's degree program."), {})["include"])
+        self.assertTrue(assess(self.job(description="Current enrollment in a Bachelor's or Master's degree program."), {})["include"])
+
+    def test_program_description_can_restrict_to_finishing_undergraduates(self):
+        result = assess(self.job(title="Digital Leadership Development Program", description="Undergraduate student completing a Bachelor’s degree between December 2026 and June 2027 in Computer Science or related field. Healthcare technology."), {})
+        self.assertFalse(result["include"])
+        self.assertTrue(assess(self.job(description="Undergraduate students completing a Bachelor's or Master's degree may apply. MBA biotechnology internship."), {})["include"])
+
+    def test_clinical_titles_do_not_conceal_field_sales(self):
+        for title, description in [
+            ("Associate Clinical Oncology Specialist", "Responsible for contributing to account sales. Healthcare oncology. Uncapped commission."),
+            ("Clinical Account Associate", "Healthcare role. Monitor performance of sales. Plans include territory management and travel."),
+        ]:
+            with self.subTest(title=title):
+                self.assertFalse(assess(self.job(title=title, description=description), {})["include"])
+        self.assertTrue(assess(self.job(title="Clinical Research Associate", description="Life sciences research. Partner with the sales organization."), {})["include"])
+        self.assertTrue(assess(self.job(title="Commercial Strategy Intern", description="Biotechnology strategy. Analyze account sales and territory management practices."), {})["include"])
+
+    def test_nurse_residency_and_active_clinical_licenses_are_excluded(self):
+        self.assertFalse(assess(self.job(title="Residency Program - New Nurse Graduates", description="Healthcare program. Current valid nursing license in U.S. and graduation from a qualified nursing program."), {})["include"])
+        self.assertFalse(assess(self.job(title="Manager, Sterile Operations", description="You Have:\nDoctor of Pharmacy (Pharm D), with active license in the State of Ohio. Healthcare operations."), {})["include"])
+        self.assertFalse(assess(self.job(title="Clinical Operations Associate", description="Requirements\nCurrent valid nursing license in U.S."), {})["include"])
+        self.assertTrue(assess(self.job(description="Nursing license preferred. MBA healthcare strategy."), {})["include"])
+
+    def test_qualification_headings_supply_required_credential_context(self):
+        self.assertFalse(assess(self.job(title="Scientist I", description="Qualifications\nPhD in neuroscience. Biotechnology research."), {})["include"])
+        self.assertTrue(assess(self.job(description="Preferred Qualifications\nPhD preferred. MBA candidates eligible."), {})["include"])
 
 
 if __name__ == "__main__":

@@ -47,7 +47,7 @@ OUTSIDE_BACKGROUND = (r"\b(engineer(?:ing)?|developer|programmer|devops|software
                       r"field service technician|repair technician|inventory control|warehouse|material handler|"
                       r"truck driver|delivery driver|caregiver|care ?giver|home health aide|nursing assistant|"
                       r"recovery coach|peer support|behavioral therapist|behavior technician|therapist|"
-                      r"dental assistant|veterinarian|veterinary technician)\b")
+                      r"dental assistant|veterinarian|veterinary technician|(?:graphic|marketing|motion) designer|lab waste technician)\b")
 FIELD_SALES = (r"\b(BDR|SDR|sales development representative|business development representative|"
                r"account executive|territory (?:sales|account|manager)|district sales|inside sales|"
                r"field sales|sales (?:representative|rep|specialist|consultant|associate|executive))\b")
@@ -82,6 +82,12 @@ def _location(location, description):
     state_code = bool(re.search(r"(?:[,;–-]\s*|^)(?:" + "|".join(STATES) + r")(?:\s*[,;/)]|\s*$)", loc))
     state_name = _has(r"\b(" + STATE_NAMES + r")\b", loc)
     foreign = _has(r"\b(" + FOREIGN + r")\b", loc)
+    # Public employer feeds sometimes use local-language place names only.
+    # Recognize explicit foreign countries/Japanese administrative locations;
+    # leave genuinely ambiguous remote locations available for manual review.
+    localized_foreign = bool(re.search(r"日本|中国|中國|대한민국|한국|Россия|भारत|千葉|東京都|大阪|京都|北海道|神奈川|[一-龯]{1,8}(?:県|府|市|区|町|村)", loc))
+    if localized_foreign and not explicit_us and not state_code and not state_name:
+        return "foreign", False
     # 'Georgia' is also a country; do not claim it is a US state without context.
     if loc.strip().lower() == "georgia":
         state_name = False
@@ -135,7 +141,7 @@ def _strong_salary(salary, threshold):
 
 
 def _clinical_title(title):
-    credential_role = _has(r"\b(registered nurse|nurse practitioner|physician|surgeon|pharmacist|dentist|physical therapist|occupational therapist)\b", title)
+    credential_role = _has(r"\b(nurses?|physician|surgeon|pharmacist|dentist|physical therapist|occupational therapist)\b", title)
     # A Physician Partnerships Intern is not necessarily a physician. Required
     # credentials for such business roles are checked in the job description.
     business_role = _has(COMMERCIAL + "|" + SECONDARY + "|" + ADJACENT + r"|\bpartnerships?\b", title)
@@ -173,11 +179,11 @@ def _experience_minimum(clause):
     Explicit alternative degree pathways may have different experience floors;
     retain the least demanding pathway without claiming the user qualifies.
     """
-    if _preferred(clause) or not _has(r"\bexperience\b", clause):
+    if _preferred(clause):
         return None
     degrees = re.findall(r"\b(?:bachelor(?:'s|s)?|master(?:'s|s)?|MBA|Ph\.?D\.?|B\.?S\.?|M\.?S\.?)\b", clause, re.I)
     alternatives = len(degrees) >= 2 and _has(r"\b(?:or|alternatively)\b", clause)
-    matches = list(re.finditer(r"\b(\d{1,2})\s*(?:\+|(?:-|–|to)\s*\d{1,2})?\s*(?:years?|yrs?)\b", clause, re.I))
+    matches = list(re.finditer(r"\b(\d{1,2})\s*(?:\+|(?:-|–|to)\s*\d{1,2}|or\s+more|or\s+greater)?\s*(?:years?|yrs?)\b", clause, re.I))
     values = []
     for index, match in enumerate(matches):
         tail = clause[match.end():]
@@ -186,7 +192,12 @@ def _experience_minimum(clause):
         before = clause[max(0, match.start() - 45):match.start()]
         next_start = matches[index + 1].start() if index + 1 < len(matches) else len(clause)
         after = clause[match.end():min(next_start, match.end() + 85)]
-        if alternatives or _has(r"\bexperience\b", after) or _has(r"\bexperience\b[^.;]{0,40}$", before):
+        work_phrase = _has(r"^\s*(?:of\s+)?(?:in|within|doing|working|practicing|managing|leading|building|developing|supporting)\b", after)
+        # '8+ years in Sales Strategy' is a qualification even without the word
+        # experience. Restrict this inference to a qualification-style opening
+        # or candidate/requirement context, not 'we have 80 years in healthcare'.
+        requirement_context = _has(r"^\s*[-•*]?\s*(?:(?:minimum|at least|over|more than)\s+(?:of\s+)?)?$", clause[:match.start()]) or _has(r"\b(?:must|requires?|required|minimum|candidate|you have|you bring|you possess|at least)\b", before)
+        if alternatives or _has(r"\bexperience\b", after) or _has(r"\bexperience\b[^.;]{0,40}$", before) or (work_phrase and requirement_context):
             values.append(int(match.group(1)))
     if not values:
         return None
@@ -258,18 +269,50 @@ def assess(job: dict, config: dict) -> dict:
         cautions.append("Senior Associate/Analyst title: closely review the required experience and responsibility level.")
     if _clinical_title(title):
         return reject("Role requires a clinical profession not established by the supplied background.")
+    # Some field-sales jobs carry clinical titles. Require direct evidence of
+    # account selling or territory sales duties, not merely work with sales teams.
+    clinical_sales_title = _has(r"\b(?:clinical account|clinical oncology specialist)\b", title)
+    direct_sales_duties = _has(r"\b(?:account sales|uncapped commission)\b", description) or (
+        _has(r"\bterritory management\b", description) and
+        _has(r"\b(?:sales objectives|performance of sales|sales goals)\b", description))
+    if clinical_sales_title and direct_sales_duties:
+        return reject("Clinical title describes a field/account-sales role outside the requested strategy and adjacent functions.")
     if _has(r"\b(undergraduate|undergrad|high school)\b", title) and program:
         return reject("Program is explicitly designated for undergraduate or high-school students.")
 
+    if _has(r"\b(?:V\.?I\.?E\.?|iMove)\b", combined) and _has(r"European Economic Area|\bEEA\b", description):
+        cautions.append("VIE program: verify EEA citizenship, the stated age limit, and the rule against assignments in your country of citizenship. Nationality and age are unverified; no sponsorship need does not establish eligibility.")
+
     required_years = []
+    credential_section = False
+    qualification_section = False
     for clause in clauses:
+        if _has(r"^\s*(?:preferred|optional|nice to have)\b", clause):
+            credential_section = False
+            qualification_section = False
+        elif _has(r"^\s*(?:you have|what you bring|qualifications|minimum requirements|required qualifications|requirements)\s*:?\s*$", clause):
+            qualification_section = True
+        elif _has(r"^\s*(?:licenses?\s*(?:&|and)\s*certifications?|required (?:licenses?|credentials?))\s*:?\s*$", clause):
+            credential_section = True
+        elif _has(r"^\s*(?:responsibilities|benefits|about us|what we offer|our company)\s*:?\s*$", clause):
+            qualification_section = False
+            credential_section = False
         if _preferred(clause):
             continue
         mandatory = _has(r"\b(must|required|minimum|at least|only|need(?:ed|s)? to)\b", clause)
-        if mandatory and _has(r"\b(undergraduates? only|undergraduate students? only|must be (?:an? )?(?:current )?undergraduate|currently enrolled in (?:an? )?(?:bachelor|undergraduate)|pursuing (?:an? )?bachelor)", clause) and not _has(r"\b(or|and/or)\b.{0,60}\b(master|graduate|MBA|advanced degree)", clause):
+        undergrad_completion = _has(r"\bundergraduate students?\s+(?:completing|pursuing|working toward)\b", clause)
+        enrollment_required = mandatory or undergrad_completion or _has(r"\bcurrent(?:ly)? (?:enrollment|enrolled)\b", clause)
+        if enrollment_required and (undergrad_completion or _has(r"\b(undergraduates? only|undergraduate students? only|must be (?:an? )?(?:current )?undergraduate|current(?:ly)? (?:enrollment|enrolled) in (?:an? )?(?:bachelor|undergraduate)|pursuing (?:an? )?bachelor)", clause)) and not _has(r"\b(or|and/or)\b.{0,60}\b(master|graduate|MBA|advanced degree)", clause):
             return reject("Required undergraduate enrollment conflicts with the MBA-stage search.")
-        credentials = r"\b(M\.?D\.?|Pharm\.?D\.?|R\.?N\.?|registered nurse|medical licen[cs]e|nursing licen[cs]e|doctoral degree|Ph\.?D\.?)\b"
-        if mandatory and _has(credentials, clause):
+        credentials = r"\b(M\.?D\.?|Pharm\.?\s*D\.?|Doctor of Pharmacy|R\.?N\.?|BSN|BScN|registered nurse|CLS|CGMBS|medical licen[cs]e|nursing licen[cs]e|doctoral degree|Ph\.?D\.?)\b"
+        listed_credential = credential_section and bool(re.fullmatch(r"\s*[-•*]?\s*(?:RN|BSN|CLS|CGMBS|registered nurse)\s*", clause, re.I))
+        explicit_lab_license = _has(r"\b(?:current|active|valid|required|must|hold|possess)\b", clause) and _has(r"\b(?:CLS|CGMBS)\b", clause) and _has(r"\blicen[cs]e\b", clause)
+        if explicit_lab_license:
+            return reject("A current clinical laboratory license is required and is not established by the supplied background.")
+        active_clinical_license = _has(r"\b(?:current|valid|active|unrestricted)\b", clause) and _has(r"\blicen[cs]e\b", clause) and _has(r"\b(?:nursing|medical|pharmacy|pharmacist|Pharm\.?\s*D\.?|Doctor of Pharmacy)\b", clause)
+        if active_clinical_license:
+            return reject("A current clinical professional license is required and is not established by the supplied background.")
+        if (mandatory or listed_credential or qualification_section) and _has(credentials, clause):
             alternatives = _has(r"\b(?:or|and/or)\b.{0,65}\b(?:MBA|master|bachelor|equivalent experience|life sciences?|biology|neurobiology)", clause) or _has(r"\b(?:MBA|master|bachelor).{0,65}\bor\b", clause)
             if not alternatives:
                 return reject("A mandatory clinical or doctoral credential is not established by the supplied background.")
@@ -299,7 +342,11 @@ def assess(job: dict, config: dict) -> dict:
     reasons.append("Healthcare/life-science industry evidence" + (" from the configured employer watchlist." if known else " in the posting."))
     score = 25
 
-    if _has(COMMERCIAL, title):
+    operations_override = _has(r"\b(?:role|position)\s+(?:is\s+)?in\s+operations\b.{0,70}\bnot\s+(?:in\s+)?(?:commercial|marketing)\b", description)
+    if operations_override:
+        score += 27
+        reasons.append("Posting explicitly identifies an operations role rather than commercial/marketing (+27).")
+    elif _has(COMMERCIAL, title):
         score += 45
         reasons.append("Primary commercial or strategy function (+45).")
     elif _has(SECONDARY, title):

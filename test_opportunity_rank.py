@@ -25,6 +25,15 @@ class OpportunityRankTests(unittest.TestCase):
         self.assertEqual(result["eligibility"], "Check eligibility")
         self.assertTrue(any("US work location" in c for c in result["cautions"]))
 
+    def test_explicit_other_state_overrides_shared_california_city_names(self):
+        for location in ["Berkeley Heights, NJ", "Fremont, NE", "Hayward, Wisconsin"]:
+            with self.subTest(location=location):
+                result = assess(self.job(location=location), {})
+                self.assertTrue(result["include"])
+                self.assertFalse(result["california"])
+        self.assertTrue(assess(self.job(location="Fremont, CA"), {})["california"])
+        self.assertTrue(assess(self.job(location="San Francisco, CA; Boston, MA"), {})["california"])
+
     def test_remote_foreign_excluded_and_remote_us_allowed(self):
         self.assertFalse(assess(self.job(location="Remote, Canada"), {})["include"])
         self.assertTrue(assess(self.job(location="Remote - United States"), {})["include"])

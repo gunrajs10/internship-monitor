@@ -19,12 +19,19 @@ for jobs or contact employers.
 The companion searches ten public LinkedIn queries without signing in and reads
 sixteen additional employer inventories through Greenhouse, Lever, and Ashby.
 The original ATS monitor continues independently. Current source definitions live
-in `opportunity_config.json`; source health is saved in `state/opportunity.json`.
+in `opportunity_config.json`. The active Windows deployment saves source health,
+pending candidates, and delivery receipts in `windows-monitor/state/opportunity.json`.
 
-The GitHub workflow requests a run every two hours at minute 11 UTC. Public-repository
-standard GitHub runners are free; no model/API subscription, Premium account,
-LinkedIn cookie, or always-awake PC is required. GitHub schedules can be delayed or
-skipped, so this is not a guarantee of notification within exactly two hours.
+The active deployment uses a Windows task named **Biotech Opportunity Monitor**
+every two hours. Keep the PC plugged in, online, and signed in; a locked screen is
+fine. The task requests wake-up and catches up when Windows becomes available.
+There is no ongoing service charge or AI usage. No Premium account or LinkedIn
+cookie is required.
+
+The included GitHub workflow is an alternative deployment. Its manual production
+run succeeded, but automatic events did not arrive during setup, so that companion
+workflow is disabled. GitHub schedules can be delayed or skipped. Use only one
+active companion deployment and migrate the latest delivery ledger before switching.
 
 Public LinkedIn search is undocumented and can be blocked or incomplete. The
 monitor stops LinkedIn requests when access is denied, keeps pending candidates,
@@ -43,8 +50,9 @@ The email includes priority, California status, match reasons, posted pay when
 available, and unresolved requirements. Initial runs can send several batches of
 existing openings; later runs send new matches. No new-match email is sent on a
 quiet run. Persistent source problems are rate-limited to one identical alert per
-day. GitHub's failed-workflow notification is the independent fallback if the email
-connection itself fails; the account's notification preferences still govern it.
+day. Other local execution failures also attempt a sanitized email, limited to one
+attempt per day. Windows task status and the local log remain available if email,
+network, the runtime, or the PC itself is unavailable.
 
 Delivery is at-least-once: a crash or timeout after the email was sent but before
 the acknowledgement was saved can cause a repeat. Stable event IDs are included,
@@ -54,16 +62,22 @@ possible. Distinct requisitions are retained even when their titles are identica
 
 ## Operation
 
-In GitHub, open **Actions → Biotech Opportunity Monitor → Run workflow**:
+Use Windows Task Scheduler to run, pause, or re-enable **Biotech Opportunity Monitor**.
+The local `windows-monitor/README.md` explains the setup and controls. The latest
+preview is `outputs/current-opportunities.html`; completion status is saved in
+`windows-monitor/last-run.json`.
+
+For the optional GitHub deployment, its manual run modes are:
 
 - `dry-run`: live discovery and a readable preview; no emails or delivery-state changes.
 - `audit`: source coverage check only.
 - `test-email`: clearly labeled delivery test through the existing email connection.
 - `normal`: discover, rank, send new jobs, and save the queue and receipts.
 
-The workflow uses the existing `WEBHOOK_URL` secret. It must never be pasted into
-source files, logs, chat, or documentation. No additional secret is required.
-State is committed even after a failed send, so deferred work survives the runner.
+Windows stores the existing email endpoint encrypted for the signed-in user and
+passes it only to the monitor process. The optional GitHub workflow uses the
+existing `WEBHOOK_URL` secret. Never paste the endpoint into source files, logs,
+chat, or documentation. Deferred candidates are saved locally before delivery.
 
 For local verification with Python 3.12 or newer (standard library only):
 
@@ -73,9 +87,9 @@ python opportunity_monitor.py --dry-run
 python opportunity_monitor.py --audit
 ```
 
-Do not delete or reset `state/opportunity.json` during normal operation: that is the
-delivery ledger and pending queue. Disable the **Biotech Opportunity Monitor**
-workflow to pause this companion; the original monitor remains a separate workflow.
+Do not delete or reset the active `opportunity.json` ledger: it prevents repeat
+alerts and preserves pending candidates. Disable the Windows scheduled task to
+pause this companion. The original ATS monitor remains a separate workflow.
 
 ## Reading results
 

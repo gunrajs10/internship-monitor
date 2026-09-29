@@ -54,9 +54,11 @@ day. Other local execution failures also attempt a sanitized email, limited to o
 attempt per day. Windows task status and the local log remain available if email,
 network, the runtime, or the PC itself is unavailable.
 
-Delivery is at-least-once: a crash or timeout after the email was sent but before
-the acknowledgement was saved can cause a repeat. Stable event IDs are included,
-but exact-once delivery requires the existing webhook to enforce idempotency.
+The deployed email receiver keeps durable batch receipts in a hidden tracker tab.
+If an acknowledgement is lost, a retry of a completed batch returns its receipt
+without sending another email. A batch interrupted inside the receiver is held
+for review rather than resent: email and spreadsheet writes are not one atomic
+transaction, so absolute exactly-once delivery is not promised.
 The old ATS monitor has a separate ledger, so overlap between the two monitors is
 possible. Distinct requisitions are retained even when their titles are identical.
 
@@ -83,9 +85,17 @@ For local verification with Python 3.12 or newer (standard library only):
 
 ```text
 python -m unittest discover -p "test_opportunity_*.py" -v
+node test_opportunity_receiver.cjs
 python opportunity_monitor.py --dry-run
 python opportunity_monitor.py --audit
 ```
+
+`opportunity_receiver.gs` is the receipt wrapper added to the existing Apps Script
+receiver. Its original `doPost` is renamed `handleMonitorPost_`; existing email and
+tracker behavior stays there. The wrapper handles companion event IDs and passes
+other requests through. An existing deployment must be updated to a new version
+after adding it. The deployed receiver's address and recipient configuration are
+private and are not included in this repository.
 
 Do not delete or reset the active `opportunity.json` ledger: it prevents repeat
 alerts and preserves pending candidates. Disable the Windows scheduled task to

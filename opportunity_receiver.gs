@@ -46,11 +46,16 @@ function doPost(e) {
       if (prior[2] === "sent") {
         return opportunityReply_({ok: true, duplicate: true}, eventId);
       }
-      return opportunityReply_({ok: false, error: "delivery_uncertain",
-        message: "An earlier attempt is processing or uncertain; reconcile it before retrying."}, eventId);
+      if (prior[2] !== "confirmed_unsent") {
+        return opportunityReply_({ok: false, error: "delivery_uncertain",
+          message: "An earlier attempt is processing or uncertain; reconcile it before retrying."}, eventId);
+      }
+      // This status can only be set by a human/operator after reconciliation,
+      // never by a webhook request. Reuse its audit row and immutable hash.
+      row = found.getRow();
     }
 
-    row = last + 1;
+    row = row || last + 1;
     sheet.getRange(row, 1, 1, 4).setValues([[eventId, hash, "processing", new Date()]]);
     SpreadsheetApp.flush(); // Persist the guard before any legacy side effect.
     handleMonitorPost_(e);
@@ -72,6 +77,32 @@ function doPost(e) {
       try { lock.releaseLock(); } catch (ignored) { /* Apps Script also releases on exit. */ }
     }
   }
+}
+
+function opportunityWriteRows_(ss, payload) {
+  // Append only absent URLs. This also repairs a partial tracker write safely.
+  var groups = {};
+  payload.items.forEach(function (item) {
+    var tab = item.track === "early-stage" ? TAB_EARLY : TAB_PROGRAMS;
+    (groups[tab] || (groups[tab] = [])).push(item);
+  });
+  Object.keys(groups).forEach(function (tab) {
+    var sheet = getSheet(ss, tab, HEADERS);
+    var last = sheet.getLastRow();
+    var existing = {};
+    if (last > 1) sheet.getRange(2, 7, last - 1, 1).getValues().forEach(function (r) { existing[String(r[0])] = true; });
+    var rows = [];
+    groups[tab].forEach(function (r) {
+      if (existing[r.url]) return;
+      existing[r.url] = true;
+      rows.push([fmtDate(r.first_seen), r.company, r.title, r.location,
+        r.posted_on, r.eligibility, r.url, "New", r.priority || "", ""].map(function(v) { return v == null ? "" : String(v); }));
+    });
+    if (!rows.length) return;
+    if (last + rows.length > sheet.getMaxRows()) sheet.insertRowsAfter(sheet.getMaxRows(), last + rows.length - sheet.getMaxRows());
+    sheet.getRange(last + 1, 1, rows.length, 10).setValues(rows);
+  });
+  SpreadsheetApp.flush();
 }
 
 function opportunityCanonical_(value) {

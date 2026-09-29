@@ -146,6 +146,12 @@ def _strong_salary(salary, threshold):
 
 
 def _clinical_title(title):
+    # Clinical training programs require a professional credential even when
+    # the broad word "program" also matches an adjacent business function.
+    if _has(r"\b(?:DVM|VMD|veterinarian)\b", title):
+        return True
+    if _has(r"\b(?:hospital medicine|advanced practice|physician assistant|nurse practitioner)\b", title) and _has(r"\b(?:fellowship|residency)\b", title):
+        return True
     credential_role = _has(r"\b(nurses?|physician|surgeon|pharmacist|dentist|physical therapist|occupational therapist)\b", title)
     # A Physician Partnerships Intern is not necessarily a physician. Required
     # credentials for such business roles are checked in the job description.
@@ -309,7 +315,7 @@ def assess(job: dict, config: dict) -> dict:
         enrollment_required = mandatory or undergrad_completion or _has(r"\bcurrent(?:ly)? (?:enrollment|enrolled)\b", clause)
         if enrollment_required and (undergrad_completion or _has(r"\b(undergraduates? only|undergraduate students? only|must be (?:an? )?(?:current )?undergraduate|current(?:ly)? (?:enrollment|enrolled) in (?:an? )?(?:bachelor|undergraduate)|pursuing (?:an? )?bachelor)", clause)) and not _has(r"\b(or|and/or)\b.{0,60}\b(master|graduate|MBA|advanced degree)", clause):
             return reject("Required undergraduate enrollment conflicts with the MBA-stage search.")
-        credentials = r"\b(M\.?D\.?|Pharm\.?\s*D\.?|Doctor of Pharmacy|R\.?N\.?|BSN|BScN|registered nurse|CLS|CGMBS|medical licen[cs]e|nursing licen[cs]e|doctoral degree|Ph\.?D\.?)\b"
+        credentials = r"\b(M\.?D\.?|Pharm\.?\s*D\.?|Doctor of Pharmacy|DVM|VMD|Doctor of Veterinary Medicine|PA-C|physician assistant licen[cs]e|nurse practitioner licen[cs]e|R\.?N\.?|BSN|BScN|registered nurse|CLS|CGMBS|medical licen[cs]e|nursing licen[cs]e|doctoral degree|Ph\.?D\.?)\b"
         listed_credential = credential_section and bool(re.fullmatch(r"\s*[-•*]?\s*(?:RN|BSN|CLS|CGMBS|registered nurse)\s*", clause, re.I))
         explicit_lab_license = _has(r"\b(?:current|active|valid|required|must|hold|possess)\b", clause) and _has(r"\b(?:CLS|CGMBS)\b", clause) and _has(r"\blicen[cs]e\b", clause)
         if explicit_lab_license:

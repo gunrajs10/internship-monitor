@@ -83,6 +83,19 @@ class OpportunityRankTests(unittest.TestCase):
         self.assertTrue(assess(self.job(description="MD preferred. MBA candidates eligible."), {})["include"])
         self.assertTrue(assess(self.job(description="MD or MBA required."), {})["include"])
 
+    def test_clinical_training_programs_are_not_business_programs(self):
+        for title in ["DVM/VMD Mentorship Program", "Hospital Medicine AP Fellowship Program", "Advanced Practice Fellowship"]:
+            with self.subTest(title=title):
+                self.assertFalse(assess(self.job(title=title), {})["include"])
+        self.assertTrue(assess(self.job(title="Clinical Program Coordinator"), {})["include"])
+        self.assertTrue(assess(self.job(title="Physician Partnerships Intern"), {})["include"])
+
+    def test_veterinary_and_advanced_practice_credentials_require_evidence(self):
+        for credential in ["DVM", "VMD", "PA-C"]:
+            with self.subTest(credential=credential):
+                self.assertFalse(assess(self.job(description=credential + " required. Healthcare internship."), {})["include"])
+                self.assertTrue(assess(self.job(description=credential + " preferred. MBA candidates eligible."), {})["include"])
+
     def test_citizenship_not_inferred_from_sponsorship(self):
         result = assess(self.job(description="US citizenship required. No sponsorship available."), {})
         self.assertTrue(result["include"])

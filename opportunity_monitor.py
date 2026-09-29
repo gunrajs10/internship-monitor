@@ -252,6 +252,8 @@ def post_webhook(payload, endpoint=None):
                     str(reply.get("status", "")).casefold() in {"ok", "success"})
         if reply.get("error") or reply.get("ok") is False or reply.get("success") is False:
             accepted = False
+        if "event_id" in reply and reply["event_id"] != payload.get("event_id"):
+            accepted = False
     if not accepted:
         raise DeliveryError("Delivery did not return a recognized success acknowledgement; pending jobs retained")
     return True

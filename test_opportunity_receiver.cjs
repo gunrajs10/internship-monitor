@@ -152,6 +152,33 @@ test("interrupted processing receipt cannot be replayed", () => {
   assert.equal(f.state.rows[1][2], "processing");
 });
 
+test("a reconciled unsent receipt can run once and reuses its audit row", () => {
+  const hash = crypto.createHash("sha256").update(fixture().context.opportunityCanonical_(job)).digest("hex");
+  const f = fixture({rows: [HEADERS, [job.event_id, hash, "confirmed_unsent", "yesterday"]]});
+  assert.equal(f.json(job).ok, true);
+  assert.equal(f.state.rows.length, 2);
+  assert.equal(f.json(job).duplicate, true);
+  assert.equal(f.state.handlerCalls, 1);
+});
+
+test("tracker repair skips existing URLs and appends only missing rows", () => {
+  const f = fixture();
+  const data = [["headers"], ["seen", "Employer", "Old", "CA", "", "", "https://example.org/old"]];
+  const sh = {getLastRow: () => data.length, getMaxRows: () => 100,
+    getRange(row, col, height, width) { return {
+      getValues: () => data.slice(row-1, row-1+height).map(r => r.slice(col-1,col-1+width)),
+      setValues: rows => rows.forEach((r,i) => {data[row-1+i] = Array.from(r);})
+    };}};
+  f.context.TAB_EARLY = "Early"; f.context.TAB_PROGRAMS = "Programs";
+  f.context.HEADERS = []; f.context.fmtDate = v => String(v || "now");
+  f.context.getSheet = () => sh;
+  const p={items:[{url:"https://example.org/old"},{url:"https://example.org/new",title:"New"},{url:"https://example.org/new",title:"Duplicate"}]};
+  f.context.opportunityWriteRows_({},p);
+  assert.equal(data.length,3); assert.equal(data[2][2],"New");
+  f.context.opportunityWriteRows_({},p);
+  assert.equal(data.length,3);
+});
+
 test("receipt write failure after handler leaves uncertain guard", () => {
   const f = fixture({failSentFlush: true});
   assert.equal(f.json(job).error, "delivery_uncertain");

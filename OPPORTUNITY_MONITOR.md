@@ -59,6 +59,9 @@ If an acknowledgement is lost, a retry of a completed batch returns its receipt
 without sending another email. A batch interrupted inside the receiver is held
 for review rather than resent: email and spreadsheet writes are not one atomic
 transaction, so absolute exactly-once delivery is not promised.
+Companion tracker writes append only URLs that are not already logged. A tracker
+write error does not block the job email. A held batch is released only after
+reconciling its receipt, tracker rows, and mailbox to establish that no email was sent.
 The old ATS monitor has a separate ledger, so overlap between the two monitors is
 possible. Distinct requisitions are retained even when their titles are identical.
 
@@ -91,8 +94,12 @@ python opportunity_monitor.py --audit
 ```
 
 `opportunity_receiver.gs` is the receipt wrapper added to the existing Apps Script
-receiver. Its original `doPost` is renamed `handleMonitorPost_`; existing email and
-tracker behavior stays there. The wrapper handles companion event IDs and passes
+receiver. Its original `doPost` is renamed `handleMonitorPost_`. In that handler's
+`new_roles` branch, companion event IDs use `opportunityWriteRows_(ss, payload)`
+inside a try/catch that logs tracker errors and continues to the existing email
+send. Other events retain the original tracker-write branch. The helper uses the
+existing `TAB_PROGRAMS`, `TAB_EARLY`, `getSheet`, and `fmtDate` definitions.
+The wrapper handles companion event IDs and passes
 other requests through. An existing deployment must be updated to a new version
 after adding it. The deployed receiver's address and recipient configuration are
 private and are not included in this repository.

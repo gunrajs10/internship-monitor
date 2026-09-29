@@ -186,6 +186,15 @@ class WebhookTests(unittest.TestCase):
         with patch.object(m.urllib.request, "urlopen", return_value=self.Response(b'{"ok":true}')):
             self.assertTrue(m.post_webhook({}, "https://example.org/hook"))
 
+    def test_receipt_for_another_batch_is_rejected(self):
+        with patch.object(m.urllib.request, "urlopen", return_value=self.Response(b'{"ok":true,"event_id":"other"}')):
+            with self.assertRaises(m.DeliveryError):
+                m.post_webhook({"event_id": "expected"}, "https://example.org/hook")
+
+    def test_matching_duplicate_receipt_is_accepted(self):
+        with patch.object(m.urllib.request, "urlopen", return_value=self.Response(b'{"ok":true,"event_id":"expected","duplicate":true}')):
+            self.assertTrue(m.post_webhook({"event_id": "expected"}, "https://example.org/hook"))
+
 
 if __name__ == "__main__":
     unittest.main()

@@ -190,6 +190,45 @@ class WebhookTests(unittest.TestCase):
         def __exit__(self, *args): pass
         def read(self, limit): return self.body
 
+    def test_apps_script_replay_keeps_event_content_with_fresh_transport_url(self):
+        payload = {"type": "new_roles", "event_id": "expected", "items": [{"title": "California strategy", "company": "Example"}]}
+        endpoint = "https://script.google.com/macros/s/example/exec?existing=keep"
+        with patch.object(m.urllib.request, "urlopen", return_value=self.Response(b'{"ok":true,"event_id":"expected"}')) as send, patch.object(m.time, "time_ns", side_effect=[10, 11]):
+            self.assertTrue(m.post_webhook(payload, endpoint))
+            self.assertTrue(m.post_webhook(payload, endpoint))
+        requests = [call.args[0] for call in send.call_args_list]
+        self.assertNotEqual(requests[0].full_url, requests[1].full_url)
+        for request in requests:
+            self.assertEqual(json.loads(request.data), payload)
+            self.assertIn("existing=keep", request.full_url)
+            self.assertEqual(request.get_header("Cache-control"), "no-cache")
+
+    def test_other_delivery_endpoints_keep_exact_signed_url(self):
+        endpoint = "https://example.org/hook?signature=keep"
+        with patch.object(m.urllib.request, "urlopen", return_value=self.Response(b'{"ok":true}')) as send:
+            self.assertTrue(m.post_webhook({}, endpoint))
+        self.assertEqual(send.call_args.args[0].full_url, endpoint)
+
+    def test_lost_job_response_uses_read_only_completed_receipt(self):
+        payload = {"type": "new_roles", "event_id": "opportunity-recovery", "items": [{"title": "MBA Intern"}]}
+        verified = self.Response(b'{"ok":true,"event_id":"opportunity-recovery","receipt_verified":true}')
+        with patch.object(m.urllib.request, "urlopen", side_effect=[self.Response(b'<html>Error</html>'), verified]) as send:
+            self.assertTrue(m.post_webhook(payload, "https://example.org/hook"))
+        requests = [json.loads(call.args[0].data) for call in send.call_args_list]
+        self.assertEqual(requests[0], payload)
+        self.assertEqual(requests[1]["type"], "receipt_check")
+        self.assertNotIn("items", requests[1])
+        canonical = json.dumps(payload, ensure_ascii=False, sort_keys=True, separators=(",", ":"))
+        self.assertEqual(requests[1]["payload_hash"], m.hashlib.sha256(canonical.encode()).hexdigest())
+
+    def test_receipt_fallback_rejects_legacy_success_or_uncertain_response(self):
+        payload = {"type": "new_roles", "event_id": "opportunity-recovery", "items": [{"title": "MBA Intern"}]}
+        for reply in [b'{"ok":true}', b'{"ok":false,"error":"delivery_uncertain"}',
+                      b'{"ok":true,"event_id":"other","receipt_verified":true}']:
+            with self.subTest(reply=reply), patch.object(m.urllib.request, "urlopen", side_effect=[self.Response(b'<html>Error</html>'), self.Response(reply)]):
+                with self.assertRaises(m.DeliveryError):
+                    m.post_webhook(payload, "https://example.org/hook")
+
     def test_html_error_with_http_200_is_not_success(self):
         with patch.object(m.urllib.request, "urlopen", return_value=self.Response(b"<html>Script error</html>")):
             with self.assertRaises(m.DeliveryError):

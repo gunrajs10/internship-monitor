@@ -134,6 +134,23 @@ def _salary(job, description):
     return ""
 
 
+def _company_key(name):
+    name = re.sub(r"[^a-z0-9]+", " ", _text(name).casefold().replace("&", " and ")).strip()
+    return re.sub(r"(?:\s+(?:incorporated|inc|corporation|corp|llc|ltd|limited|plc|company|co))+$", "", name).strip()
+
+
+def geography_allowed(job, config):
+    """California first; a named employer exception never waives US/role checks."""
+    policy = (config or {}).get("geography", {})
+    if not policy.get("california_focus"):
+        return True
+    status, california = _location(job.get("location"), _text(job.get("description")))
+    if status != "us":
+        return False
+    approved = {_company_key(n) for n in policy.get("outside_california_employers", [])}
+    return california or _company_key(job.get("company")) in approved
+
+
 def _strong_salary(salary, threshold):
     if not salary or _has(r"\b(hour|hourly|hr|month|monthly|week|weekly|CAD|GBP|EUR|AUD|INR)\b|[£€]", salary):
         return False
@@ -223,6 +240,8 @@ def needs_detail(job: dict, config: dict) -> bool:
     This must run before a detail-request cap so the caller can persist a queue.
     """
     config = config or {}
+    if not geography_allowed(job, config):
+        return False
     title = _text(job.get("title"))
     if not title or _senior_title(title) or _outside_background(title):
         return False
@@ -261,6 +280,13 @@ def assess(job: dict, config: dict) -> dict:
     if not title:
         return reject("Missing job title; cannot assess this posting.")
     loc_status, result["california"] = _location(job.get("location"), description)
+    if config.get("geography", {}).get("california_focus"):
+        result["location_priority"] = 0 if result["california"] else 1
+        if not geography_allowed(job, config):
+            result["geography_excluded"] = True
+            return reject("California-focused search: non-California roles need a confirmed US location and an approved major/watchlist employer.")
+        if not result["california"]:
+            reasons.append("Outside-California exception: approved major/watchlist employer; role and qualification checks still apply.")
     if loc_status == "foreign":
         return reject("Posting location is outside the United States.")
     if loc_status == "unknown":

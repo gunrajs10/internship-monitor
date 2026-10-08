@@ -235,15 +235,38 @@ class DeliveryError(RuntimeError):
 
 
 def post_webhook(payload, endpoint=None):
+    try:
+        return _post_webhook_once(payload, endpoint)
+    except DeliveryError as original:
+        event = str(payload.get("event_id", ""))
+        if payload.get("type") not in {"new_roles", "failures"} or not event.startswith(("opportunity-", "windows-opportunity-")):
+            raise
+        # Verify the completed receipt with a small, read-only request. Never
+        # automatically replay the job/email POST after losing its response.
+        canonical = json.dumps(payload, ensure_ascii=False, sort_keys=True, separators=(",", ":"))
+        check = {"type": "receipt_check", "event_id": event,
+                 "payload_hash": hashlib.sha256(canonical.encode()).hexdigest()}
+        try:
+            return _post_webhook_once(check, endpoint)
+        except DeliveryError:
+            raise original from None
+
+
+def _post_webhook_once(payload, endpoint=None):
     endpoint = endpoint or os.environ.get("WEBHOOK_URL", "").strip()
     if not endpoint:
         raise DeliveryError("WEBHOOK_URL is missing; no jobs will be marked delivered")
     parsed = urllib.parse.urlparse(endpoint)
     if parsed.scheme != "https":
         raise DeliveryError("The delivery endpoint must use HTTPS")
-    data = json.dumps(payload, ensure_ascii=False).encode()
+    # Apps Script acknowledgements redirect to a one-time content URL. Keep
+    # each transport request fresh without changing the durable event/payload.
+    if parsed.hostname == "script.google.com":
+        endpoint += ("&" if parsed.query else "?") + "monitor_request_id=" + str(time.time_ns())
+    data = json.dumps(payload, ensure_ascii=False, sort_keys=True).encode()
     request = urllib.request.Request(endpoint, data=data,
-        headers={"Content-Type": "application/json", "User-Agent": "OpportunityMonitor/1.0"}, method="POST")
+        headers={"Content-Type": "application/json", "User-Agent": "OpportunityMonitor/1.0",
+                 "Cache-Control": "no-cache"}, method="POST")
     try:
         with urllib.request.urlopen(request, timeout=120) as response:
             body = response.read(200000).decode("utf-8", "replace").strip()
@@ -267,6 +290,9 @@ def post_webhook(payload, endpoint=None):
             accepted = False
     if not accepted:
         raise DeliveryError("Delivery did not return a recognized success acknowledgement; pending jobs retained")
+    if payload.get("type") == "receipt_check" and (not isinstance(reply, dict) or
+            reply.get("receipt_verified") is not True or reply.get("event_id") != payload.get("event_id")):
+        raise DeliveryError("Completed receipt was not verified; pending jobs retained")
     return True
 
 

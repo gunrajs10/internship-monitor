@@ -277,9 +277,11 @@ def _collect_linkedin(settings, previous_health, now):
     pages_limit = max(1, min(100, int(settings.get("max_pages", 3))))
     page_size = max(1, min(100, int(settings.get("page_size", 25))))
     queries = list(dict.fromkeys(str(q).strip() for q in settings.get("queries", []) if str(q).strip()))
+    locations = settings.get("query_locations", {})
+    keys = {q: "linkedin:" + q + ("|location=" + locations[q] if locations.get(q, "United States") != "United States" else "") for q in queries}
     jobs, health, unique, circuit = [], {}, set(), ""
     for query in queries:
-        key = "linkedin:" + query
+        key = keys[query]
         previous = previous_health.get(key, {})
         hours, maximum, gap, coverage_start = _window(settings, previous, now)
         query_jobs, query_ids, errors, pages, offset = [], set(), [], 0, 0
@@ -289,7 +291,7 @@ def _collect_linkedin(settings, previous_health, now):
         else:
             for page in range(pages_limit):
                 url = "https://www.linkedin.com/jobs-guest/jobs/api/seeMoreJobPostings/search?" + urlencode({
-                    "keywords": query, "location": "United States", "f_TPR": "r" + str(hours * 3600),
+                    "keywords": query, "location": locations.get(query, "United States"), "f_TPR": "r" + str(hours * 3600),
                     "sortBy": "DD", "start": offset, "count": page_size,
                 })
                 try:
@@ -339,15 +341,15 @@ def _collect_linkedin(settings, previous_health, now):
                               truncated=truncated, success=exhausted, pages=pages,
                               lookback_hours=hours, max_window_hours=maximum,
                               coverage_start=_iso(coverage_start), backfill_gap=gap)
-    aggregate_errors = [f"{q}: {health['linkedin:' + q]['error']}" for q in queries if health['linkedin:' + q]['error']]
-    complete = bool(queries) and all(health["linkedin:" + q]["status"] == "ok" for q in queries)
+    aggregate_errors = [f"{q}: {health[keys[q]]['error']}" for q in queries if health[keys[q]]['error']]
+    complete = bool(queries) and all(health[keys[q]]["status"] == "ok" for q in queries)
     if not queries:
         aggregate_errors.append("LinkedIn enabled but no search queries configured")
     health["linkedin"] = _health(previous_health.get("linkedin", {}), now, len(jobs),
                                   error=" | ".join(aggregate_errors),
                                   truncated=any(item["truncated"] for item in health.values()),
                                   success=complete, circuit_open=bool(circuit),
-                                  completed_queries=sum(health["linkedin:" + q]["status"] == "ok" for q in queries),
+                                  completed_queries=sum(health[keys[q]]["status"] == "ok" for q in queries),
                                   total_queries=len(queries))
     return jobs, health
 

@@ -253,6 +253,38 @@ test("local failure event uses the same receipt guard", () => {
 });
 
 let failed = 0;
+test("read-only receipt check verifies content without resending or changing rows", () => {
+  const f = fixture(); f.json(job);
+  const before = JSON.stringify(f.state.rows);
+  const check = {type: "receipt_check", event_id: job.event_id, payload_hash: f.state.rows[1][1]};
+  assert.deepEqual(f.json(check), {ok: true, duplicate: true, receipt_verified: true, event_id: job.event_id});
+  assert.equal(f.state.handlerCalls, 1);
+  assert.equal(f.state.locks, 1);
+  assert.equal(JSON.stringify(f.state.rows), before);
+});
+
+test("receipt check rejects wrong content and every incomplete status", () => {
+  const f = fixture(); f.json(job);
+  const check = {type: "receipt_check", event_id: job.event_id, payload_hash: f.state.rows[1][1]};
+  assert.equal(f.json({...check, payload_hash: "a".repeat(64)}).error, "payload_hash_mismatch");
+  for (const status of ["processing", "uncertain", "confirmed_unsent"]) {
+    f.state.rows[1][2] = status;
+    assert.equal(f.json(check).error, "delivery_uncertain");
+    assert.equal(f.state.rows[1][2], status);
+  }
+  assert.equal(f.state.handlerCalls, 1);
+});
+
+test("missing or malformed receipt queries never create storage or send mail", () => {
+  const f = fixture();
+  const check = {type: "receipt_check", event_id: job.event_id, payload_hash: "a".repeat(64)};
+  assert.equal(f.json(check).error, "receipt_not_found");
+  assert.equal(f.json({...check, payload_hash: "bad"}).error, "invalid_receipt_check");
+  assert.equal(f.state.rows.length, 0);
+  assert.equal(f.state.handlerCalls, 0);
+  assert.equal(f.state.locks, 0);
+});
+
 test("missing dedicated tracker fails closed without falling back to ATS sheet", () => {
   const f = fixture({missingTracker: true});
   const reply = f.json(job);

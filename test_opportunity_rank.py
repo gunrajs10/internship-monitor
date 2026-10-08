@@ -4,6 +4,22 @@ from opportunity_rank import assess, needs_detail
 
 
 class OpportunityRankTests(unittest.TestCase):
+    def test_california_policy_employer_exception_does_not_waive_role_rules(self):
+        config = {"geography": {"california_focus": True, "outside_california_employers": ["Amgen", "Bristol Myers Squibb"]}}
+        self.assertTrue(assess(self.job(), config)["include"])
+        self.assertFalse(assess(self.job(location="Boston, MA"), config)["include"])
+        self.assertFalse(needs_detail(self.job(location="Boston, MA"), config))
+        self.assertTrue(assess(self.job(company="Amgen Inc.", location="Boston, MA"), config)["include"])
+        self.assertTrue(assess(self.job(company="Bristol-Myers Squibb", location="Princeton, NJ"), config)["include"])
+        for changes in [dict(company="Amgen Recruiting Partner",location="Boston, MA"), dict(company="Amgen",location="Cambridge, United Kingdom"), dict(company="Amgen",location="Remote"), dict(company="Amgen",location="Boston, MA",title="Director, Commercial Strategy"), dict(company="Amgen",location="Boston, MA",description="Minimum 8 years of experience required.")]:
+            self.assertFalse(assess(self.job(**changes),config)["include"],changes)
+
+    def test_california_policy_does_not_confuse_canada_or_shared_city_names(self):
+        config = {"geography": {"california_focus": True}}
+        for location in ["Vancouver, CA", "Fremont, NE", "Berkeley Heights, NJ", "Remote - United States"]:
+            self.assertFalse(assess(self.job(location=location),config)["include"],location)
+        self.assertTrue(assess(self.job(location="Remote - California, United States"),config)["include"])
+
     def job(self, **changes):
         data = {"company": "Example Therapeutics", "title": "Commercial Strategy Intern",
                 "location": "San Francisco, CA", "description": "MBA students. Biotechnology strategy internship.",

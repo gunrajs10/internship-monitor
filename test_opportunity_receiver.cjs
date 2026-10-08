@@ -49,6 +49,9 @@ function fixture(options = {}) {
   const sheet = {getRange: range, getLastRow: () => state.rows.length,
     hideSheet() { state.hidden = true; }};
   const context = vm.createContext({
+    PropertiesService: {getScriptProperties() { return {getProperty(name) {
+      assert.equal(name, "OPPORTUNITY_SPREADSHEET_ID"); return options.missingTracker ? null : "dedicated-tracker";
+    }}; }},
     handleMonitorPost_(event) {
       state.handlerCalls++; state.handlerEvents.push(event);
       if (options.handler) return options.handler(event, state);
@@ -66,7 +69,8 @@ function fixture(options = {}) {
           .map(b => b > 127 ? b - 256 : b);
       }},
     SpreadsheetApp: {
-      getActiveSpreadsheet() {
+      openById(id) {
+        assert.equal(id, "dedicated-tracker");
         state.sheetAccesses++;
         return {
           getSheetByName(name) { assert.equal(name, "_Opportunity Delivery Receipts"); return state.exists ? sheet : null; },
@@ -249,6 +253,14 @@ test("local failure event uses the same receipt guard", () => {
 });
 
 let failed = 0;
+test("missing dedicated tracker fails closed without falling back to ATS sheet", () => {
+  const f = fixture({missingTracker: true});
+  const reply = f.json(job);
+  assert.equal(reply.ok, false);
+  assert.equal(f.state.handlerCalls, 0);
+  assert.equal(f.state.sheetAccesses, 0);
+});
+
 for (const [name, fn] of tests) {
   try { fn(); process.stdout.write("PASS " + name + "\n"); }
   catch (error) { failed++; process.stderr.write("FAIL " + name + "\n" + error.stack + "\n"); }

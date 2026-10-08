@@ -5,6 +5,9 @@ function doPost(e) {
   catch (_) { return handleMonitorPost_(e); }
   var eventId = payload && typeof payload.event_id === "string" ? payload.event_id : "";
   var ours = /^(opportunity-|windows-opportunity-)/.test(eventId);
+  if (ours && payload.type === "receipt_check") {
+    return opportunityCheckReceipt_(payload, eventId);
+  }
   if (payload && payload.type === "connection_check") {
     return opportunityReply_({ok: true, protocol: "opportunity-receipts-v1"}, ours ? eventId : "");
   }
@@ -109,6 +112,28 @@ function opportunitySpreadsheet_() {
   var id = PropertiesService.getScriptProperties().getProperty("OPPORTUNITY_SPREADSHEET_ID");
   if (!id) throw new Error("Dedicated opportunity tracker is not configured");
   return SpreadsheetApp.openById(id);
+}
+
+function opportunityCheckReceipt_(payload, eventId) {
+  // Read only: never create a row, release a held batch, or send an email.
+  if (!/^[a-f0-9]{64}$/.test(String(payload.payload_hash || ""))) {
+    return opportunityReply_({ok: false, error: "invalid_receipt_check"}, eventId);
+  }
+  try {
+    var sheet = opportunitySpreadsheet_().getSheetByName("_Opportunity Delivery Receipts");
+    var last = sheet ? sheet.getLastRow() : 0;
+    var found = last > 1 ? sheet.getRange(2, 1, last - 1, 1).createTextFinder(eventId)
+      .matchEntireCell(true).matchCase(true).useRegularExpression(false).findNext() : null;
+    if (!found) return opportunityReply_({ok: false, error: "receipt_not_found"}, eventId);
+    var prior = sheet.getRange(found.getRow(), 1, 1, 4).getValues()[0];
+    if (prior[1] !== payload.payload_hash) {
+      return opportunityReply_({ok: false, error: "payload_hash_mismatch"}, eventId);
+    }
+    if (prior[2] !== "sent") return opportunityReply_({ok: false, error: "delivery_uncertain"}, eventId);
+    return opportunityReply_({ok: true, duplicate: true, receipt_verified: true}, eventId);
+  } catch (_) {
+    return opportunityReply_({ok: false, error: "receipt_store_unavailable"}, eventId);
+  }
 }
 
 function opportunityCanonical_(value) {

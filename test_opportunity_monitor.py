@@ -22,6 +22,24 @@ def job(number=1, company="Example Biotech"):
 
 
 class QueueTests(unittest.TestCase):
+    def test_location_policy_prunes_old_queue_before_detail_budget(self):
+        state = m.new_state()
+        ca, other = job(1), job(2)
+        other.update(location="Boston, MA",description="")
+        m.ingest(state,[ca,other],{},NOW)
+        key=m.identity(other)
+        state["pending"][key]["detail_pending"]=True
+        with patch.object(m,"fetch_detail") as fetch:
+            m.enrich_pending(state,{"geography":{"california_focus":True}},NOW,fetch)
+        fetch.assert_not_called()
+        self.assertNotIn(key,state["pending"])
+        self.assertEqual(len(state["pending"]),1)
+
+    def test_california_first_sorting_while_preserving_fit_within_location(self):
+        ca=job(1); ca["assessment"]={"score":60,"california":True,"location_priority":0}
+        other=job(2); other["assessment"]={"score":100,"california":False,"location_priority":1}
+        self.assertEqual(sorted([other,ca],key=m.rank_key),[ca,other])
+
     def setUp(self):
         self.tmp = tempfile.TemporaryDirectory()
         self.addCleanup(self.tmp.cleanup)

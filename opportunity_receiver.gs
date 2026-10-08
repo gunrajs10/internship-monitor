@@ -26,7 +26,7 @@ function doPost(e) {
       opportunityCanonical_(payload), Utilities.Charset.UTF_8).map(function (b) {
         return ("0" + ((b + 256) % 256).toString(16)).slice(-2);
       }).join("");
-    var ss = SpreadsheetApp.getActiveSpreadsheet();
+    var ss = opportunitySpreadsheet_();
     sheet = ss.getSheetByName("_Opportunity Delivery Receipts");
     if (!sheet) {
       sheet = ss.insertSheet("_Opportunity Delivery Receipts");
@@ -103,6 +103,12 @@ function opportunityWriteRows_(ss, payload) {
     sheet.getRange(last + 1, 1, rows.length, 10).setValues(rows);
   });
   SpreadsheetApp.flush();
+}
+
+function opportunitySpreadsheet_() {
+  var id = PropertiesService.getScriptProperties().getProperty("OPPORTUNITY_SPREADSHEET_ID");
+  if (!id) throw new Error("Dedicated opportunity tracker is not configured");
+  return SpreadsheetApp.openById(id);
 }
 
 function opportunityCanonical_(value) {

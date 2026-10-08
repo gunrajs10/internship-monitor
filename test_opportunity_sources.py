@@ -26,6 +26,16 @@ def gh_job(identifier=5):
 
 
 class SourceTests(unittest.TestCase):
+    def test_california_query_uses_its_own_location_and_checkpoint(self):
+        config = {"linkedin": {"enabled": True, "queries": ["commercial"], "query_locations": {"commercial": "California, United States"}, "bootstrap_hours": 24, "lookback_hours": 6}}
+        prior = {"linkedin:commercial": {"last_success": NOW.isoformat()}}
+        with patch.object(sources, "_request", return_value="No matching jobs found") as request:
+            _, health = sources.collect(config, prior, NOW)
+        query = parse_qs(urlsplit(request.call_args.args[0]).query)
+        self.assertEqual(query["location"], ["California, United States"])
+        self.assertEqual(query["f_TPR"], ["r86400"])
+        self.assertEqual(health["linkedin:commercial|location=California, United States"]["status"], "ok")
+
     def test_live_style_card_entities_and_canonical_url(self):
         jobs, invalid, count = sources._parse_linkedin_search("<!DOCTYPE html>" + card())
         self.assertEqual((invalid, count), (0, 1))

@@ -123,6 +123,14 @@
    "title": "Field Reimbursement Manager (FRM) - TN/KY/WV Ecosystem",
    "url": "https://roche.wd3.myworkdayjobs.com/en-US/ROG-A2O-GENE/job/Lexington-Fayette/Field-Reimbursement-Manager--FRM----TN-KY-WV-Ecosystem_202607-118474"
   },
+  "024575a15b346268fbf2ddd4c12b3cc09a9ee149": {
+   "company": "Sanofi",
+   "first_seen": "2026-10-09T00:20:01.470101+00:00",
+   "location": "Framingham, MA",
+   "match": "program",
+   "title": "2027 Spring Co-op Cell Culture Process Development, Framingham, MA",
+   "url": "https://sanofi.wd3.myworkdayjobs.com/en-US/SanofiCareers/job/Framingham-MA/XMLNAME-2027-Spring-Co-op-Cell-Culture-Process-Development--Framingham--MA_R2856036"
+  },
   "024fdbe60ef969e896386c64886b9decdb2a688d": {
    "company": "Merck",
    "first_seen": "2026-09-08T17:14:13.250290+00:00",
@@ -3944,6 +3952,14 @@
    "match": "early-stage",
    "title": "Batch Release Specialist, Quality Assurance Operations",
    "url": "https://www.lonza.com/jobs/R76496"
+  },
+  "4ca46b602731cd31fd94e1773695e4a3b7742d08": {
+   "company": "Bristol Myers Squibb",
+   "first_seen": "2026-10-09T00:20:01.470101+00:00",
+   "location": "2 Locations",
+   "match": "program",
+   "title": "2027 Summer Intern, Research & Development Quality",
+   "url": "https://bristolmyerssquibb.wd5.myworkdayjobs.com/en-US/BMS/job/New-Brunswick---NJ---US/XMLNAME-2027-Summer-Intern--Research---Development-Quality_R1607363"
   },
   "4cd39b66aee8fd03cabd5515bc2a1f3e7235127c": {
    "company": "Vertex Pharmaceuticals",
@@ -10265,6 +10281,22 @@
    "title": "Director, Early Talent & Recruitment Marketing",
    "url": "https://pfizer.wd1.myworkdayjobs.com/en-US/PfizerCareers/job/United-States---New-York---New-York-City/Director--Early-Talent---Recruitment-Marketing_4963156-2"
   },
+  "cc13db3483221f42403792d93418a7e74e2cd817": {
+   "company": "Johnson & Johnson",
+   "first_seen": "2026-10-09T00:20:01.470101+00:00",
+   "location": "Raritan",
+   "match": "program",
+   "title": "Regional Operations & Customer Support Co-Op",
+   "url": "https://www.careers.jnj.com/en/jobs/r-098405/regional-operations-customer-support-co-op/"
+  },
+  "cc915a06c16d5685b7bde0ee5c03dce3edbac5c4": {
+   "company": "Johnson & Johnson",
+   "first_seen": "2026-10-09T00:20:01.470101+00:00",
+   "location": "New Brunswick",
+   "match": "early-stage",
+   "title": "Manager, Data Science - Finance Advanced Analytics & Reporting",
+   "url": "https://www.careers.jnj.com/en/jobs/r-103073/manager-data-science-finance-advanced-analytics-reporting/"
+  },
   "cc99aef9ffc8027a58b55aa351f58197fb1b33b6": {
    "company": "Johnson & Johnson",
    "first_seen": "2026-09-21T04:53:30.156216+00:00",
@@ -10359,6 +10391,14 @@
    "match": "early-stage",
    "title": "Publication Manager, Global Medical Affairs (Autoantibody)",
    "url": "https://www.careers.jnj.com/en/jobs/r-095114/publication-manager-global-medical-affairs-autoantibody/"
+  },
+  "ce4517f7b982fb744e6622a50a2039810ece6ec6": {
+   "company": "Tempus AI",
+   "first_seen": "2026-10-09T00:20:01.470101+00:00",
+   "location": "Chicago",
+   "match": "early-stage",
+   "title": "Marketing Manager - Germline",
+   "url": "https://tempus.wd5.myworkdayjobs.com/en-US/Tempus_Careers/job/Chicago/Marketing-Manager---Germline_JR202601063-1"
   },
   "ce80c2eb40f0ede798c48b8187b77ce05d1bafa6": {
    "company": "GSK",
@@ -11971,6 +12011,28 @@
    "match": "early-stage",
    "title": "Sr. Manager, Brand Development and Launch - Schizophrenia",
    "url": "https://neurocrine.wd5.myworkdayjobs.com/en-US/NeurocrineCareers/job/US-CA-San-Diego/Sr-Manager--Brand-Development-and-Launch---Schizophrenia_R7039"
+  },
+  "f09eafce111fe86932ed70c9a3b72d8fe2f00ce4": {
+   "company": "Johnson & Johnson",
+   "first_seen": "2026-10-09T00:20:01.470101+00:00",
+   "location": "Spring House",
+   "match": "program",
+   "title": "AI Excellence, Decision Enablement Intern",
+   "url": "https://www.careers.jnj.com/en/jobs/r-102881/ai-excellence-decision-enablement-intern/"
+  },
+  "f0a36887b3a011c5de1e0299f3304eafcd5fa20b": {
+   "company": "Bristol Myers Squibb",
+   "first_seen": "2026-10-09T00:20:01.470101+00:00",
+   "location": "2 Locations",
+   "skipped": "undergrad-only",
+   "title": "2027 Summer Internship Product Development"
+  },
+  "f0b4fd58bdb713825428b5ebedb36cf11e7d026e": {
+   "company": "Bristol Myers Squibb",
+   "first_seen": "2026-10-09T00:20:01.470101+00:00",
+   "location": "Madison - Giralda - NJ - US",
+   "skipped": "undergrad-only",
+   "title": "2027 Spring Co-op Global Quality - Commercial Specification Committee"
   },
   "f0e3a16cea4c831f76011bd564a48696e539b617": {
    "company": "Johnson & Johnson",

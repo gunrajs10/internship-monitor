@@ -1,5 +1,11 @@
 {
- "failing": {},
+ "failing": {
+  "Vertex Pharmaceuticals": {
+   "reason": "https://vrtx.wd501.myworkdayjobs.com/wday/cxs/vrtx/Vertex_Careers/jobs failed after Chrome-impersonation fallback: HTTP 200 but non-JSON via curl_cffi/chrome",
+   "since": "2026-10-17T05:34:03.360883+00:00",
+   "streak": 1
+  }
+ },
  "failures": {
   "086dc629b509cd0452a21cc3f157d1f45fa29ea9": "2026-07-15T06:28:41.532995+00:00",
   "0c46a7f23793197517536fba857eb4558bb9ed42": "2026-08-12T08:38:28.406966+00:00",
@@ -5491,6 +5497,14 @@
    "title": "Manager, Strategic Labelling and Development",
    "url": "https://gsk.wd5.myworkdayjobs.com/en-US/GSKCareers/job/USA---Pennsylvania---Upper-Providence/Manager--Strategic-Labelling-and-Development_448940"
   },
+  "5f7b1f1668c2d33e5ade26b5f8befb1a158b6814": {
+   "company": "Takeda",
+   "first_seen": "2026-10-17T05:34:03.360883+00:00",
+   "location": "Boston, MA",
+   "match": "program",
+   "title": "US Region Real Estate & Facilities Co-op",
+   "url": "https://jobs.takeda.com/job/boston/us-region-real-estate-and-facilities-co-op/1113/102058321488"
+  },
   "5f8290e93385f7a4a6a4ae78adf9d6246b58c040": {
    "company": "Merck",
    "first_seen": "2026-09-10T01:02:22.179581+00:00",
@@ -7803,6 +7817,14 @@
    "match": "early-stage",
    "title": "Internal Meetings Manager, U.S. Commercial",
    "url": "https://amgen.wd1.myworkdayjobs.com/en-US/Careers/job/United-States---Remote/Internal-Meetings-Manager--US-Commercial_R-257571"
+  },
+  "8c84448f3a143739141f072ea636b98c2f783544": {
+   "company": "Takeda",
+   "first_seen": "2026-10-17T05:34:03.360883+00:00",
+   "location": "Boston, MA",
+   "match": "program",
+   "title": "Co Op Program: Global Procurement - Strategic Projects",
+   "url": "https://jobs.takeda.com/job/boston/co-op-program-global-procurement-strategic-projects/1113/102058322080"
   },
   "8c9f267720edb813b87198920a7bd3b6806ad0ff": {
    "company": "Johnson & Johnson",
@@ -10711,6 +10733,14 @@
    "first_seen": "2026-07-15T06:28:41.532995+00:00",
    "location": "Petaling Jaya, Selangor, Malaysia",
    "title": "Intern - Finance SSC (iNext)"
+  },
+  "be8d42bf96e980de29b0a25445e67958cc630fed": {
+   "company": "Takeda",
+   "first_seen": "2026-10-17T05:34:03.360883+00:00",
+   "location": "Cambridge, MA",
+   "match": "program",
+   "title": "Facilities Asset Management & Process Improvement Co-op",
+   "url": "https://jobs.takeda.com/job/cambridge/facilities-asset-management-and-process-improvement-co-op/1113/102058323392"
   },
   "be99f0a757e16a04df2f8b495910c0ba90be738f": {
    "company": "AstraZeneca",

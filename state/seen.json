@@ -3,7 +3,7 @@
   "Johnson & Johnson": {
    "reason": "https://www.careers.jnj.com/en/jobs/ failed after 3 attempts: ReadTimeout",
    "since": "2026-10-31T18:30:08.973426+00:00",
-   "streak": 1
+   "streak": 2
   }
  },
  "failures": {

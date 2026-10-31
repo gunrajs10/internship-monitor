@@ -1,5 +1,96 @@
 {
- "failing": {},
+ "failing": {
+  "Agilent Technologies": {
+   "reason": "https://agilent.wd5.myworkdayjobs.com/wday/cxs/agilent/Agilent_Careers/jobs failed after Chrome-impersonation fallback: HTTP 200 but non-JSON via curl_cffi/chrome",
+   "since": "2026-10-31T06:57:50.809065+00:00",
+   "streak": 1
+  },
+  "Amgen": {
+   "reason": "https://amgen.wd1.myworkdayjobs.com/wday/cxs/amgen/Careers/jobs failed after Chrome-impersonation fallback: HTTP 200 but non-JSON via curl_cffi/chrome",
+   "since": "2026-10-31T06:57:50.809065+00:00",
+   "streak": 1
+  },
+  "AstraZeneca": {
+   "reason": "https://astrazeneca.wd3.myworkdayjobs.com/wday/cxs/astrazeneca/Careers/jobs failed after Chrome-impersonation fallback: HTTP 200 but non-JSON via curl_cffi/chrome",
+   "since": "2026-10-31T06:57:50.809065+00:00",
+   "streak": 1
+  },
+  "Biogen": {
+   "reason": "https://biibhr.wd3.myworkdayjobs.com/wday/cxs/biibhr/external/jobs failed after Chrome-impersonation fallback: HTTP 200 but non-JSON via curl_cffi/chrome",
+   "since": "2026-10-31T06:57:50.809065+00:00",
+   "streak": 1
+  },
+  "Bristol Myers Squibb": {
+   "reason": "https://bristolmyerssquibb.wd5.myworkdayjobs.com/wday/cxs/bristolmyerssquibb/BMS/jobs failed after Chrome-impersonation fallback: HTTP 200 but non-JSON via curl_cffi/chrome",
+   "since": "2026-10-31T06:57:50.809065+00:00",
+   "streak": 1
+  },
+  "GSK": {
+   "reason": "https://gsk.wd5.myworkdayjobs.com/wday/cxs/gsk/GSKCareers/jobs failed after Chrome-impersonation fallback: HTTP 200 but non-JSON via curl_cffi/chrome",
+   "since": "2026-10-31T06:57:50.809065+00:00",
+   "streak": 1
+  },
+  "Genentech": {
+   "reason": "https://roche.wd3.myworkdayjobs.com/wday/cxs/roche/ROG-A2O-GENE/jobs failed after Chrome-impersonation fallback: HTTP 200 but non-JSON via curl_cffi/chrome",
+   "since": "2026-10-31T06:57:50.809065+00:00",
+   "streak": 1
+  },
+  "Gilead Sciences": {
+   "reason": "https://gilead.wd1.myworkdayjobs.com/wday/cxs/gilead/gileadcareers/jobs failed after Chrome-impersonation fallback: HTTP 200 but non-JSON via curl_cffi/chrome",
+   "since": "2026-10-31T06:57:50.809065+00:00",
+   "streak": 1
+  },
+  "Illumina": {
+   "reason": "https://illumina.wd1.myworkdayjobs.com/wday/cxs/illumina/illumina-careers/jobs failed after Chrome-impersonation fallback: HTTP 200 but non-JSON via curl_cffi/chrome",
+   "since": "2026-10-31T06:57:50.809065+00:00",
+   "streak": 1
+  },
+  "Kite Pharma": {
+   "reason": "https://gilead.wd1.myworkdayjobs.com/wday/cxs/gilead/kitepharmacareers/jobs failed after Chrome-impersonation fallback: HTTP 200 but non-JSON via curl_cffi/chrome",
+   "since": "2026-10-31T06:57:50.809065+00:00",
+   "streak": 1
+  },
+  "Moderna": {
+   "reason": "https://modernatx.wd1.myworkdayjobs.com/wday/cxs/modernatx/M_tx/jobs failed after Chrome-impersonation fallback: HTTP 200 but non-JSON via curl_cffi/chrome",
+   "since": "2026-10-31T06:57:50.809065+00:00",
+   "streak": 1
+  },
+  "Neurocrine Biosciences": {
+   "reason": "https://neurocrine.wd5.myworkdayjobs.com/wday/cxs/neurocrine/NeurocrineCareers/jobs failed after Chrome-impersonation fallback: HTTP 200 but non-JSON via curl_cffi/chrome",
+   "since": "2026-10-31T06:57:50.809065+00:00",
+   "streak": 1
+  },
+  "Novartis": {
+   "reason": "https://novartis.wd3.myworkdayjobs.com/wday/cxs/novartis/Novartis_Careers/jobs failed after Chrome-impersonation fallback: HTTP 200 but non-JSON via curl_cffi/chrome",
+   "since": "2026-10-31T06:57:50.809065+00:00",
+   "streak": 1
+  },
+  "Pfizer": {
+   "reason": "https://pfizer.wd1.myworkdayjobs.com/wday/cxs/pfizer/PfizerCareers/jobs failed after Chrome-impersonation fallback: HTTP 200 but non-JSON via curl_cffi/chrome",
+   "since": "2026-10-31T06:57:50.809065+00:00",
+   "streak": 1
+  },
+  "Regeneron": {
+   "reason": "https://regeneron.wd1.myworkdayjobs.com/wday/cxs/regeneron/Careers/jobs failed after Chrome-impersonation fallback: HTTP 200 but non-JSON via curl_cffi/chrome",
+   "since": "2026-10-31T06:57:50.809065+00:00",
+   "streak": 1
+  },
+  "Roche": {
+   "reason": "https://roche.wd3.myworkdayjobs.com/wday/cxs/roche/roche-ext/jobs failed after Chrome-impersonation fallback: HTTP 200 but non-JSON via curl_cffi/chrome",
+   "since": "2026-10-31T06:57:50.809065+00:00",
+   "streak": 1
+  },
+  "Sanofi": {
+   "reason": "https://sanofi.wd3.myworkdayjobs.com/wday/cxs/sanofi/SanofiCareers/jobs failed after Chrome-impersonation fallback: HTTP 200 but non-JSON via curl_cffi/chrome",
+   "since": "2026-10-31T06:57:50.809065+00:00",
+   "streak": 1
+  },
+  "Tempus AI": {
+   "reason": "https://tempus.wd5.myworkdayjobs.com/wday/cxs/tempus/Tempus_Careers/jobs failed after Chrome-impersonation fallback: HTTP 200 but non-JSON via curl_cffi/chrome",
+   "since": "2026-10-31T06:57:50.809065+00:00",
+   "streak": 1
+  }
+ },
  "failures": {
   "086dc629b509cd0452a21cc3f157d1f45fa29ea9": "2026-07-15T06:28:41.532995+00:00",
   "0c46a7f23793197517536fba857eb4558bb9ed42": "2026-08-12T08:38:28.406966+00:00",
@@ -2886,6 +2977,14 @@
    "match": "early-stage",
    "title": "NeuroPsych Regional Patient Access Manager, Long Island",
    "url": "https://neurocrine.wd5.myworkdayjobs.com/en-US/NeurocrineCareers/job/US-NY-Home-Office/NeuroPsych-Regional-Patient-Access-Manager--Long-Island_R7226"
+  },
+  "2f6f99c4d51f5b5f7f099d683a17b7930f59ba94": {
+   "company": "Merck",
+   "first_seen": "2026-10-31T06:57:50.809065+00:00",
+   "location": "Rahway, New Jersey, United States of America",
+   "match": "program",
+   "title": "2027 Future Talent Program - International Pricing Analytics - Intern",
+   "url": "https://msd.wd5.myworkdayjobs.com/en-US/SearchJobs/job/USA---New-Jersey---Rahway/XMLNAME-2027-Future-Talent-Program---International-Pricing-Analytics---Intern_R420041/apply"
   },
   "2f865b03fc7b39dd914248ecddbf6e316c6365e3": {
    "company": "Medpace",
@@ -14931,6 +15030,14 @@
    "title": "Strategic Sourcing Manager",
    "url": "https://amgen.wd1.myworkdayjobs.com/en-US/Careers/job/US---Florida---Jacksonville/Strategic-Sourcing-Manager_R-250328-1"
   },
+  "f3d01764d3eadd0aac15eb74766b6f6c758e4caa": {
+   "company": "Merck",
+   "first_seen": "2026-10-31T06:57:50.809065+00:00",
+   "location": "West Point, Pennsylvania, United States of America",
+   "match": "program",
+   "title": "2027 Future Talent Program \u2013 West Point Vaccine Manufacturing Intern",
+   "url": "https://msd.wd5.myworkdayjobs.com/en-US/SearchJobs/job/USA---Pennsylvania---West-Point/XMLNAME-2027-Future-Talent-Program---West-Point-Vaccine-Manufacturing-Intern_R416751/apply"
+  },
   "f3d0977f4f3b9d9390275e1e35f11730be712205": {
    "company": "Neurocrine Biosciences",
    "first_seen": "2026-08-04T16:21:37.894020+00:00",
@@ -15487,6 +15594,14 @@
    "match": "early-stage",
    "title": "Field Reimbursement Manager (Oncology)\u2013 (St. Louis, Missouri)",
    "url": "https://www.careers.jnj.com/en/jobs/r-089530/field-reimbursement-manager-oncology-st-louis-missouri/"
+  },
+  "fd4b82ec17d1932cbbd7d72d504d346c088411e0": {
+   "company": "Merck",
+   "first_seen": "2026-10-31T06:57:50.809065+00:00",
+   "location": "Rahway, New Jersey, United States of America",
+   "match": "program",
+   "title": "2027 Future Talent Program - Global Lung Medical Affairs - Intern",
+   "url": "https://msd.wd5.myworkdayjobs.com/en-US/SearchJobs/job/USA---New-Jersey---Rahway/XMLNAME-2027-Future-Talent-Program---Global-Lung-Medical-Affairs---Intern_R420967/apply"
   },
   "fd59ebb00a15ce0e84ce0642ce4c183e934d4457": {
    "company": "AbbVie",

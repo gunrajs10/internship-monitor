@@ -362,6 +362,14 @@
    "title": "Business Development Specialist",
    "url": "https://www.lonza.com/jobs/R78628"
   },
+  "04d86d61d600fb3817fb54e6c80eb3dfcb30b396": {
+   "company": "Tempus AI",
+   "first_seen": "2026-11-03T16:59:43.552655+00:00",
+   "location": "2 Locations",
+   "match": "early-stage",
+   "title": "Manager, Strategy & Operations",
+   "url": "https://tempus.wd5.myworkdayjobs.com/en-US/Tempus_Careers/job/New-York-City/Manager--Strategy---Operations_JR202601184-1"
+  },
   "05766b53b4cbade5f756b5516bcb5e28281d03ad": {
    "company": "AstraZeneca",
    "first_seen": "2026-10-29T23:34:48.275362+00:00",
@@ -981,6 +989,14 @@
    "title": "Director Drug Development Program Management (Internal Medicine)",
    "url": "https://regeneron.wd1.myworkdayjobs.com/en-US/Careers/job/Warren/Director-Development-Program-Management_R51099"
   },
+  "11c3c7c951eeb0c5b679078a6c27f8bfe98a455b": {
+   "company": "AstraZeneca",
+   "first_seen": "2026-11-03T16:59:43.552655+00:00",
+   "location": "US - Gaithersburg - MD",
+   "match": "program",
+   "title": "US Medical Affairs, Lung Cancer Evidence & Strategy Intern",
+   "url": "https://astrazeneca.wd3.myworkdayjobs.com/en-US/Careers/job/US---Gaithersburg---MD/US-Medical-Affairs--Lung-Cancer-Evidence---Strategy-Intern_R-263259"
+  },
   "11d487a7d0af149cdc79ba5f24e38ff3f710e92f": {
    "company": "Medpace",
    "first_seen": "2026-07-28T21:45:15.519623+00:00",
@@ -1367,6 +1383,13 @@
    "match": "program",
    "title": "2027 Co-op Data Science & Computational Biology (Research)",
    "url": "https://regeneron.wd1.myworkdayjobs.com/en-US/Careers/job/TARRYTOWN/XMLNAME-2027-Co-op-Data-Science---Computational-Biology--Research-_R51032-1"
+  },
+  "17e9efcd67a80cb68f2274c62278f6a6931bbd52": {
+   "company": "Bristol Myers Squibb",
+   "first_seen": "2026-11-03T16:59:43.552655+00:00",
+   "location": "Summit West - NJ - US",
+   "skipped": "undergrad-only",
+   "title": "Manufacturing Science and Technology Process Engineering Co-Op"
   },
   "17eb0d9e4b1d09a9cc801f73b9b11c5b173914fd": {
    "company": "Johnson & Johnson",
@@ -6687,6 +6710,13 @@
    "location": "Sant Cugat del Vall\u00e8s",
    "title": "In-House Service/Repair Technician Intern"
   },
+  "6b4364d576aee4fc44ff54e43b72c5e608e29847": {
+   "company": "AstraZeneca",
+   "first_seen": "2026-11-03T16:59:43.552655+00:00",
+   "location": "US - Gaithersburg - MD",
+   "skipped": "undergrad-only",
+   "title": "US Medical Affairs, AI & Knowledge Experience Intern"
+  },
   "6b6189bb6b7659cbcf51fcc87e76a27a650db78a": {
    "company": "Roche",
    "first_seen": "2026-09-30T13:39:41.240345+00:00",
@@ -7141,6 +7171,14 @@
    "match": "program",
    "title": "2027 Future Talent Program - Vaccine Manufacturing Co-op",
    "url": "https://msd.wd5.myworkdayjobs.com/en-US/SearchJobs/job/USA---Pennsylvania---West-Point/XMLNAME-2027-Future-Talent-Program---Vaccine-Manufacturing-Co-op_R422481/apply"
+  },
+  "72b39fc29da9cffada953f57fb053c0c7127da3a": {
+   "company": "Biogen",
+   "first_seen": "2026-11-03T16:59:43.552655+00:00",
+   "location": "Cambridge, MA",
+   "match": "program",
+   "title": "Intern, Information Technology",
+   "url": "https://biibhr.wd3.myworkdayjobs.com/en-US/external/job/Cambridge-MA/XMLNAME-2027-Intern--Information-Technology_REQ24162"
   },
   "72cf5dd182935c041f7eea9c9b997aa8b6515253": {
    "company": "Sanofi",
@@ -8447,6 +8485,14 @@
    "title": "Financial Planning & Analysis Senior Specialist",
    "url": "https://msd.wd5.myworkdayjobs.com/en-US/SearchJobs/job/PRI---Guaynabo---Guaynabo/Financial-Planning---Analysis-Senior-Specialist_R389632-1/apply"
   },
+  "8a064e1474e93d0d6d1678fa849c43f9d2bd27c2": {
+   "company": "Sanofi",
+   "first_seen": "2026-11-03T16:59:43.552655+00:00",
+   "location": "Swiftwater, PA",
+   "match": "program",
+   "title": "2027 Summer Intern Pharmacovigilance Scientist Swiftwater PA",
+   "url": "https://sanofi.wd3.myworkdayjobs.com/en-US/SanofiCareers/job/Swiftwater-PA/XMLNAME-2027-Summer-Intern-Pharmacovigilance-Scientist-Swiftwater-PA_R2865514"
+  },
   "8a155306384e5f892515ffb0e738eb4a469e4699": {
    "company": "Takeda",
    "first_seen": "2026-11-02T19:27:30.498091+00:00",
@@ -8826,6 +8872,14 @@
    "match": "program",
    "title": "2027 Spring  Intern - Pharma Technical Development - Engineering and Manufacturing Focus",
    "url": "https://roche.wd3.myworkdayjobs.com/en-US/ROG-A2O-GENE/job/South-San-Francisco/XMLNAME-2027-Spring--Intern---Pharma-Technical-Development---Engineering-and-Manufacturing-Focus_202608-121946"
+  },
+  "906af07d5703afb24f510600f3d2fdb58f800337": {
+   "company": "Genentech",
+   "first_seen": "2026-11-03T16:59:43.552655+00:00",
+   "location": "South San Francisco",
+   "match": "early-stage",
+   "title": "Manager, gRED Portfolio Strategy and Planning",
+   "url": "https://roche.wd3.myworkdayjobs.com/en-US/ROG-A2O-GENE/job/South-San-Francisco/Manager--gRED-Portfolio-Strategy-and-Planning_202610-127668-1"
   },
   "909e4fbb2d36571fa315a59c38a4bbed385108cd": {
    "company": "Merck",
@@ -9546,6 +9600,13 @@
    "match": "program",
    "title": "2027 Co-op Product Biochemistry",
    "url": "https://regeneron.wd1.myworkdayjobs.com/en-US/Careers/job/TARRYTOWN/XMLNAME-2027-Co-op-Product-Biochemistry_R51034-1"
+  },
+  "9c9b31144a97d0bb81cda9db9e9b2f3a8322ab08": {
+   "company": "AstraZeneca",
+   "first_seen": "2026-11-03T16:59:43.552655+00:00",
+   "location": "US - Gaithersburg - MD",
+   "skipped": "undergrad-only",
+   "title": "US Medical Affairs, Breast Cancer Intern"
   },
   "9cc7994093e68807c18f38bdb9f6333584c9f81a": {
    "company": "AbbVie",

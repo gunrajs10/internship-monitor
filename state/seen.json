@@ -1,5 +1,11 @@
 {
- "failing": {},
+ "failing": {
+  "Johnson & Johnson": {
+   "reason": "https://www.careers.jnj.com/en/jobs/ failed after 3 attempts: HTTP 403",
+   "since": "2026-11-11T17:04:48.376014+00:00",
+   "streak": 1
+  }
+ },
  "failures": {
   "086dc629b509cd0452a21cc3f157d1f45fa29ea9": "2026-07-15T06:28:41.532995+00:00",
   "0c46a7f23793197517536fba857eb4558bb9ed42": "2026-08-12T08:38:28.406966+00:00",
@@ -3732,6 +3738,14 @@
    "title": "Field Reimbursement Manager - Respiratory  -  Sioux Falls, SD",
    "url": "https://astrazeneca.wd3.myworkdayjobs.com/en-US/Careers/job/US/Field-Reimbursement-Manager---Respiratory-----Sioux-Falls--SD_R-262157"
   },
+  "3a28f3976b5c259ae287e1a13115a452e8922660": {
+   "company": "Merck",
+   "first_seen": "2026-11-11T17:04:48.376014+00:00",
+   "location": "Elkhorn, Nebraska, United States of America",
+   "match": "program",
+   "title": "2027 Future Talent Program - Environmental Health and Safety Process and Site Support - Intern",
+   "url": "https://msd.wd5.myworkdayjobs.com/en-US/SearchJobs/job/USA---Nebraska---Elkhorn/XMLNAME-2027-Future-Talent-Program---Environmental-Health-and-Safety-Process-and-Site-Support---Intern_R413357/apply"
+  },
   "3a403f23adab797547347d67308f96461b655405": {
    "company": "GSK",
    "first_seen": "2026-08-07T19:12:49.895551+00:00",
@@ -5873,6 +5887,13 @@
    "match": "early-stage",
    "title": "Manager, Commercial Quality Global Labeling and IFU, DePuy Synthes",
    "url": "https://www.careers.jnj.com/en/jobs/r-091297/manager-commercial-quality-global-labeling-and-ifu-depuy-synthes/"
+  },
+  "58dbb6abfb341dd1a6d2fadcc8b6dd1f43508530": {
+   "company": "AstraZeneca",
+   "first_seen": "2026-11-11T17:04:48.376014+00:00",
+   "location": "US - Rockville - MD",
+   "skipped": "undergrad-only",
+   "title": "Manufacturing Analyst Intern"
   },
   "58e4f6aa8197690b5940e6f5d481e5b1cbed03c7": {
    "company": "AstraZeneca",
@@ -9316,6 +9337,13 @@
    "title": "US Surgery Demand Planning Co-Op, Summer 2027",
    "url": "https://www.careers.jnj.com/en/jobs/r-102582/us-surgery-demand-planning-co-op-summer-2027/"
   },
+  "90e0acf6fa9d21d3968cdfbe3f5ad046c769372a": {
+   "company": "Medpace",
+   "first_seen": "2026-11-11T17:04:48.376014+00:00",
+   "location": "Cincinnati, Ohio, United States",
+   "skipped": "undergrad-only",
+   "title": "Account Management Internship - Summer 2027"
+  },
   "91455e63a03f63ac18703e0db512092740b87b92": {
    "company": "Johnson & Johnson",
    "first_seen": "2026-08-17T15:36:31.529445+00:00",
@@ -10690,6 +10718,14 @@
    "match": "early-stage",
    "title": "Clinical Sales Specialist (Salt Lake City, UT) - Johnson & Johnson MedTech - Orthopaedics",
    "url": "https://www.careers.jnj.com/en/jobs/r-086973/clinical-sales-specialist-salt-lake-city-ut-johnson-johnson-medtech-orthopaedics/"
+  },
+  "a5311fa17a70df78198bc5cef281b5d2a27d4150": {
+   "company": "AstraZeneca",
+   "first_seen": "2026-11-11T17:04:48.376014+00:00",
+   "location": "US - Gaithersburg - MD",
+   "match": "program",
+   "title": "Biologics Engineering, Computational and Experimental Design of Multispecific Antibodies Intern",
+   "url": "https://astrazeneca.wd3.myworkdayjobs.com/en-US/Careers/job/US---Gaithersburg---MD/Biologics-Engineering--Computational-and-Experimental-Design-of-Multispecific-Antibodies-Intern_R-264042"
   },
   "a562f44648e609d7136823ceb5f7a763f1c92b4f": {
    "company": "Regeneron",
@@ -14290,6 +14326,13 @@
    "match": "program",
    "title": "2027 Summer Intern - Translational Safety (Computational Toxicology)",
    "url": "https://roche.wd3.myworkdayjobs.com/en-US/ROG-A2O-GENE/job/South-San-Francisco/XMLNAME-2027-Summer-Intern---Translational-Safety--Computational-Toxicology-_202610-127395"
+  },
+  "dac0bc8ada5d39a689b8c2dc96b6cc071cc2b353": {
+   "company": "AstraZeneca",
+   "first_seen": "2026-11-11T17:04:48.376014+00:00",
+   "location": "US - Gaithersburg - MD",
+   "skipped": "undergrad-only",
+   "title": "Manufacturing Sciences, Validation Engineer Intern"
   },
   "db512474f00d121211ab61181cf60af5cc648f55": {
    "company": "Gilead Sciences",

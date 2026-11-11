@@ -3,7 +3,7 @@
   "Johnson & Johnson": {
    "reason": "https://www.careers.jnj.com/en/jobs/ failed after 3 attempts: HTTP 403",
    "since": "2026-11-11T17:04:48.376014+00:00",
-   "streak": 1
+   "streak": 2
   }
  },
  "failures": {
@@ -3667,6 +3667,14 @@
    "title": "Senior Associate, Site Affairs and Business Operations",
    "url": "https://pfizer.wd1.myworkdayjobs.com/en-US/PfizerCareers/job/United-States---New-York---Pearl-River/Senior-Associate--Site-Affairs-and-Business-Operations_4958929-2"
   },
+  "38f956989451acd7be9b3677bb2aff9f75b6c55d": {
+   "company": "Ultragenyx",
+   "first_seen": "2026-11-11T21:22:19.448317+00:00",
+   "location": "Bedford, MA",
+   "match": "program",
+   "title": "Intern, Environmental Health and Safety",
+   "url": "https://job-boards.greenhouse.io/ultragenyxpharmaceutical/jobs/4753224005?gh_jid=4753224005"
+  },
   "39134125742315483ebcc3b3b75277b7443ca21b": {
    "company": "Merck",
    "first_seen": "2026-09-08T17:14:13.250290+00:00",
@@ -5730,6 +5738,14 @@
    "title": "ANZ Product Manager Knee",
    "url": "https://www.careers.jnj.com/en/jobs/r-093351/anz-product-manager-knee/"
   },
+  "5664e0a5fba6b27640e4fdec066196b6ff26f7e5": {
+   "company": "Gilead Sciences",
+   "first_seen": "2026-11-11T21:22:19.448317+00:00",
+   "location": "United States - California - Foster City",
+   "match": "early-stage",
+   "title": "Manager, Corporate Development",
+   "url": "https://gilead.wd1.myworkdayjobs.com/en-US/gileadcareers/job/United-States---California---Foster-City/Manager--Corporate-Development_R0056504"
+  },
   "566845b8e412b227c046f0b20298874c45ae25f7": {
    "company": "Medpace",
    "first_seen": "2026-10-06T19:30:17.763941+00:00",
@@ -6788,6 +6804,14 @@
    "title": "Field Reimbursement Manager - Kidney (Great Plains - NV, UT, CO, NE, KS)",
    "url": "https://vrtx.wd501.myworkdayjobs.com/en-US/Vertex_Careers/job/United-States---Field-Based/Field-Reimbursement-Manager---Kidney--Great-Plains---NV--UT--CO--NE--KS-_REQ-29093"
   },
+  "67a008d70b4d9f4235c206a7e0fcd371f1cebfc1": {
+   "company": "Ultragenyx",
+   "first_seen": "2026-11-11T21:22:19.448317+00:00",
+   "location": "Bedford, MA",
+   "match": "program",
+   "title": "Intern, Manufacturing Associate, Upstream, 7:00 AM - 7:00 PM",
+   "url": "https://job-boards.greenhouse.io/ultragenyxpharmaceutical/jobs/4753503005?gh_jid=4753503005"
+  },
   "67a8f1f682b58cf2b9e58f7b3872438997e07890": {
    "company": "Merck",
    "first_seen": "2026-09-08T21:06:45.504227+00:00",
@@ -7125,6 +7149,14 @@
    "match": "early-stage",
    "title": "Pharmaceutical Sales Specialist, Specialty Care -CVRM- Northern New England",
    "url": "https://astrazeneca.wd3.myworkdayjobs.com/en-US/Careers/job/US---Portland---ME/Pharmaceutical-Sales-Specialist--Specialty-Care--CVRM--Northern-New-England_R-257205"
+  },
+  "6d587f970b4ef71cd73c52511c2154ef739ef051": {
+   "company": "Genentech",
+   "first_seen": "2026-11-11T21:22:19.448317+00:00",
+   "location": "South San Francisco",
+   "match": "program",
+   "title": "2027 Summer Intern - Biostatistics and Analytical Data Sciences",
+   "url": "https://roche.wd3.myworkdayjobs.com/en-US/ROG-A2O-GENE/job/South-San-Francisco/XMLNAME-2027-Summer-Intern---Biostatistics-and-Analytical-Data-Sciences_202611-128787"
   },
   "6d606a13dd45f5bafb823996fd7d1a521d688b07": {
    "company": "Sanofi",
@@ -7593,6 +7625,14 @@
    "match": "early-stage",
    "title": "Patient Access Manager (SAN DIEGO, CA/AZ)",
    "url": "https://gsk.wd5.myworkdayjobs.com/en-US/GSKCareers/job/USA---California---San-Diego/Patient-Access-Manager--SAN-DIEGO--CA-AZ--_448677"
+  },
+  "73be341113ac9a28edfa6657a767d48d8ae3acee": {
+   "company": "Ultragenyx",
+   "first_seen": "2026-11-11T21:22:19.448317+00:00",
+   "location": "Bedford, MA",
+   "match": "program",
+   "title": "Intern, Manufacturing Associate, Downstream and Central Services, 6:00 AM - 4:30 PM",
+   "url": "https://job-boards.greenhouse.io/ultragenyxpharmaceutical/jobs/4753208005?gh_jid=4753208005"
   },
   "73d59d7fdc1df9b4ca8da1122a0928370b3f9dde": {
    "company": "Johnson & Johnson",
@@ -8643,6 +8683,14 @@
    "location": "Portugal - Lisbon",
    "title": "Internship Program \u2013 Business & Operations"
   },
+  "860746119dd6183d9dbeae5ddeebd8d8ab3783fb": {
+   "company": "Genentech",
+   "first_seen": "2026-11-11T21:22:19.448317+00:00",
+   "location": "Boston",
+   "match": "program",
+   "title": "2027 Summer Intern - Product Development Data Sciences",
+   "url": "https://roche.wd3.myworkdayjobs.com/en-US/ROG-A2O-GENE/job/Boston/XMLNAME-2027-Summer-Intern---Product-Development-Data-Sciences_202611-128802"
+  },
   "8660193a154f38522793bf256d8d2fc066bf2126": {
    "company": "Sanofi",
    "first_seen": "2026-10-12T18:59:33.007289+00:00",
@@ -8824,6 +8872,14 @@
    "match": "program",
    "title": "Spring Co-Op 2027, Analytical Development, Statistics",
    "url": "https://vrtx.wd501.myworkdayjobs.com/en-US/Vertex_Careers/job/Boston-MA/Vertex-Spring-Co-Op-2027--Analytical-Development--Statistics_REQ-30506-1"
+  },
+  "88c840256d3fe02434cf9c5008b0d9c483385f4c": {
+   "company": "Sanofi",
+   "first_seen": "2026-11-11T21:22:19.448317+00:00",
+   "location": "Cambridge, MA",
+   "match": "program",
+   "title": "2027 Summer Intern Statistical Methodology Cambridge MA",
+   "url": "https://sanofi.wd3.myworkdayjobs.com/en-US/SanofiCareers/job/Cambridge-MA/XMLNAME-2027-Summer-Intern-Statistical-Methodology-Cambridge-MA_R2865711-1"
   },
   "88f165337a49883f5f3cfe84fe9689eba014af8b": {
    "company": "Tempus AI",
@@ -9604,6 +9660,13 @@
    "title": "Finance Manager US Oncology - SG&A and Forecasting",
    "url": "https://careers.abbvie.com/en/job/finance-manager-us-oncology-sg-and-a-and-forecasting-in-mettawa-il-jid-32643"
   },
+  "96527cb836de135a91d3010d0713715b2fc4737a": {
+   "company": "Ultragenyx",
+   "first_seen": "2026-11-11T21:22:19.448317+00:00",
+   "location": "Bedford, MA",
+   "skipped": "undergrad-only",
+   "title": "Co-op, Validation"
+  },
   "965e4374a2cc2b91169ea2d4e6ff33be26f1d1da": {
    "company": "BioMarin",
    "first_seen": "2026-08-10T21:56:10.836629+00:00",
@@ -10199,6 +10262,14 @@
    "title": "2027 Future Talent Program \u2013 Manufacturing and Reliability Engineering Co-Op",
    "url": "https://msd.wd5.myworkdayjobs.com/en-US/SearchJobs/job/USA---Pennsylvania---West-Point/XMLNAME-2027-Future-Talent-Program---Manufacturing-and-Reliability-Engineering-Co-Op_R422487/apply"
   },
+  "9e9300e62ff1c3873e52c0ec3e0f53b7ed101e17": {
+   "company": "Sanofi",
+   "first_seen": "2026-11-11T21:22:19.448317+00:00",
+   "location": "Cambridge, MA",
+   "match": "program",
+   "title": "2027 Summer Intern New Product Launch Cambridge MA",
+   "url": "https://sanofi.wd3.myworkdayjobs.com/en-US/SanofiCareers/job/Cambridge-MA/XMLNAME-2027-Summer-Intern-New-Product-Launch-Cambridge-MA_R2866494-1"
+  },
   "9edd145f59824e81a44e5b356aa3c9077bdf1f5d": {
    "company": "Johnson & Johnson",
    "first_seen": "2026-08-18T23:33:45.016404+00:00",
@@ -10632,6 +10703,13 @@
    "match": "program",
    "title": "2027 Future Talent Program - Global Market Access Intern",
    "url": "https://msd.wd5.myworkdayjobs.com/en-US/SearchJobs/job/USA---New-Jersey---Rahway/XMLNAME-2027-Future-Talent-Program---Global-Market-Access-Intern_R412826/apply"
+  },
+  "a3f9e5b703e7646819671edb7596916dbf6b85ba": {
+   "company": "AstraZeneca",
+   "first_seen": "2026-11-11T21:22:19.448317+00:00",
+   "location": "US \u2013 Tarzana \u2013 CA",
+   "skipped": "undergrad-only",
+   "title": "Facilities & Engineering Safety Intern"
   },
   "a452a5757211295438d96977f16aa1803d90cc3b": {
    "company": "Biogen",
@@ -13436,6 +13514,14 @@
    "title": "Operations Leadership Development Program",
    "url": "https://thermofisher.wd5.myworkdayjobs.com/ThermoFisherCareers/job/Waltham-Massachusetts-USA/Operations-Leadership-Development-Program_R-01362052/apply"
   },
+  "cd73cf8f2983c7b88b049e47cbb7afc0fa3f86f0": {
+   "company": "Ultragenyx",
+   "first_seen": "2026-11-11T21:22:19.448317+00:00",
+   "location": "Bedford, MA",
+   "match": "program",
+   "title": "Intern, Maintenance Coordinator",
+   "url": "https://job-boards.greenhouse.io/ultragenyxpharmaceutical/jobs/4753288005?gh_jid=4753288005"
+  },
   "cd8003b7c5c25745fc79fce25b4d9daacb31238b": {
    "company": "Novo Nordisk",
    "first_seen": "2026-08-28T23:01:01.197554+00:00",
@@ -14629,6 +14715,14 @@
    "title": "Global OBU Finance Co-Op",
    "url": "https://jobs.takeda.com/job/boston/global-obu-finance-co-op/1113/102832669808"
   },
+  "dfa6e978f25598bdfa56e14a023480de7a2d87ba": {
+   "company": "Roche",
+   "first_seen": "2026-11-11T21:22:19.448317+00:00",
+   "location": "3 Locations",
+   "match": "early-stage",
+   "title": "Senior Strategy and Operations Specialist",
+   "url": "https://roche.wd3.myworkdayjobs.com/en-US/roche-ext/job/Mississauga/Senior-Strategy-and-Operations-Specialist_202609-124068-1"
+  },
   "dfc78df273109665d36c9f84e4083badc1ee17b9": {
    "company": "Johnson & Johnson",
    "first_seen": "2026-08-31T20:01:04.647963+00:00",
@@ -15496,6 +15590,13 @@
    "title": "2027 Spring Co-op Opportunities, Swiftwater, PA",
    "url": "https://sanofi.wd3.myworkdayjobs.com/en-US/SanofiCareers/job/Swiftwater-PA/XMLNAME-2027-Spring-Co-op-Opportunities--Swiftwater--PA_R2861047"
   },
+  "ec96174819dfd34c1b2d71bd24b595001b37ace9": {
+   "company": "Ultragenyx",
+   "first_seen": "2026-11-11T21:22:19.448317+00:00",
+   "location": "Bedford, MA",
+   "skipped": "undergrad-only",
+   "title": "Co-op, Process Engineer"
+  },
   "ecf09526a9f6605a57155f9d4484edacfc6eef8c": {
    "company": "Thermo Fisher Scientific",
    "first_seen": "2026-09-09T05:57:47.774567+00:00",
@@ -15866,6 +15967,14 @@
    "match": "early-stage",
    "title": "Manager, Technical Product Management",
    "url": "https://www.careers.jnj.com/en/jobs/r-096972/manager-technical-product-management/"
+  },
+  "f230426c374270d7a03a7f440494c76263b7289e": {
+   "company": "Genentech",
+   "first_seen": "2026-11-11T21:22:19.448317+00:00",
+   "location": "South San Francisco",
+   "match": "program",
+   "title": "2027 Summer Intern - Digital, AI, and Clinical Outcome Assessments",
+   "url": "https://roche.wd3.myworkdayjobs.com/en-US/ROG-A2O-GENE/job/South-San-Francisco/XMLNAME-2027-Summer-Intern---Digital--AI--and-Clinical-Outcome-Assessments_202611-128790"
   },
   "f29b20ae9ee3163bf03d74da2bf0c6c9b72036ce": {
    "company": "Thermo Fisher Scientific",

@@ -3,7 +3,7 @@
   "Johnson & Johnson": {
    "reason": "https://www.careers.jnj.com/en/jobs/ failed after 3 attempts: HTTP 403",
    "since": "2026-11-11T17:04:48.376014+00:00",
-   "streak": 3
+   "streak": 4
   }
  },
  "failures": {
@@ -12503,6 +12503,14 @@
    "match": "early-stage",
    "title": "Technical Product Manager - Evinova",
    "url": "https://astrazeneca.wd3.myworkdayjobs.com/en-US/Careers/job/US---Gaithersburg---MD/Technical-Product-Manager---Evinova_R-259237-1"
+  },
+  "bb3b16edc89b3a8f4e1402ba157009f0b8708e5e": {
+   "company": "GSK",
+   "first_seen": "2026-11-12T08:17:04.157043+00:00",
+   "location": "3 Locations",
+   "match": "program",
+   "title": "Register Your Interest \u2013 May/June/July to December 2027 Internship, Singapore",
+   "url": "https://gsk.wd5.myworkdayjobs.com/en-US/GSKCareers/job/Singapore---Rochester-Park/Register-Your-Interest---May-June-July-to-December-2027-Internship--Singapore_451563"
   },
   "bb5f3505046049dd261c3bca0404304a65626a1f": {
    "company": "Thermo Fisher Scientific",

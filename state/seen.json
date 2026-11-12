@@ -3,12 +3,12 @@
   "Johnson & Johnson": {
    "reason": "https://www.careers.jnj.com/en/jobs/ failed after 3 attempts: HTTP 403",
    "since": "2026-11-11T17:04:48.376014+00:00",
-   "streak": 5
+   "streak": 6
   },
   "Labcorp": {
    "reason": "https://careers.labcorp.com/widgets failed after 3 attempts: HTTP 404",
    "since": "2026-11-12T17:33:04.510498+00:00",
-   "streak": 1
+   "streak": 2
   }
  },
  "failures": {
@@ -1458,6 +1458,14 @@
    "match": "early-stage",
    "title": "Sr. Inside Sales Business Development Manager",
    "url": "https://careers.abbvie.com/en/job/sr-inside-sales-business-development-manager-in-austin-tx-jid-28586"
+  },
+  "17bd4523b57d0c7a5f1d5dbaec5591690362c551": {
+   "company": "Medpace",
+   "first_seen": "2026-11-12T21:27:14.240450+00:00",
+   "location": "Cincinnati, Ohio, United States",
+   "match": "program",
+   "title": "Clinical Monitoring Intern (Summer 2027)",
+   "url": "https://careers.medpace.com/jobs/13129?lang=en-us"
   },
   "17db6f9b2849fe074f3ba5bb193522e73454040f": {
    "company": "Regeneron",
@@ -4702,6 +4710,13 @@
    "title": "Intern - Research - Medicinal Chemistry/ Structural Biology & Chemistry - AI",
    "url": "https://gilead.wd1.myworkdayjobs.com/en-US/gileadcareers/job/United-States---California---Foster-City/Intern---Research---Medicinal-Chemistry--Structural-Biology---Chemistry---AI_R0055565"
   },
+  "46c53558c19688c2b8a8709c5b4fadb0a4585931": {
+   "company": "Moderna",
+   "first_seen": "2026-11-12T21:27:14.240450+00:00",
+   "location": "",
+   "skipped": "undergrad-only",
+   "title": "2027 Co-Op, Investigator Site Budgets & Contracts and Data Integration & Reporting"
+  },
   "46ca0ccf6c43a16b762cacad758400e287659975": {
    "company": "Bristol Myers Squibb",
    "first_seen": "2026-07-28T21:45:15.519623+00:00",
@@ -5721,6 +5736,14 @@
    "match": "early-stage",
    "title": "Associate Specialist, Clin Ops Strategy & Efficiency",
    "url": "https://neurocrine.wd5.myworkdayjobs.com/en-US/NeurocrineCareers/job/US-CA-San-Diego/Associate-Specialist--Clin-Ops-Strategy---Efficiency_R7099"
+  },
+  "5538a4459be948c6cfde39e9b0d38bb8db91f5a7": {
+   "company": "AstraZeneca",
+   "first_seen": "2026-11-12T21:27:14.240450+00:00",
+   "location": "US - Boston - MA",
+   "match": "program",
+   "title": "Summer 2027 Biostatistics Intern PhD",
+   "url": "https://astrazeneca.wd3.myworkdayjobs.com/en-US/Careers/job/US---Boston---MA/Summer-2027-Biostatistics-Intern-PhD_R-264273-1"
   },
   "553940181cf06ca8ff6bdaa9ed98e00cb7041acd": {
    "company": "Johnson & Johnson",
@@ -17082,6 +17105,13 @@
    "first_seen": "2026-07-15T06:28:41.532995+00:00",
    "location": "Porto Salvo, Portugal",
    "title": "Data Mng Internship"
+  },
+  "ffe84724c14a39a1325a513149314ec4c93a3a7c": {
+   "company": "AstraZeneca",
+   "first_seen": "2026-11-12T21:27:14.240450+00:00",
+   "location": "US - New Haven - CT",
+   "skipped": "undergrad-only",
+   "title": "Summer 2027 Analytical Development & Quality Control Intern"
   },
   "fff4ed86570ec48d8ecc93262dbf5a268cf5a032": {
    "company": "AstraZeneca",

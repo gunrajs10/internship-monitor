@@ -3,7 +3,12 @@
   "Johnson & Johnson": {
    "reason": "https://www.careers.jnj.com/en/jobs/ failed after 3 attempts: HTTP 403",
    "since": "2026-11-11T17:04:48.376014+00:00",
-   "streak": 4
+   "streak": 5
+  },
+  "Labcorp": {
+   "reason": "https://careers.labcorp.com/widgets failed after 3 attempts: HTTP 404",
+   "since": "2026-11-12T17:33:04.510498+00:00",
+   "streak": 1
   }
  },
  "failures": {
@@ -2445,6 +2450,14 @@
    "location": "Cincinnati",
    "title": "J&J Surgery Cincinnati: Electrical Engineering Co-op, Fall 2026"
   },
+  "270b1a42b57adb659b0cfe8298afa653470d2784": {
+   "company": "Ultragenyx",
+   "first_seen": "2026-11-12T17:33:04.510498+00:00",
+   "location": "Bedford, MA",
+   "match": "program",
+   "title": "Intern, Environmental Health and Safety (Winter Term Jan 4-Feb 26 2027)",
+   "url": "https://job-boards.greenhouse.io/ultragenyxpharmaceutical/jobs/4753224005?gh_jid=4753224005"
+  },
   "271f42e73528a7f7bf5f29914e22cb173c7c0569": {
    "company": "Johnson & Johnson",
    "first_seen": "2026-10-26T23:49:57.714379+00:00",
@@ -4218,6 +4231,14 @@
    "match": "program",
    "title": "2027 Summer Intern Commercial Graduate Program Associate, General Medicines, Morristown, NJ",
    "url": "https://sanofi.wd3.myworkdayjobs.com/en-US/SanofiCareers/job/Morristown-NJ/XMLNAME-2027-Summer-Intern-Commercial-Graduate-Program-Associate--General-Medicines--Morristown--NJ_R2870195"
+  },
+  "40a96c7f36128f978d07d8a7db957bb36274bd83": {
+   "company": "Amgen",
+   "first_seen": "2026-11-12T17:33:04.510498+00:00",
+   "location": "US - California - South San Francisco",
+   "match": "program",
+   "title": "Grad Intern - PKDM-BA (Summer 2027)",
+   "url": "https://amgen.wd1.myworkdayjobs.com/en-US/Careers/job/US---California---South-San-Francisco/Grad-Intern---PKDM-BA--Summer-2027-_R-261206"
   },
   "40aae2ace01f6c82c855d587b346a98945c101e5": {
    "company": "Merck",
@@ -8724,6 +8745,14 @@
    "title": "2027 Summer Intern - Product Development Data Sciences",
    "url": "https://roche.wd3.myworkdayjobs.com/en-US/ROG-A2O-GENE/job/Boston/XMLNAME-2027-Summer-Intern---Product-Development-Data-Sciences_202611-128802"
   },
+  "865a4b8b2a2115e7916b39bc01ec4bbfbe6e9669": {
+   "company": "Amgen",
+   "first_seen": "2026-11-12T17:33:04.510498+00:00",
+   "location": "United States - Remote",
+   "match": "program",
+   "title": "Grad Intern - Computational Chemistry (summer 2027)",
+   "url": "https://amgen.wd1.myworkdayjobs.com/en-US/Careers/job/United-States---Remote/Grad-Intern---Computational-Chemistry--summer-2027-_R-261449"
+  },
   "8660193a154f38522793bf256d8d2fc066bf2126": {
    "company": "Sanofi",
    "first_seen": "2026-10-12T18:59:33.007289+00:00",
@@ -10969,6 +10998,14 @@
    "match": "early-stage",
    "title": "Field Reimbursement Manager - San Diego, CA",
    "url": "https://astrazeneca.wd3.myworkdayjobs.com/en-US/Careers/job/US---San-Diego---CA/Field-Reimbursement-Manager---San-Diego--CA_R-257865"
+  },
+  "a77ce385c4eee450c7e5ed89fa11d1b7c27377ea": {
+   "company": "Ultragenyx",
+   "first_seen": "2026-11-12T17:33:04.510498+00:00",
+   "location": "Bedford, MA",
+   "match": "program",
+   "title": "Intern, Environmental Health and Safety (Summer)",
+   "url": "https://job-boards.greenhouse.io/ultragenyxpharmaceutical/jobs/4753679005?gh_jid=4753679005"
   },
   "a785fbf7b44b4ec6efabd10cc4209656ed589491": {
    "company": "Johnson & Johnson",

@@ -3,12 +3,12 @@
   "Johnson & Johnson": {
    "reason": "https://www.careers.jnj.com/en/jobs/ failed after 3 attempts: HTTP 403",
    "since": "2026-11-11T17:04:48.376014+00:00",
-   "streak": 9
+   "streak": 10
   },
   "Labcorp": {
    "reason": "https://careers.labcorp.com/widgets failed after 3 attempts: HTTP 404",
    "since": "2026-11-12T17:33:04.510498+00:00",
-   "streak": 5
+   "streak": 6
   }
  },
  "failures": {
@@ -268,6 +268,14 @@
    "match": "early-stage",
    "title": "Field Reimbursement Manager, GI \u2013 Cincinnati, OH",
    "url": "https://www.careers.jnj.com/en/jobs/r-097180/field-reimbursement-manager-gi-cincinnati-oh/"
+  },
+  "036f8113abea50df92c3e2e3a57b86496f6c61a4": {
+   "company": "Vertex Pharmaceuticals",
+   "first_seen": "2026-11-13T20:53:00.123025+00:00",
+   "location": "Boston, MA",
+   "match": "program",
+   "title": "Summer Intern 2027, Pathobiology",
+   "url": "https://vrtx.wd501.myworkdayjobs.com/en-US/Vertex_Careers/job/Boston-MA/Summer-Intern-2027--Pathobiology_REQ-31423-1"
   },
   "0397a51ee9ceb9d5fd4967ec170a53a39046ec2f": {
    "company": "Johnson & Johnson",
@@ -1604,6 +1612,14 @@
    "location": "Cincinnati, Ohio, United States",
    "title": "Software Development Co-Op - Fall 2026"
   },
+  "1954f9cf2235ac04d5274ba4e79d49212013c23d": {
+   "company": "Vertex Pharmaceuticals",
+   "first_seen": "2026-11-13T20:53:00.123025+00:00",
+   "location": "Boston, MA",
+   "match": "program",
+   "title": "Summer Intern 2027, OSD Process Data Analytics",
+   "url": "https://vrtx.wd501.myworkdayjobs.com/en-US/Vertex_Careers/job/Boston-MA/Summer-Intern-2027--OSD-Process-Data-Analytics_REQ-31312"
+  },
   "195755838cce29b9311efd7f3796aa72191c40fa": {
    "company": "Neurocrine Biosciences",
    "first_seen": "2026-07-28T21:45:15.519623+00:00",
@@ -1854,6 +1870,14 @@
    "title": "Customer Solutions MedTech Channel Ops Co-Op",
    "url": "https://www.careers.jnj.com/en/jobs/r-096659/customer-solutions-medtech-channel-ops-co-op/"
   },
+  "1ddcb8fee572c3541422c9809a8b84070ba3f6b2": {
+   "company": "Vertex Pharmaceuticals",
+   "first_seen": "2026-11-13T20:53:00.123025+00:00",
+   "location": "San Diego, CA",
+   "match": "program",
+   "title": "Summer Intern 2027, Drug Metabolism & Pharmacokinetics",
+   "url": "https://vrtx.wd501.myworkdayjobs.com/en-US/Vertex_Careers/job/San-Diego-CA/Summer-Intern-2027--Drug-Metabolism---Pharmacokinetics_REQ-31305-1"
+  },
   "1de679a48940ddabca17e7b37bedc9ea9b8a5751": {
    "company": "Novo Nordisk",
    "first_seen": "2026-10-06T15:54:54.040144+00:00",
@@ -1877,6 +1901,14 @@
    "match": "early-stage",
    "title": "Field Reimbursement Manager, Neuroscience \u2013(Phoenix, AZ ) \u2013 Patient Engagement & Customer Solutions (PECS)",
    "url": "https://www.careers.jnj.com/en/jobs/r-098952/field-reimbursement-manager-neuroscience-phoenix-az-patient-engagement-customer-solutions-pecs/"
+  },
+  "1e3a4ed3674f283541f45985b953e9d8490f2477": {
+   "company": "Merck",
+   "first_seen": "2026-11-13T20:53:00.123025+00:00",
+   "location": "Rahway, New Jersey, United States of America",
+   "match": "program",
+   "title": "2027 Future Talent Program - Global Safety & Environment - Intern",
+   "url": "https://msd.wd5.myworkdayjobs.com/en-US/SearchJobs/job/USA---New-Jersey---Rahway/XMLNAME-2027-Future-Talent-Program---Global-Safety---Environment---Intern_R414564/apply"
   },
   "1e466e5d4d548e6f9ae072eeee8af7fb85c38812": {
    "company": "Regeneron",
@@ -3315,6 +3347,14 @@
    "match": "early-stage",
    "title": "Strategic Sourcing Manager",
    "url": "https://agilent.wd5.myworkdayjobs.com/en-US/Agilent_Careers/job/US-DE-Wilmington/Strategic-Sourcing-Manager_4036993"
+  },
+  "32b1a9dfb656f0414e95661327417cc261730d91": {
+   "company": "Vertex Pharmaceuticals",
+   "first_seen": "2026-11-13T20:53:00.123025+00:00",
+   "location": "Boston, MA",
+   "match": "program",
+   "title": "Summer Intern 2027, Process Chemistry",
+   "url": "https://vrtx.wd501.myworkdayjobs.com/en-US/Vertex_Careers/job/Boston-MA/Summer-Intern-2027--Process-Chemistry_REQ-31306-1"
   },
   "32b6a00eb47ab8f7a4d9a496f8ccbc14e26d2235": {
    "company": "Genentech",
@@ -4885,6 +4925,14 @@
    "title": "Microbiology Intern",
    "url": "https://thermofisher.wd5.myworkdayjobs.com/ThermoFisherCareers/job/Middleton-Wisconsin-USA/Microbiology-Intern_R-01366570/apply"
   },
+  "49763a779da3acb483ff558c4b47e121bfdf341a": {
+   "company": "Vertex Pharmaceuticals",
+   "first_seen": "2026-11-13T20:53:00.123025+00:00",
+   "location": "Boston, MA",
+   "match": "program",
+   "title": "Summer Intern 2027, Process Chemistry, MSAT - PhD",
+   "url": "https://vrtx.wd501.myworkdayjobs.com/en-US/Vertex_Careers/job/Boston-MA/Summer-Intern-2027--Process-Chemistry--MSAT---PhD_REQ-31313-1"
+  },
   "497c52cf89d38ce14a5785ba309677d2e825b0e6": {
    "company": "Johnson & Johnson",
    "first_seen": "2026-08-17T17:42:23.977432+00:00",
@@ -5707,6 +5755,14 @@
    "match": "early-stage",
    "title": "Regional Sales Manager, CMF Orthopedics",
    "url": "https://www.careers.jnj.com/en/jobs/r-088080/regional-sales-manager-cmf-orthopedics/"
+  },
+  "5433d865dba46f516df984e5a09cbb1459260f8f": {
+   "company": "Moderna",
+   "first_seen": "2026-11-13T20:53:00.123025+00:00",
+   "location": "",
+   "match": "program",
+   "title": "2027 Co-Op, Strategic Partnerships",
+   "url": "https://modernatx.wd1.myworkdayjobs.com/en-US/M_tx/job/Cambridge-Massachusetts/XMLNAME-2027-Co-Op--Strategic-Partnerships_R20144"
   },
   "543b772af69e0dda125db10624a22087fc5a8ea7": {
    "company": "BridgeBio",
@@ -8098,6 +8154,14 @@
    "title": "Grad Intern - Global Patient Safety (Summer 2027)",
    "url": "https://amgen.wd1.myworkdayjobs.com/en-US/Careers/job/United-States---Remote/Grad-Intern---Global-Patient-Safety--Summer-2027-_R-260757"
   },
+  "77ad9ccd25da2d622ac322c869bd64a0f2ec0ba3": {
+   "company": "Amgen",
+   "first_seen": "2026-11-13T20:53:00.123025+00:00",
+   "location": "United States - Remote",
+   "match": "program",
+   "title": "Grad Intern - Knowledge Graph Applications (Summer 2027)",
+   "url": "https://amgen.wd1.myworkdayjobs.com/en-US/Careers/job/United-States---Remote/Grad-Intern---Knowledge-Graph-Applications--Summer-2027-_R-260625"
+  },
   "77b950394272c9e01321fb4f59c0c865458fcc2c": {
    "company": "Medpace",
    "first_seen": "2026-07-15T10:16:04.586005+00:00",
@@ -8241,6 +8305,14 @@
    "title": "Business Operations Analyst - RDT Group Functions",
    "url": "https://roche.wd3.myworkdayjobs.com/en-US/roche-ext/job/Warsaw/Business-Operations-Analyst---RDT-Group-Functions_202605-112905-1"
   },
+  "7988737245d4f0214b9a6aeb63f54592181e277f": {
+   "company": "AstraZeneca",
+   "first_seen": "2026-11-13T20:53:00.123025+00:00",
+   "location": "US - Gaithersburg - MD",
+   "match": "program",
+   "title": "Sr. Talent Acquisition Partner - Early Talent",
+   "url": "https://astrazeneca.wd3.myworkdayjobs.com/en-US/Careers/job/US---Gaithersburg---MD/Sr-Talent-Acquisition-Partner---Early-Talent_R-264347"
+  },
   "79ce39d35a7e7ebd21355354def623cc64c5dff1": {
    "company": "GSK",
    "first_seen": "2026-08-24T14:00:09.097793+00:00",
@@ -8263,6 +8335,14 @@
    "location": "",
    "skipped": "undergrad-only",
    "title": "Co-Op, Compliance and Data QC"
+  },
+  "7a73d820c4409950415e625a12e6211c084af44e": {
+   "company": "Vertex Pharmaceuticals",
+   "first_seen": "2026-11-13T20:53:00.123025+00:00",
+   "location": "Boston, MA",
+   "match": "program",
+   "title": "Summer Intern 2027, Comparative Medicine",
+   "url": "https://vrtx.wd501.myworkdayjobs.com/en-US/Vertex_Careers/job/Boston-MA/Summer-Intern-2027--Comparative-Medicine_REQ-31424-1"
   },
   "7aa0291b73b80961040c85759b0ee551eacdb151": {
    "company": "Regeneron",
@@ -13070,6 +13150,14 @@
    "title": "Finance Account Analyst",
    "url": "https://careers.medpace.com/jobs/12232?lang=en-us"
   },
+  "c1f2a96ad7ca4e4ec5afbb4e956167c9807bc510": {
+   "company": "Vertex Pharmaceuticals",
+   "first_seen": "2026-11-13T20:53:00.123025+00:00",
+   "location": "Boston, MA",
+   "match": "program",
+   "title": "Summer Intern 2027, Bioanalytical",
+   "url": "https://vrtx.wd501.myworkdayjobs.com/en-US/Vertex_Careers/job/Boston-MA/Summer-Intern-2027--Bioanalytical_REQ-31425"
+  },
   "c2347e1e3d0b0ae30df49d4e895785eeef2e6823": {
    "company": "Johnson & Johnson",
    "first_seen": "2026-09-21T04:53:30.156216+00:00",
@@ -14068,6 +14156,14 @@
    "first_seen": "2026-07-15T06:28:41.532995+00:00",
    "location": "Budapest",
    "title": "Graphic Designer Intern"
+  },
+  "d2998e6e81538b22495440d0517fffb3bb334a24": {
+   "company": "Vertex Pharmaceuticals",
+   "first_seen": "2026-11-13T20:53:00.123025+00:00",
+   "location": "Boston, MA",
+   "match": "program",
+   "title": "Summer Intern 2027, DMPK Bioanalysis",
+   "url": "https://vrtx.wd501.myworkdayjobs.com/en-US/Vertex_Careers/job/Boston-MA/Summer-Intern-2027--DMPK-Bioanalysis_REQ-31426-1"
   },
   "d29d5e92c3ba55bf2cee15eeca4135fa6183eff4": {
    "company": "Genentech",

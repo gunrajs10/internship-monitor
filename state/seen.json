@@ -3,12 +3,12 @@
   "Johnson & Johnson": {
    "reason": "https://www.careers.jnj.com/en/jobs/ failed after 3 attempts: HTTP 403",
    "since": "2026-11-11T17:04:48.376014+00:00",
-   "streak": 6
+   "streak": 7
   },
   "Labcorp": {
    "reason": "https://careers.labcorp.com/widgets failed after 3 attempts: HTTP 404",
    "since": "2026-11-12T17:33:04.510498+00:00",
-   "streak": 2
+   "streak": 3
   }
  },
  "failures": {
@@ -24,6 +24,7 @@
   "2e59c836b7727c50020af57ba7425f16f00a1c59": "2026-07-15T06:28:41.532995+00:00",
   "3572d5223295b088510c1ae834f0e2f3079be17a": "2026-07-18T07:06:43.380328+00:00",
   "35badfe95d3ae4863129c4fba793d74d149795a2": "2026-07-16T16:40:24.610302+00:00",
+  "3ee3b33ed09cd98bdc03453c065ef2c2391316f2": "2026-11-13T02:07:28.635134+00:00",
   "43bda6447d35d4bb959328648827feebbcbf7104": "2026-07-18T07:06:43.380328+00:00",
   "4b9b077a7d46061dcbf00b95aa5c8da3c4dfa647": "2026-08-12T16:11:28.079252+00:00",
   "513d79acf71ba9ba5567945c0a7f32936bc89edd": "2026-07-18T07:06:43.380328+00:00",
@@ -1071,6 +1072,14 @@
    "match": "program",
    "title": "Associate Engineer, Technical Development Program",
    "url": "https://careers.abbvie.com/en/job/associate-engineer-technical-development-program-in-worcester-ma-jid-34575"
+  },
+  "11ec3491e12f6915a8896602632c2e0ad7d40584": {
+   "company": "AstraZeneca",
+   "first_seen": "2026-11-13T02:07:28.635134+00:00",
+   "location": "US - Boston - MA",
+   "match": "program",
+   "title": "Summer 2027 Innovation and AI Transformation Intern",
+   "url": "https://astrazeneca.wd3.myworkdayjobs.com/en-US/Careers/job/US---Boston---MA/Summer-2027-Innovation-and-AI-Transformation-Intern_R-264282-1"
   },
   "11fc063702847c8489376db08f0180f0fd446a66": {
    "company": "Johnson & Johnson",
@@ -5581,6 +5590,14 @@
    "title": "Field Reimbursement Manager OBL - Johnson & Johnson MedTech, Circulatory Restoration",
    "url": "https://www.careers.jnj.com/en/jobs/r-107218/field-reimbursement-manager-obl-johnson-johnson-medtech-circulatory-restoration/"
   },
+  "5231890935090f1647d062b6b75b4e882d0141fd": {
+   "company": "AstraZeneca",
+   "first_seen": "2026-11-13T02:07:28.635134+00:00",
+   "location": "US - New Haven - CT",
+   "match": "program",
+   "title": "Summer 2027 Pharmaceutical Development Summer Intern PhD",
+   "url": "https://astrazeneca.wd3.myworkdayjobs.com/en-US/Careers/job/US---New-Haven---CT/Summer-2027-Pharmaceutical-Development-Summer-Intern-PhD_R-264287-1"
+  },
   "5256cc195e4bcc8ac7c2c80e4c043f828281e568": {
    "company": "Johnson & Johnson",
    "first_seen": "2026-08-19T17:37:19.742884+00:00",
@@ -5776,6 +5793,14 @@
    "match": "program",
    "title": "2027 Future Talent Program \u2013 Companion Animal Sales \u2013 Intern",
    "url": "https://msd.wd5.myworkdayjobs.com/en-US/SearchJobs/job/USA---New-Jersey---Rahway/XMLNAME-2027-Future-Talent-Program---Companion-Animal-Sales---Intern_R422298/apply"
+  },
+  "55887fefddae90e3a0259445d82c59918fde3584": {
+   "company": "AstraZeneca",
+   "first_seen": "2026-11-13T02:07:28.635134+00:00",
+   "location": "US - Boston - MA",
+   "match": "program",
+   "title": "Summer 2027 Quantitative Intern PhD",
+   "url": "https://astrazeneca.wd3.myworkdayjobs.com/en-US/Careers/job/US---Boston---MA/Summer-2027-Quantitative-Intern-PhD_R-264278"
   },
   "5594220743092975f248290d574f6f8fc78ae40e": {
    "company": "Medpace",
@@ -6950,6 +6975,13 @@
    "match": "program",
    "title": "Laboratory Intern",
    "url": "https://thermofisher.wd5.myworkdayjobs.com/ThermoFisherCareers/job/Richmond-Virginia-USA/Laboratory-Intern_R-01366613/apply"
+  },
+  "688983fd1a907f96a2ded408be6eb252fe68adee": {
+   "company": "AstraZeneca",
+   "first_seen": "2026-11-13T02:07:28.635134+00:00",
+   "location": "US - Cambridge Kendall SQ - MA",
+   "skipped": "undergrad-only",
+   "title": "Summer 2027 Small Molecule Oncology Bioscience Intern"
   },
   "68ae5478e376059760bdee3f42ded7301c6c2b42": {
    "company": "Thermo Fisher Scientific",
@@ -9168,6 +9200,14 @@
    "location": "US - Massachusetts - Cambridge",
    "title": "Associate Fuel Rotational Program - Cambridge, MA",
    "url": "https://amgen.wd1.myworkdayjobs.com/en-US/Careers/job/US---Massachusetts---Cambridge/Associate-Fuel-Rotational-Program---Cambridge--MA_R-250281"
+  },
+  "8bff444126b97a21f0e10c7472acf4572cb129de": {
+   "company": "Roche",
+   "first_seen": "2026-11-13T02:07:28.635134+00:00",
+   "location": "8 Locations",
+   "match": "early-stage",
+   "title": "Product Manager Martech & AI",
+   "url": "https://roche.wd3.myworkdayjobs.com/en-US/roche-ext/job/Rotkreuz/Product-Manager-Martech---AI_202610-126357-1"
   },
   "8c31e11eb9c99207d93b72a38e40ee7b353da246": {
    "company": "Roche",
@@ -12740,6 +12780,13 @@
    "title": "Product Manager, Marketing Engagement and Professional Education, US Oncology",
    "url": "https://www.careers.jnj.com/en/jobs/r-092499/product-manager-marketing-engagement-and-professional-education-us-oncology/"
   },
+  "bd99374a220aa2c83d6a965b9160e5d042dfe3be": {
+   "company": "AstraZeneca",
+   "first_seen": "2026-11-13T02:07:28.635134+00:00",
+   "location": "US - Cambridge Kendall SQ - MA",
+   "skipped": "undergrad-only",
+   "title": "Summer 2027 Automation Technician Intern"
+  },
   "bdb10671ec1371474017afb404c2a1892ebe2a77": {
    "company": "GSK",
    "first_seen": "2026-09-30T23:00:48.165184+00:00",
@@ -12793,6 +12840,14 @@
    "match": "early-stage",
    "title": "Reimbursement Business Manager",
    "url": "https://regeneron.wd1.myworkdayjobs.com/en-US/Careers/job/Remote---United-States/Reimbursement-Business-Manager_R48672-1"
+  },
+  "bef4b156ba5388c9c97f36edfb7defde8777dfc5": {
+   "company": "AstraZeneca",
+   "first_seen": "2026-11-13T02:07:28.635134+00:00",
+   "location": "2 Locations",
+   "match": "program",
+   "title": "Global Technical Operations (GTO) Summer Internships",
+   "url": "https://astrazeneca.wd3.myworkdayjobs.com/en-US/Careers/job/US---Gaithersburg---MD/Global-Technical-Operations--GTO--Summer-Internships_R-264280"
   },
   "bf0426225847c4eb3c2155e62fbdbc2acba60fca": {
    "company": "Thermo Fisher Scientific",
@@ -15984,6 +16039,14 @@
    "match": "early-stage",
    "title": "Senior F&O Strategic Project Manager",
    "url": "https://www.novonordisk.com/careers/find-a-job/job-ad.html?id=338346.en_US"
+  },
+  "f0ece9cc58fc7f85b5e595dbdc5094af1d97666d": {
+   "company": "Amgen",
+   "first_seen": "2026-11-13T02:07:28.635134+00:00",
+   "location": "United States - Remote",
+   "match": "early-stage",
+   "title": "Transformation Manager, US Value & Access Strategy & Innovation",
+   "url": "https://amgen.wd1.myworkdayjobs.com/en-US/Careers/job/United-States---Remote/Transformation-Manager--US-Value---Access-Strategy---Innovation_R-261163"
   },
   "f11cfb0ad3c039956e197498aeeaeabf36c27bd7": {
    "company": "Merck",

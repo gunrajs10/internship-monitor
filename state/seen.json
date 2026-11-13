@@ -3,12 +3,12 @@
   "Johnson & Johnson": {
    "reason": "https://www.careers.jnj.com/en/jobs/ failed after 3 attempts: HTTP 403",
    "since": "2026-11-11T17:04:48.376014+00:00",
-   "streak": 8
+   "streak": 9
   },
   "Labcorp": {
    "reason": "https://careers.labcorp.com/widgets failed after 3 attempts: HTTP 404",
    "since": "2026-11-12T17:33:04.510498+00:00",
-   "streak": 4
+   "streak": 5
   }
  },
  "failures": {
@@ -205,6 +205,13 @@
    "location": "Waltham, Massachusetts, United States of America",
    "title": "Digital Leadership Development Program",
    "url": "https://thermofisher.wd5.myworkdayjobs.com/ThermoFisherCareers/job/Waltham-Massachusetts-USA/Digital-Leadership-Development-Program_R-01362051/apply"
+  },
+  "02ab3d2d8e990b3032925a0d86f56d18e0e8cd09": {
+   "company": "AstraZeneca",
+   "first_seen": "2026-11-13T17:09:52.051178+00:00",
+   "location": "US - Rockville - MD",
+   "skipped": "undergrad-only",
+   "title": "Site Support Intern"
   },
   "02f6dc856357d7e71fb044587545f726cd40a973": {
    "company": "Biogen",
@@ -2082,6 +2089,14 @@
    "match": "early-stage",
    "title": "\u3010AstraZeneca\u3011\u3010Finance\u3011Pricing Manager, Pricing & Market Access",
    "url": "https://astrazeneca.wd3.myworkdayjobs.com/en-US/Careers/job/Japan---Tokyo/XMLNAME--AstraZeneca--Finance-Pricing-Manager--Pricing---Market-Access_R-240314-2"
+  },
+  "214ee70967430ce86483f90a024f99e6e31dbff4": {
+   "company": "Vertex Pharmaceuticals",
+   "first_seen": "2026-11-13T17:09:52.051178+00:00",
+   "location": "Boston, MA",
+   "match": "program",
+   "title": "Summer Intern 2027, Material Science",
+   "url": "https://vrtx.wd501.myworkdayjobs.com/en-US/Vertex_Careers/job/Boston-MA/Summer-Intern-2027--Material-Science_REQ-31308-2"
   },
   "2185e132b57cc99f7e9d66dec9592a66303491ef": {
    "company": "Sanofi",
@@ -7235,6 +7250,14 @@
    "title": "MBA Finance Summer Associate",
    "url": "https://pfizer.wd1.myworkdayjobs.com/en-US/PfizerCareers/job/United-States---New-York---New-York-City/MBA-Finance-Summer-Associate_4960971"
   },
+  "6ce0bf692f3e0255b6f5b0f67f4d27ef51aecd8d": {
+   "company": "Sanofi",
+   "first_seen": "2026-11-13T17:09:52.051178+00:00",
+   "location": "Ft Lauderdale, FL",
+   "match": "early-stage",
+   "title": "Field Reimbursement Manager, Ft. Lauderdale, FL - DERM Southeast",
+   "url": "https://sanofi.wd3.myworkdayjobs.com/en-US/SanofiCareers/job/Ft-Lauderdale-FL/Field-Reimbursement-Manager--Ft-Lauderdale--FL---DERM-Southeast_R2878889-1"
+  },
   "6d1321bcb172ce7978245cdefe6bdfcde14acb3a": {
    "company": "Gilead Sciences",
    "first_seen": "2026-09-08T12:07:08.455196+00:00",
@@ -12133,6 +12156,14 @@
    "title": "Oncology Forecasting Manager",
    "url": "https://gsk.wd5.myworkdayjobs.com/en-US/GSKCareers/job/Durham-Blackwell-Street/Oncology-Forecasting-Manager_447312"
   },
+  "b4c2d03c924fb63c85ea753b50c33875c007e5c8": {
+   "company": "Sanofi",
+   "first_seen": "2026-11-13T17:09:52.051178+00:00",
+   "location": "Philadelphia, PA",
+   "match": "early-stage",
+   "title": "Field Reimbursement Manager, Allergy/ENT - Philadelphia",
+   "url": "https://sanofi.wd3.myworkdayjobs.com/en-US/SanofiCareers/job/Philadelphia-PA/Field-Reimbursement-Manager--Allergy-ENT---Philadelphia_R2878768-1"
+  },
   "b4cead71cd51341bbb41325569d8c9ec53044a1f": {
    "company": "Genentech",
    "first_seen": "2026-07-15T06:28:41.532995+00:00",
@@ -16322,6 +16353,14 @@
    "match": "program",
    "title": "2027 Spring Intern - Purification, Microbiology, and Virology (PMV)",
    "url": "https://roche.wd3.myworkdayjobs.com/en-US/ROG-A2O-GENE/job/South-San-Francisco/XMLNAME-2027-Spring-Intern---Purification--Microbiology--and-Virology--PMV-_202609-122708"
+  },
+  "f5a9a3091907c266cae032136586f217c2bf3d0b": {
+   "company": "Praxis Precision Medicines",
+   "first_seen": "2026-11-13T17:09:52.051178+00:00",
+   "location": "United States - Remote",
+   "match": "early-stage",
+   "title": "Manager Commercial Meetings & Marketing Operations",
+   "url": "https://job-boards.greenhouse.io/praxisprecisionmedicines/jobs/5475094008"
   },
   "f5d066656c193a1ee4ec347a50bd8cb3f48c44e5": {
    "company": "Gilead Sciences",

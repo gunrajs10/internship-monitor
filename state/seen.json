@@ -1,34 +1,14 @@
 {
  "failing": {
-  "Amgen": {
-   "reason": "https://amgen.wd1.myworkdayjobs.com/wday/cxs/amgen/Careers/jobs failed after Chrome-impersonation fallback: HTTP 200 but non-JSON via curl_cffi/chrome",
-   "since": "2026-11-14T01:25:41.223282+00:00",
-   "streak": 3
-  },
-  "Gilead Sciences": {
-   "reason": "https://gilead.wd1.myworkdayjobs.com/wday/cxs/gilead/gileadcareers/jobs failed after Chrome-impersonation fallback: HTTP 200 but non-JSON via curl_cffi/chrome",
-   "since": "2026-11-14T01:25:41.223282+00:00",
-   "streak": 3
-  },
   "Johnson & Johnson": {
    "reason": "https://www.careers.jnj.com/en/jobs/ failed after 3 attempts: HTTP 403",
    "since": "2026-11-11T17:04:48.376014+00:00",
-   "streak": 13
-  },
-  "Kite Pharma": {
-   "reason": "https://gilead.wd1.myworkdayjobs.com/wday/cxs/gilead/kitepharmacareers/jobs failed after Chrome-impersonation fallback: HTTP 200 but non-JSON via curl_cffi/chrome",
-   "since": "2026-11-14T01:25:41.223282+00:00",
-   "streak": 3
+   "streak": 14
   },
   "Labcorp": {
    "reason": "https://careers.labcorp.com/widgets failed after 3 attempts: HTTP 404",
    "since": "2026-11-12T17:33:04.510498+00:00",
-   "streak": 9
-  },
-  "Pfizer": {
-   "reason": "https://pfizer.wd1.myworkdayjobs.com/wday/cxs/pfizer/PfizerCareers/jobs failed after Chrome-impersonation fallback: HTTP 200 but non-JSON via curl_cffi/chrome",
-   "since": "2026-11-14T01:25:41.223282+00:00",
-   "streak": 3
+   "streak": 10
   }
  },
  "failures": {

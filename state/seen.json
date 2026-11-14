@@ -3,72 +3,102 @@
   "Agilent Technologies": {
    "reason": "https://agilent.wd5.myworkdayjobs.com/wday/cxs/agilent/Agilent_Careers/jobs failed after 3 attempts: HTTP 521",
    "since": "2026-11-14T01:25:41.223282+00:00",
-   "streak": 1
+   "streak": 2
   },
   "Amgen": {
    "reason": "https://amgen.wd1.myworkdayjobs.com/wday/cxs/amgen/Careers/jobs failed after 3 attempts: HTTP 521",
    "since": "2026-11-14T01:25:41.223282+00:00",
+   "streak": 2
+  },
+  "AstraZeneca": {
+   "reason": "https://astrazeneca.wd3.myworkdayjobs.com/wday/cxs/astrazeneca/Careers/jobs failed after Chrome-impersonation fallback: HTTP 200 but non-JSON via curl_cffi/chrome",
+   "since": "2026-11-14T07:35:00.118742+00:00",
+   "streak": 1
+  },
+  "Biogen": {
+   "reason": "https://biibhr.wd3.myworkdayjobs.com/wday/cxs/biibhr/external/jobs failed after Chrome-impersonation fallback: HTTP 200 but non-JSON via curl_cffi/chrome",
+   "since": "2026-11-14T07:35:00.118742+00:00",
    "streak": 1
   },
   "Bristol Myers Squibb": {
    "reason": "https://bristolmyerssquibb.wd5.myworkdayjobs.com/wday/cxs/bristolmyerssquibb/BMS/jobs failed after 3 attempts: HTTP 521",
    "since": "2026-11-14T01:25:41.223282+00:00",
-   "streak": 1
+   "streak": 2
   },
   "GSK": {
    "reason": "https://gsk.wd5.myworkdayjobs.com/wday/cxs/gsk/GSKCareers/jobs failed after 3 attempts: HTTP 521",
    "since": "2026-11-14T01:25:41.223282+00:00",
+   "streak": 2
+  },
+  "Genentech": {
+   "reason": "https://roche.wd3.myworkdayjobs.com/wday/cxs/roche/ROG-A2O-GENE/jobs failed after Chrome-impersonation fallback: HTTP 200 but non-JSON via curl_cffi/chrome",
+   "since": "2026-11-14T07:35:00.118742+00:00",
    "streak": 1
   },
   "Gilead Sciences": {
    "reason": "https://gilead.wd1.myworkdayjobs.com/wday/cxs/gilead/gileadcareers/jobs failed after 3 attempts: HTTP 521",
    "since": "2026-11-14T01:25:41.223282+00:00",
-   "streak": 1
+   "streak": 2
   },
   "Illumina": {
    "reason": "https://illumina.wd1.myworkdayjobs.com/wday/cxs/illumina/illumina-careers/jobs failed after 3 attempts: HTTP 521",
    "since": "2026-11-14T01:25:41.223282+00:00",
-   "streak": 1
+   "streak": 2
   },
   "Johnson & Johnson": {
    "reason": "https://www.careers.jnj.com/en/jobs/ failed after 3 attempts: HTTP 403",
    "since": "2026-11-11T17:04:48.376014+00:00",
-   "streak": 11
+   "streak": 12
   },
   "Kite Pharma": {
    "reason": "https://gilead.wd1.myworkdayjobs.com/wday/cxs/gilead/kitepharmacareers/jobs failed after 3 attempts: HTTP 521",
    "since": "2026-11-14T01:25:41.223282+00:00",
-   "streak": 1
+   "streak": 2
   },
   "Labcorp": {
    "reason": "https://careers.labcorp.com/widgets failed after 3 attempts: HTTP 404",
    "since": "2026-11-12T17:33:04.510498+00:00",
-   "streak": 7
+   "streak": 8
   },
   "Moderna": {
    "reason": "https://modernatx.wd1.myworkdayjobs.com/wday/cxs/modernatx/M_tx/jobs failed after 3 attempts: HTTP 521",
    "since": "2026-11-14T01:25:41.223282+00:00",
-   "streak": 1
+   "streak": 2
   },
   "Neurocrine Biosciences": {
    "reason": "https://neurocrine.wd5.myworkdayjobs.com/wday/cxs/neurocrine/NeurocrineCareers/jobs failed after 3 attempts: HTTP 521",
    "since": "2026-11-14T01:25:41.223282+00:00",
+   "streak": 2
+  },
+  "Novartis": {
+   "reason": "https://novartis.wd3.myworkdayjobs.com/wday/cxs/novartis/Novartis_Careers/jobs failed after Chrome-impersonation fallback: HTTP 200 but non-JSON via curl_cffi/chrome",
+   "since": "2026-11-14T07:35:00.118742+00:00",
    "streak": 1
   },
   "Pfizer": {
    "reason": "https://pfizer.wd1.myworkdayjobs.com/wday/cxs/pfizer/PfizerCareers/jobs failed after 3 attempts: HTTP 521",
    "since": "2026-11-14T01:25:41.223282+00:00",
-   "streak": 1
+   "streak": 2
   },
   "Regeneron": {
    "reason": "https://regeneron.wd1.myworkdayjobs.com/wday/cxs/regeneron/Careers/jobs failed after 3 attempts: HTTP 521",
    "since": "2026-11-14T01:25:41.223282+00:00",
+   "streak": 2
+  },
+  "Roche": {
+   "reason": "https://roche.wd3.myworkdayjobs.com/wday/cxs/roche/roche-ext/jobs failed after Chrome-impersonation fallback: HTTP 200 but non-JSON via curl_cffi/chrome",
+   "since": "2026-11-14T07:35:00.118742+00:00",
+   "streak": 1
+  },
+  "Sanofi": {
+   "reason": "https://sanofi.wd3.myworkdayjobs.com/wday/cxs/sanofi/SanofiCareers/jobs failed after Chrome-impersonation fallback: HTTP 200 but non-JSON via curl_cffi/chrome",
+   "since": "2026-11-14T07:35:00.118742+00:00",
    "streak": 1
   },
   "Tempus AI": {
    "reason": "https://tempus.wd5.myworkdayjobs.com/wday/cxs/tempus/Tempus_Careers/jobs failed after 3 attempts: HTTP 521",
    "since": "2026-11-14T01:25:41.223282+00:00",
-   "streak": 1
+   "streak": 2
   }
  },
  "failures": {
@@ -84,7 +114,7 @@
   "2e59c836b7727c50020af57ba7425f16f00a1c59": "2026-07-15T06:28:41.532995+00:00",
   "3572d5223295b088510c1ae834f0e2f3079be17a": "2026-07-18T07:06:43.380328+00:00",
   "35badfe95d3ae4863129c4fba793d74d149795a2": "2026-07-16T16:40:24.610302+00:00",
-  "3ee3b33ed09cd98bdc03453c065ef2c2391316f2": "2026-11-13T02:07:28.635134+00:00",
+  "3ee3b33ed09cd98bdc03453c065ef2c2391316f2": "2026-11-14T07:35:00.118742+00:00",
   "43bda6447d35d4bb959328648827feebbcbf7104": "2026-07-18T07:06:43.380328+00:00",
   "4b9b077a7d46061dcbf00b95aa5c8da3c4dfa647": "2026-08-12T16:11:28.079252+00:00",
   "513d79acf71ba9ba5567945c0a7f32936bc89edd": "2026-07-18T07:06:43.380328+00:00",

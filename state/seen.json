@@ -3,12 +3,12 @@
   "Johnson & Johnson": {
    "reason": "https://www.careers.jnj.com/en/jobs/ failed after 3 attempts: HTTP 403",
    "since": "2026-11-11T17:04:48.376014+00:00",
-   "streak": 14
+   "streak": 15
   },
   "Labcorp": {
    "reason": "https://careers.labcorp.com/widgets failed after 3 attempts: HTTP 404",
    "since": "2026-11-12T17:33:04.510498+00:00",
-   "streak": 10
+   "streak": 11
   }
  },
  "failures": {
@@ -11209,6 +11209,14 @@
    "title": "Field Reimbursement Manager, Neuroscience \u2013 (Indianapolis, IN) \u2013 Patient Engagement & Customer Solutions (PECS)",
    "url": "https://www.careers.jnj.com/en/jobs/r-098941/field-reimbursement-manager-neuroscience-indianapolis-in-patient-engagement-customer-solutions-pecs/"
   },
+  "a78debd3f620d0b9ad0566689efe6806066bff52": {
+   "company": "GSK",
+   "first_seen": "2026-11-14T22:56:53.507755+00:00",
+   "location": "Durham Blackwell Street",
+   "match": "early-stage",
+   "title": "ViiV Healthcare (GSK) Launch Strategy and Campaign Marketing Manager",
+   "url": "https://gsk.wd5.myworkdayjobs.com/en-US/GSKCareers/job/Durham-Blackwell-Street/ViiV-Healthcare--GSK--Launch-Strategy-and-Campaign-Marketing-Manager_451357-1"
+  },
   "a7947a97e16083c87f908d0b2e5e2053d4c73b0f": {
    "company": "Pfizer",
    "first_seen": "2026-08-04T22:42:38.803746+00:00",
@@ -14332,6 +14340,14 @@
    "match": "early-stage",
    "title": "Product Manager",
    "url": "https://sanofi.wd3.myworkdayjobs.com/en-US/SanofiCareers/job/Barcelona/Product-Manager_R2871782"
+  },
+  "d4c3155176039a79c0ca17c0480afcccefcf1afa": {
+   "company": "GSK",
+   "first_seen": "2026-11-14T22:56:53.507755+00:00",
+   "location": "Durham Blackwell Street",
+   "match": "early-stage",
+   "title": "ViiV Healthcare (GSK) Launch Field Engagement & Adoption Marketing Manager",
+   "url": "https://gsk.wd5.myworkdayjobs.com/en-US/GSKCareers/job/Durham-Blackwell-Street/ViiV-Healthcare--GSK--Launch-Field-Engagement---Adoption-Marketing-Manager_451356"
   },
   "d4db6885d0f71c7a1337e226ceef954b9140d39b": {
    "company": "Gilead Sciences",

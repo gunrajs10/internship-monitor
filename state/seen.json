@@ -1,14 +1,74 @@
 {
  "failing": {
+  "Agilent Technologies": {
+   "reason": "https://agilent.wd5.myworkdayjobs.com/wday/cxs/agilent/Agilent_Careers/jobs failed after 3 attempts: HTTP 521",
+   "since": "2026-11-14T01:25:41.223282+00:00",
+   "streak": 1
+  },
+  "Amgen": {
+   "reason": "https://amgen.wd1.myworkdayjobs.com/wday/cxs/amgen/Careers/jobs failed after 3 attempts: HTTP 521",
+   "since": "2026-11-14T01:25:41.223282+00:00",
+   "streak": 1
+  },
+  "Bristol Myers Squibb": {
+   "reason": "https://bristolmyerssquibb.wd5.myworkdayjobs.com/wday/cxs/bristolmyerssquibb/BMS/jobs failed after 3 attempts: HTTP 521",
+   "since": "2026-11-14T01:25:41.223282+00:00",
+   "streak": 1
+  },
+  "GSK": {
+   "reason": "https://gsk.wd5.myworkdayjobs.com/wday/cxs/gsk/GSKCareers/jobs failed after 3 attempts: HTTP 521",
+   "since": "2026-11-14T01:25:41.223282+00:00",
+   "streak": 1
+  },
+  "Gilead Sciences": {
+   "reason": "https://gilead.wd1.myworkdayjobs.com/wday/cxs/gilead/gileadcareers/jobs failed after 3 attempts: HTTP 521",
+   "since": "2026-11-14T01:25:41.223282+00:00",
+   "streak": 1
+  },
+  "Illumina": {
+   "reason": "https://illumina.wd1.myworkdayjobs.com/wday/cxs/illumina/illumina-careers/jobs failed after 3 attempts: HTTP 521",
+   "since": "2026-11-14T01:25:41.223282+00:00",
+   "streak": 1
+  },
   "Johnson & Johnson": {
    "reason": "https://www.careers.jnj.com/en/jobs/ failed after 3 attempts: HTTP 403",
    "since": "2026-11-11T17:04:48.376014+00:00",
-   "streak": 10
+   "streak": 11
+  },
+  "Kite Pharma": {
+   "reason": "https://gilead.wd1.myworkdayjobs.com/wday/cxs/gilead/kitepharmacareers/jobs failed after 3 attempts: HTTP 521",
+   "since": "2026-11-14T01:25:41.223282+00:00",
+   "streak": 1
   },
   "Labcorp": {
    "reason": "https://careers.labcorp.com/widgets failed after 3 attempts: HTTP 404",
    "since": "2026-11-12T17:33:04.510498+00:00",
-   "streak": 6
+   "streak": 7
+  },
+  "Moderna": {
+   "reason": "https://modernatx.wd1.myworkdayjobs.com/wday/cxs/modernatx/M_tx/jobs failed after 3 attempts: HTTP 521",
+   "since": "2026-11-14T01:25:41.223282+00:00",
+   "streak": 1
+  },
+  "Neurocrine Biosciences": {
+   "reason": "https://neurocrine.wd5.myworkdayjobs.com/wday/cxs/neurocrine/NeurocrineCareers/jobs failed after 3 attempts: HTTP 521",
+   "since": "2026-11-14T01:25:41.223282+00:00",
+   "streak": 1
+  },
+  "Pfizer": {
+   "reason": "https://pfizer.wd1.myworkdayjobs.com/wday/cxs/pfizer/PfizerCareers/jobs failed after 3 attempts: HTTP 521",
+   "since": "2026-11-14T01:25:41.223282+00:00",
+   "streak": 1
+  },
+  "Regeneron": {
+   "reason": "https://regeneron.wd1.myworkdayjobs.com/wday/cxs/regeneron/Careers/jobs failed after 3 attempts: HTTP 521",
+   "since": "2026-11-14T01:25:41.223282+00:00",
+   "streak": 1
+  },
+  "Tempus AI": {
+   "reason": "https://tempus.wd5.myworkdayjobs.com/wday/cxs/tempus/Tempus_Careers/jobs failed after 3 attempts: HTTP 521",
+   "since": "2026-11-14T01:25:41.223282+00:00",
+   "streak": 1
   }
  },
  "failures": {
@@ -7218,6 +7278,14 @@
    "match": "early-stage",
    "title": "Senior Market Analyst (Patient Insights & Primary Market Research)",
    "url": "https://roche.wd3.myworkdayjobs.com/en-US/roche-ext/job/Chennai/Senior-Market-Analyst--Patient-Insights---Primary-Market-Research-_202609-124693"
+  },
+  "6b700332359fe4ba16b9f0eafc30586b70aa159d": {
+   "company": "Genentech",
+   "first_seen": "2026-11-14T01:25:41.223282+00:00",
+   "location": "South San Francisco",
+   "match": "program",
+   "title": "2027 Summer Intern - Translational Pharmacokinetics & Pharmacodynamics (tPKPD): QSP Modeling in Cardiovascular, Renal and Metabolic Diseases",
+   "url": "https://roche.wd3.myworkdayjobs.com/en-US/ROG-A2O-GENE/job/South-San-Francisco/XMLNAME-2027-Summer-Intern---Translational-Pharmacokinetics---Pharmacodynamics--tPKPD---QSP-Modeling-in-Cardiovascular--Renal-and-Metabolic-Diseases_202611-129010"
   },
   "6b790745ef9904a0edb44f25deb78da70dcd102d": {
    "company": "Regeneron",

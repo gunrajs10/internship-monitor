@@ -3,12 +3,12 @@
   "Johnson & Johnson": {
    "reason": "https://www.careers.jnj.com/en/jobs/ failed after 3 attempts: HTTP 403",
    "since": "2026-11-11T17:04:48.376014+00:00",
-   "streak": 16
+   "streak": 17
   },
   "Labcorp": {
    "reason": "https://careers.labcorp.com/widgets failed after 3 attempts: HTTP 404",
    "since": "2026-11-12T17:33:04.510498+00:00",
-   "streak": 12
+   "streak": 13
   }
  },
  "failures": {
@@ -26,7 +26,7 @@
   "34a05f9b09e5b94cfde0f3a99785730abcbc3b58": "2026-11-14T15:46:51.905455+00:00",
   "3572d5223295b088510c1ae834f0e2f3079be17a": "2026-07-18T07:06:43.380328+00:00",
   "35badfe95d3ae4863129c4fba793d74d149795a2": "2026-07-16T16:40:24.610302+00:00",
-  "3ee3b33ed09cd98bdc03453c065ef2c2391316f2": "2026-11-14T07:35:00.118742+00:00",
+  "3ee3b33ed09cd98bdc03453c065ef2c2391316f2": "2026-11-15T07:49:06.233647+00:00",
   "43bda6447d35d4bb959328648827feebbcbf7104": "2026-07-18T07:06:43.380328+00:00",
   "4b9b077a7d46061dcbf00b95aa5c8da3c4dfa647": "2026-08-12T16:11:28.079252+00:00",
   "513d79acf71ba9ba5567945c0a7f32936bc89edd": "2026-07-18T07:06:43.380328+00:00",
@@ -15230,6 +15230,14 @@
    "match": "early-stage",
    "title": "Customer Team Leader (District Sales Manager), Cardiovascular Disease - Kansas City District",
    "url": "https://msd.wd5.myworkdayjobs.com/en-US/SearchJobs/job/USA---Missouri---Kansas-City/Customer-Team-Leader--District-Sales-Manager---Cardiovascular-Disease---Kansas-City-District_R401233-1/apply"
+  },
+  "e2b400deee155329753d89708aba6d78d8c16312": {
+   "company": "Gilead Sciences",
+   "first_seen": "2026-11-15T07:49:06.233647+00:00",
+   "location": "United States - California - Foster City",
+   "match": "early-stage",
+   "title": "Finance Manager, R&D Consolidations",
+   "url": "https://gilead.wd1.myworkdayjobs.com/en-US/gileadcareers/job/United-States---California---Foster-City/Finance-Manager--R-D-Consolidations_R0056472-1"
   },
   "e2c44b9e7127b5c1ba6f905f0c167aff775186c2": {
    "company": "Thermo Fisher Scientific",

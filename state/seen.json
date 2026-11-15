@@ -3,12 +3,12 @@
   "Johnson & Johnson": {
    "reason": "https://www.careers.jnj.com/en/jobs/ failed after 3 attempts: HTTP 403",
    "since": "2026-11-11T17:04:48.376014+00:00",
-   "streak": 17
+   "streak": 18
   },
   "Labcorp": {
    "reason": "https://careers.labcorp.com/widgets failed after 3 attempts: HTTP 404",
    "since": "2026-11-12T17:33:04.510498+00:00",
-   "streak": 13
+   "streak": 14
   }
  },
  "failures": {
@@ -36,7 +36,7 @@
   "61cc41a1acd594a63c62a683b5f33f4c82eb9589": "2026-08-01T18:09:38.463207+00:00",
   "6c91fc004c0f264ec7b1f4aaf8f723d1c0e03192": "2026-11-14T15:46:51.905455+00:00",
   "71afc05a31bfec55a667671da61dffcfb01d6946": "2026-07-18T07:06:43.380328+00:00",
-  "76f608e18a47ce15e057842512b6fdfa51f2d741": "2026-11-14T15:46:51.905455+00:00",
+  "76f608e18a47ce15e057842512b6fdfa51f2d741": "2026-11-15T16:18:17.923251+00:00",
   "800ae8be0ff815d3124bb2bbcdb1a7d7629b4fcc": "2026-08-30T00:42:09.537445+00:00",
   "81d8954712925d83c7999284d664dd6ff37c5a24": "2026-07-18T07:06:43.380328+00:00",
   "844d4e03858b4c8c54347287b84c27027da8aa83": "2026-08-30T17:27:06.676588+00:00",

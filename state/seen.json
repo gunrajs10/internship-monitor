@@ -3,17 +3,17 @@
   "Johnson & Johnson": {
    "reason": "https://www.careers.jnj.com/en/jobs/ failed after 3 attempts: HTTP 403",
    "since": "2026-11-11T17:04:48.376014+00:00",
-   "streak": 20
+   "streak": 21
   },
   "Labcorp": {
    "reason": "https://careers.labcorp.com/widgets failed after 3 attempts: HTTP 404",
    "since": "2026-11-12T17:33:04.510498+00:00",
-   "streak": 16
+   "streak": 17
   },
   "Vertex Pharmaceuticals": {
    "reason": "https://vrtx.wd501.myworkdayjobs.com/wday/cxs/vrtx/Vertex_Careers/jobs failed after 3 attempts: HTTP 429",
    "since": "2026-11-15T23:30:46.692282+00:00",
-   "streak": 1
+   "streak": 2
   }
  },
  "failures": {

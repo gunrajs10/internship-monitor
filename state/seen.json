@@ -3,102 +3,107 @@
   "Agilent Technologies": {
    "reason": "https://agilent.wd5.myworkdayjobs.com/wday/cxs/agilent/Agilent_Careers/jobs failed after 3 attempts: HTTP 429",
    "since": "2026-11-16T07:56:58.003125+00:00",
-   "streak": 14
+   "streak": 15
   },
   "Amgen": {
    "reason": "https://amgen.wd1.myworkdayjobs.com/wday/cxs/amgen/Careers/jobs failed after 3 attempts: HTTP 429",
    "since": "2026-11-16T07:56:58.003125+00:00",
-   "streak": 14
+   "streak": 15
   },
   "AstraZeneca": {
    "reason": "https://astrazeneca.wd3.myworkdayjobs.com/wday/cxs/astrazeneca/Careers/jobs failed after 3 attempts: HTTP 429",
    "since": "2026-11-16T07:56:58.003125+00:00",
-   "streak": 14
+   "streak": 15
   },
   "Biogen": {
    "reason": "https://biibhr.wd3.myworkdayjobs.com/wday/cxs/biibhr/external/jobs failed after 3 attempts: HTTP 429",
    "since": "2026-11-16T07:56:58.003125+00:00",
-   "streak": 14
+   "streak": 15
   },
   "Bristol Myers Squibb": {
    "reason": "https://bristolmyerssquibb.wd5.myworkdayjobs.com/wday/cxs/bristolmyerssquibb/BMS/jobs failed after 3 attempts: HTTP 429",
    "since": "2026-11-16T07:56:58.003125+00:00",
-   "streak": 14
+   "streak": 15
   },
   "GSK": {
    "reason": "https://gsk.wd5.myworkdayjobs.com/wday/cxs/gsk/GSKCareers/jobs failed after 3 attempts: HTTP 429",
    "since": "2026-11-16T07:56:58.003125+00:00",
-   "streak": 14
+   "streak": 15
   },
   "Genentech": {
    "reason": "https://roche.wd3.myworkdayjobs.com/wday/cxs/roche/ROG-A2O-GENE/jobs failed after 3 attempts: HTTP 429",
    "since": "2026-11-16T07:56:58.003125+00:00",
-   "streak": 14
+   "streak": 15
   },
   "Gilead Sciences": {
    "reason": "https://gilead.wd1.myworkdayjobs.com/wday/cxs/gilead/gileadcareers/jobs failed after 3 attempts: HTTP 429",
    "since": "2026-11-16T07:56:58.003125+00:00",
-   "streak": 14
+   "streak": 15
   },
   "Illumina": {
    "reason": "https://illumina.wd1.myworkdayjobs.com/wday/cxs/illumina/illumina-careers/jobs failed after 3 attempts: HTTP 429",
    "since": "2026-11-16T07:56:58.003125+00:00",
-   "streak": 14
+   "streak": 15
   },
   "Johnson & Johnson": {
    "reason": "https://www.careers.jnj.com/en/jobs/ failed after 3 attempts: HTTP 403",
    "since": "2026-11-11T17:04:48.376014+00:00",
-   "streak": 35
+   "streak": 36
   },
   "Kite Pharma": {
    "reason": "https://gilead.wd1.myworkdayjobs.com/wday/cxs/gilead/kitepharmacareers/jobs failed after 3 attempts: HTTP 429",
    "since": "2026-11-16T07:56:58.003125+00:00",
-   "streak": 14
+   "streak": 15
   },
   "Labcorp": {
    "reason": "https://careers.labcorp.com/widgets failed after 3 attempts: HTTP 404",
    "since": "2026-11-12T17:33:04.510498+00:00",
-   "streak": 31
+   "streak": 32
   },
   "Moderna": {
    "reason": "https://modernatx.wd1.myworkdayjobs.com/wday/cxs/modernatx/M_tx/jobs failed after 3 attempts: HTTP 429",
    "since": "2026-11-16T07:56:58.003125+00:00",
-   "streak": 14
+   "streak": 15
   },
   "Neurocrine Biosciences": {
    "reason": "https://neurocrine.wd5.myworkdayjobs.com/wday/cxs/neurocrine/NeurocrineCareers/jobs failed after 3 attempts: HTTP 429",
    "since": "2026-11-16T07:56:58.003125+00:00",
-   "streak": 14
+   "streak": 15
   },
   "Novartis": {
    "reason": "https://novartis.wd3.myworkdayjobs.com/wday/cxs/novartis/Novartis_Careers/jobs failed after 3 attempts: HTTP 429",
    "since": "2026-11-16T07:56:58.003125+00:00",
-   "streak": 14
+   "streak": 15
   },
   "Pfizer": {
    "reason": "https://pfizer.wd1.myworkdayjobs.com/wday/cxs/pfizer/PfizerCareers/jobs failed after 3 attempts: HTTP 429",
    "since": "2026-11-16T07:56:58.003125+00:00",
-   "streak": 14
+   "streak": 15
   },
   "Regeneron": {
    "reason": "https://regeneron.wd1.myworkdayjobs.com/wday/cxs/regeneron/Careers/jobs failed after 3 attempts: HTTP 429",
    "since": "2026-11-16T07:56:58.003125+00:00",
-   "streak": 14
+   "streak": 15
   },
   "Roche": {
    "reason": "https://roche.wd3.myworkdayjobs.com/wday/cxs/roche/roche-ext/jobs failed after 3 attempts: HTTP 429",
    "since": "2026-11-16T07:56:58.003125+00:00",
-   "streak": 14
+   "streak": 15
   },
   "Sanofi": {
    "reason": "https://sanofi.wd3.myworkdayjobs.com/wday/cxs/sanofi/SanofiCareers/jobs failed after 3 attempts: HTTP 429",
    "since": "2026-11-16T07:56:58.003125+00:00",
-   "streak": 14
+   "streak": 15
   },
   "Tempus AI": {
    "reason": "https://tempus.wd5.myworkdayjobs.com/wday/cxs/tempus/Tempus_Careers/jobs failed after 3 attempts: HTTP 429",
    "since": "2026-11-16T07:56:58.003125+00:00",
-   "streak": 14
+   "streak": 15
+  },
+  "Vertex Pharmaceuticals": {
+   "reason": "https://vrtx.wd501.myworkdayjobs.com/wday/cxs/vrtx/Vertex_Careers/jobs failed after 3 attempts: HTTP 429",
+   "since": "2026-11-19T22:07:24.371365+00:00",
+   "streak": 1
   }
  },
  "failures": {
@@ -7342,6 +7347,14 @@
    "skipped": "undergrad-only",
    "title": "US Medical Affairs, AI & Knowledge Experience Intern"
   },
+  "6b51e58a0325edf7701a779920de5b55bdd74465": {
+   "company": "AbbVie",
+   "first_seen": "2026-11-19T22:07:24.371365+00:00",
+   "location": "Florham Park, NJ",
+   "match": "early-stage",
+   "title": "Regional Marketing Manager, I/II (East) \u00e2\u0080\u0093 Migraine (Remote)",
+   "url": "https://careers.abbvie.com/en/job/regional-marketing-manager-i-ii-east-migraine-remote-in-florham-park-nj-jid-36122"
+  },
   "6b6189bb6b7659cbcf51fcc87e76a27a650db78a": {
    "company": "Roche",
    "first_seen": "2026-09-30T13:39:41.240345+00:00",
@@ -8622,6 +8635,14 @@
    "match": "program",
    "title": "2027 Future Talent Program - Value & Implementation - Outcomes Research Intern",
    "url": "https://msd.wd5.myworkdayjobs.com/en-US/SearchJobs/job/USA---New-Jersey---Rahway/XMLNAME-2027-Future-Talent-Program---Value---Implementation---Outcomes-Research-Intern_R413998/apply"
+  },
+  "7e2ed6144a4877c7f8dde8545348cbda91a34b6f": {
+   "company": "AbbVie",
+   "first_seen": "2026-11-19T22:07:24.371365+00:00",
+   "location": "Atlanta, GA",
+   "match": "early-stage",
+   "title": "Regional Marketing Manager, I/II (Southeast) \u00e2\u0080\u0093 Migraine (Remote)",
+   "url": "https://careers.abbvie.com/en/job/regional-marketing-manager-i-ii-southeast-migraine-remote-in-atlanta-ga-jid-36125"
   },
   "7e7b476cb00995d7bb674abff2b7b3d947f20c8a": {
    "company": "Johnson & Johnson",
@@ -16834,6 +16855,14 @@
    "match": "program",
    "title": "Global Market Access Summer Associate",
    "url": "https://www.careers.jnj.com/en/jobs/r-101873/global-market-access-summer-associate/"
+  },
+  "f8161d9df736f567d6183b9b22dd5763adc68533": {
+   "company": "AbbVie",
+   "first_seen": "2026-11-19T22:07:24.371365+00:00",
+   "location": "Dallas, TX",
+   "match": "early-stage",
+   "title": "Regional Marketing Manager, I/II (Gulf Coast) \u00e2\u0080\u0093 Migraine (Remote)",
+   "url": "https://careers.abbvie.com/en/job/regional-marketing-manager-i-ii-gulf-coast-migraine-remote-in-dallas-tx-jid-36127"
   },
   "f861a19d53adc1365eaffbd79c03e0db0da552a8": {
    "company": "Sanofi",

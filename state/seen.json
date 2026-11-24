@@ -3,106 +3,106 @@
   "Agilent Technologies": {
    "reason": "https://agilent.wd5.myworkdayjobs.com/wday/cxs/agilent/Agilent_Careers/jobs failed after 3 attempts: HTTP 429",
    "since": "2026-11-20T21:46:58.792286+00:00",
-   "streak": 16
+   "streak": 17
   },
   "Amgen": {
    "reason": "https://amgen.wd1.myworkdayjobs.com/wday/cxs/amgen/Careers/jobs failed after 3 attempts: HTTP 429",
    "since": "2026-11-16T07:56:58.003125+00:00",
-   "streak": 34
+   "streak": 35
   },
   "AstraZeneca": {
    "reason": "https://astrazeneca.wd3.myworkdayjobs.com/wday/cxs/astrazeneca/Careers/jobs failed after 3 attempts: HTTP 429",
    "since": "2026-11-16T07:56:58.003125+00:00",
-   "streak": 34
+   "streak": 35
   },
   "Biogen": {
    "reason": "https://biibhr.wd3.myworkdayjobs.com/wday/cxs/biibhr/external/jobs failed after 3 attempts: HTTP 429",
    "since": "2026-11-16T07:56:58.003125+00:00",
-   "streak": 34
+   "streak": 35
   },
   "Bristol Myers Squibb": {
    "reason": "https://bristolmyerssquibb.wd5.myworkdayjobs.com/wday/cxs/bristolmyerssquibb/BMS/jobs failed after 3 attempts: HTTP 429",
    "since": "2026-11-16T07:56:58.003125+00:00",
-   "streak": 34
+   "streak": 35
   },
   "GSK": {
    "reason": "https://gsk.wd5.myworkdayjobs.com/wday/cxs/gsk/GSKCareers/jobs failed after 3 attempts: HTTP 429",
    "since": "2026-11-16T07:56:58.003125+00:00",
-   "streak": 34
+   "streak": 35
   },
   "Genentech": {
    "reason": "https://roche.wd3.myworkdayjobs.com/wday/cxs/roche/ROG-A2O-GENE/jobs failed after 3 attempts: HTTP 429",
    "since": "2026-11-16T07:56:58.003125+00:00",
-   "streak": 34
+   "streak": 35
   },
   "Gilead Sciences": {
    "reason": "https://gilead.wd1.myworkdayjobs.com/wday/cxs/gilead/gileadcareers/jobs failed after 3 attempts: HTTP 429",
    "since": "2026-11-16T07:56:58.003125+00:00",
-   "streak": 34
+   "streak": 35
   },
   "Illumina": {
    "reason": "https://illumina.wd1.myworkdayjobs.com/wday/cxs/illumina/illumina-careers/jobs failed after 3 attempts: HTTP 429",
    "since": "2026-11-16T07:56:58.003125+00:00",
-   "streak": 34
+   "streak": 35
   },
   "Kite Pharma": {
    "reason": "https://gilead.wd1.myworkdayjobs.com/wday/cxs/gilead/kitepharmacareers/jobs failed after 3 attempts: HTTP 429",
    "since": "2026-11-16T07:56:58.003125+00:00",
-   "streak": 34
+   "streak": 35
   },
   "Labcorp": {
    "reason": "https://careers.labcorp.com/widgets failed after 3 attempts: HTTP 404",
    "since": "2026-11-12T17:33:04.510498+00:00",
-   "streak": 51
+   "streak": 52
   },
   "Moderna": {
    "reason": "https://modernatx.wd1.myworkdayjobs.com/wday/cxs/modernatx/M_tx/jobs failed after 3 attempts: HTTP 429",
    "since": "2026-11-16T07:56:58.003125+00:00",
-   "streak": 34
+   "streak": 35
   },
   "Neurocrine Biosciences": {
    "reason": "https://neurocrine.wd5.myworkdayjobs.com/wday/cxs/neurocrine/NeurocrineCareers/jobs failed after 3 attempts: HTTP 429",
    "since": "2026-11-16T07:56:58.003125+00:00",
-   "streak": 34
+   "streak": 35
   },
   "Novartis": {
    "reason": "https://novartis.wd3.myworkdayjobs.com/wday/cxs/novartis/Novartis_Careers/jobs failed after 3 attempts: HTTP 429",
    "since": "2026-11-16T07:56:58.003125+00:00",
-   "streak": 34
+   "streak": 35
   },
   "Pfizer": {
    "reason": "https://pfizer.wd1.myworkdayjobs.com/wday/cxs/pfizer/PfizerCareers/jobs failed after 3 attempts: HTTP 429",
    "since": "2026-11-16T07:56:58.003125+00:00",
-   "streak": 34
+   "streak": 35
   },
   "Regeneron": {
    "reason": "https://regeneron.wd1.myworkdayjobs.com/wday/cxs/regeneron/Careers/jobs failed after 3 attempts: HTTP 429",
    "since": "2026-11-16T07:56:58.003125+00:00",
-   "streak": 34
+   "streak": 35
   },
   "Roche": {
    "reason": "https://roche.wd3.myworkdayjobs.com/wday/cxs/roche/roche-ext/jobs failed after 3 attempts: HTTP 429",
    "since": "2026-11-16T07:56:58.003125+00:00",
-   "streak": 34
+   "streak": 35
   },
   "Sanofi": {
    "reason": "https://sanofi.wd3.myworkdayjobs.com/wday/cxs/sanofi/SanofiCareers/jobs failed after 3 attempts: HTTP 429",
    "since": "2026-11-16T07:56:58.003125+00:00",
-   "streak": 34
+   "streak": 35
   },
   "Tempus AI": {
    "reason": "https://tempus.wd5.myworkdayjobs.com/wday/cxs/tempus/Tempus_Careers/jobs failed after 3 attempts: HTTP 429",
    "since": "2026-11-16T07:56:58.003125+00:00",
-   "streak": 34
+   "streak": 35
   },
   "Vertex Pharmaceuticals": {
    "reason": "https://vrtx.wd501.myworkdayjobs.com/wday/cxs/vrtx/Vertex_Careers/jobs failed after 3 attempts: HTTP 429",
    "since": "2026-11-23T21:16:19.070797+00:00",
-   "streak": 4
+   "streak": 5
   }
  },
  "failures": {
-  "0098dd31978e80162473336413b40410df64e745": "2026-11-23T21:16:19.070797+00:00",
+  "0098dd31978e80162473336413b40410df64e745": "2026-11-24T23:27:39.357251+00:00",
   "086dc629b509cd0452a21cc3f157d1f45fa29ea9": "2026-07-15T06:28:41.532995+00:00",
   "0c46a7f23793197517536fba857eb4558bb9ed42": "2026-08-12T08:38:28.406966+00:00",
   "16f21d6ab6316264dcd83655281b68699bf45dfc": "2026-07-15T06:28:41.532995+00:00",
@@ -113,50 +113,50 @@
   "297a44b8eda86efd9b100a83a15e8e00924c13ab": "2026-07-17T11:39:57.926663+00:00",
   "2bbce5fd8073110644788b38e5e4b79d72012a1e": "2026-08-29T22:38:42.814406+00:00",
   "2e59c836b7727c50020af57ba7425f16f00a1c59": "2026-07-15T06:28:41.532995+00:00",
-  "3176a13f6fc90dcbf0bf8f770798b1f142dfbe90": "2026-11-23T21:16:19.070797+00:00",
-  "34a05f9b09e5b94cfde0f3a99785730abcbc3b58": "2026-11-23T21:16:19.070797+00:00",
+  "3176a13f6fc90dcbf0bf8f770798b1f142dfbe90": "2026-11-24T23:27:39.357251+00:00",
+  "34a05f9b09e5b94cfde0f3a99785730abcbc3b58": "2026-11-24T23:27:39.357251+00:00",
   "3572d5223295b088510c1ae834f0e2f3079be17a": "2026-07-18T07:06:43.380328+00:00",
   "35badfe95d3ae4863129c4fba793d74d149795a2": "2026-07-16T16:40:24.610302+00:00",
-  "388799788893a2217a0b5c64c901be2522e8ea66": "2026-11-23T21:16:19.070797+00:00",
-  "3b9f69547873bce263fca9e9985485f714acfb35": "2026-11-23T21:16:19.070797+00:00",
+  "388799788893a2217a0b5c64c901be2522e8ea66": "2026-11-24T23:27:39.357251+00:00",
+  "3b9f69547873bce263fca9e9985485f714acfb35": "2026-11-24T23:27:39.357251+00:00",
   "3ee3b33ed09cd98bdc03453c065ef2c2391316f2": "2026-11-24T01:38:12.547272+00:00",
-  "43bda6447d35d4bb959328648827feebbcbf7104": "2026-11-23T21:16:19.070797+00:00",
+  "43bda6447d35d4bb959328648827feebbcbf7104": "2026-11-24T23:27:39.357251+00:00",
   "4b9b077a7d46061dcbf00b95aa5c8da3c4dfa647": "2026-08-12T16:11:28.079252+00:00",
-  "4d29d8f9103607841bf90b513835d228ce9ae35f": "2026-11-23T21:16:19.070797+00:00",
+  "4d29d8f9103607841bf90b513835d228ce9ae35f": "2026-11-24T23:27:39.357251+00:00",
   "513d79acf71ba9ba5567945c0a7f32936bc89edd": "2026-07-18T07:06:43.380328+00:00",
-  "55acc109101c580b651d7f961df190a7ad28cf88": "2026-11-23T21:16:19.070797+00:00",
+  "55acc109101c580b651d7f961df190a7ad28cf88": "2026-11-24T23:27:39.357251+00:00",
   "5633daeaa52c2823783c98d235431667e7054131": "2026-07-18T07:06:43.380328+00:00",
-  "5b01b9e3acb24a799e2055e3778ceb027233d6c1": "2026-11-23T21:16:19.070797+00:00",
+  "5b01b9e3acb24a799e2055e3778ceb027233d6c1": "2026-11-24T23:27:39.357251+00:00",
   "5d2e82db342046dfce808221bf5fa5777e9df909": "2026-11-21T08:15:07.306531+00:00",
-  "5d9e43b9daf3137c34287be2023fbfbaa6d4930c": "2026-11-23T21:16:19.070797+00:00",
-  "5fb1ba49c7fb96607a8b0e09c067eb4ff57602d8": "2026-11-23T21:16:19.070797+00:00",
+  "5d9e43b9daf3137c34287be2023fbfbaa6d4930c": "2026-11-24T23:27:39.357251+00:00",
+  "5fb1ba49c7fb96607a8b0e09c067eb4ff57602d8": "2026-11-24T23:27:39.357251+00:00",
   "61cc41a1acd594a63c62a683b5f33f4c82eb9589": "2026-08-01T18:09:38.463207+00:00",
-  "62052cf99c4ee3b1590ae1b6811e38a55afb99b4": "2026-11-23T21:16:19.070797+00:00",
+  "62052cf99c4ee3b1590ae1b6811e38a55afb99b4": "2026-11-24T23:27:39.357251+00:00",
   "6c91fc004c0f264ec7b1f4aaf8f723d1c0e03192": "2026-11-21T08:15:07.306531+00:00",
   "71afc05a31bfec55a667671da61dffcfb01d6946": "2026-07-18T07:06:43.380328+00:00",
-  "73f775150e6ceb2b2c49dfc0e8997d888b84bb0c": "2026-11-23T21:16:19.070797+00:00",
+  "73f775150e6ceb2b2c49dfc0e8997d888b84bb0c": "2026-11-24T23:27:39.357251+00:00",
   "76f608e18a47ce15e057842512b6fdfa51f2d741": "2026-11-23T21:16:19.070797+00:00",
   "800ae8be0ff815d3124bb2bbcdb1a7d7629b4fcc": "2026-08-30T00:42:09.537445+00:00",
   "81d8954712925d83c7999284d664dd6ff37c5a24": "2026-07-18T07:06:43.380328+00:00",
   "844d4e03858b4c8c54347287b84c27027da8aa83": "2026-08-30T17:27:06.676588+00:00",
   "87e6196561dcb3a8ae8e993e59f1349256cb5e91": "2026-07-15T06:28:41.532995+00:00",
-  "89dd93d96208ee7512a90783779d402a6eb8850c": "2026-11-23T21:16:19.070797+00:00",
+  "89dd93d96208ee7512a90783779d402a6eb8850c": "2026-11-24T23:27:39.357251+00:00",
   "8a8486d0395e288b4e3e8162c226787cb3700dc7": "2026-07-18T07:06:43.380328+00:00",
   "98e739be64b7900218e95cea23263a47d4b8db9b": "2026-11-01T01:06:39.317563+00:00",
   "9b2d457e162abd7110b823413ea52dfb7f953755": "2026-07-15T10:16:04.586005+00:00",
   "9cc6f10e0c44a0f3a4a9707f16c35e338bf676f9": "2026-07-18T07:06:43.380328+00:00",
-  "9f1e361efdda386d55e472f64f465575d99c635b": "2026-11-23T21:16:19.070797+00:00",
+  "9f1e361efdda386d55e472f64f465575d99c635b": "2026-11-24T23:27:39.357251+00:00",
   "b77c2cf6c3e69beb97f671242bd9c377bf7c6e67": "2026-11-24T10:53:17.790108+00:00",
   "b9224a20eb51923648a90b5274d73faea3485bcd": "2026-08-29T14:26:53.676108+00:00",
-  "b9cd41993498134af97e75812da9a2c4421d6a3d": "2026-11-23T21:16:19.070797+00:00",
+  "b9cd41993498134af97e75812da9a2c4421d6a3d": "2026-11-24T23:27:39.357251+00:00",
   "bd19904263163618755f3cdc38cb3521205a9e00": "2026-08-30T18:03:12.080535+00:00",
   "c78195205147bee8ea18db17d4985b1f1c6d2436": "2026-07-15T06:28:41.532995+00:00",
-  "d00b02a4f2a16f72a103d434ac797e4f5ee7f037": "2026-11-23T21:16:19.070797+00:00",
+  "d00b02a4f2a16f72a103d434ac797e4f5ee7f037": "2026-11-24T23:27:39.357251+00:00",
   "d4bca1582956e68e2bf2a1e076edd334d245354b": "2026-07-26T14:44:04.840791+00:00",
   "d8e690d4365279f8e354246f2faf5bbf31eee6f2": "2026-07-18T07:06:43.380328+00:00",
   "dff249e123931bda3de9c0d0b65d1bfaf865bae6": "2026-07-15T06:28:41.532995+00:00",
   "e073341d6868c3dfba4496ac55b1cf694139f42f": "2026-07-18T07:06:43.380328+00:00",
-  "f296831752b2a3a89ba0ccef810cb9d3af577571": "2026-11-23T21:16:19.070797+00:00"
+  "f296831752b2a3a89ba0ccef810cb9d3af577571": "2026-11-24T23:27:39.357251+00:00"
  },
  "seen": {
   "0029c609aea3f87d18711c8359994b0c9498c00a": {
@@ -1541,6 +1541,14 @@
    "match": "early-stage",
    "title": "Pharmaceutical Sales Specialist, Respiratory Specialty Care - Chattanooga,TN",
    "url": "https://astrazeneca.wd3.myworkdayjobs.com/en-US/Careers/job/US---Chattanooga---TN/Pharmaceutical-Sales-Specialist--Respiratory-Specialty-Care---Chattanooga-TN_R-257506"
+  },
+  "15b48c0c74aa0f66319548d2050d702a50eb398e": {
+   "company": "Johnson & Johnson",
+   "first_seen": "2026-11-24T23:27:39.357251+00:00",
+   "location": "Raynham / Arizona (Any City) / California (Any City) / Idaho (Any City) / Nevada (Any City) / Remote (Us) / Oregon (Any City) / Washington (Any City)",
+   "match": "early-stage",
+   "title": "Senior Commercial Operations Specialist - Spine",
+   "url": "https://www.careers.jnj.com/en/jobs/r-110114/senior-commercial-operations-specialist-spine/"
   },
   "16147ac2c7849e06beb97e48d08d4be5afc537d5": {
    "company": "Axsome Therapeutics",
@@ -5628,6 +5636,14 @@
    "title": "Global Marketing Manager, Trauma",
    "url": "https://www.careers.jnj.com/en/jobs/r-096275/global-marketing-manager-trauma/"
   },
+  "4f5f56d54c4251170eca9ac7f8bb0a38729e2d6c": {
+   "company": "Johnson & Johnson",
+   "first_seen": "2026-11-24T23:27:39.357251+00:00",
+   "location": "Santa Clara / Cincinnati",
+   "match": "early-stage",
+   "title": "Manager, Commercial Management, Monarch Urology",
+   "url": "https://www.careers.jnj.com/en/jobs/r-110241/manager-commercial-management-monarch-urology/"
+  },
   "4f991946b869b2c37316550aff2d139333292c90": {
    "company": "Johnson & Johnson",
    "first_seen": "2026-09-15T21:17:17.148288+00:00",
@@ -9423,6 +9439,14 @@
    "match": "program",
    "title": "Spring Co-Op 2027, Analytical Development, Statistics",
    "url": "https://vrtx.wd501.myworkdayjobs.com/en-US/Vertex_Careers/job/Boston-MA/Vertex-Spring-Co-Op-2027--Analytical-Development--Statistics_REQ-30506-1"
+  },
+  "88781df80e0b4f3b1596e154069d0fe339444423": {
+   "company": "Johnson & Johnson",
+   "first_seen": "2026-11-24T23:27:39.357251+00:00",
+   "location": "Raritan / Florida (Any City)",
+   "match": "early-stage",
+   "title": "Manager, SAP Finance Technology & Solutions",
+   "url": "https://www.careers.jnj.com/en/jobs/r-094570/manager-sap-finance-technology-solutions/"
   },
   "88c840256d3fe02434cf9c5008b0d9c483385f4c": {
    "company": "Sanofi",

@@ -3,107 +3,102 @@
   "Agilent Technologies": {
    "reason": "https://agilent.wd5.myworkdayjobs.com/wday/cxs/agilent/Agilent_Careers/jobs failed after 3 attempts: HTTP 429",
    "since": "2026-11-20T21:46:58.792286+00:00",
-   "streak": 15
+   "streak": 16
   },
   "Amgen": {
    "reason": "https://amgen.wd1.myworkdayjobs.com/wday/cxs/amgen/Careers/jobs failed after 3 attempts: HTTP 429",
    "since": "2026-11-16T07:56:58.003125+00:00",
-   "streak": 33
+   "streak": 34
   },
   "AstraZeneca": {
    "reason": "https://astrazeneca.wd3.myworkdayjobs.com/wday/cxs/astrazeneca/Careers/jobs failed after 3 attempts: HTTP 429",
    "since": "2026-11-16T07:56:58.003125+00:00",
-   "streak": 33
+   "streak": 34
   },
   "Biogen": {
    "reason": "https://biibhr.wd3.myworkdayjobs.com/wday/cxs/biibhr/external/jobs failed after 3 attempts: HTTP 429",
    "since": "2026-11-16T07:56:58.003125+00:00",
-   "streak": 33
+   "streak": 34
   },
   "Bristol Myers Squibb": {
    "reason": "https://bristolmyerssquibb.wd5.myworkdayjobs.com/wday/cxs/bristolmyerssquibb/BMS/jobs failed after 3 attempts: HTTP 429",
    "since": "2026-11-16T07:56:58.003125+00:00",
-   "streak": 33
+   "streak": 34
   },
   "GSK": {
    "reason": "https://gsk.wd5.myworkdayjobs.com/wday/cxs/gsk/GSKCareers/jobs failed after 3 attempts: HTTP 429",
    "since": "2026-11-16T07:56:58.003125+00:00",
-   "streak": 33
+   "streak": 34
   },
   "Genentech": {
    "reason": "https://roche.wd3.myworkdayjobs.com/wday/cxs/roche/ROG-A2O-GENE/jobs failed after 3 attempts: HTTP 429",
    "since": "2026-11-16T07:56:58.003125+00:00",
-   "streak": 33
+   "streak": 34
   },
   "Gilead Sciences": {
    "reason": "https://gilead.wd1.myworkdayjobs.com/wday/cxs/gilead/gileadcareers/jobs failed after 3 attempts: HTTP 429",
    "since": "2026-11-16T07:56:58.003125+00:00",
-   "streak": 33
+   "streak": 34
   },
   "Illumina": {
    "reason": "https://illumina.wd1.myworkdayjobs.com/wday/cxs/illumina/illumina-careers/jobs failed after 3 attempts: HTTP 429",
    "since": "2026-11-16T07:56:58.003125+00:00",
-   "streak": 33
-  },
-  "Johnson & Johnson": {
-   "reason": "https://www.careers.jnj.com/en/jobs/ failed after 3 attempts: HTTP 403",
-   "since": "2026-11-11T17:04:48.376014+00:00",
-   "streak": 54
+   "streak": 34
   },
   "Kite Pharma": {
    "reason": "https://gilead.wd1.myworkdayjobs.com/wday/cxs/gilead/kitepharmacareers/jobs failed after 3 attempts: HTTP 429",
    "since": "2026-11-16T07:56:58.003125+00:00",
-   "streak": 33
+   "streak": 34
   },
   "Labcorp": {
    "reason": "https://careers.labcorp.com/widgets failed after 3 attempts: HTTP 404",
    "since": "2026-11-12T17:33:04.510498+00:00",
-   "streak": 50
+   "streak": 51
   },
   "Moderna": {
    "reason": "https://modernatx.wd1.myworkdayjobs.com/wday/cxs/modernatx/M_tx/jobs failed after 3 attempts: HTTP 429",
    "since": "2026-11-16T07:56:58.003125+00:00",
-   "streak": 33
+   "streak": 34
   },
   "Neurocrine Biosciences": {
    "reason": "https://neurocrine.wd5.myworkdayjobs.com/wday/cxs/neurocrine/NeurocrineCareers/jobs failed after 3 attempts: HTTP 429",
    "since": "2026-11-16T07:56:58.003125+00:00",
-   "streak": 33
+   "streak": 34
   },
   "Novartis": {
    "reason": "https://novartis.wd3.myworkdayjobs.com/wday/cxs/novartis/Novartis_Careers/jobs failed after 3 attempts: HTTP 429",
    "since": "2026-11-16T07:56:58.003125+00:00",
-   "streak": 33
+   "streak": 34
   },
   "Pfizer": {
    "reason": "https://pfizer.wd1.myworkdayjobs.com/wday/cxs/pfizer/PfizerCareers/jobs failed after 3 attempts: HTTP 429",
    "since": "2026-11-16T07:56:58.003125+00:00",
-   "streak": 33
+   "streak": 34
   },
   "Regeneron": {
    "reason": "https://regeneron.wd1.myworkdayjobs.com/wday/cxs/regeneron/Careers/jobs failed after 3 attempts: HTTP 429",
    "since": "2026-11-16T07:56:58.003125+00:00",
-   "streak": 33
+   "streak": 34
   },
   "Roche": {
    "reason": "https://roche.wd3.myworkdayjobs.com/wday/cxs/roche/roche-ext/jobs failed after 3 attempts: HTTP 429",
    "since": "2026-11-16T07:56:58.003125+00:00",
-   "streak": 33
+   "streak": 34
   },
   "Sanofi": {
    "reason": "https://sanofi.wd3.myworkdayjobs.com/wday/cxs/sanofi/SanofiCareers/jobs failed after 3 attempts: HTTP 429",
    "since": "2026-11-16T07:56:58.003125+00:00",
-   "streak": 33
+   "streak": 34
   },
   "Tempus AI": {
    "reason": "https://tempus.wd5.myworkdayjobs.com/wday/cxs/tempus/Tempus_Careers/jobs failed after 3 attempts: HTTP 429",
    "since": "2026-11-16T07:56:58.003125+00:00",
-   "streak": 33
+   "streak": 34
   },
   "Vertex Pharmaceuticals": {
    "reason": "https://vrtx.wd501.myworkdayjobs.com/wday/cxs/vrtx/Vertex_Careers/jobs failed after 3 attempts: HTTP 429",
    "since": "2026-11-23T21:16:19.070797+00:00",
-   "streak": 3
+   "streak": 4
   }
  },
  "failures": {
@@ -1138,6 +1133,14 @@
    "match": "early-stage",
    "title": "Portfolio Strategy Associate VIE Contract",
    "url": "https://sanofi.wd3.myworkdayjobs.com/en-US/SanofiCareers/job/Morristown-NJ/Portfolio-Strategy-Associate-VIE-Contract_R2864886"
+  },
+  "109941ac381b744794313e49224e34d623bafa57": {
+   "company": "Johnson & Johnson",
+   "first_seen": "2026-11-24T21:08:51.709903+00:00",
+   "location": "West Chester",
+   "match": "early-stage",
+   "title": "Global Strategic Associate Marketing Manager, Neuro and Thoracic",
+   "url": "https://www.careers.jnj.com/en/jobs/r-111175/global-strategic-associate-marketing-manager-neuro-and-thoracic/"
   },
   "10a5e6f0a58f7320a0133d8b66afa4707a9f671c": {
    "company": "Vertex Pharmaceuticals",
@@ -3619,6 +3622,14 @@
    "match": "early-stage",
    "title": "R&I Primary Care District Sales Manager- Baltimore East",
    "url": "https://astrazeneca.wd3.myworkdayjobs.com/en-US/Careers/job/US---Baltimore---MD/R-I-Primary-Care-District-Sales-Manager--Baltimore-East_R-254949"
+  },
+  "3330201eb56a0682f716c665edae0e69c75e177e": {
+   "company": "Johnson & Johnson",
+   "first_seen": "2026-11-24T21:08:51.709903+00:00",
+   "location": "Horsham",
+   "match": "early-stage",
+   "title": "Manager, Oncology Competitive Intelligence, Oncology Solid Tumor",
+   "url": "https://www.careers.jnj.com/en/jobs/r-111845/manager-oncology-competitive-intelligence-oncology-solid-tumor/"
   },
   "334522c64a1611015e793b63513c7af87a119d2e": {
    "company": "Moderna",
@@ -6270,6 +6281,14 @@
    "title": "2027 Future Talent Program - Translational Medicine - Intern",
    "url": "https://msd.wd5.myworkdayjobs.com/en-US/SearchJobs/job/USA---California---South-San-Francisco-Grand-Ave/XMLNAME-2027-Future-Talent-Program---Translational-Medicine---Intern_R413602/apply"
   },
+  "5886e1283391b4098dc93cd23a30eebef450ec3b": {
+   "company": "Merck",
+   "first_seen": "2026-11-24T21:08:51.709903+00:00",
+   "location": "Rahway, New Jersey, United States of America",
+   "match": "program",
+   "title": "2027 Future Talent Program - Finance Leadership Development Program, Internal Audit Specialist - Information Technology, Cybersecurity & AI",
+   "url": "https://msd.wd5.myworkdayjobs.com/en-US/SearchJobs/job/USA---New-Jersey---Rahway/XMLNAME-2027-Future-Talent-Program---Finance-Leadership-Development-Program--Audit-Specialist_R415343-1/apply"
+  },
   "5899a3115490c2c87abf77b3ca9ff6105c8735c2": {
    "company": "Tempus AI",
    "first_seen": "2026-07-28T21:45:15.519623+00:00",
@@ -7979,6 +7998,14 @@
    "title": "Field Reimbursement Manager - Pulm/Gastro (Knoxville,TN)",
    "url": "https://regeneron.wd1.myworkdayjobs.com/en-US/Careers/job/Knoxville-TN/Field-Reimbursement-Manager---Pulm-Gastro--Knoxville-TN-_R48092"
   },
+  "729489880512525b447e6a7a89418e28073d498b": {
+   "company": "Medpace",
+   "first_seen": "2026-11-24T21:08:51.709903+00:00",
+   "location": "Cincinnati, Ohio, United States",
+   "match": "program",
+   "title": "Clinical Intelligence Internship - Summer 2027",
+   "url": "https://careers.medpace.com/jobs/13558?lang=en-us"
+  },
   "72a0d0fc17b6e6d0c9d949c075c842c68a9d1046": {
    "company": "Merck",
    "first_seen": "2026-10-15T18:14:53.295590+00:00",
@@ -8553,6 +8580,14 @@
    "match": "early-stage",
    "title": "UPLIZNA gMG Medical Marketing, Manager",
    "url": "https://amgen.wd1.myworkdayjobs.com/en-US/Careers/job/US---Pennsylvania---Philadelphia/UPLIZNA-gMG-Medical-Marketing--Manager_R-252082-1"
+  },
+  "789f8cb3d5d88949ae42bea874fe68708aeaa682": {
+   "company": "Johnson & Johnson",
+   "first_seen": "2026-11-24T21:08:51.709903+00:00",
+   "location": "New Brunswick",
+   "match": "early-stage",
+   "title": "Global Product Manager",
+   "url": "https://www.careers.jnj.com/en/jobs/r-111154/global-product-manager/"
   },
   "790d9689c7a944dbcfe7b1d9ba447a18fae08531": {
    "company": "AstraZeneca",
@@ -11814,6 +11849,14 @@
    "title": "Environment, Health, Safety and Sustainability (EHSS) Intern",
    "url": "https://bristolmyerssquibb.wd5.myworkdayjobs.com/en-US/BMS/job/Summit-West---NJ---US/Environment--Health--Safety-and-Sustainability--EHSS--Intern_R1607611"
   },
+  "ab368f2fd92df79cbd7f2a5c96ead65127340ed6": {
+   "company": "Johnson & Johnson",
+   "first_seen": "2026-11-24T21:08:51.709903+00:00",
+   "location": "Horsham",
+   "match": "early-stage",
+   "title": "Manager, Technical Product Manager - Advanced Therapy",
+   "url": "https://www.careers.jnj.com/en/jobs/r-110481/manager-technical-product-manager-advanced-therapy/"
+  },
   "ab4ac88a48ef51b8e75969605731cd7c536e9014": {
    "company": "Johnson & Johnson",
    "first_seen": "2026-09-12T00:37:00.191485+00:00",
@@ -12025,6 +12068,14 @@
    "match": "program",
    "title": "Internship- EHS Engineer",
    "url": "https://www.novonordisk.com/careers/find-a-job/job-ad.html?id=346680.en_US"
+  },
+  "ada27c1862664372baabb851f9833c2a1ec73684": {
+   "company": "Johnson & Johnson",
+   "first_seen": "2026-11-24T21:08:51.709903+00:00",
+   "location": "Plano / Oklahoma City / Denton",
+   "match": "early-stage",
+   "title": "Field Reimbursement Manager, Oncology - (North TX/OK) - Patient Engagement & Customer Solution (PECS)",
+   "url": "https://www.careers.jnj.com/en/jobs/r-105652/field-reimbursement-manager-oncology-north-txok-patient-engagement-customer-solution-pecs/"
   },
   "ada6996d58532a57d5c5162102786b56848029ed": {
    "company": "Merck",
@@ -13266,6 +13317,14 @@
    "match": "program",
    "title": "Technology TS AM CBT Off Cycle Co-Op",
    "url": "https://www.careers.jnj.com/en/jobs/r-099831/technology-ts-am-cbt-off-cycle-co-op/"
+  },
+  "bd6464ac6f6f0e1ee98eef91a80b989ac6d08864": {
+   "company": "Johnson & Johnson",
+   "first_seen": "2026-11-24T21:08:51.709903+00:00",
+   "location": "Horsham / Titusville",
+   "match": "early-stage",
+   "title": "Manager, Commercial AI & Advanced Analytics",
+   "url": "https://www.careers.jnj.com/en/jobs/r-112013/manager-commercial-ai-advanced-analytics/"
   },
   "bd6b2b96d7f4265d72a741b11f14ed6a5c86d470": {
    "company": "Gilead Sciences",
@@ -15223,6 +15282,14 @@
    "title": "Marketing Manager, New CVRM Franchise",
    "url": "https://astrazeneca.wd3.myworkdayjobs.com/en-US/Careers/job/US---Wilmington---DE/Marketing-Manager--New-CVRM-Franchise_R-263344"
   },
+  "dc608e7ec126cc273f3ca4855154b5c93e562913": {
+   "company": "Johnson & Johnson",
+   "first_seen": "2026-11-24T21:08:51.709903+00:00",
+   "location": "Malvern",
+   "match": "early-stage",
+   "title": "Senior Specialist, Strategy & Business Operations \u2013 Cell & Gene Therapy (2 openings)",
+   "url": "https://www.careers.jnj.com/en/jobs/r-110099/senior-specialist-strategy-business-operations-cell-gene-therapy-2-openings/"
+  },
   "dc6cbef74e91ebf8cbad9ce84c9be588c3ba54b8": {
    "company": "Sanofi",
    "first_seen": "2026-09-08T17:14:13.250290+00:00",
@@ -16344,6 +16411,14 @@
    "title": "Engineering Co-op",
    "url": "https://thermofisher.wd5.myworkdayjobs.com/ThermoFisherCareers/job/Cincinnati-Ohio-USA/Engineering-Co-op_R-01366573-1/apply"
   },
+  "ed0d7ad882d89594b21bb2cbcf43c96097043608": {
+   "company": "Johnson & Johnson",
+   "first_seen": "2026-11-24T21:08:51.709903+00:00",
+   "location": "Cambridge / New Brunswick / Remote (Us)",
+   "match": "early-stage",
+   "title": "Crowdsourcing Strategic Planning & Operations Manager",
+   "url": "https://www.careers.jnj.com/en/jobs/r-109249/crowdsourcing-strategic-planning-operations-manager/"
+  },
   "ed8d06c15e37bdfdbd3f63db763ec9ee905e11ff": {
    "company": "Thermo Fisher Scientific",
    "first_seen": "2026-10-21T05:18:19.846112+00:00",
@@ -16722,6 +16797,14 @@
    "match": "program",
    "title": "2027 Summer Intern - Digital, AI, and Clinical Outcome Assessments",
    "url": "https://roche.wd3.myworkdayjobs.com/en-US/ROG-A2O-GENE/job/South-San-Francisco/XMLNAME-2027-Summer-Intern---Digital--AI--and-Clinical-Outcome-Assessments_202611-128790"
+  },
+  "f28f5d67146aa3b0e62ccdb7fe071f7a9b0a50f9": {
+   "company": "Johnson & Johnson",
+   "first_seen": "2026-11-24T21:08:51.709903+00:00",
+   "location": "Horsham",
+   "match": "early-stage",
+   "title": "Manager, Business Analytics Solid Tumor Oncology - New Products and Business Development",
+   "url": "https://www.careers.jnj.com/en/jobs/r-112303/manager-business-analytics-solid-tumor-oncology-new-products-and-business-development/"
   },
   "f29b20ae9ee3163bf03d74da2bf0c6c9b72036ce": {
    "company": "Thermo Fisher Scientific",

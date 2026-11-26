@@ -3,102 +3,97 @@
   "Agilent Technologies": {
    "reason": "https://agilent.wd5.myworkdayjobs.com/wday/cxs/agilent/Agilent_Careers/jobs failed after 3 attempts: HTTP 429",
    "since": "2026-11-20T21:46:58.792286+00:00",
-   "streak": 24
+   "streak": 25
   },
   "Amgen": {
    "reason": "https://amgen.wd1.myworkdayjobs.com/wday/cxs/amgen/Careers/jobs failed after 3 attempts: HTTP 429",
    "since": "2026-11-16T07:56:58.003125+00:00",
-   "streak": 42
+   "streak": 43
   },
   "AstraZeneca": {
    "reason": "https://astrazeneca.wd3.myworkdayjobs.com/wday/cxs/astrazeneca/Careers/jobs failed after 3 attempts: HTTP 429",
    "since": "2026-11-16T07:56:58.003125+00:00",
-   "streak": 42
+   "streak": 43
   },
   "Biogen": {
    "reason": "https://biibhr.wd3.myworkdayjobs.com/wday/cxs/biibhr/external/jobs failed after 3 attempts: HTTP 429",
    "since": "2026-11-16T07:56:58.003125+00:00",
-   "streak": 42
+   "streak": 43
   },
   "Bristol Myers Squibb": {
    "reason": "https://bristolmyerssquibb.wd5.myworkdayjobs.com/wday/cxs/bristolmyerssquibb/BMS/jobs failed after 3 attempts: HTTP 429",
    "since": "2026-11-16T07:56:58.003125+00:00",
-   "streak": 42
+   "streak": 43
   },
   "GSK": {
    "reason": "https://gsk.wd5.myworkdayjobs.com/wday/cxs/gsk/GSKCareers/jobs failed after 3 attempts: HTTP 429",
    "since": "2026-11-16T07:56:58.003125+00:00",
-   "streak": 42
+   "streak": 43
   },
   "Genentech": {
    "reason": "https://roche.wd3.myworkdayjobs.com/wday/cxs/roche/ROG-A2O-GENE/jobs failed after 3 attempts: HTTP 429",
    "since": "2026-11-16T07:56:58.003125+00:00",
-   "streak": 42
+   "streak": 43
   },
   "Gilead Sciences": {
    "reason": "https://gilead.wd1.myworkdayjobs.com/wday/cxs/gilead/gileadcareers/jobs failed after 3 attempts: HTTP 429",
    "since": "2026-11-16T07:56:58.003125+00:00",
-   "streak": 42
+   "streak": 43
   },
   "Illumina": {
    "reason": "https://illumina.wd1.myworkdayjobs.com/wday/cxs/illumina/illumina-careers/jobs failed after 3 attempts: HTTP 429",
    "since": "2026-11-16T07:56:58.003125+00:00",
-   "streak": 42
+   "streak": 43
   },
   "Kite Pharma": {
    "reason": "https://gilead.wd1.myworkdayjobs.com/wday/cxs/gilead/kitepharmacareers/jobs failed after 3 attempts: HTTP 429",
    "since": "2026-11-16T07:56:58.003125+00:00",
-   "streak": 42
+   "streak": 43
   },
   "Labcorp": {
    "reason": "https://careers.labcorp.com/widgets failed after 3 attempts: HTTP 404",
    "since": "2026-11-12T17:33:04.510498+00:00",
-   "streak": 59
+   "streak": 60
   },
   "Moderna": {
    "reason": "https://modernatx.wd1.myworkdayjobs.com/wday/cxs/modernatx/M_tx/jobs failed after 3 attempts: HTTP 429",
    "since": "2026-11-16T07:56:58.003125+00:00",
-   "streak": 42
+   "streak": 43
   },
   "Neurocrine Biosciences": {
    "reason": "https://neurocrine.wd5.myworkdayjobs.com/wday/cxs/neurocrine/NeurocrineCareers/jobs failed after 3 attempts: HTTP 429",
    "since": "2026-11-16T07:56:58.003125+00:00",
-   "streak": 42
+   "streak": 43
   },
   "Novartis": {
    "reason": "https://novartis.wd3.myworkdayjobs.com/wday/cxs/novartis/Novartis_Careers/jobs failed after 3 attempts: HTTP 429",
    "since": "2026-11-16T07:56:58.003125+00:00",
-   "streak": 42
+   "streak": 43
   },
   "Pfizer": {
    "reason": "https://pfizer.wd1.myworkdayjobs.com/wday/cxs/pfizer/PfizerCareers/jobs failed after 3 attempts: HTTP 429",
    "since": "2026-11-16T07:56:58.003125+00:00",
-   "streak": 42
+   "streak": 43
   },
   "Regeneron": {
    "reason": "https://regeneron.wd1.myworkdayjobs.com/wday/cxs/regeneron/Careers/jobs failed after 3 attempts: HTTP 429",
    "since": "2026-11-16T07:56:58.003125+00:00",
-   "streak": 42
+   "streak": 43
   },
   "Roche": {
    "reason": "https://roche.wd3.myworkdayjobs.com/wday/cxs/roche/roche-ext/jobs failed after 3 attempts: HTTP 429",
    "since": "2026-11-16T07:56:58.003125+00:00",
-   "streak": 42
+   "streak": 43
   },
   "Sanofi": {
    "reason": "https://sanofi.wd3.myworkdayjobs.com/wday/cxs/sanofi/SanofiCareers/jobs failed after 3 attempts: HTTP 429",
    "since": "2026-11-16T07:56:58.003125+00:00",
-   "streak": 42
+   "streak": 43
   },
   "Tempus AI": {
    "reason": "https://tempus.wd5.myworkdayjobs.com/wday/cxs/tempus/Tempus_Careers/jobs failed after 3 attempts: HTTP 429",
    "since": "2026-11-16T07:56:58.003125+00:00",
-   "streak": 42
-  },
-  "Vertex Pharmaceuticals": {
-   "reason": "https://vrtx.wd501.myworkdayjobs.com/wday/cxs/vrtx/Vertex_Careers/jobs failed after 3 attempts: HTTP 429",
-   "since": "2026-11-26T20:09:02.678965+00:00",
-   "streak": 1
+   "streak": 43
   }
  },
  "failures": {
